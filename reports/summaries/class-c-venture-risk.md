@@ -17,27 +17,27 @@ This report summarizes all tokens classified as **Class C (Venture Risk)**.
 
 | Symbol | Name | Insider Score | Tariff | Exchange Rate |
 |--------|------|---------------|--------|---------------|
-| [HXRO](../tokens/hxro.md) | Hxro Network | 35 | 100% | 2.00x |
-| [DBR](../tokens/dbr.md) | deBridge | 35 | 100% | 2.00x |
-| [SLIM](../tokens/slim.md) | Solanium | 40 | 100% | 2.00x |
-| [GRASS](../tokens/grass.md) | Grass | 40 | 80% | 1.80x |
-| [UXD](../tokens/uxd.md) | UXD Stablecoin | 40 | 50% | 1.50x |
-| [MNGO](../tokens/mngo.md) | Mango Markets | 40 | 100% | 2.00x |
-| [ZETA](../tokens/zeta.md) | Zeta Markets | 40 | 120% | 2.20x |
-| [JTO](../tokens/jto.md) | Jito | 40 | 200% | 3.00x |
-| [GMT](../tokens/gmt.md) | STEPN | 40 | 200% | 3.00x |
-| [KMNO](../tokens/kmno.md) | Kamino | 42 | 100% | 2.00x |
-| [PRCL](../tokens/prcl.md) | Parcl | 45 | 100% | 2.00x |
-| [ATLAS](../tokens/atlas.md) | Star Atlas | 45 | 80% | 1.80x |
-| [ACS](../tokens/acs.md) | Access Protocol | 45 | 100% | 2.00x |
-| [IO](../tokens/io.md) | io.net | 46 | 100% | 2.00x |
-| [DRIFT](../tokens/drift.md) | Drift Protocol | 47 | 150% | 2.50x |
-| [W](../tokens/w.md) | Wormhole | 47 | 300% | 4.00x |
-| [JUP](../tokens/jup.md) | Jupiter | 50 | 50% | 1.50x |
-| [POLIS](../tokens/polis.md) | Star Atlas DAO | 50 | 100% | 2.00x |
-| [SHRAP](../tokens/shrap.md) | Shrapnel | 50 | 150% | 2.50x |
-| [PYTH](../tokens/pyth.md) | Pyth Network | 52 | 300% | 4.00x |
-| [NEON](../tokens/neon.md) | Neon EVM | 55 | 150% | 2.50x |
+| [HXRO](../tokens/hxro.md) | Hxro Network | 35 | 100.0% | 2.00x |
+| [DBR](../tokens/dbr.md) | deBridge | 35 | 100.0% | 2.00x |
+| [SLIM](../tokens/slim.md) | Solanium | 40 | 100.0% | 2.00x |
+| [GRASS](../tokens/grass.md) | Grass | 40 | 80.0% | 1.80x |
+| [UXD](../tokens/uxd.md) | UXD Stablecoin | 40 | 50.0% | 1.50x |
+| [MNGO](../tokens/mngo.md) | Mango Markets | 40 | 100.0% | 2.00x |
+| [ZETA](../tokens/zeta.md) | Zeta Markets | 40 | 120.0% | 2.20x |
+| [JTO](../tokens/jto.md) | Jito | 40 | 200.0% | 3.00x |
+| [GMT](../tokens/gmt.md) | STEPN | 40 | 200.0% | 3.00x |
+| [KMNO](../tokens/kmno.md) | Kamino | 42 | 100.0% | 2.00x |
+| [PRCL](../tokens/prcl.md) | Parcl | 45 | 100.0% | 2.00x |
+| [ATLAS](../tokens/atlas.md) | Star Atlas | 45 | 80.0% | 1.80x |
+| [ACS](../tokens/acs.md) | Access Protocol | 45 | 100.0% | 2.00x |
+| [IO](../tokens/io.md) | io.net | 46 | 100.0% | 2.00x |
+| [DRIFT](../tokens/drift.md) | Drift Protocol | 47 | 150.0% | 2.50x |
+| [W](../tokens/w.md) | Wormhole | 47 | 300.0% | 4.00x |
+| [JUP](../tokens/jup.md) | Jupiter | 50 | 50.0% | 1.50x |
+| [POLIS](../tokens/polis.md) | Star Atlas DAO | 50 | 100.0% | 2.00x |
+| [SHRAP](../tokens/shrap.md) | Shrapnel | 50 | 150.0% | 2.50x |
+| [PYTH](../tokens/pyth.md) | Pyth Network | 52 | 300.0% | 4.00x |
+| [NEON](../tokens/neon.md) | Neon EVM | 55 | 150.0% | 2.50x |
 
 ## Risk Characteristics
 

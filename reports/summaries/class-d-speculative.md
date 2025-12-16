@@ -17,7 +17,7 @@ This report summarizes all tokens classified as **Class D (Speculative)**.
 
 | Symbol | Name | Insider Score | Tariff | Exchange Rate |
 |--------|------|---------------|--------|---------------|
-| [LFG](../tokens/lfg.md) | Less Fn Gas | 5 | 200% | 3.00x |
+| [LFG](../tokens/lfg.md) | Less Fn Gas | 5 | 200.0% | 3.00x |
 
 ## Risk Characteristics
 
