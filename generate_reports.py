@@ -136,7 +136,7 @@ class MarkdownReportGenerator:
         # Create table rows
         table_rows = []
         for token in sorted(tokens, key=lambda t: t.insider_score):
-            table_rows.append(f"| {token.symbol} | {token.name} | {token.insider_score} | {token.tariff_override}% | {token.exchange_rate} |")
+            table_rows.append(f"| [{token.symbol}](../tokens/{token.symbol.lower()}.md) | {token.name} | {token.insider_score} | {token.tariff_override}% | {token.exchange_rate} |")
         
         content = f"""# {risk_class} - Summary
 
@@ -264,10 +264,10 @@ This repository contains comprehensive analysis reports for {total_tokens} Solan
 
 | Risk Class | Token Count | Description |
 |------------|-------------|-------------|
-| **Class A (Real Yield)** | {class_counts["Class A (Real Yield)"]} | Low-risk foundation assets |
-| **Class B (Systemic)** | {class_counts["Class B (Systemic)"]} | Medium-risk ecosystem tokens |
-| **Class C (Venture Risk)** | {class_counts["Class C (Venture Risk)"]} | Higher-risk growth opportunities |
-| **Class D (Speculative)** | {class_counts["Class D (Speculative)"]} | Maximum-risk speculative assets |
+| [**Class A (Real Yield)**](./summaries/class-a-real-yield.md) | {class_counts["Class A (Real Yield)"]} | Low-risk foundation assets |
+| [**Class B (Systemic)**](./summaries/class-b-systemic.md) | {class_counts["Class B (Systemic)"]} | Medium-risk ecosystem tokens |
+| [**Class C (Venture Risk)**](./summaries/class-c-venture-risk.md) | {class_counts["Class C (Venture Risk)"]} | Higher-risk growth opportunities |
+| [**Class D (Speculative)**](./summaries/class-d-speculative.md) | {class_counts["Class D (Speculative)"]} | Maximum-risk speculative assets |
 
 ## 📈 Quick Stats
 

@@ -17,48 +17,48 @@ This report summarizes all tokens classified as **Class A (Real Yield)**.
 
 | Symbol | Name | Insider Score | Tariff | Exchange Rate |
 |--------|------|---------------|--------|---------------|
-| tBTC | Threshold Bitcoin | 0 | 0% | 1.00x |
-| USDY | Ondo US Dollar Yield | 5 | 2% | 1.02x |
-| OUSG | Ondo Short-Term US Gov | 5 | 2% | 1.02x |
-| zBTC | Zeus Bitcoin | 10 | 2% | 1.02x |
-| PAXG | Paxos Gold (Portal) | 10 | 5% | 1.05x |
-| UPT | UpRock | 10 | 15% | 1.15x |
-| LFNTY | Lifinity | 10 | 10% | 1.10x |
-| JLP | Jupiter Perps LP | 10 | 10% | 1.10x |
-| GUAC | Guacamole | 10 | 25% | 1.25x |
-| XAUT | Tether Gold (Portal) | 15 | 8% | 1.08x |
-| STRM | Streamflow | 15 | 10% | 1.10x |
-| NOS | Nosana | 15 | 10% | 1.10x |
-| SHDW | Shadow Token | 15 | 12% | 1.12x |
-| STEP | Step Finance | 15 | 15% | 1.15x |
-| WBTC | Wrapped Bitcoin (Portal) | 20 | 5% | 1.05x |
-| MET | Meteora | 20 | 20% | 1.20x |
-| ALEPH | Aleph.im | 20 | 15% | 1.15x |
-| AKT | Akash Network (Wormhole) | 20 | 20% | 1.20x |
-| HONEY | Hivemapper | 20 | 15% | 1.15x |
-| WIFI | WiFi Map | 20 | 25% | 1.25x |
-| ISC | International Stable Currency | 20 | 5% | 1.05x |
-| DUAL | Dual Finance | 20 | 25% | 1.25x |
-| PICA | Picasso | 20 | 25% | 1.25x |
-| LMR | Lumerin | 20 | 20% | 1.20x |
-| CROWN | Photo Finish LIVE | 20 | 10% | 1.10x |
-| FIDA | Bonfida | 25 | 15% | 1.15x |
-| wUNI | Wrapped Uniswap (Portal) | 25 | 3% | 1.03x |
-| SYN | Synesis One | 25 | 25% | 1.25x |
-| NATIX | Natix Network | 25 | 25% | 1.25x |
-| ONDE | Onde Network | 25 | 20% | 1.20x |
-| USDH | Hubble USD | 25 | 8% | 1.08x |
-| PHOENIX | Phoenix (Ellipsis) | 25 | 30% | 1.30x |
-| ZEUS | Zeus Network | 25 | 20% | 1.20x |
-| CLOUD | Sanctum | 30 | 25% | 1.25x |
-| FRKT | Frakt | 30 | 5% | 1.05x |
-| MOBILE | Helium Mobile | 30 | 20% | 1.20x |
-| IOT | Helium IOT | 30 | 20% | 1.20x |
-| AURY | Aurory | 30 | 25% | 1.25x |
-| RENDER | Render Network | 35 | 15% | 1.15x |
-| HBB | Hubble Protocol | 35 | 4% | 1.04x |
-| GENE | Genopets | 35 | 40% | 1.40x |
-| HNT | Helium Network | 40 | 25% | 1.25x |
+| [tBTC](../tokens/tbtc.md) | Threshold Bitcoin | 0 | 0% | 1.00x |
+| [USDY](../tokens/usdy.md) | Ondo US Dollar Yield | 5 | 2% | 1.02x |
+| [OUSG](../tokens/ousg.md) | Ondo Short-Term US Gov | 5 | 2% | 1.02x |
+| [zBTC](../tokens/zbtc.md) | Zeus Bitcoin | 10 | 2% | 1.02x |
+| [PAXG](../tokens/paxg.md) | Paxos Gold (Portal) | 10 | 5% | 1.05x |
+| [UPT](../tokens/upt.md) | UpRock | 10 | 15% | 1.15x |
+| [LFNTY](../tokens/lfnty.md) | Lifinity | 10 | 10% | 1.10x |
+| [JLP](../tokens/jlp.md) | Jupiter Perps LP | 10 | 10% | 1.10x |
+| [GUAC](../tokens/guac.md) | Guacamole | 10 | 25% | 1.25x |
+| [XAUT](../tokens/xaut.md) | Tether Gold (Portal) | 15 | 8% | 1.08x |
+| [STRM](../tokens/strm.md) | Streamflow | 15 | 10% | 1.10x |
+| [NOS](../tokens/nos.md) | Nosana | 15 | 10% | 1.10x |
+| [SHDW](../tokens/shdw.md) | Shadow Token | 15 | 12% | 1.12x |
+| [STEP](../tokens/step.md) | Step Finance | 15 | 15% | 1.15x |
+| [WBTC](../tokens/wbtc.md) | Wrapped Bitcoin (Portal) | 20 | 5% | 1.05x |
+| [MET](../tokens/met.md) | Meteora | 20 | 20% | 1.20x |
+| [ALEPH](../tokens/aleph.md) | Aleph.im | 20 | 15% | 1.15x |
+| [AKT](../tokens/akt.md) | Akash Network (Wormhole) | 20 | 20% | 1.20x |
+| [HONEY](../tokens/honey.md) | Hivemapper | 20 | 15% | 1.15x |
+| [WIFI](../tokens/wifi.md) | WiFi Map | 20 | 25% | 1.25x |
+| [ISC](../tokens/isc.md) | International Stable Currency | 20 | 5% | 1.05x |
+| [DUAL](../tokens/dual.md) | Dual Finance | 20 | 25% | 1.25x |
+| [PICA](../tokens/pica.md) | Picasso | 20 | 25% | 1.25x |
+| [LMR](../tokens/lmr.md) | Lumerin | 20 | 20% | 1.20x |
+| [CROWN](../tokens/crown.md) | Photo Finish LIVE | 20 | 10% | 1.10x |
+| [FIDA](../tokens/fida.md) | Bonfida | 25 | 15% | 1.15x |
+| [wUNI](../tokens/wuni.md) | Wrapped Uniswap (Portal) | 25 | 3% | 1.03x |
+| [SYN](../tokens/syn.md) | Synesis One | 25 | 25% | 1.25x |
+| [NATIX](../tokens/natix.md) | Natix Network | 25 | 25% | 1.25x |
+| [ONDE](../tokens/onde.md) | Onde Network | 25 | 20% | 1.20x |
+| [USDH](../tokens/usdh.md) | Hubble USD | 25 | 8% | 1.08x |
+| [PHOENIX](../tokens/phoenix.md) | Phoenix (Ellipsis) | 25 | 30% | 1.30x |
+| [ZEUS](../tokens/zeus.md) | Zeus Network | 25 | 20% | 1.20x |
+| [CLOUD](../tokens/cloud.md) | Sanctum | 30 | 25% | 1.25x |
+| [FRKT](../tokens/frkt.md) | Frakt | 30 | 5% | 1.05x |
+| [MOBILE](../tokens/mobile.md) | Helium Mobile | 30 | 20% | 1.20x |
+| [IOT](../tokens/iot.md) | Helium IOT | 30 | 20% | 1.20x |
+| [AURY](../tokens/aury.md) | Aurory | 30 | 25% | 1.25x |
+| [RENDER](../tokens/render.md) | Render Network | 35 | 15% | 1.15x |
+| [HBB](../tokens/hbb.md) | Hubble Protocol | 35 | 4% | 1.04x |
+| [GENE](../tokens/gene.md) | Genopets | 35 | 40% | 1.40x |
+| [HNT](../tokens/hnt.md) | Helium Network | 40 | 25% | 1.25x |
 
 ## Risk Characteristics
 

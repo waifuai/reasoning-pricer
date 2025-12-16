@@ -8,10 +8,10 @@ This repository contains comprehensive analysis reports for 99 Solana tokens, or
 
 | Risk Class | Token Count | Description |
 |------------|-------------|-------------|
-| **Class A (Real Yield)** | 42 | Low-risk foundation assets |
-| **Class B (Systemic)** | 35 | Medium-risk ecosystem tokens |
-| **Class C (Venture Risk)** | 21 | Higher-risk growth opportunities |
-| **Class D (Speculative)** | 1 | Maximum-risk speculative assets |
+| [**Class A (Real Yield)**](./summaries/class-a-real-yield.md) | 42 | Low-risk foundation assets |
+| [**Class B (Systemic)**](./summaries/class-b-systemic.md) | 35 | Medium-risk ecosystem tokens |
+| [**Class C (Venture Risk)**](./summaries/class-c-venture-risk.md) | 21 | Higher-risk growth opportunities |
+| [**Class D (Speculative)**](./summaries/class-d-speculative.md) | 1 | Maximum-risk speculative assets |
 
 ## 📈 Quick Stats
 

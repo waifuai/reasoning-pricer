@@ -17,41 +17,41 @@ This report summarizes all tokens classified as **Class B (Systemic)**.
 
 | Symbol | Name | Insider Score | Tariff | Exchange Rate |
 |--------|------|---------------|--------|---------------|
-| wETH | Wrapped Ether (Portal) | 5 | 3% | 1.03x |
-| USDC | USD Coin | 10 | 5% | 1.05x |
-| EURC | Euro Coin | 10 | 5% | 1.05x |
-| USDS | Sky Dollar (Solana) | 10 | 5% | 1.05x |
-| KIN | Kin | 15 | 4% | 1.04x |
-| PYUSD | PayPal USD | 15 | 5% | 1.05x |
-| USDT | Tether USD | 20 | 5% | 1.05x |
-| RAY | Raydium | 20 | 50% | 1.50x |
-| ORCA | Orca | 20 | 30% | 1.30x |
-| TRYB | BiLira | 25 | 3% | 1.03x |
-| SONAR | SonarWatch | 25 | 3% | 1.03x |
-| TULIP | Tulip Protocol | 25 | 50% | 1.50x |
-| 1INCH | 1inch (Wormhole) | 30 | 40% | 1.40x |
-| wLINK | Wrapped Chainlink (Portal) | 30 | 3% | 1.03x |
-| BRZ | BRZ Token | 30 | 3% | 1.03x |
-| SLND | Solend (Save) | 30 | 30% | 1.30x |
-| MNDE | Marinade | 30 | 40% | 1.40x |
-| CHAT | Solchat | 35 | 4% | 1.04x |
-| MPLX | Metaplex | 40 | 3% | 1.03x |
-| wMATIC | Wrapped Matic (Portal) | 40 | 4% | 1.04x |
-| wAVAX | Wrapped AVAX (Portal) | 40 | 4% | 1.04x |
-| INF | Sanctum Infinity | 40 | 30% | 1.30x |
-| ZBCN | Zebec Network | 45 | 4% | 1.04x |
-| SOL | Solana | 48 | 30% | 1.30x |
-| JitoSOL | Jito Staked SOL | 48 | 30% | 1.30x |
-| mSOL | Marinade Staked SOL | 48 | 30% | 1.30x |
-| bSOL | Blaze Staked SOL | 48 | 30% | 1.30x |
-| jSOL | JPool Staked SOL | 48 | 30% | 1.30x |
-| hSOL | Helius Staked SOL | 48 | 30% | 1.30x |
-| daosol | daoSOL | 48 | 30% | 1.30x |
-| wLDO | Wrapped Lido DAO (Portal) | 50 | 4% | 1.04x |
-| ME | Magic Eden | 55 | 4% | 1.04x |
-| TNSR | Tensor | 60 | 5% | 1.05x |
-| wBNB | Wrapped BNB (Portal) | 65 | 4% | 1.04x |
-| cbBTC | Coinbase Wrapped BTC | 100 | 10% | 1.10x |
+| [wETH](../tokens/weth.md) | Wrapped Ether (Portal) | 5 | 3% | 1.03x |
+| [USDC](../tokens/usdc.md) | USD Coin | 10 | 5% | 1.05x |
+| [EURC](../tokens/eurc.md) | Euro Coin | 10 | 5% | 1.05x |
+| [USDS](../tokens/usds.md) | Sky Dollar (Solana) | 10 | 5% | 1.05x |
+| [KIN](../tokens/kin.md) | Kin | 15 | 4% | 1.04x |
+| [PYUSD](../tokens/pyusd.md) | PayPal USD | 15 | 5% | 1.05x |
+| [USDT](../tokens/usdt.md) | Tether USD | 20 | 5% | 1.05x |
+| [RAY](../tokens/ray.md) | Raydium | 20 | 50% | 1.50x |
+| [ORCA](../tokens/orca.md) | Orca | 20 | 30% | 1.30x |
+| [TRYB](../tokens/tryb.md) | BiLira | 25 | 3% | 1.03x |
+| [SONAR](../tokens/sonar.md) | SonarWatch | 25 | 3% | 1.03x |
+| [TULIP](../tokens/tulip.md) | Tulip Protocol | 25 | 50% | 1.50x |
+| [1INCH](../tokens/1inch.md) | 1inch (Wormhole) | 30 | 40% | 1.40x |
+| [wLINK](../tokens/wlink.md) | Wrapped Chainlink (Portal) | 30 | 3% | 1.03x |
+| [BRZ](../tokens/brz.md) | BRZ Token | 30 | 3% | 1.03x |
+| [SLND](../tokens/slnd.md) | Solend (Save) | 30 | 30% | 1.30x |
+| [MNDE](../tokens/mnde.md) | Marinade | 30 | 40% | 1.40x |
+| [CHAT](../tokens/chat.md) | Solchat | 35 | 4% | 1.04x |
+| [MPLX](../tokens/mplx.md) | Metaplex | 40 | 3% | 1.03x |
+| [wMATIC](../tokens/wmatic.md) | Wrapped Matic (Portal) | 40 | 4% | 1.04x |
+| [wAVAX](../tokens/wavax.md) | Wrapped AVAX (Portal) | 40 | 4% | 1.04x |
+| [INF](../tokens/inf.md) | Sanctum Infinity | 40 | 30% | 1.30x |
+| [ZBCN](../tokens/zbcn.md) | Zebec Network | 45 | 4% | 1.04x |
+| [SOL](../tokens/sol.md) | Solana | 48 | 30% | 1.30x |
+| [JitoSOL](../tokens/jitosol.md) | Jito Staked SOL | 48 | 30% | 1.30x |
+| [mSOL](../tokens/msol.md) | Marinade Staked SOL | 48 | 30% | 1.30x |
+| [bSOL](../tokens/bsol.md) | Blaze Staked SOL | 48 | 30% | 1.30x |
+| [jSOL](../tokens/jsol.md) | JPool Staked SOL | 48 | 30% | 1.30x |
+| [hSOL](../tokens/hsol.md) | Helius Staked SOL | 48 | 30% | 1.30x |
+| [daosol](../tokens/daosol.md) | daoSOL | 48 | 30% | 1.30x |
+| [wLDO](../tokens/wldo.md) | Wrapped Lido DAO (Portal) | 50 | 4% | 1.04x |
+| [ME](../tokens/me.md) | Magic Eden | 55 | 4% | 1.04x |
+| [TNSR](../tokens/tnsr.md) | Tensor | 60 | 5% | 1.05x |
+| [wBNB](../tokens/wbnb.md) | Wrapped BNB (Portal) | 65 | 4% | 1.04x |
+| [cbBTC](../tokens/cbbtc.md) | Coinbase Wrapped BTC | 100 | 10% | 1.10x |
 
 ## Risk Characteristics
 
