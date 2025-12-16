@@ -1,0 +1,142 @@
+[
+  {
+    "symbol": "HBB",
+    "name": "Hubble Protocol",
+    "archetype": "Class A (Real Yield)",
+    "insider_score": 35,
+    "tags": [
+      "defi",
+      "stablecoin",
+      "lending",
+      "yield-bearing"
+    ],
+    "tariff_override": 4,
+    "reason": "A borrowing protocol enabling the minting of USDH against collateral. Generates protocol revenue through minting and redemption fees. Moderate governance concentration."
+  },
+  {
+    "symbol": "SONAR",
+    "name": "SonarWatch",
+    "archetype": "Class B (Systemic)",
+    "insider_score": 25,
+    "tags": [
+      "infrastructure",
+      "data",
+      "analytics",
+      "tooling"
+    ],
+    "tariff_override": 3,
+    "reason": "The premier portfolio tracking dashboard for Solana. Essential infrastructure for users to track DeFi positions. Token allows for PRO features and governance."
+  },
+  {
+    "symbol": "FRKT",
+    "name": "Frakt",
+    "archetype": "Class A (Real Yield)",
+    "insider_score": 30,
+    "tags": [
+      "defi",
+      "nft-fi",
+      "lending",
+      "yield-bearing"
+    ],
+    "tariff_override": 5,
+    "reason": "A decentralized NFT lending protocol. Allows users to borrow against NFTs or lend liquidity for yield. Generates real revenue from interest spreads."
+  },
+  {
+    "symbol": "MBS",
+    "name": "MonkeyLeague",
+    "archetype": "Class C (Speculative)",
+    "insider_score": 55,
+    "tags": [
+      "gaming",
+      "esports",
+      "metaverse",
+      "p2e"
+    ],
+    "tariff_override": 6,
+    "reason": "A strategy-based soccer game. High production value but relies on the play-to-earn model which carries economic sustainability risks. Moderate to high insider influence."
+  },
+  {
+    "symbol": "IVN",
+    "name": "Investin",
+    "archetype": "Class B (Systemic)",
+    "insider_score": 40,
+    "tags": [
+      "defi",
+      "asset-management",
+      "fund-management",
+      "platform"
+    ],
+    "tariff_override": 5,
+    "reason": "A decentralized fund management protocol allowing traders to launch on-chain funds. Provides systemic utility for copy-trading, though liquidity is niche."
+  },
+  {
+    "symbol": "AART",
+    "name": "ALL.ART",
+    "archetype": "Class B (Systemic)",
+    "insider_score": 45,
+    "tags": [
+      "infrastructure",
+      "nft-standard",
+      "rights-management",
+      "metaverse"
+    ],
+    "tariff_override": 4,
+    "reason": "Infrastructure focusing on NFT licensing and rights management standards (VRDA). Builds critical intellectual property rails for the ecosystem."
+  },
+  {
+    "symbol": "CRWNY",
+    "name": "Crowny",
+    "archetype": "Class C (Speculative)",
+    "insider_score": 50,
+    "tags": [
+      "marketing",
+      "loyalty",
+      "consumer",
+      "app"
+    ],
+    "tariff_override": 5,
+    "reason": "Advertising platform connecting brands with users via a loyalty app. Token value is tied to brand adoption and ad-spend within the closed ecosystem."
+  },
+  {
+    "symbol": "LIQ",
+    "name": "Liq Protocol",
+    "archetype": "Class B (Systemic)",
+    "insider_score": 60,
+    "tags": [
+      "defi",
+      "infrastructure",
+      "liquidation",
+      "mev"
+    ],
+    "tariff_override": 6,
+    "reason": "A decentralized liquidation engine powering other lending protocols. Critical backend infrastructure, but high insider score due to the technical niche and team control."
+  },
+  {
+    "symbol": "SOLR",
+    "name": "SolRazr",
+    "archetype": "Class C (Speculative)",
+    "insider_score": 40,
+    "tags": [
+      "launchpad",
+      "fundraising",
+      "incubator",
+      "utility"
+    ],
+    "tariff_override": 7,
+    "reason": "One of the original IDO launchpads on Solana. Token acts as a gatekeeper for allocations. Value fluctuates heavily based on the quality of launched projects."
+  },
+  {
+    "symbol": "CYS",
+    "name": "Cyclos",
+    "archetype": "Class C (Speculative)",
+    "insider_score": 65,
+    "tags": [
+      "defi",
+      "amm",
+      "liquidity",
+      "yield-farming"
+    ],
+    "tariff_override": 6,
+    "reason": "Concentrated liquidity market maker. While technologically sound, it struggles for market share against dominant aggregators, increasing the speculative risk for holders."
+  }
+]

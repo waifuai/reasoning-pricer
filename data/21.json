@@ -1,0 +1,142 @@
+[
+  {
+    "symbol": "GH0ST",
+    "name": "Gh0st",
+    "archetype": "Class E (Experimental)",
+    "insider_score": 5,
+    "tags": [
+      "token-2022",
+      "standard",
+      "pioneer",
+      "transfer-tax"
+    ],
+    "tariff_override": 6,
+    "reason": "The first asset launched using the Solana Token-2022 standard. Served as a proof-of-concept for transfer hooks. Extremely decentralized due to its nature as a technical demo turned community asset."
+  },
+  {
+    "symbol": "CWIF",
+    "name": "Catwifhat",
+    "archetype": "Class E (Experimental)",
+    "insider_score": 20,
+    "tags": [
+      "token-2022",
+      "deflationary",
+      "burn-mechanism",
+      "meme"
+    ],
+    "tariff_override": 5,
+    "reason": "Utilizes Token-2022 extensions to enforce an aggressive burn on every transaction. Represents a successful experiment in deflationary tokenomics on Solana."
+  },
+  {
+    "symbol": "SOLS",
+    "name": "SPL20 Inscriptions",
+    "archetype": "Class E (Experimental)",
+    "insider_score": 10,
+    "tags": [
+      "inscription",
+      "ordinals",
+      "non-standard",
+      "fair-launch"
+    ],
+    "tariff_override": 9,
+    "reason": "The first major SPL-20 inscription token, mimicking Bitcoin Ordinals on Solana. The technical architecture differs from standard SPL tokens, adding significant complexity and experimental risk."
+  },
+  {
+    "symbol": "PIP",
+    "name": "Pip",
+    "archetype": "Class B (Systemic)",
+    "insider_score": 55,
+    "tags": [
+      "infrastructure",
+      "payments",
+      "web3",
+      "social-integration"
+    ],
+    "tariff_override": 4,
+    "reason": "Micropayment layer integrating Solana into Web2 social platforms. Strong utility case but relies on centralized browser extensions and team-managed infrastructure."
+  },
+  {
+    "symbol": "DEAN",
+    "name": "Dean's List",
+    "archetype": "Class B (Systemic)",
+    "insider_score": 25,
+    "tags": [
+      "dao",
+      "governance",
+      "service",
+      "community"
+    ],
+    "tariff_override": 4,
+    "reason": "A Service DAO composed of power users who provide feedback to Solana developers. Operates as a 'network state' experiment with high reputation-based decentralization."
+  },
+  {
+    "symbol": "HAWK",
+    "name": "Hawk Protocol",
+    "archetype": "Class C (Speculative)",
+    "insider_score": 50,
+    "tags": [
+      "defi",
+      "privacy",
+      "yield-bearing",
+      "compliance"
+    ],
+    "tariff_override": 7,
+    "reason": "DeFi protocol attempting to merge privacy with regulatory compliance. The dual mandate creates technical and adoption hurdles, increasing the risk profile."
+  },
+  {
+    "symbol": "MUMU",
+    "name": "Mumu the Bull",
+    "archetype": "Class D (Memetic)",
+    "insider_score": 30,
+    "tags": [
+      "meme",
+      "culture",
+      "finance-meme",
+      "community"
+    ],
+    "tariff_override": 5,
+    "reason": "Represents the 'Bull Market' avatar. Established community with organic growth, serving as a counter-narrative to bear market memes."
+  },
+  {
+    "symbol": "MICHI",
+    "name": "Michi",
+    "archetype": "Class D (Memetic)",
+    "insider_score": 35,
+    "tags": [
+      "meme",
+      "cat-coin",
+      "infinite-derivatives",
+      "community"
+    ],
+    "tariff_override": 5,
+    "reason": "A meme coin popularized by its 'infinite derivatives' meta, where the character is photoshopped into endless scenarios. High community engagement reduces insider centralization."
+  },
+  {
+    "symbol": "LOCKIN",
+    "name": "Lock In",
+    "archetype": "Class D (Memetic)",
+    "insider_score": 40,
+    "tags": [
+      "meme",
+      "cult",
+      "ticker-narrative",
+      "volatile"
+    ],
+    "tariff_override": 7,
+    "reason": "A cult-like meme based on the 'Lock In' phrase. Value is driven by high-conviction holders and social reinforcement, creating a rigid but volatile price floor."
+  },
+  {
+    "symbol": "LOAF",
+    "name": "Loaf Cat",
+    "archetype": "Class E (Experimental)",
+    "insider_score": 45,
+    "tags": [
+      "gaming",
+      "pixel-art",
+      "tamagotchi",
+      "meme"
+    ],
+    "tariff_override": 6,
+    "reason": "Combines meme culture with on-chain Tamagotchi-style gaming interaction. Moderate insider score due to the development requirements of the gaming interface."
+  }
+]

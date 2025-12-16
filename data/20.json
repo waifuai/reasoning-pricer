@@ -1,0 +1,142 @@
+[
+  {
+    "symbol": "COPE",
+    "name": "Cope",
+    "archetype": "Class E (Experimental)",
+    "insider_score": 60,
+    "tags": [
+      "social-fi",
+      "trading-performance",
+      "legacy",
+      "community"
+    ],
+    "tariff_override": 7,
+    "reason": "The pioneer of 'Copy Trading' scoring on Solana. Users staked COPE to rank traders. The project suffered from internal team friction, resulting in a high historical insider score and legacy baggage."
+  },
+  {
+    "symbol": "ROPE",
+    "name": "Rope",
+    "archetype": "Class E (Experimental)",
+    "insider_score": 55,
+    "tags": [
+      "defi",
+      "volatility-index",
+      "legacy",
+      "meme-fi"
+    ],
+    "tariff_override": 8,
+    "reason": "One of the first 'Meme-Fi' experiments, originally designed as a volatility index. It defines the 'Class E' archetype by blending ironic meme culture with complex financial mechanics."
+  },
+  {
+    "symbol": "BERN",
+    "name": "BonkEarn",
+    "archetype": "Class E (Experimental)",
+    "insider_score": 25,
+    "tags": [
+      "token-2022",
+      "yield-bearing",
+      "deflationary",
+      "tax-token"
+    ],
+    "tariff_override": 6,
+    "reason": "A showcase for the Solana Token-2022 standard. Implements protocol-level transfer taxes and burns to generate yield for holders. Highly experimental technical implementation."
+  },
+  {
+    "symbol": "BOZO",
+    "name": "Bozo Hybrid",
+    "archetype": "Class E (Experimental)",
+    "insider_score": 35,
+    "tags": [
+      "hybrid",
+      "nft-token",
+      "deflationary",
+      "community"
+    ],
+    "tariff_override": 6,
+    "reason": "Pioneered the 'Hybrid' meta, functioning simultaneously as a fungible token and a claim on NFTs. Innovative structure that blurs the lines between SPL tokens and Metaplex standards."
+  },
+  {
+    "symbol": "GRAPE",
+    "name": "Grape Network",
+    "archetype": "Class B (Systemic)",
+    "insider_score": 45,
+    "tags": [
+      "infrastructure",
+      "social-gating",
+      "dao-tools",
+      "community"
+    ],
+    "tariff_override": 4,
+    "reason": "The standard for token-gated communities on Discord. Essential infrastructure for DAOs, though its token economics have struggled to capture value commensurate with its utility."
+  },
+  {
+    "symbol": "MAIL",
+    "name": "SolMail",
+    "archetype": "Class E (Experimental)",
+    "insider_score": 40,
+    "tags": [
+      "infrastructure",
+      "communication",
+      "utility",
+      "protocol"
+    ],
+    "tariff_override": 5,
+    "reason": "An attempt to create an on-chain email standard. Functionality is novel, but the long-term viability of paying for individual messages remains an experimental economic model."
+  },
+  {
+    "symbol": "ANALOS",
+    "name": "Analos",
+    "archetype": "Class D (Memetic)",
+    "insider_score": 50,
+    "tags": [
+      "meme",
+      "narrative",
+      "mirror",
+      "volatile"
+    ],
+    "tariff_override": 7,
+    "reason": "A narrative-driven meme coin ('Solana' spelled backwards). Represents the 'mirror' meta. High volatility and rapid capital rotation typical of short-lived narrative plays."
+  },
+  {
+    "symbol": "LIKE",
+    "name": "Only1",
+    "archetype": "Class C (Speculative)",
+    "insider_score": 40,
+    "tags": [
+      "social-fi",
+      "nft-utility",
+      "creator-economy",
+      "platform"
+    ],
+    "tariff_override": 6,
+    "reason": "A decentralized social platform similar to Patreon. Users buy NFTs to stake on creators. Moderate insider score due to VC backing and platform development centralization."
+  },
+  {
+    "symbol": "SAMO",
+    "name": "Samoyedcoin",
+    "archetype": "Class D (Memetic)",
+    "insider_score": 10,
+    "tags": [
+      "meme",
+      "dog-coin",
+      "legacy",
+      "community"
+    ],
+    "tariff_override": 4,
+    "reason": "The original Solana dog coin. Unlike newer memes, its supply is well-distributed over years, resulting in a very low insider score and 'blue-chip' meme status."
+  },
+  {
+    "symbol": "BLOCK",
+    "name": "Blockasset",
+    "archetype": "Class C (Speculative)",
+    "insider_score": 55,
+    "tags": [
+      "sports",
+      "nft-utility",
+      "fan-token",
+      "platform"
+    ],
+    "tariff_override": 6,
+    "reason": "Sports athlete tokenization platform. Partnerships with major athletes create value, but the model relies heavily on centralized partnerships and team execution."
+  }
+]

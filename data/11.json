@@ -1,0 +1,142 @@
+[
+  {
+    "symbol": "BONK",
+    "name": "Bonk",
+    "archetype": "Class D (Memetic)",
+    "insider_score": 15,
+    "tags": [
+      "meme",
+      "community",
+      "ecosystem",
+      "dog-coin"
+    ],
+    "tariff_override": 4,
+    "reason": "The flagship cultural token of Solana that catalyzed the 2023 revival. Highly decentralized distribution via massive airdrops to developers and NFT holders. Low insider concentration."
+  },
+  {
+    "symbol": "WIF",
+    "name": "dogwifhat",
+    "archetype": "Class D (Memetic)",
+    "insider_score": 35,
+    "tags": [
+      "meme",
+      "community",
+      "volatile",
+      "speculative"
+    ],
+    "tariff_override": 5,
+    "reason": "A leading viral meme asset with significant market capitalization. While distribution is broader now, early supply concentration in sniper wallets suggests moderate insider influence."
+  },
+  {
+    "symbol": "POPCAT",
+    "name": "Popcat",
+    "archetype": "Class D (Memetic)",
+    "insider_score": 25,
+    "tags": [
+      "meme",
+      "community",
+      "cat-coin",
+      "volatile"
+    ],
+    "tariff_override": 6,
+    "reason": "Top-tier cat-themed meme coin. Community takeover narrative reduces insider scoring, but volatility remains high requiring elevated tariff friction."
+  },
+  {
+    "symbol": "BOME",
+    "name": "BOOK OF MEME",
+    "archetype": "Class D (Memetic)",
+    "insider_score": 65,
+    "tags": [
+      "meme",
+      "experimental",
+      "volatile",
+      "presale"
+    ],
+    "tariff_override": 8,
+    "reason": "Launched via a controversial presale model where a single entity handled initial liquidity. High insider score due to the mechanics of the launch and supply concentration."
+  },
+  {
+    "symbol": "SLERF",
+    "name": "Slerf",
+    "archetype": "Class D (Memetic)",
+    "insider_score": 10,
+    "tags": [
+      "meme",
+      "community",
+      "accidental-burn",
+      "volatile"
+    ],
+    "tariff_override": 7,
+    "reason": "Unique case where the developer accidentally burned the LP and airdrop supply, resulting in a inadvertently decentralized 'fair launch'. High risk due to chaotic origin."
+  },
+  {
+    "symbol": "MYRO",
+    "name": "Myro",
+    "archetype": "Class D (Memetic)",
+    "insider_score": 45,
+    "tags": [
+      "meme",
+      "dog-coin",
+      "speculative",
+      "community"
+    ],
+    "tariff_override": 6,
+    "reason": "Tribute token named after the Solana co-founder's dog. Moderate insider control observed in top holder clusters. Standard meme coin volatility profile."
+  },
+  {
+    "symbol": "WEN",
+    "name": "Wen",
+    "archetype": "Class D (Memetic)",
+    "insider_score": 5,
+    "tags": [
+      "meme",
+      "community",
+      "nft-fraction",
+      "airdrop"
+    ],
+    "tariff_override": 3,
+    "reason": "Created by the Jupiter team as a stress test, with extremely wide distribution to over a million wallets. Very low insider score and high decentralization."
+  },
+  {
+    "symbol": "PONKE",
+    "name": "Ponke",
+    "archetype": "Class D (Memetic)",
+    "insider_score": 55,
+    "tags": [
+      "meme",
+      "gambling",
+      "volatile",
+      "community"
+    ],
+    "tariff_override": 7,
+    "reason": "High-velocity meme coin with aggressive marketing. On-chain analysis suggests coordinated market making and significant wallet clustering."
+  },
+  {
+    "symbol": "MEW",
+    "name": "cat in a dogs world",
+    "archetype": "Class D (Memetic)",
+    "insider_score": 60,
+    "tags": [
+      "meme",
+      "cat-coin",
+      "airdrop",
+      "speculative"
+    ],
+    "tariff_override": 6,
+    "reason": "Large cap cat coin distributed partly via airdrop to phone holders, but retaining significant supply for market makers and team, indicating higher insider control."
+  },
+  {
+    "symbol": "SILLY",
+    "name": "Silly Dragon",
+    "archetype": "Class D (Memetic)",
+    "insider_score": 40,
+    "tags": [
+      "meme",
+      "community",
+      "culture",
+      "year-of-dragon"
+    ],
+    "tariff_override": 6,
+    "reason": "Cultural token tied to the Year of the Dragon and Solana ecosystem lore. Moderate concentration among early adopters and ecosystem participants."
+  }
+]

@@ -1,0 +1,128 @@
+[
+  {
+    "symbol": "wETH",
+    "name": "Wrapped Ether (Portal)",
+    "archetype": "Class B (Systemic)",
+    "insider_score": 5,
+    "tags": [
+      "bridged",
+      "blue-chip",
+      "layer-1",
+      "collateral"
+    ],
+    "tariff_override": 3,
+    "reason": "The dominant Layer 1 asset bridged to Solana via Wormhole. Extremely low insider control on the underlying asset (Ethereum), but carries inherent bridge smart contract risks."
+  },
+  {
+    "symbol": "wBNB",
+    "name": "Wrapped BNB (Portal)",
+    "archetype": "Class B (Systemic)",
+    "insider_score": 65,
+    "tags": [
+      "bridged",
+      "exchange-token",
+      "layer-1",
+      "utility"
+    ],
+    "tariff_override": 4,
+    "reason": "Bridged version of the Binance ecosystem token. High utility and liquidity, but the underlying asset has significant centralized influence from the issuing exchange."
+  },
+  {
+    "symbol": "wMATIC",
+    "name": "Wrapped Matic (Portal)",
+    "archetype": "Class B (Systemic)",
+    "insider_score": 40,
+    "tags": [
+      "bridged",
+      "layer-2",
+      "scaling",
+      "infrastructure"
+    ],
+    "tariff_override": 4,
+    "reason": "Polygon's native token bridged to Solana. Moderate insider score reflecting the Polygon Foundation's treasury and allocation, representing cross-chain liquidity."
+  },
+  {
+    "symbol": "wAVAX",
+    "name": "Wrapped AVAX (Portal)",
+    "archetype": "Class B (Systemic)",
+    "insider_score": 40,
+    "tags": [
+      "bridged",
+      "layer-1",
+      "consensus",
+      "volatile"
+    ],
+    "tariff_override": 4,
+    "reason": "Avalanche consensus token bridged via Portal. serves as a speculative instrument and liquidity pairs on Solana DEXs. Moderate centralization profile."
+  },
+  {
+    "symbol": "wLINK",
+    "name": "Wrapped Chainlink (Portal)",
+    "archetype": "Class B (Systemic)",
+    "insider_score": 30,
+    "tags": [
+      "bridged",
+      "oracle",
+      "infrastructure",
+      "data"
+    ],
+    "tariff_override": 3,
+    "reason": "The standard for decentralized oracle networks. Bridged version allows for price speculation on Solana. The underlying asset has a strong reputation and moderate distribution."
+  },
+  {
+    "symbol": "wUNI",
+    "name": "Wrapped Uniswap (Portal)",
+    "archetype": "Class A (Real Yield)",
+    "insider_score": 25,
+    "tags": [
+      "bridged",
+      "defi",
+      "governance",
+      "dex"
+    ],
+    "tariff_override": 3,
+    "reason": "Governance token for the largest Ethereum DEX. While the bridged token doesn't govern on Solana, it represents a 'blue-chip' DeFi asset with deep liquidity."
+  },
+  {
+    "symbol": "wLDO",
+    "name": "Wrapped Lido DAO (Portal)",
+    "archetype": "Class B (Systemic)",
+    "insider_score": 50,
+    "tags": [
+      "bridged",
+      "liquid-staking",
+      "governance",
+      "defi"
+    ],
+    "tariff_override": 4,
+    "reason": "Governance token for the dominant liquid staking provider on Ethereum. Higher insider score due to the concentration of voting power in the DAO's early investors."
+  },
+  {
+    "symbol": "wCRV",
+    "name": "Wrapped Curve DAO (Portal)",
+    "archetype": "Class C (Speculative)",
+    "insider_score": 60,
+    "tags": [
+      "bridged",
+      "defi",
+      "stable-swap",
+      "governance"
+    ],
+    "tariff_override": 5,
+    "reason": "Curve Finance governance token. Bridged exposure allows for speculation on Curve's wars and emissions. Higher insider control due to founder's significant stake."
+  },
+  {
+    "symbol": "wNEAR",
+    "name": "Wrapped NEAR (Portal)",
+    "archetype": "Class C (Speculative)",
+    "insider_score": 45,
+    "tags": [
+      "bridged",
+      "layer-1",
+      "sharding",
+      "volatile"
+    ],
+    "tariff_override": 5,
+    "reason": "Native token of the NEAR Protocol bridged to Solana. Represents a competing L1 ecosystem asset. Moderate insider allocation to foundation and backers."
+  }
+]

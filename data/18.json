@@ -1,0 +1,100 @@
+[
+  {
+    "symbol": "TRYB",
+    "name": "BiLira",
+    "archetype": "Class B (Systemic)",
+    "insider_score": 25,
+    "tags": [
+      "stable",
+      "forex",
+      "emerging-market",
+      "payments"
+    ],
+    "tariff_override": 3,
+    "reason": "The dominant Turkish Lira stablecoin on blockchain. Connects DeFi to the Turkish banking system. Moderate centralization due to the issuer's control over reserves."
+  },
+  {
+    "symbol": "BRZ",
+    "name": "BRZ Token",
+    "archetype": "Class B (Systemic)",
+    "insider_score": 30,
+    "tags": [
+      "stable",
+      "forex",
+      "latin-america",
+      "payments"
+    ],
+    "tariff_override": 3,
+    "reason": "The largest stablecoin backed by the Brazilian Real. Essential infrastructure for Latin American crypto adoption, maintained by Transfero Swiss."
+  },
+  {
+    "symbol": "ZBCN",
+    "name": "Zebec Network",
+    "archetype": "Class B (Systemic)",
+    "insider_score": 45,
+    "tags": [
+      "payments",
+      "rwa",
+      "streaming",
+      "infrastructure"
+    ],
+    "tariff_override": 4,
+    "reason": "Protocol enabling continuous money streaming and payroll. Recently migrated from ZBC. Strong utility in real-world payments, with moderate insider governance control."
+  },
+  {
+    "symbol": "SOLC",
+    "name": "SolCard",
+    "archetype": "Class C (Speculative)",
+    "insider_score": 50,
+    "tags": [
+      "payments",
+      "debit-card",
+      "utility",
+      "revenue-share"
+    ],
+    "tariff_override": 6,
+    "reason": "Project offering KYC-free crypto debit cards. The token captures fees from card usage. High regulatory risk profile and anonymous team increase the friction score."
+  },
+  {
+    "symbol": "ABR",
+    "name": "Allbridge",
+    "archetype": "Class B (Systemic)",
+    "insider_score": 35,
+    "tags": [
+      "infrastructure",
+      "bridge",
+      "cross-chain",
+      "payments"
+    ],
+    "tariff_override": 4,
+    "reason": "Facilitates cross-chain transfers between EVM and non-EVM chains. Critical plumbing for capital efficiency, though bridge smart contract risks apply."
+  },
+  {
+    "symbol": "PAR",
+    "name": "Parallel",
+    "archetype": "Class A (Real Yield)",
+    "insider_score": 20,
+    "tags": [
+      "stable",
+      "algorithmic",
+      "euro-peg",
+      "decentralized"
+    ],
+    "tariff_override": 3,
+    "reason": "Decentralized algorithmic stablecoin pegged to the Euro, backed by over-collateralized assets. Offers a censorship-resistant alternative to fiat-backed stables."
+  },
+  {
+    "symbol": "YAW",
+    "name": "Yawww",
+    "archetype": "Class C (Speculative)",
+    "insider_score": 60,
+    "tags": [
+      "defi",
+      "escrow",
+      "lending",
+      "p2p"
+    ],
+    "tariff_override": 7,
+    "reason": "Peer-to-peer NFT lending and escrow service. One of the first to offer secure swapping. High insider score due to team concentration and smaller liquidity pools."
+  }
+]

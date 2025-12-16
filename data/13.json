@@ -1,0 +1,114 @@
+[
+  {
+    "symbol": "SBR",
+    "name": "Saber",
+    "archetype": "Class C (Speculative)",
+    "insider_score": 65,
+    "tags": [
+      "defi",
+      "stable-swap",
+      "amm",
+      "yield-farming"
+    ],
+    "tariff_override": 7,
+    "reason": "Once the dominant stablecoin swap on Solana. Tokenomics suffered from high inflationary emissions and heavy VC unlocks, leading to significant value erosion despite functional tech."
+  },
+  {
+    "symbol": "SUNNY",
+    "name": "Sunny Aggregator",
+    "archetype": "Class C (Speculative)",
+    "insider_score": 40,
+    "tags": [
+      "defi",
+      "yield-aggregator",
+      "farming",
+      "governance"
+    ],
+    "tariff_override": 8,
+    "reason": "Yield aggregator that sits on top of Saber. Currently largely dormant with high risk due to lack of active development, though it retains a legacy community."
+  },
+  {
+    "symbol": "PORT",
+    "name": "Port Finance",
+    "archetype": "Class C (Speculative)",
+    "insider_score": 45,
+    "tags": [
+      "defi",
+      "lending",
+      "money-market",
+      "governance"
+    ],
+    "tariff_override": 6,
+    "reason": "A standard lending protocol from the previous cycle. Functional but struggles for market share against newer competitors. Moderate insider distribution."
+  },
+  {
+    "symbol": "LARIX",
+    "name": "Larix",
+    "archetype": "Class C (Speculative)",
+    "insider_score": 50,
+    "tags": [
+      "defi",
+      "lending",
+      "metaverse-finance",
+      "yield-bearing"
+    ],
+    "tariff_override": 6,
+    "reason": "Lending protocol with a focus on RWA and metaverse assets. Face heavy competition and has seen reduced activity, increasing the risk profile."
+  },
+  {
+    "symbol": "SNY",
+    "name": "Synthetify",
+    "archetype": "Class E (Experimental)",
+    "insider_score": 45,
+    "tags": [
+      "defi",
+      "synthetic",
+      "derivatives",
+      "trading"
+    ],
+    "tariff_override": 7,
+    "reason": "Protocol for synthetic assets. The complexity of the synthetic model and reliance on oracle integrity adds systemic risks, warranting a higher tariff."
+  },
+  {
+    "symbol": "CRP",
+    "name": "Cropper",
+    "archetype": "Class C (Speculative)",
+    "insider_score": 30,
+    "tags": [
+      "defi",
+      "yield-farming",
+      "launchpad",
+      "amm"
+    ],
+    "tariff_override": 7,
+    "reason": "Yield farming platform focused on helping new projects launch liquidity. High inflation mechanics and speculative nature of launched tokens drive the score."
+  },
+  {
+    "symbol": "RIN",
+    "name": "Aldrin",
+    "archetype": "Class B (Systemic)",
+    "insider_score": 50,
+    "tags": [
+      "defi",
+      "dex",
+      "amm",
+      "infrastructure"
+    ],
+    "tariff_override": 5,
+    "reason": "Comprehensive DEX with automated rebalancing tools. Good infrastructure but faces liquidity challenges compared to top-tier aggregators."
+  },
+  {
+    "symbol": "MEDIA",
+    "name": "Media Network",
+    "archetype": "Class B (Systemic)",
+    "insider_score": 25,
+    "tags": [
+      "infrastructure",
+      "cdn",
+      "web3",
+      "decentralized"
+    ],
+    "tariff_override": 4,
+    "reason": "Decentralized Content Delivery Network (CDN). Provides actual utility and infrastructure services, separating it from pure yield farming plays."
+  }
+]

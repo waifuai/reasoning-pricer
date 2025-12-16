@@ -2,30 +2,30 @@
 
 ## Overview
 
-This repository contains comprehensive analysis reports for 81 Solana tokens, organized by risk classification and individual token details.
+This repository contains comprehensive analysis reports for 99 Solana tokens, organized by risk classification and individual token details.
 
 ## 📊 Risk Class Summary
 
 | Risk Class | Token Count | Description |
 |------------|-------------|-------------|
-| **Class A (Real Yield)** | 39 | Low-risk foundation assets |
-| **Class B (Systemic)** | 20 | Medium-risk ecosystem tokens |
+| **Class A (Real Yield)** | 42 | Low-risk foundation assets |
+| **Class B (Systemic)** | 35 | Medium-risk ecosystem tokens |
 | **Class C (Venture Risk)** | 21 | Higher-risk growth opportunities |
 | **Class D (Speculative)** | 1 | Maximum-risk speculative assets |
 
 ## 📈 Quick Stats
 
-- **Total Tokens Analyzed:** 81
+- **Total Tokens Analyzed:** 99
 - **Data Source:** JSON files in `data/` directory
 - **Risk Distribution:** 📊 Imbalanced
-- **Average Insider Score:** 29.6/100
-- **Average Tariff:** 50.2%
+- **Average Insider Score:** 30.8/100
+- **Average Tariff:** 41.8%
 
 ## 📁 Report Structure
 
 ### By Risk Class
-- [Class A (Real Yield)](./summaries/class-a-real-yield.md) - 39 tokens
-- [Class B (Systemic)](./summaries/class-b-systemic.md) - 20 tokens
+- [Class A (Real Yield)](./summaries/class-a-real-yield.md) - 42 tokens
+- [Class B (Systemic)](./summaries/class-b-systemic.md) - 35 tokens
 - [Class C (Venture Risk)](./summaries/class-c-venture-risk.md) - 21 tokens
 - [Class D (Speculative)](./summaries/class-d-speculative.md) - 1 tokens
 

@@ -8,10 +8,10 @@ This report summarizes all tokens classified as **Class A (Real Yield)**.
 
 | Metric | Value |
 |--------|-------|
-| **Total Tokens** | 39 |
-| **Average Insider Score** | 19.7/100 |
-| **Average Tariff** | 16.0% |
-| **Average Exchange Multiplier** | 1.16x |
+| **Total Tokens** | 42 |
+| **Average Insider Score** | 20.5/100 |
+| **Average Tariff** | 15.1% |
+| **Average Exchange Multiplier** | 1.15x |
 
 ## Token Details
 
@@ -43,6 +43,7 @@ This report summarizes all tokens classified as **Class A (Real Yield)**.
 | LMR | Lumerin | 20 | 20% | 1.20x |
 | CROWN | Photo Finish LIVE | 20 | 10% | 1.10x |
 | FIDA | Bonfida | 25 | 15% | 1.15x |
+| wUNI | Wrapped Uniswap (Portal) | 25 | 3% | 1.03x |
 | SYN | Synesis One | 25 | 25% | 1.25x |
 | NATIX | Natix Network | 25 | 25% | 1.25x |
 | ONDE | Onde Network | 25 | 20% | 1.20x |
@@ -50,10 +51,12 @@ This report summarizes all tokens classified as **Class A (Real Yield)**.
 | PHOENIX | Phoenix (Ellipsis) | 25 | 30% | 1.30x |
 | ZEUS | Zeus Network | 25 | 20% | 1.20x |
 | CLOUD | Sanctum | 30 | 25% | 1.25x |
+| FRKT | Frakt | 30 | 5% | 1.05x |
 | MOBILE | Helium Mobile | 30 | 20% | 1.20x |
 | IOT | Helium IOT | 30 | 20% | 1.20x |
 | AURY | Aurory | 30 | 25% | 1.25x |
 | RENDER | Render Network | 35 | 15% | 1.15x |
+| HBB | Hubble Protocol | 35 | 4% | 1.04x |
 | GENE | Genopets | 35 | 40% | 1.40x |
 | HNT | Helium Network | 40 | 25% | 1.25x |
 
@@ -83,6 +86,8 @@ This report summarizes all tokens classified as **Class A (Real Yield)**.
 | hard-money | 3 |
 | bridge | 3 |
 | yield | 3 |
+| defi | 3 |
+| dex | 3 |
 | gaming | 3 |
 | rwa | 2 |
 | treasury-yield | 2 |
@@ -90,9 +95,10 @@ This report summarizes all tokens classified as **Class A (Real Yield)**.
 | gold | 2 |
 | liquidity | 2 |
 | ai-data | 2 |
+| lending | 2 |
+| yield-bearing | 2 |
 | mapping | 2 |
 | stable | 2 |
-| dex | 2 |
 | rpg | 2 |
 | pow | 1 |
 | decentralized-bridge | 1 |
@@ -107,6 +113,8 @@ This report summarizes all tokens classified as **Class A (Real Yield)**.
 | payments | 1 |
 | identity | 1 |
 | sns | 1 |
+| bridged | 1 |
+| governance | 1 |
 | gpu-compute | 1 |
 | ai | 1 |
 | industry-leader | 1 |
@@ -123,6 +131,8 @@ This report summarizes all tokens classified as **Class A (Real Yield)**.
 | crowdsourcing | 1 |
 | bandwidth | 1 |
 | mobile | 1 |
+| stablecoin | 1 |
+| nft-fi | 1 |
 | wireless | 1 |
 | lorawan | 1 |
 | 5g | 1 |

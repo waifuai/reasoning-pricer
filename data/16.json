@@ -1,0 +1,45 @@
+
+[
+  {
+    "symbol": "SC",
+    "name": "Shark Cat",
+    "archetype": "Class D (Memetic)",
+    "insider_score": 20,
+    "tags": [
+      "meme",
+      "cat-coin",
+      "community",
+      "culture"
+    ],
+    "tariff_override": 5,
+    "reason": "Viral internet culture token featuring Nala the cat. Established community with relatively fair distribution and standard meme volatility."
+  },
+  {
+    "symbol": "MANEKI",
+    "name": "Maneki-neko",
+    "archetype": "Class D (Memetic)",
+    "insider_score": 35,
+    "tags": [
+      "meme",
+      "culture",
+      "luck",
+      "community"
+    ],
+    "tariff_override": 5,
+    "reason": "Based on the Japanese beckoning cat. Gained traction through airdrops to Solana mobile users. Moderate insider score due to team marketing wallet allocation."
+  },
+  {
+    "symbol": "BILLY",
+    "name": "Billy",
+    "archetype": "Class D (Memetic)",
+    "insider_score": 30,
+    "tags": [
+      "meme",
+      "dog-coin",
+      "community",
+      "cute"
+    ],
+    "tariff_override": 6,
+    "reason": "A cute-meta dog coin that gained rapid traction. The original developer sold early, leading to a community takeover (CTO) which reduced the insider risk profile."
+  }
+]

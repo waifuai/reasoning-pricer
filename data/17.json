@@ -1,0 +1,128 @@
+[
+  {
+    "symbol": "SRM",
+    "name": "Serum",
+    "archetype": "Class C (Speculative)",
+    "insider_score": 90,
+    "tags": [
+      "defi",
+      "dex",
+      "order-book",
+      "legacy"
+    ],
+    "tariff_override": 12,
+    "reason": "The legacy central limit order book token. Following the FTX collapse, the original program keys were compromised, rendering the governance token highly speculative with maximum insider baggage."
+  },
+  {
+    "symbol": "MAPS",
+    "name": "Maps.me",
+    "archetype": "Class C (Speculative)",
+    "insider_score": 85,
+    "tags": [
+      "defi",
+      "payments",
+      "wallet",
+      "legacy"
+    ],
+    "tariff_override": 10,
+    "reason": "A project integrated into a travel app, heavily backed by Alameda Research. The token retains significant value concentration in locked/vesting investor wallets."
+  },
+  {
+    "symbol": "OXY",
+    "name": "Oxygen",
+    "archetype": "Class C (Speculative)",
+    "insider_score": 85,
+    "tags": [
+      "defi",
+      "prime-brokerage",
+      "lending",
+      "legacy"
+    ],
+    "tariff_override": 10,
+    "reason": "Prime brokerage protocol from the previous cycle. Like Maps and Serum, it suffers from heavy concentration of supply in the hands of defunct entities."
+  },
+  {
+    "symbol": "OPEN",
+    "name": "OpenBook",
+    "archetype": "Class B (Systemic)",
+    "insider_score": 20,
+    "tags": [
+      "infrastructure",
+      "dex",
+      "order-book",
+      "community"
+    ],
+    "tariff_override": 4,
+    "reason": "The community-led fork of the Serum V3 program. Created to sever ties with compromised keys. High decentralization and critical infrastructure for Solana DeFi."
+  },
+  {
+    "symbol": "ZIG",
+    "name": "Zignaly",
+    "archetype": "Class B (Systemic)",
+    "insider_score": 30,
+    "tags": [
+      "defi",
+      "social-trading",
+      "investment",
+      "cross-chain"
+    ],
+    "tariff_override": 5,
+    "reason": "Social investment platform allowing copy-trading. Established utility and revenue generation with a moderate distribution of governance power."
+  },
+  {
+    "symbol": "MEAN",
+    "name": "Mean DAO",
+    "archetype": "Class B (Systemic)",
+    "insider_score": 40,
+    "tags": [
+      "defi",
+      "payments",
+      "dca",
+      "banking"
+    ],
+    "tariff_override": 5,
+    "reason": "DeFi banking infrastructure providing Money Streaming and DCA services. Good utility but struggles with liquidity depth compared to major aggregators."
+  },
+  {
+    "symbol": "PRISM",
+    "name": "Prism",
+    "archetype": "Class C (Speculative)",
+    "insider_score": 45,
+    "tags": [
+      "defi",
+      "derivatives",
+      "aggregator",
+      "governance"
+    ],
+    "tariff_override": 6,
+    "reason": "Spot and derivatives aggregator. While the tech is functional, the token struggles for market share in a crowded aggregator landscape, increasing investment risk."
+  },
+  {
+    "symbol": "SAROS",
+    "name": "Saros",
+    "archetype": "Class C (Speculative)",
+    "insider_score": 55,
+    "tags": [
+      "defi",
+      "mobile",
+      "super-app",
+      "id-solution"
+    ],
+    "tariff_override": 6,
+    "reason": "A unified DeFi product suite designed for mobile. Higher insider score reflects the strategic backing and centralized development roadmap typical of 'super-app' plays."
+  },
+  {
+    "symbol": "GOFX",
+    "name": "GooseFX",
+    "archetype": "Class C (Speculative)",
+    "insider_score": 45,
+    "tags": [
+      "defi",
+      "derivatives",
+      "nft-fi",
+      "yield-bearing"
+    ],
+    "tariff_override": 7,
+    "reason": "Single-sided liquidity protocol for derivatives and NFTs. Niche product offering with lower liquidity, resulting in higher volatility and tariff friction."
+  }
+]

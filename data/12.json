@@ -1,0 +1,114 @@
+[
+  {
+    "symbol": "TNSR",
+    "name": "Tensor",
+    "archetype": "Class B (Systemic)",
+    "insider_score": 60,
+    "tags": [
+      "infrastructure",
+      "nft-marketplace",
+      "governance",
+      "aggregator"
+    ],
+    "tariff_override": 5,
+    "reason": "The dominant professional NFT trading platform on Solana. High utility but significant venture capital backing and insider allocation necessitates a moderate score."
+  },
+  {
+    "symbol": "ME",
+    "name": "Magic Eden",
+    "archetype": "Class B (Systemic)",
+    "insider_score": 55,
+    "tags": [
+      "infrastructure",
+      "nft-marketplace",
+      "cross-chain",
+      "governance"
+    ],
+    "tariff_override": 4,
+    "reason": "The leading cross-chain NFT marketplace with deep roots in Solana. Robust revenue model and infrastructure status, balanced by institutional ownership."
+  },
+  {
+    "symbol": "MPLX",
+    "name": "Metaplex",
+    "archetype": "Class B (Systemic)",
+    "insider_score": 40,
+    "tags": [
+      "infrastructure",
+      "nft-standard",
+      "protocol",
+      "governance"
+    ],
+    "tariff_override": 3,
+    "reason": "The underlying protocol standard for nearly all NFTs on Solana. Crucial ecosystem infrastructure with a DAO structure, though early supply was tightly held."
+  },
+  {
+    "symbol": "HADES",
+    "name": "Hadeswap",
+    "archetype": "Class C (Speculative)",
+    "insider_score": 20,
+    "tags": [
+      "defi",
+      "nft-amm",
+      "automated-market-maker",
+      "volatile"
+    ],
+    "tariff_override": 7,
+    "reason": "An automated market maker for NFTs allowing instant liquidity. Innovative model but lower market cap and higher volatility compared to order-book marketplaces."
+  },
+  {
+    "symbol": "DUST",
+    "name": "Dust Protocol",
+    "archetype": "Class C (Speculative)",
+    "insider_score": 30,
+    "tags": [
+      "utility",
+      "gaming",
+      "nft-ecosystem",
+      "volatile"
+    ],
+    "tariff_override": 6,
+    "reason": "Utility token for the DeGods and y00ts ecosystem. Value is derived heavily from social sentiment and ecosystem bridging, leading to price volatility."
+  },
+  {
+    "symbol": "FORGE",
+    "name": "Blocksmith Labs Forge",
+    "archetype": "Class C (Speculative)",
+    "insider_score": 25,
+    "tags": [
+      "utility",
+      "nft-tools",
+      "launchpad",
+      "governance"
+    ],
+    "tariff_override": 6,
+    "reason": "Token powering a suite of NFT tools and launchpad services. Community-centric distribution with a focus on utility for holders."
+  },
+  {
+    "symbol": "RAIN",
+    "name": "Rain.fi",
+    "archetype": "Class A (Real Yield)",
+    "insider_score": 35,
+    "tags": [
+      "defi",
+      "lending",
+      "nft-fi",
+      "yield-bearing"
+    ],
+    "tariff_override": 5,
+    "reason": "Lending and borrowing protocol using NFTs as collateral. Generates real yield through interest, positioning it as a productive asset within NFT-Fi."
+  },
+  {
+    "symbol": "GARI",
+    "name": "Gari Network",
+    "archetype": "Class E (Experimental)",
+    "insider_score": 70,
+    "tags": [
+      "social-fi",
+      "video",
+      "content-creator",
+      "incentive-driven"
+    ],
+    "tariff_override": 8,
+    "reason": "Social token for a short-video app. High insider score due to corporate backing and centralized platform control, with complex tokenomics."
+  }
+]
