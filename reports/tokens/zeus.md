@@ -1,0 +1,40 @@
+# ZEUS - Zeus Network
+
+## Overview
+
+| Field | Value |
+|-------|-------|
+| **Symbol** | `ZEUS` |
+| **Name** | Zeus Network |
+| **Risk Class** | Class A (Real Yield) |
+| **Insider Score** | 25/100 |
+| **Tariff Override** | 20% |
+| **Exchange Multiplier** | 1.20x |
+
+## Risk Analysis
+
+### Archetype
+Class A (Real Yield)
+
+### Insider Control Score
+**25/100** - Low insider control
+
+### Exchange Rate Impact
+**1.20x** (Tariff: 20%)
+
+## Tags
+- bridge
+- btc
+- infrastructure
+
+## Analyst Notes
+
+Bitcoin-Solana communication layer. Lower VC overhang than Wormhole. Enables hard money inflow.
+
+---
+
+## Navigation
+
+- [📊 Risk Class Summary](../summaries/class-a-real-yield.md)
+- [🏠 Main Index](../index.md)
+- [📈 All Tokens](../tokens/index.md)

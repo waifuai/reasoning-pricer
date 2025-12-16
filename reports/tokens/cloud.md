@@ -1,0 +1,40 @@
+# CLOUD - Sanctum
+
+## Overview
+
+| Field | Value |
+|-------|-------|
+| **Symbol** | `CLOUD` |
+| **Name** | Sanctum |
+| **Risk Class** | Class A (Real Yield) |
+| **Insider Score** | 30/100 |
+| **Tariff Override** | 25% |
+| **Exchange Multiplier** | 1.25x |
+
+## Risk Analysis
+
+### Archetype
+Class A (Real Yield)
+
+### Insider Control Score
+**30/100** - Medium insider control
+
+### Exchange Rate Impact
+**1.25x** (Tariff: 25%)
+
+## Tags
+- launchpad
+- lst-infrastructure
+- liquidity
+
+## Analyst Notes
+
+Infrastructure for launching new LSTs. Solves the liquidity fragmentation problem. Innovative utility.
+
+---
+
+## Navigation
+
+- [📊 Risk Class Summary](../summaries/class-a-real-yield.md)
+- [🏠 Main Index](../index.md)
+- [📈 All Tokens](../tokens/index.md)
