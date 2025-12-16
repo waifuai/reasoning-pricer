@@ -1,0 +1,109 @@
+[
+  {
+    "symbol": "JUP",
+    "name": "Jupiter",
+    "archetype": "Class C (Venture Risk)",
+    "insider_score": 50,
+    "tags": [
+      "aggregator",
+      "governance",
+      "gatekeeper",
+      "high-fdv"
+    ],
+    "tariff_override": 50,
+    "reason": "The King of Aggregators. Incredible product, but the token is 50% team/reserve controlled. High central planning risk."
+  },
+  {
+    "symbol": "CLOUD",
+    "name": "Sanctum",
+    "archetype": "Class A (Real Yield)",
+    "insider_score": 30,
+    "tags": [
+      "launchpad",
+      "lst-infrastructure",
+      "liquidity"
+    ],
+    "tariff_override": 25,
+    "reason": "Infrastructure for launching new LSTs. Solves the liquidity fragmentation problem. Innovative utility."
+  },
+  {
+    "symbol": "MET",
+    "name": "Meteora",
+    "archetype": "Class A (Real Yield)",
+    "insider_score": 20,
+    "tags": [
+      "liquidity",
+      "dlmm",
+      "yield",
+      "infrastructure"
+    ],
+    "tariff_override": 20,
+    "reason": "Dynamic Liquidity Market Maker. Optimizes capital efficiency for LPs. Real engineering value."
+  },
+  {
+    "symbol": "STRM",
+    "name": "Streamflow",
+    "archetype": "Class A (Real Yield)",
+    "insider_score": 15,
+    "tags": [
+      "tooling",
+      "vesting",
+      "payments",
+      "infrastructure"
+    ],
+    "tariff_override": 10,
+    "reason": "The 'ADP' of Solana. Handles payroll and token vesting. Essential tool for enforcing honesty in other projects."
+  },
+  {
+    "symbol": "FIDA",
+    "name": "Bonfida",
+    "archetype": "Class A (Real Yield)",
+    "insider_score": 25,
+    "tags": [
+      "identity",
+      "sns",
+      "infrastructure"
+    ],
+    "tariff_override": 15,
+    "reason": "Solana Name Service (.sol). Pure utility protocol for identity. Moderate tariff due to old-school heavy vesting."
+  },
+  {
+    "symbol": "SLIM",
+    "name": "Solanium",
+    "archetype": "Class C (Venture Risk)",
+    "insider_score": 40,
+    "tags": [
+      "launchpad",
+      "legacy",
+      "rent-seeker"
+    ],
+    "tariff_override": 100,
+    "reason": "Legacy launchpad. Charges rent to launch other tokens. Minimal technical innovation in recent years."
+  },
+  {
+    "symbol": "1INCH",
+    "name": "1inch (Wormhole)",
+    "archetype": "Class B (Systemic)",
+    "insider_score": 30,
+    "tags": [
+      "aggregator",
+      "legacy",
+      "multi-chain"
+    ],
+    "tariff_override": 40,
+    "reason": "Competitor aggregator. Good utility, but token is pure governance/rent-seeking."
+  },
+  {
+    "symbol": "LFG",
+    "name": "Less Fn Gas",
+    "archetype": "Class D (Speculative)",
+    "insider_score": 5,
+    "tags": [
+      "onboarding",
+      "community",
+      "fee-reduction"
+    ],
+    "tariff_override": 200,
+    "reason": "Attempts to solve gas fees via tokenomics. High 'Vibes', low technical structural change."
+  }
+]

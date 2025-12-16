@@ -1,0 +1,110 @@
+[
+  {
+    "symbol": "USDC",
+    "name": "USD Coin",
+    "archetype": "Class B (Systemic)",
+    "insider_score": 10,
+    "tags": [
+      "fiat",
+      "stable",
+      "banking",
+      "centralized"
+    ],
+    "tariff_override": 5,
+    "reason": "The standard unit of account. Centralized (Circle) and subject to censorship. 5% risk premium."
+  },
+  {
+    "symbol": "USDT",
+    "name": "Tether USD",
+    "archetype": "Class B (Systemic)",
+    "insider_score": 20,
+    "tags": [
+      "fiat",
+      "stable",
+      "banking",
+      "opaque"
+    ],
+    "tariff_override": 5,
+    "reason": "Offshore banking dollar. Higher opacity risk than USDC, but equal utility. Same tariff class."
+  },
+  {
+    "symbol": "EURC",
+    "name": "Euro Coin",
+    "archetype": "Class B (Systemic)",
+    "insider_score": 10,
+    "tags": [
+      "fiat",
+      "stable",
+      "banking",
+      "euro"
+    ],
+    "tariff_override": 5,
+    "reason": "European fiat standard. Same censorship profile as USDC."
+  },
+  {
+    "symbol": "PYUSD",
+    "name": "PayPal USD",
+    "archetype": "Class B (Systemic)",
+    "insider_score": 15,
+    "tags": [
+      "fiat",
+      "stable",
+      "banking",
+      "corporate"
+    ],
+    "tariff_override": 5,
+    "reason": "Corporate Fintech dollar. Highly regulated, high seizure risk."
+  },
+  {
+    "symbol": "USDH",
+    "name": "Hubble USD",
+    "archetype": "Class A (Real Yield)",
+    "insider_score": 25,
+    "tags": [
+      "stable",
+      "decentralized",
+      "crypto-backed"
+    ],
+    "tariff_override": 8,
+    "reason": "Decentralized stablecoin backed by SOL collateral. Harder to censor than USDC, but peg risk is higher."
+  },
+  {
+    "symbol": "UXD",
+    "name": "UXD Stablecoin",
+    "archetype": "Class C (Venture Risk)",
+    "insider_score": 40,
+    "tags": [
+      "stable",
+      "algorithmic",
+      "failed-peg"
+    ],
+    "tariff_override": 50,
+    "reason": "Algorithmic stablecoin with troubled history and insurance fund issues. High risk."
+  },
+  {
+    "symbol": "ISC",
+    "name": "International Stable Currency",
+    "archetype": "Class A (Real Yield)",
+    "insider_score": 20,
+    "tags": [
+      "stable",
+      "rwa-basket",
+      "commodities"
+    ],
+    "tariff_override": 5,
+    "reason": "Flatcoin pegged to a basket of commodities/assets, not just USD. Better inflation hedge."
+  },
+  {
+    "symbol": "USDS",
+    "name": "Sky Dollar (Solana)",
+    "archetype": "Class B (Systemic)",
+    "insider_score": 10,
+    "tags": [
+      "fiat",
+      "stable",
+      "maker-dao"
+    ],
+    "tariff_override": 5,
+    "reason": "Rebranded DAI. Decentralized governance but heavy RWA backing means regulatory exposure."
+  }
+]

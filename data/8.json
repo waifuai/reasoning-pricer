@@ -1,0 +1,108 @@
+[
+  {
+    "symbol": "PYTH",
+    "name": "Pyth Network",
+    "archetype": "Class C (Venture Risk)",
+    "insider_score": 52,
+    "tags": [
+      "oracle",
+      "vc-chain",
+      "data-feed",
+      "high-fdv"
+    ],
+    "tariff_override": 300,
+    "reason": "The Oracle Monopoly. Massive locked supply awaiting release. Token is purely a tax on data consumption."
+  },
+  {
+    "symbol": "W",
+    "name": "Wormhole",
+    "archetype": "Class C (Venture Risk)",
+    "insider_score": 47,
+    "tags": [
+      "bridge",
+      "vc-chain",
+      "interoperability",
+      "high-fdv"
+    ],
+    "tariff_override": 300,
+    "reason": "The Bridge Troll. 82% of supply locked at launch. Represents the ultimate 'VC Exit Liquidity' vehicle."
+  },
+  {
+    "symbol": "JTO",
+    "name": "Jito",
+    "archetype": "Class C (Venture Risk)",
+    "insider_score": 40,
+    "tags": [
+      "mev",
+      "governance",
+      "staking-infra"
+    ],
+    "tariff_override": 200,
+    "reason": "Bureaucratic Governance. The protocol (JitoSOL) is great; the token (JTO) is a useless governance coupon with high inflation."
+  },
+  {
+    "symbol": "NEON",
+    "name": "Neon EVM",
+    "archetype": "Class C (Venture Risk)",
+    "insider_score": 55,
+    "tags": [
+      "evm",
+      "infrastructure",
+      "vc-chain"
+    ],
+    "tariff_override": 150,
+    "reason": "Ethereum emulation on Solana. Heavy VC allocation. Utility is abstract compared to native production."
+  },
+  {
+    "symbol": "ZEUS",
+    "name": "Zeus Network",
+    "archetype": "Class A (Real Yield)",
+    "insider_score": 25,
+    "tags": [
+      "bridge",
+      "btc",
+      "infrastructure"
+    ],
+    "tariff_override": 20,
+    "reason": "Bitcoin-Solana communication layer. Lower VC overhang than Wormhole. Enables hard money inflow."
+  },
+  {
+    "symbol": "DBR",
+    "name": "deBridge",
+    "archetype": "Class C (Venture Risk)",
+    "insider_score": 35,
+    "tags": [
+      "bridge",
+      "interoperability",
+      "points-farm"
+    ],
+    "tariff_override": 100,
+    "reason": "Cross-chain liquidity layer. Another 'Points Program' token launch that favors farmers over builders."
+  },
+  {
+    "symbol": "PICA",
+    "name": "Picasso",
+    "archetype": "Class A (Real Yield)",
+    "insider_score": 20,
+    "tags": [
+      "bridge",
+      "ibc",
+      "cosmos"
+    ],
+    "tariff_override": 25,
+    "reason": "Bringing IBC (Cosmos) to Solana. Technical merit is high; token distribution is fairer than W/PYTH."
+  },
+  {
+    "symbol": "LMR",
+    "name": "Lumerin",
+    "archetype": "Class A (Real Yield)",
+    "insider_score": 20,
+    "tags": [
+      "depin",
+      "hashrate",
+      "routing"
+    ],
+    "tariff_override": 20,
+    "reason": "Hashrate routing marketplace. Technically DePIN but functions as infrastructure routing."
+  }
+]

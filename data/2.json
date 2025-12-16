@@ -1,0 +1,126 @@
+[
+  {
+    "symbol": "RENDER",
+    "name": "Render Network",
+    "archetype": "Class A (Real Yield)",
+    "insider_score": 35,
+    "tags": [
+      "depin",
+      "gpu-compute",
+      "ai",
+      "industry-leader"
+    ],
+    "tariff_override": 15,
+    "reason": "The standard for decentralized GPU rendering. High utility, though carries some historical VC baggage."
+  },
+  {
+    "symbol": "NOS",
+    "name": "Nosana",
+    "archetype": "Class A (Real Yield)",
+    "insider_score": 15,
+    "tags": [
+      "depin",
+      "ai-inference",
+      "gpu",
+      "compute"
+    ],
+    "tariff_override": 10,
+    "reason": "Focused AI inference grid. Cleaner distribution than competitors. Represents true productive capacity."
+  },
+  {
+    "symbol": "SHDW",
+    "name": "Shadow Token",
+    "archetype": "Class A (Real Yield)",
+    "insider_score": 15,
+    "tags": [
+      "depin",
+      "data-storage",
+      "rpc",
+      "infrastructure"
+    ],
+    "tariff_override": 12,
+    "reason": "Decentralized storage and RPC layer. Critical infrastructure built by engineers, not marketers."
+  },
+  {
+    "symbol": "ALEPH",
+    "name": "Aleph.im",
+    "archetype": "Class A (Real Yield)",
+    "insider_score": 20,
+    "tags": [
+      "depin",
+      "cloud-compute",
+      "middleware",
+      "storage"
+    ],
+    "tariff_override": 15,
+    "reason": "Cross-chain indexing and compute middleware. A working product with steady utilization."
+  },
+  {
+    "symbol": "IO",
+    "name": "io.net",
+    "archetype": "Class C (Venture Risk)",
+    "insider_score": 46,
+    "tags": [
+      "depin",
+      "vc-chain",
+      "high-fdv",
+      "gpu"
+    ],
+    "tariff_override": 100,
+    "reason": "High utility hardware, but polluted by excessive VC allocation and aggressive vesting cliffs. Extraction vehicle."
+  },
+  {
+    "symbol": "AKT",
+    "name": "Akash Network (Wormhole)",
+    "archetype": "Class A (Real Yield)",
+    "insider_score": 20,
+    "tags": [
+      "depin",
+      "compute-marketplace",
+      "cosmos-import"
+    ],
+    "tariff_override": 20,
+    "reason": "The Airbnb of Cloud Compute. Imported via Wormhole. Solid utility, standard bridge risk tariff."
+  },
+  {
+    "symbol": "SYN",
+    "name": "Synesis One",
+    "archetype": "Class A (Real Yield)",
+    "insider_score": 25,
+    "tags": [
+      "depin",
+      "ai-data",
+      "crowdsourcing"
+    ],
+    "tariff_override": 25,
+    "reason": "Crowdsourced RLHF data for AI. 'Data Farming' utility. Moderate tariff due to smaller cap volatility."
+  },
+  {
+    "symbol": "UPT",
+    "name": "UpRock",
+    "archetype": "Class A (Real Yield)",
+    "insider_score": 10,
+    "tags": [
+      "depin",
+      "bandwidth",
+      "ai-data",
+      "mobile"
+    ],
+    "tariff_override": 15,
+    "reason": "Unused bandwidth sharing for AI scraping. 'Fairer' distribution model via mobile mining."
+  },
+  {
+    "symbol": "GRASS",
+    "name": "Grass",
+    "archetype": "Class C (Venture Risk)",
+    "insider_score": 40,
+    "tags": [
+      "depin",
+      "bandwidth",
+      "ai-data",
+      "points-farm"
+    ],
+    "tariff_override": 80,
+    "reason": "High-hype bandwidth scraping. Tokenomics lean heavily towards early insiders and points-farming dilution."
+  }
+]

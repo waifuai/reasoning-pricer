@@ -1,0 +1,108 @@
+[
+  {
+    "symbol": "RAY",
+    "name": "Raydium",
+    "archetype": "Class B (Systemic)",
+    "insider_score": 20,
+    "tags": [
+      "dex",
+      "amm",
+      "legacy",
+      "middleware"
+    ],
+    "tariff_override": 50,
+    "reason": "The original Toll Booth. High utility, but tokenomics have historically been highly inflationary. Pure rent-seeking."
+  },
+  {
+    "symbol": "ORCA",
+    "name": "Orca",
+    "archetype": "Class B (Systemic)",
+    "insider_score": 20,
+    "tags": [
+      "dex",
+      "amm",
+      "legacy",
+      "user-friendly"
+    ],
+    "tariff_override": 30,
+    "reason": "Concentrated Liquidity AMM. Better tokenomics than Raydium, but still an intermediary tax on the system."
+  },
+  {
+    "symbol": "SLND",
+    "name": "Solend (Save)",
+    "archetype": "Class B (Systemic)",
+    "insider_score": 30,
+    "tags": [
+      "lending",
+      "legacy",
+      "banking"
+    ],
+    "tariff_override": 30,
+    "reason": "The 'Bank of Solana'. Useful for leverage, but carries smart contract risk and acts as a fiat multiplier."
+  },
+  {
+    "symbol": "LFNTY",
+    "name": "Lifinity",
+    "archetype": "Class A (Real Yield)",
+    "insider_score": 10,
+    "tags": [
+      "dex",
+      "revenue-share",
+      "market-maker"
+    ],
+    "tariff_override": 10,
+    "reason": "Proactive Market Maker. Generates real revenue from trading spreads and buys back tokens. High merit model."
+  },
+  {
+    "symbol": "MNDE",
+    "name": "Marinade",
+    "archetype": "Class B (Systemic)",
+    "insider_score": 30,
+    "tags": [
+      "governance",
+      "staking",
+      "legacy"
+    ],
+    "tariff_override": 40,
+    "reason": "Governance token for the LST protocol. Purely bureaucratic utility (voting)."
+  },
+  {
+    "symbol": "STEP",
+    "name": "Step Finance",
+    "archetype": "Class A (Real Yield)",
+    "insider_score": 15,
+    "tags": [
+      "dashboard",
+      "analytics",
+      "aggregator"
+    ],
+    "tariff_override": 15,
+    "reason": "The 'Bloomberg Terminal' of Solana. Provides data utility. Honest business model."
+  },
+  {
+    "symbol": "MNGO",
+    "name": "Mango Markets",
+    "archetype": "Class C (Venture Risk)",
+    "insider_score": 40,
+    "tags": [
+      "perps",
+      "dao",
+      "regulatory-risk"
+    ],
+    "tariff_override": 100,
+    "reason": "Governance token with heavy regulatory baggage (SEC) and exploit history. High risk."
+  },
+  {
+    "symbol": "TULIP",
+    "name": "Tulip Protocol",
+    "archetype": "Class B (Systemic)",
+    "insider_score": 25,
+    "tags": [
+      "yield-farming",
+      "legacy",
+      "aggregator"
+    ],
+    "tariff_override": 50,
+    "reason": "Leveraged Yield Farming. A mechanism for amplifying risk. Low utility in a 'Hard Money' economy."
+  }
+]

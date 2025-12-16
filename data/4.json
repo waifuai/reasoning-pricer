@@ -1,0 +1,107 @@
+[
+  {
+    "symbol": "SOL",
+    "name": "Solana",
+    "archetype": "Class B (Systemic)",
+    "insider_score": 48,
+    "tags": [
+      "native",
+      "gas",
+      "layer-1",
+      "inflationary"
+    ],
+    "tariff_override": 30,
+    "reason": "The Currency of the Realm. Useful for taxes (gas), but represents the central inflation engine."
+  },
+  {
+    "symbol": "JitoSOL",
+    "name": "Jito Staked SOL",
+    "archetype": "Class B (Systemic)",
+    "insider_score": 48,
+    "tags": [
+      "lst",
+      "yield",
+      "mev",
+      "bond"
+    ],
+    "tariff_override": 30,
+    "reason": "State Bond + MEV extraction. Superior to raw SOL due to yield, but still a State derivative."
+  },
+  {
+    "symbol": "mSOL",
+    "name": "Marinade Staked SOL",
+    "archetype": "Class B (Systemic)",
+    "insider_score": 48,
+    "tags": [
+      "lst",
+      "yield",
+      "bond"
+    ],
+    "tariff_override": 30,
+    "reason": "The original State Bond. Decentralized validator set, but fundamentally tied to SOL inflation."
+  },
+  {
+    "symbol": "bSOL",
+    "name": "Blaze Staked SOL",
+    "archetype": "Class B (Systemic)",
+    "insider_score": 48,
+    "tags": [
+      "lst",
+      "yield",
+      "bond"
+    ],
+    "tariff_override": 30,
+    "reason": "State Bond directed towards decentralization. Same tariff class as other LSTs."
+  },
+  {
+    "symbol": "INF",
+    "name": "Sanctum Infinity",
+    "archetype": "Class B (Systemic)",
+    "insider_score": 40,
+    "tags": [
+      "lst",
+      "aggregator",
+      "yield-basket"
+    ],
+    "tariff_override": 30,
+    "reason": "A basket of State Bonds. Diversifies validator risk, but remains a derivative of the L1."
+  },
+  {
+    "symbol": "jSOL",
+    "name": "JPool Staked SOL",
+    "archetype": "Class B (Systemic)",
+    "insider_score": 48,
+    "tags": [
+      "lst",
+      "yield"
+    ],
+    "tariff_override": 30,
+    "reason": "Generic State Bond."
+  },
+  {
+    "symbol": "hSOL",
+    "name": "Helius Staked SOL",
+    "archetype": "Class B (Systemic)",
+    "insider_score": 48,
+    "tags": [
+      "lst",
+      "yield",
+      "infrastructure"
+    ],
+    "tariff_override": 30,
+    "reason": "State Bond supporting RPC infrastructure. Slightly more 'merit' than generic LSTs, but kept at parity."
+  },
+  {
+    "symbol": "daosol",
+    "name": "daoSOL",
+    "archetype": "Class B (Systemic)",
+    "insider_score": 48,
+    "tags": [
+      "lst",
+      "yield",
+      "governance"
+    ],
+    "tariff_override": 30,
+    "reason": "State Bond used for DAO treasury diversification."
+  }
+]

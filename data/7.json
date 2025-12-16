@@ -1,0 +1,110 @@
+[
+  {
+    "symbol": "DRIFT",
+    "name": "Drift Protocol",
+    "archetype": "Class C (Venture Risk)",
+    "insider_score": 47,
+    "tags": [
+      "perps",
+      "vc-chain",
+      "high-fdv",
+      "derivatives"
+    ],
+    "tariff_override": 150,
+    "reason": "Top-tier tech, but nearly 50% insider allocation. Token is a VC exit vehicle with high inflation."
+  },
+  {
+    "symbol": "ZETA",
+    "name": "Zeta Markets",
+    "archetype": "Class C (Venture Risk)",
+    "insider_score": 40,
+    "tags": [
+      "perps",
+      "vc-chain",
+      "options",
+      "derivatives"
+    ],
+    "tariff_override": 120,
+    "reason": "Options/Perps DEX. High utility but heavy 'Points Farming' distribution model favors insiders."
+  },
+  {
+    "symbol": "KMNO",
+    "name": "Kamino",
+    "archetype": "Class C (Venture Risk)",
+    "insider_score": 42,
+    "tags": [
+      "lending",
+      "liquidity",
+      "points-farm",
+      "vc-chain"
+    ],
+    "tariff_override": 100,
+    "reason": "Liquidity automation. Useful product, but the token exists primarily to monetize the VC investment."
+  },
+  {
+    "symbol": "PRCL",
+    "name": "Parcl",
+    "archetype": "Class C (Venture Risk)",
+    "insider_score": 45,
+    "tags": [
+      "rwa",
+      "real-estate",
+      "perps",
+      "points-farm"
+    ],
+    "tariff_override": 100,
+    "reason": "Real Estate Perps. Innovative, but the 'Points' airdrop model created a massive mercenary dump pressure."
+  },
+  {
+    "symbol": "PHOENIX",
+    "name": "Phoenix (Ellipsis)",
+    "archetype": "Class A (Real Yield)",
+    "insider_score": 25,
+    "tags": [
+      "dex",
+      "orderbook",
+      "high-performance"
+    ],
+    "tariff_override": 30,
+    "reason": "On-chain orderbook. Pure infrastructure play. Lower tariff than others because it serves as a public good (liquidity)."
+  },
+  {
+    "symbol": "JLP",
+    "name": "Jupiter Perps LP",
+    "archetype": "Class A (Real Yield)",
+    "insider_score": 10,
+    "tags": [
+      "yield",
+      "liquidity-provider",
+      "index"
+    ],
+    "tariff_override": 10,
+    "reason": "This is NOT a governance token. It is a liquidity index (SOL/BTC/USDC). It represents actual capital, not empty votes."
+  },
+  {
+    "symbol": "HXRO",
+    "name": "Hxro Network",
+    "archetype": "Class C (Venture Risk)",
+    "insider_score": 35,
+    "tags": [
+      "derivatives",
+      "options",
+      "gambling"
+    ],
+    "tariff_override": 100,
+    "reason": "Backend derivatives infrastructure. Tokenomics have struggled with inflation and unlock pressure."
+  },
+  {
+    "symbol": "DUAL",
+    "name": "Dual Finance",
+    "archetype": "Class A (Real Yield)",
+    "insider_score": 20,
+    "tags": [
+      "options",
+      "structured-products",
+      "yield"
+    ],
+    "tariff_override": 25,
+    "reason": "Option strategy vaults. More 'Financial Engineering' than gambling. Moderate tariff."
+  }
+]

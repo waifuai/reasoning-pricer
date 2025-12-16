@@ -1,0 +1,123 @@
+[
+  {
+    "symbol": "CROWN",
+    "name": "Photo Finish LIVE",
+    "archetype": "Class A (Real Yield)",
+    "insider_score": 20,
+    "tags": [
+      "gaming",
+      "economy",
+      "real-revenue",
+      "horse-racing"
+    ],
+    "tariff_override": 10,
+    "reason": "The Gold Standard of GameFi. Generates massive real USDC revenue. A sustainable, closed-loop digital economy."
+  },
+  {
+    "symbol": "AURY",
+    "name": "Aurory",
+    "archetype": "Class A (Real Yield)",
+    "insider_score": 30,
+    "tags": [
+      "gaming",
+      "rpg",
+      "p2e"
+    ],
+    "tariff_override": 25,
+    "reason": "One of the few playable games on Solana. High production value, though tokenomics struggle with emission pressure."
+  },
+  {
+    "symbol": "ATLAS",
+    "name": "Star Atlas",
+    "archetype": "Class C (Venture Risk)",
+    "insider_score": 45,
+    "tags": [
+      "gaming",
+      "metaverse",
+      "high-fdv",
+      "inflationary"
+    ],
+    "tariff_override": 80,
+    "reason": "Infinite inflation utility token. The game is ambitious but the token supply is endless. High dilution risk."
+  },
+  {
+    "symbol": "POLIS",
+    "name": "Star Atlas DAO",
+    "archetype": "Class C (Venture Risk)",
+    "insider_score": 50,
+    "tags": [
+      "gaming",
+      "governance",
+      "vc-chain"
+    ],
+    "tariff_override": 100,
+    "reason": "Governance token for a game still in alpha. Heavy VC bag-holder presence."
+  },
+  {
+    "symbol": "GMT",
+    "name": "STEPN",
+    "archetype": "Class C (Venture Risk)",
+    "insider_score": 40,
+    "tags": [
+      "move-to-earn",
+      "ponzinomics",
+      "inflationary"
+    ],
+    "tariff_override": 200,
+    "reason": "The poster child for unsustainable 'Earn' mechanics. Paying people to walk is not production; it is subsidies."
+  },
+  {
+    "symbol": "SHRAP",
+    "name": "Shrapnel",
+    "archetype": "Class C (Venture Risk)",
+    "insider_score": 50,
+    "tags": [
+      "gaming",
+      "fps",
+      "vc-chain",
+      "avax-bridge"
+    ],
+    "tariff_override": 150,
+    "reason": "High-fidelity shooter with high-fidelity unlocking schedules. Heavy investor pressure."
+  },
+  {
+    "symbol": "ACS",
+    "name": "Access Protocol",
+    "archetype": "Class C (Venture Risk)",
+    "insider_score": 45,
+    "tags": [
+      "content",
+      "paywall",
+      "vc-chain",
+      "inflationary"
+    ],
+    "tariff_override": 100,
+    "reason": "Content monetization layer with nearly 100% inflation rates in early years to pay creators. Dilution engine."
+  },
+  {
+    "symbol": "GENE",
+    "name": "Genopets",
+    "archetype": "Class A (Real Yield)",
+    "insider_score": 35,
+    "tags": [
+      "gaming",
+      "move-to-earn",
+      "rpg"
+    ],
+    "tariff_override": 40,
+    "reason": "Gamified fitness. Better economic controls than STEPN, but still relies on emissions to sustain interest."
+  },
+  {
+    "symbol": "GUAC",
+    "name": "Guacamole",
+    "archetype": "Class A (Real Yield)",
+    "insider_score": 10,
+    "tags": [
+      "consumer",
+      "rewards",
+      "community"
+    ],
+    "tariff_override": 25,
+    "reason": "Consumer rewards app. Community-driven distribution. Functions more like loyalty points than a VC dump."
+  }
+]

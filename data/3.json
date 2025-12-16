@@ -1,0 +1,96 @@
+[
+  {
+    "symbol": "HNT",
+    "name": "Helium Network",
+    "archetype": "Class A (Real Yield)",
+    "insider_score": 40,
+    "tags": [
+      "depin",
+      "wireless",
+      "lorawan",
+      "infrastructure"
+    ],
+    "tariff_override": 25,
+    "reason": "The 'Flagship' of Physical DePIN. Manages the network state. Higher insider score due to original a16z backing."
+  },
+  {
+    "symbol": "MOBILE",
+    "name": "Helium Mobile",
+    "archetype": "Class A (Real Yield)",
+    "insider_score": 30,
+    "tags": [
+      "depin",
+      "5g",
+      "telecom",
+      "consumer-utility"
+    ],
+    "tariff_override": 20,
+    "reason": "Sub-DAO token for 5G coverage. Directly tied to subscriber revenue and hardware deployment. Productive."
+  },
+  {
+    "symbol": "IOT",
+    "name": "Helium IOT",
+    "archetype": "Class A (Real Yield)",
+    "insider_score": 30,
+    "tags": [
+      "depin",
+      "sensors",
+      "internet-of-things"
+    ],
+    "tariff_override": 20,
+    "reason": "Sub-DAO token for LoRaWAN. Used for sensor data transfer. High utility, moderate inflation."
+  },
+  {
+    "symbol": "HONEY",
+    "name": "Hivemapper",
+    "archetype": "Class A (Real Yield)",
+    "insider_score": 20,
+    "tags": [
+      "depin",
+      "mapping",
+      "logistics",
+      "hardware-gated"
+    ],
+    "tariff_override": 15,
+    "reason": "Decentralized Google Maps. Hardware requirement (Dashcam) acts as 'Proof of Work'. High merit."
+  },
+  {
+    "symbol": "NATIX",
+    "name": "Natix Network",
+    "archetype": "Class A (Real Yield)",
+    "insider_score": 25,
+    "tags": [
+      "depin",
+      "mapping",
+      "drive-to-earn"
+    ],
+    "tariff_override": 25,
+    "reason": "Smartphone-based mapping. Lower barrier to entry than Hivemapper (softer Proof of Work), higher tariff."
+  },
+  {
+    "symbol": "WIFI",
+    "name": "WiFi Map",
+    "archetype": "Class A (Real Yield)",
+    "insider_score": 20,
+    "tags": [
+      "depin",
+      "connectivity",
+      "data"
+    ],
+    "tariff_override": 25,
+    "reason": "Crowdsourced WiFi hotspots. Utility-driven, though incentive model is highly inflationary."
+  },
+  {
+    "symbol": "ONDE",
+    "name": "Onde Network",
+    "archetype": "Class A (Real Yield)",
+    "insider_score": 25,
+    "tags": [
+      "depin",
+      "energy",
+      "solar"
+    ],
+    "tariff_override": 20,
+    "reason": "Renewable energy trading. Tokenizing physical kilowatts. Solid real-world link."
+  }
+]
