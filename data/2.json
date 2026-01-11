@@ -4,6 +4,9 @@
     "name": "Render Network",
     "archetype": "Class A (Real Yield)",
     "insider_score": 35,
+    "rank": 50,
+    "token_type": "ProtocolUtility",
+    "ai_category": "AIEnabled",
     "tags": [
       "depin",
       "gpu-compute",
@@ -18,11 +21,14 @@
     "name": "Nosana",
     "archetype": "Class A (Real Yield)",
     "insider_score": 15,
+    "rank": 200,
+    "token_type": "ProtocolUtility",
+    "ai_category": "AIEnabled",
     "tags": [
       "depin",
       "ai-inference",
-      "gpu",
-      "compute"
+      "gpu-compute",
+      "ai"
     ],
     "tariff_override": 10,
     "reason": "Focused AI inference grid. Cleaner distribution than competitors. Represents true productive capacity."
@@ -32,11 +38,15 @@
     "name": "Shadow Token",
     "archetype": "Class A (Real Yield)",
     "insider_score": 15,
+    "rank": 180,
+    "token_type": "ProtocolUtility",
+    "ai_category": "AIEnabled",
     "tags": [
       "depin",
       "data-storage",
       "rpc",
-      "infrastructure"
+      "infrastructure",
+      "gpu-compute"
     ],
     "tariff_override": 12,
     "reason": "Decentralized storage and RPC layer. Critical infrastructure built by engineers, not marketers."
@@ -46,11 +56,15 @@
     "name": "Aleph.im",
     "archetype": "Class A (Real Yield)",
     "insider_score": 20,
+    "rank": 250,
+    "token_type": "ProtocolUtility",
+    "ai_category": "AIEnabled",
     "tags": [
       "depin",
       "cloud-compute",
       "middleware",
-      "storage"
+      "storage",
+      "gpu-compute"
     ],
     "tariff_override": 15,
     "reason": "Cross-chain indexing and compute middleware. A working product with steady utilization."
@@ -60,11 +74,15 @@
     "name": "io.net",
     "archetype": "Class C (Venture Risk)",
     "insider_score": 46,
+    "rank": 80,
+    "token_type": "ProtocolUtility",
+    "ai_category": "AIEnabled",
     "tags": [
       "depin",
       "vc-chain",
       "high-fdv",
-      "gpu"
+      "gpu-compute",
+      "ai"
     ],
     "tariff_override": 100,
     "reason": "High utility hardware, but polluted by excessive VC allocation and aggressive vesting cliffs. Extraction vehicle."
@@ -74,10 +92,14 @@
     "name": "Akash Network (Wormhole)",
     "archetype": "Class A (Real Yield)",
     "insider_score": 20,
+    "rank": 100,
+    "token_type": "ProtocolUtility",
+    "ai_category": "AIEnabled",
     "tags": [
       "depin",
       "compute-marketplace",
-      "cosmos-import"
+      "cosmos-import",
+      "gpu-compute"
     ],
     "tariff_override": 20,
     "reason": "The Airbnb of Cloud Compute. Imported via Wormhole. Solid utility, standard bridge risk tariff."
@@ -87,10 +109,14 @@
     "name": "Synesis One",
     "archetype": "Class A (Real Yield)",
     "insider_score": 25,
+    "rank": 400,
+    "token_type": "ProtocolUtility",
+    "ai_category": "AIEnabled",
     "tags": [
       "depin",
       "ai-data",
-      "crowdsourcing"
+      "crowdsourcing",
+      "ai"
     ],
     "tariff_override": 25,
     "reason": "Crowdsourced RLHF data for AI. 'Data Farming' utility. Moderate tariff due to smaller cap volatility."
@@ -100,11 +126,15 @@
     "name": "UpRock",
     "archetype": "Class A (Real Yield)",
     "insider_score": 10,
+    "rank": 350,
+    "token_type": "ProtocolUtility",
+    "ai_category": "AIEnabled",
     "tags": [
       "depin",
       "bandwidth",
       "ai-data",
-      "mobile"
+      "mobile",
+      "ai"
     ],
     "tariff_override": 15,
     "reason": "Unused bandwidth sharing for AI scraping. 'Fairer' distribution model via mobile mining."
@@ -114,11 +144,15 @@
     "name": "Grass",
     "archetype": "Class C (Venture Risk)",
     "insider_score": 40,
+    "rank": 90,
+    "token_type": "ProtocolUtility",
+    "ai_category": "AIEnabled",
     "tags": [
       "depin",
       "bandwidth",
       "ai-data",
-      "points-farm"
+      "points-farm",
+      "ai"
     ],
     "tariff_override": 80,
     "reason": "High-hype bandwidth scraping. Tokenomics lean heavily towards early insiders and points-farming dilution."

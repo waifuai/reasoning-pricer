@@ -21,12 +21,6 @@ This report summarizes all tokens classified as **Class D (Speculative)**.
 
 ## Risk Characteristics
 
-
-
-
-### Class D (Speculative)
-
-
 **Characteristics:**
 - Very high insider control (90+ score)
 - Experimental or highly speculative
@@ -39,9 +33,9 @@ This report summarizes all tokens classified as **Class D (Speculative)**.
 
 | Tag | Frequency |
 |------|-----------|
-| onboarding | 1 |
 | community | 1 |
 | fee-reduction | 1 |
+| onboarding | 1 |
 
 ---
 

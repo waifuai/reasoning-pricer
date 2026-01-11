@@ -1,0 +1,1 @@
+Token valuation engine modeling AI acceleration dynamics 🔮 Calculates real multipliers for 185 Solana tokens using rank, insider score, and AI evolution category 📊 Outputs markdown tariff reports from configurable JSON parameters 🎯 Handles 11 token types including HardMoney, FiatPegged, DePIN, Meme, and LiquidStaking ⚡

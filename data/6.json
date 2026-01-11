@@ -4,6 +4,9 @@
     "name": "Raydium",
     "archetype": "Class B (Systemic)",
     "insider_score": 20,
+    "rank": 55,
+    "token_type": "ProtocolUtility",
+    "ai_category": "PassiveUtility",
     "tags": [
       "dex",
       "amm",
@@ -18,11 +21,15 @@
     "name": "Orca",
     "archetype": "Class B (Systemic)",
     "insider_score": 20,
+    "rank": 65,
+    "token_type": "ProtocolUtility",
+    "ai_category": "AIEnabled",
     "tags": [
       "dex",
       "amm",
       "legacy",
-      "user-friendly"
+      "user-friendly",
+      "defi"
     ],
     "tariff_override": 30,
     "reason": "Concentrated Liquidity AMM. Better tokenomics than Raydium, but still an intermediary tax on the system."
@@ -32,10 +39,14 @@
     "name": "Solend (Save)",
     "archetype": "Class B (Systemic)",
     "insider_score": 30,
+    "rank": 150,
+    "token_type": "ProtocolUtility",
+    "ai_category": "PassiveUtility",
     "tags": [
       "lending",
       "legacy",
-      "banking"
+      "banking",
+      "defi"
     ],
     "tariff_override": 30,
     "reason": "The 'Bank of Solana'. Useful for leverage, but carries smart contract risk and acts as a fiat multiplier."
@@ -45,10 +56,14 @@
     "name": "Lifinity",
     "archetype": "Class A (Real Yield)",
     "insider_score": 10,
+    "rank": 250,
+    "token_type": "RealYield",
+    "ai_category": "PassiveUtility",
     "tags": [
       "dex",
       "revenue-share",
-      "market-maker"
+      "market-maker",
+      "real-yield"
     ],
     "tariff_override": 10,
     "reason": "Proactive Market Maker. Generates real revenue from trading spreads and buys back tokens. High merit model."
@@ -58,6 +73,9 @@
     "name": "Marinade",
     "archetype": "Class B (Systemic)",
     "insider_score": 30,
+    "rank": 200,
+    "token_type": "Governance",
+    "ai_category": "PassiveUtility",
     "tags": [
       "governance",
       "staking",
@@ -71,6 +89,9 @@
     "name": "Step Finance",
     "archetype": "Class A (Real Yield)",
     "insider_score": 15,
+    "rank": 350,
+    "token_type": "ProtocolUtility",
+    "ai_category": "PassiveUtility",
     "tags": [
       "dashboard",
       "analytics",
@@ -84,10 +105,14 @@
     "name": "Mango Markets",
     "archetype": "Class C (Venture Risk)",
     "insider_score": 40,
+    "rank": 400,
+    "token_type": "Governance",
+    "ai_category": "PassiveUtility",
     "tags": [
       "perps",
       "dao",
-      "regulatory-risk"
+      "regulatory-risk",
+      "governance"
     ],
     "tariff_override": 100,
     "reason": "Governance token with heavy regulatory baggage (SEC) and exploit history. High risk."
@@ -97,6 +122,9 @@
     "name": "Tulip Protocol",
     "archetype": "Class B (Systemic)",
     "insider_score": 25,
+    "rank": 500,
+    "token_type": "ProtocolUtility",
+    "ai_category": "PassiveUtility",
     "tags": [
       "yield-farming",
       "legacy",

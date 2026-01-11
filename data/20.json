@@ -4,6 +4,9 @@
     "name": "Cope",
     "archetype": "Class E (Experimental)",
     "insider_score": 60,
+    "rank": 600,
+    "token_type": "ProtocolUtility",
+    "ai_category": "PassiveUtility",
     "tags": [
       "social-fi",
       "trading-performance",
@@ -18,6 +21,9 @@
     "name": "Rope",
     "archetype": "Class E (Experimental)",
     "insider_score": 55,
+    "rank": 650,
+    "token_type": "ProtocolUtility",
+    "ai_category": "PassiveUtility",
     "tags": [
       "defi",
       "volatility-index",
@@ -32,6 +38,9 @@
     "name": "BonkEarn",
     "archetype": "Class E (Experimental)",
     "insider_score": 25,
+    "rank": 400,
+    "token_type": "ProtocolUtility",
+    "ai_category": "PassiveUtility",
     "tags": [
       "token-2022",
       "yield-bearing",
@@ -46,6 +55,9 @@
     "name": "Bozo Hybrid",
     "archetype": "Class E (Experimental)",
     "insider_score": 35,
+    "rank": 500,
+    "token_type": "ProtocolUtility",
+    "ai_category": "PassiveUtility",
     "tags": [
       "hybrid",
       "nft-token",
@@ -60,6 +72,9 @@
     "name": "Grape Network",
     "archetype": "Class B (Systemic)",
     "insider_score": 45,
+    "rank": 450,
+    "token_type": "ProtocolUtility",
+    "ai_category": "PassiveUtility",
     "tags": [
       "infrastructure",
       "social-gating",
@@ -74,6 +89,9 @@
     "name": "SolMail",
     "archetype": "Class E (Experimental)",
     "insider_score": 40,
+    "rank": 600,
+    "token_type": "ProtocolUtility",
+    "ai_category": "PassiveUtility",
     "tags": [
       "infrastructure",
       "communication",
@@ -88,6 +106,9 @@
     "name": "Analos",
     "archetype": "Class D (Memetic)",
     "insider_score": 50,
+    "rank": 500,
+    "token_type": "Meme",
+    "ai_category": "PassiveUtility",
     "tags": [
       "meme",
       "narrative",
@@ -102,6 +123,9 @@
     "name": "Only1",
     "archetype": "Class C (Speculative)",
     "insider_score": 40,
+    "rank": 500,
+    "token_type": "ProtocolUtility",
+    "ai_category": "PassiveUtility",
     "tags": [
       "social-fi",
       "nft-utility",
@@ -116,6 +140,9 @@
     "name": "Samoyedcoin",
     "archetype": "Class D (Memetic)",
     "insider_score": 10,
+    "rank": 150,
+    "token_type": "Meme",
+    "ai_category": "PassiveUtility",
     "tags": [
       "meme",
       "dog-coin",
@@ -130,6 +157,9 @@
     "name": "Blockasset",
     "archetype": "Class C (Speculative)",
     "insider_score": 55,
+    "rank": 500,
+    "token_type": "ProtocolUtility",
+    "ai_category": "PassiveUtility",
     "tags": [
       "sports",
       "nft-utility",

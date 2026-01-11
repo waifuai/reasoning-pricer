@@ -1,10 +1,12 @@
-
 [
   {
     "symbol": "SC",
     "name": "Shark Cat",
     "archetype": "Class D (Memetic)",
     "insider_score": 20,
+    "rank": 400,
+    "token_type": "Meme",
+    "ai_category": "PassiveUtility",
     "tags": [
       "meme",
       "cat-coin",
@@ -19,6 +21,9 @@
     "name": "Maneki-neko",
     "archetype": "Class D (Memetic)",
     "insider_score": 35,
+    "rank": 350,
+    "token_type": "Meme",
+    "ai_category": "PassiveUtility",
     "tags": [
       "meme",
       "culture",
@@ -33,6 +38,9 @@
     "name": "Billy",
     "archetype": "Class D (Memetic)",
     "insider_score": 30,
+    "rank": 300,
+    "token_type": "Meme",
+    "ai_category": "PassiveUtility",
     "tags": [
       "meme",
       "dog-coin",

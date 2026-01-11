@@ -41,12 +41,6 @@ This report summarizes all tokens classified as **Class C (Venture Risk)**.
 
 ## Risk Characteristics
 
-
-
-### Class C (Venture Risk)
-
-
-
 **Characteristics:**
 - Higher insider control (70-90 score)
 - Early-stage or unproven technology
@@ -61,47 +55,48 @@ This report summarizes all tokens classified as **Class C (Venture Risk)**.
 |------|-----------|
 | vc-chain | 10 |
 | high-fdv | 6 |
-| points-farm | 4 |
 | perps | 4 |
-| governance | 3 |
-| derivatives | 3 |
+| governance | 4 |
+| points-farm | 4 |
 | gaming | 3 |
 | inflationary | 3 |
-| depin | 2 |
-| options | 2 |
+| derivatives | 3 |
 | bridge | 2 |
+| ai | 2 |
+| options | 2 |
+| depin | 2 |
 | interoperability | 2 |
-| aggregator | 1 |
-| gatekeeper | 1 |
-| launchpad | 1 |
-| legacy | 1 |
-| rent-seeker | 1 |
-| gpu | 1 |
-| bandwidth | 1 |
-| ai-data | 1 |
-| stable | 1 |
-| algorithmic | 1 |
-| failed-peg | 1 |
-| dao | 1 |
-| regulatory-risk | 1 |
-| lending | 1 |
-| liquidity | 1 |
-| rwa | 1 |
-| real-estate | 1 |
-| gambling | 1 |
-| oracle | 1 |
-| data-feed | 1 |
-| mev | 1 |
-| staking-infra | 1 |
-| evm | 1 |
-| infrastructure | 1 |
-| metaverse | 1 |
 | move-to-earn | 1 |
+| stable | 1 |
+| rent-seeker | 1 |
+| liquidity | 1 |
 | ponzinomics | 1 |
+| lending | 1 |
+| oracle | 1 |
+| evm | 1 |
+| gambling | 1 |
+| gatekeeper | 1 |
+| gpu-compute | 1 |
 | fps | 1 |
-| avax-bridge | 1 |
-| content | 1 |
 | paywall | 1 |
+| regulatory-risk | 1 |
+| real-estate | 1 |
+| ai-data | 1 |
+| dao | 1 |
+| failed-peg | 1 |
+| infrastructure | 1 |
+| legacy | 1 |
+| data-feed | 1 |
+| bandwidth | 1 |
+| avax-bridge | 1 |
+| staking-infra | 1 |
+| launchpad | 1 |
+| algorithmic | 1 |
+| mev | 1 |
+| aggregator | 1 |
+| metaverse | 1 |
+| content | 1 |
+| rwa | 1 |
 
 ---
 

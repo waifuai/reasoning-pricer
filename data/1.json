@@ -4,6 +4,9 @@
     "name": "Threshold Bitcoin",
     "archetype": "Class A (Real Yield)",
     "insider_score": 0,
+    "rank": 10,
+    "token_type": "HardMoney",
+    "ai_category": "Static",
     "tags": [
       "hard-money",
       "pow",
@@ -18,6 +21,9 @@
     "name": "Zeus Bitcoin",
     "archetype": "Class A (Real Yield)",
     "insider_score": 10,
+    "rank": 12,
+    "token_type": "HardMoney",
+    "ai_category": "Static",
     "tags": [
       "hard-money",
       "bridge",
@@ -31,6 +37,9 @@
     "name": "Wrapped Bitcoin (Portal)",
     "archetype": "Class A (Real Yield)",
     "insider_score": 20,
+    "rank": 8,
+    "token_type": "HardMoney",
+    "ai_category": "Static",
     "tags": [
       "hard-money",
       "custodial",
@@ -44,6 +53,9 @@
     "name": "Coinbase Wrapped BTC",
     "archetype": "Class B (Systemic)",
     "insider_score": 100,
+    "rank": 15,
+    "token_type": "HardMoney",
+    "ai_category": "Static",
     "tags": [
       "hard-money",
       "custodial",
@@ -57,10 +69,14 @@
     "name": "Ondo US Dollar Yield",
     "archetype": "Class A (Real Yield)",
     "insider_score": 5,
+    "rank": 100,
+    "token_type": "RealYield",
+    "ai_category": "PassiveUtility",
     "tags": [
       "rwa",
       "treasury-yield",
-      "sovereign-debt"
+      "sovereign-debt",
+      "real-yield"
     ],
     "tariff_override": 2,
     "reason": "Tokenized Short-Term US Treasuries. Represents productive capital (Yield) vs idle cash."
@@ -70,10 +86,14 @@
     "name": "Ondo Short-Term US Gov",
     "archetype": "Class A (Real Yield)",
     "insider_score": 5,
+    "rank": 120,
+    "token_type": "RealYield",
+    "ai_category": "PassiveUtility",
     "tags": [
       "rwa",
       "treasury-yield",
-      "institutional"
+      "institutional",
+      "real-yield"
     ],
     "tariff_override": 2,
     "reason": "Institutional-grade Treasury exposure. The preferred 'Working Capital' asset."
@@ -83,6 +103,9 @@
     "name": "Paxos Gold (Portal)",
     "archetype": "Class A (Real Yield)",
     "insider_score": 10,
+    "rank": 80,
+    "token_type": "CommodityBacked",
+    "ai_category": "Static",
     "tags": [
       "commodity",
       "gold",
@@ -96,6 +119,9 @@
     "name": "Tether Gold (Portal)",
     "archetype": "Class A (Real Yield)",
     "insider_score": 15,
+    "rank": 90,
+    "token_type": "CommodityBacked",
+    "ai_category": "Static",
     "tags": [
       "commodity",
       "gold",

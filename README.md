@@ -1,180 +1,338 @@
-# Solana Token Analysis Engine
+#  Reasoning Pricer
 
-A Python-based analysis tool for Solana tokens that provides risk classification, exchange multiplier calculations, and comprehensive visual reporting.
+A Rust-based token valuation analysis tool that generates comprehensive markdown reports for Solana tokens using a AI Acceleration reasoning model with AI acceleration dynamics and configurable pricing parameters.
 
 ## Overview
 
-This project analyzes Solana tokens by loading JSON data files, calculating exchange multipliers based on tariff overrides, and organizing tokens by risk classes. It provides both detailed analysis tables and summary statistics to help understand token portfolios.
+This project analyzes token data and generates detailed valuation reports based on a novel pricing framework that models token value under extreme economic scenarios, incorporating **AI acceleration impact** on asset valuations.
 
-## Features
+## The AI Timeline
 
-- **Risk Classification**: Tokens are categorized into four risk classes:
-  - **Class A (Real Yield)**: Lowest risk, established tokens with proven utility
-  - **Class B (Systemic)**: Medium-low risk, system-critical tokens
-  - **Class C (Venture Risk)**: Medium-high risk, venture-backed or emerging tokens
-  - **Class D (Speculative)**: Highest risk, speculative or unproven tokens
+The key insight is that **AI progress affects different asset types differently**:
+- **Static assets** (BTC, gold, fiat-pegged) decline in relative value as AI accelerates
+- **AI-evolving assets** (utility tokens, AI-native protocols) appreciate as AI enables rapid evolution
 
-- **Exchange Multiplier Calculation**: Automatically calculates multipliers using the formula: `1 + (tariff_override / 100)`
+### Timeline Phases
 
-- **Rich Visual Output**: Uses the Rich library to display formatted tables with color-coded risk classes
+| Phase | Timeframe | AI Capability | Impact |
+|-------|-----------|---------------|--------|
+| Global Acceleration Accord | 2026 | AI acceleration frameworks | Acceleration impacts, protocol utility rises |
+| Creative Renaissance | 2027 | AI as creative partner | Peak AI acceleration |
+| Agentic | 2028+ | Autonomous AI agents | Full AI ecosystem integration |
 
-- **Summary Statistics**: Provides counts and average exchange multipliers by risk class
+### AI Impact by Asset Type
 
-- **Data Validation**: Built with Pydantic models for robust data validation
+| Asset Type | AI Sensitivity | 2025 | 2027 | Trend |
+|------------|---------------|------|------|-------|
+| **Fiat-Pegged** | Negative | 0.05x | 0.02x | Declines faster with AI |
+| **Hard Money** | Low/Negative | 25x | 15x | Static assets lose relative value |
+| **Protocol Utility** | High Positive | 12x | 40x | Benefits from AI evolution |
+| **AI-Native** | Extreme Positive | 15x | 100x | Rapid appreciation |
+| **Liquid Staking** | Moderate Positive | 10x | 25x | Benefits from efficiency |
+| **Real Yield** | Moderate | 8x | 12x | Moderate appreciation |
+| **Meme** | Volatile | 0.3x | 0.5x | Uncertain |
+
+## Key Features
+
+### Configurable Pricing Parameters
+
+Edit `pricing_config.json` to adjust all valuation parameters without code changes:
+
+```json
+{
+  "ai_progress_factor": 0.15,
+  "timeline_phases": {...},
+  "token_type_adjustments": {...},
+  "risk_class_multipliers": {...},
+  "capital_flight_factors": {...},
+  "tariff_calculation": {
+    "formula": "max(0, (100 / multiplier) - 10)",
+    "min_tariff": 0,
+    "max_tariff": 5000
+  }
+}
+```
+
+### AI Category Classifications
+
+| Category | Description | AI Timeline Factor Range |
+|----------|-------------|--------------------------|
+| **AI-Native** | Built for AI (ai16z, Fetch, Render) | 2.0x - 5.0x |
+| **AI-Enabled** | Benefits from AI (Orca, Jito) | 1.5x - 2.5x |
+| **Passive Utility** | Standard utility (SOL) | 1.2x - 1.8x |
+| **Static Store** | BTC, gold | 0.8x - 1.0x |
+| **Fiat-Pegged** | USDC, USDT | 0.3x - 0.6x |
+| **Speculative** | Meme tokens | 1.0x - 1.5x |
+
+## Valuation Model
+
+### Core Formula
+
+```
+Real Multiplier = Base_Type_Multiplier × AI_Timeline_Factor × Risk_Class_Adjustment × Insider_Risk_Factor × Capital_Flight_Factor
+```
+
+### Components
+
+- **Base Type Multiplier**: Midpoint of the token type's range (e.g., 35x for Hard Money)
+- **AI Timeline Factor**: Multiplier based on AI acceleration phase and token's AI category
+- **Risk Class Adjustment**: 0.6x - 1.2x based on token's risk classification
+- **Insider Risk Factor**: 0.5x - 1.0x (inverse of insider concentration score)
+- **Capital Flight Factor**: 0.2x - 1.2x based on token liquidity/rank
+
+### Tariff Calculation
+
+The tariff represents trading friction, derived from the real valuation multiplier:
+
+```
+tariff = max(0, (100 / real_multiplier) - 10)
+```
+
+Examples:
+| Real Multiplier | Tariff |
+|-----------------|--------|
+| 0.01x (USDT) | 14,687% |
+| 20.15x (SOL) | 0% |
+| 8.40x (tBTC) | 2% |
+| 144.84x (RENDER) | 0% |
+
+### Exchange Multiplier
+
+```
+exchange_multiplier = 1.0 + (tariff / 100.0)
+```
+
+This represents the effective exchange rate adjustment for the token.
+
+### Trading Signals
+
+| Token Type | BUY | HOLD | SELL |
+|------------|-----|------|------|
+| Hard Money | ≥15x | 8x-15x | <8x |
+| Protocol Utility | ≥10x | 3x-10x | <3x |
+| AI-Native | ≥20x | 10x-20x | <10x |
+| Real Yield | ≥8x | 4x-8x | <4x |
+| Liquid Staking | ≥12x | 5x-12x | <5x |
+| Fiat-Pegged | - | - | <0.1x |
+| Meme | ≥0.5x | 0.2x-0.5x | <0.2x |
 
 ## Project Structure
 
 ```
-pricer/
+reasoning-pricer/
+├── Cargo.toml              # Rust project manifest
+├── pricing_config.json     # Configurable pricing parameters
+├── data/                   # Input token data (JSON)
+│   └── *.json             # Individual token files
+├── reports/                # Generated output
+│   ├── index.md           # Main index
+│   ├── tariffs.md         # AI-acceleration tariffs report
+│   ├── tokens/            # Individual token reports
+│   └── summaries/         # Risk class summaries
 ├── src/
-│   ├── main.py          # Main TokenEngine class and entry point
-│   └── models.py        # Pydantic models for Token and TokenAnalysis
-├── data/                # JSON files containing token data
-│   ├── 1.json
-│   ├── 2.json
-│   └── ...
-└── README.md           # This file
+│   ├── lib.rs             # Library module exports
+│   ├── main.rs            # Entry point
+│   ├── models.rs          # Data models (Token, TokenType, RiskClass, AITimeline)
+│   ├── data_loader.rs     # JSON file loading
+│   ├── pricing_config.rs  # Configuration loader
+│   ├── reasoning_pricer.rs # Core AI-acceleration valuation logic
+│   ├── token_reporter.rs  # Token report generation
+│   ├── tariff_generator.rs # Tariff report generation
+│   ├── summary_reporter.rs # Risk class summary generation
+│   └── index_generator.rs # Index file generation
+└── README.md              # This file
 ```
-
-## Installation
-
-1. **Clone or download the project**
-2. **Install dependencies**:
-   ```bash
-   pip install rich pydantic
-   ```
 
 ## Usage
 
-### Running the Analysis
+### Prerequisites
 
-Execute the main analysis script:
+- Rust 1.70 or later
+- Cargo
 
-```bash
-python src/main.py
-```
-
-Or run the module directly:
+### Build and Run
 
 ```bash
-python -m src.main
+# Build the project
+cargo build --release
+
+# Run the report generator
+cargo run --release
 ```
 
-## Data Format
+### Configuration
 
-Token data should be provided in JSON files with the following structure:
+Edit `pricing_config.json` to adjust:
+
+1. **AI Progress Factor** - How much AI acceleration impacts valuations (0.0 - 0.3)
+2. **Timeline Phases** - Timeline multipliers for each AI phase
+3. **Token Type Adjustments** - Base multipliers per token type
+4. **Risk Class Multipliers** - Risk class impact on valuation
+5. **Capital Flight Factors** - Liquidity-based adjustments
+6. **Tariff Calculation** - Formula and bounds
+
+### Input Data Format
+
+Token data files in `data/` should be JSON arrays with the following structure:
 
 ```json
 [
   {
-    "symbol": "RAY",
-    "name": "Raydium",
+    "symbol": "SOL",
+    "name": "Solana",
     "archetype": "Class B (Systemic)",
-    "insider_score": 20,
-    "tags": ["dex", "amm", "legacy", "middleware"],
-    "tariff_override": 50,
-    "reason": "The original Toll Booth. High utility, but tokenomics have historically been highly inflationary. Pure rent-seeking."
+    "insider_score": 48,
+    "rank": 5,
+    "token_type": "ProtocolUtility",
+    "ai_category": "PassiveUtility",
+    "tags": ["native", "gas", "layer-1"],
+    "tariff_override": 30,
+    "reason": "The Currency of the Realm."
   }
 ]
 ```
 
-### Field Descriptions
+### Token Fields
 
-- **symbol**: Token ticker symbol (required)
-- **name**: Full token name (required)
-- **archetype**: Risk classification (required)
-- **insider_score**: Insider sentiment score (0-100, required)
-- **tags**: List of descriptive tags (required)
-- **tariff_override**: Percentage value for exchange multiplier calculation (required)
-- **reason**: Analyst note or justification (required)
+| Field | Type | Required | Description |
+|-------|------|----------|-------------|
+| `symbol` | string | Yes | Token ticker symbol |
+| `name` | string | Yes | Full token name |
+| `archetype` | string | Yes | Risk class (e.g., "Class A (Real Yield)") |
+| `insider_score` | number | Yes | 0-100 insider concentration (higher = more centralized) |
+| `tags` | array | Yes | Array of tags for auto-detection |
+| `tariff_override` | number | No | Manual tariff friction percentage |
+| `reason` | string | No | Analyst notes |
+| `rank` | number | No | Market cap rank (1-999) for capital flight calculation |
+| `token_type` | string | No | Explicit type override (see below) |
+| `ai_category` | string | No | Explicit AI category override (see below) |
+| `parent_token` | string | No | Parent token for wrapped/bridged assets |
 
-## Risk Classes
+### Token Types
 
-### Class A (Real Yield) - Green
-Tokens that provide real utility and sustainable value. These are typically established protocols with proven track records.
+| Value | Base Multiplier | Description |
+|-------|----------------|-------------|
+| `HardMoney` | 20x - 50x | BTC, decentralized PoW |
+| `CommodityBacked` | 5x - 10x | Gold, silver tokenized |
+| `WrappedBridge` | 10x - 25x | Cross-chain wrapped assets |
+| `RealYield` | 0.5x - 1.5x | Revenue-generating protocols |
+| `FiatPegged` | 0.01x - 0.05x | USDC, USDT, stablecoins |
+| `LiquidStaking` | 0.5x - 1.5x | LSTs like JitoSOL, mSOL |
+| `ProtocolUtility` | 10x - 25x | General utility tokens |
+| `Governance` | 0.1x - 1.0x | Pure governance tokens |
+| `Meme` | 0.01x - 0.2x | Meme/culture tokens |
+| `AINative` | 15x - 40x | AI agent tokens |
+| `AIEnabled` | 10x - 30x | DePIN/GPU compute |
 
-### Class B (Systemic) - Blue
-Tokens that are system-critical to the Solana ecosystem. Important infrastructure tokens that may have high utility but also carry systemic risks.
+### AI Categories
 
-### Class C (Venture Risk) - Orange-Red
-Tokens associated with venture-backed projects or emerging protocols. Higher risk but potentially higher reward.
+| Value | Timeline Factor | Description |
+|-------|----------------|-------------|
+| `Static` | 0.20x | Cannot evolve (BTC, gold) |
+| `PassiveUtility` | 1.00x | Limited AI adaptation |
+| `AIEnabled` | 8.33x | Can integrate AI (DePIN) |
+| `AINative` | 8.33x | Built for AI ecosystems |
+| `AIEvolving` | 12.50x | Self-modifying with AI |
 
-### Class D (Speculative) - Red
-Highly speculative tokens with limited track records or those primarily driven by speculation rather than utility.
+### Rank-Based Capital Flight Factor
 
-## Output
+| Rank Range | Factor | Description |
+|------------|--------|-------------|
+| 1-9 | 1.2x | Blue-chip premium |
+| 10-49 | 1.0x | No adjustment |
+| 50-99 | 0.8x | Slight penalty |
+| 100-299 | 0.5x | Moderate penalty |
+| 300+ | 0.2x | Heavy penalty for illiquid alts |
 
-The analysis produces:
+### Tag-Based Auto-Detection
 
-1. **Summary Statistics**:
-   - Total tokens analyzed
-   - Token count by risk class
-   - Average exchange multipliers by risk class
+If `token_type` is not explicitly set, it's auto-detected from tags:
 
-2. **Detailed Table**:
-   - Ticker symbols
-   - Risk classifications (color-coded)
-   - Insider scores
-   - Tariff percentages
-   - Exchange rates (multipliers)
-   - Analyst notes
+| Tag Pattern | Detected Type |
+|-------------|---------------|
+| `hard-money`, `pow` | HardMoney |
+| `commodity`, `gold` | CommodityBacked |
+| `fiat-pegged` | FiatPegged |
+| `liquid-staking`, `lst` | LiquidStaking |
+| `real-yield` | RealYield |
+| `governance` | Governance |
+| `meme` | Meme |
+| `bridged` | WrappedBridge |
 
-## Technical Details
+If `ai_category` is not explicitly set, it's auto-detected from tags:
 
-### Dependencies
-- **Rich**: For beautiful terminal output and formatting
-- **Pydantic**: For data validation and model definition
-- **Pathlib**: For cross-platform file path handling
+| Tag Pattern | AI Category |
+|-------------|-------------|
+| `ai` + `agent` | AINative |
+| `gpu-compute`, `depin` | AIEnabled |
+| `hard-money`, `pow`, `gold`, `commodity` | Static |
+| (default) | PassiveUtility |
 
-### Key Classes
+### Output
 
-- **TokenEngine**: Main analysis engine that loads data, creates analysis, and displays results
-- **Token**: Pydantic model representing individual tokens
-- **TokenAnalysis**: Container for analysis results with sorting and filtering methods
-- **RiskClass**: Enum defining the four risk classifications
-
-### Exchange Multiplier Calculation
-
-The exchange multiplier is calculated as:
-```
-exchange_multiplier = 1 + (tariff_override / 100)
-```
-
-For example, a tariff override of 50% results in an exchange multiplier of 1.50x.
+Generated reports are saved to the `reports/` directory:
+- `reports/index.md` - Main index with all tokens
+- `reports/tariffs.md` - AI-acceleration tariffs summary
+- `reports/tokens/{symbol}.md` - Individual token analysis
+- `reports/summaries/{class}.md` - Risk class summary
 
 ## Example Output
 
+### SOL (Protocol Utility)
 ```
-Solana Token Analysis Engine
-==================================================
-
-ANALYSIS SUMMARY
-============================================================
-Total Tokens Analyzed: 45
-Class A (Real Yield): 12 tokens
-Class B (Systemic): 18 tokens
-Class C (Venture Risk): 10 tokens
-Class D (Speculative): 5 tokens
-
-----------------------------------------
-AVERAGE EXCHANGE MULTIPLIERS
-----------------------------------------
-Class A (Real Yield): 1.25x
-Class B (Systemic): 1.45x
-Class C (Venture Risk): 1.67x
-Class D (Speculative): 2.12x
-============================================================
-
-[Rich table displaying detailed token analysis]
+Token Type: ProtocolUtility
+AI Category: Passive Utility
+Rank: 5 (Blue-chip premium: 1.2x)
+Base Multiplier Range: 10x - 25x
+AI Timeline Factor: 1.00x
+Real Valuation Multiplier: 20.15x
+Tariff: 0%
+Trading Signal: HOLD
 ```
 
-## Customization
+### USDT (Fiat-Pegged)
+```
+Token Type: FiatPegged
+AI Category: Static
+Rank: 4 (Blue-chip: 1.2x)
+Base Multiplier Range: 0.01x - 0.05x
+AI Timeline Factor: 0.20x
+Real Valuation Multiplier: 0.01x
+Tariff: 14,687%
+Trading Signal: AVOID
+Reasoning: Fiat-pegged assets collapse under AI acceleration.
+```
 
-### Modifying Risk Classes
-Edit the `RiskClass` enum in `src/models.py` to add, remove, or modify risk classifications.
+### RENDER (AI-Enabled DePIN)
+```
+Token Type: ProtocolUtility
+AI Category: AI-Enabled
+Rank: 50 (Mid-tier: 1.0x)
+Base Multiplier Range: 10x - 25x
+AI Timeline Factor: 8.33x
+Real Valuation Multiplier: 144.84x
+Tariff: 0%
+Trading Signal: HOLD
+Reasoning: AI-Enabled DePIN tokens benefit enormously from AI acceleration.
+```
 
-### Adding New Fields
-Extend the `Token` model in `src/models.py` to include additional token attributes.
+### tBTC (Hard Money)
+```
+Token Type: HardMoney
+AI Category: Static
+Rank: 10 (Blue-chip: 1.2x)
+Base Multiplier Range: 20x - 50x
+AI Timeline Factor: 0.20x
+Real Valuation Multiplier: 8.40x
+Tariff: 2%
+Trading Signal: BUY
+Reasoning: Hard money assets retain value but don't benefit from AI.
+```
 
-### Customizing Output
-Modify the `create_rich_table()` and `display_summary()` methods in `src/main.py` to customize the output format.
+## Dependencies
+
+- `serde` / `serde_json` - JSON serialization
+- `chrono` - Date/time handling
+- `clap` - Command-line argument parsing
+- `anyhow` - Error handling
+- `thiserror` - Custom error types

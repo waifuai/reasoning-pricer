@@ -4,6 +4,9 @@
     "name": "Helium Network",
     "archetype": "Class A (Real Yield)",
     "insider_score": 40,
+    "rank": 50,
+    "token_type": "ProtocolUtility",
+    "ai_category": "AIEnabled",
     "tags": [
       "depin",
       "wireless",
@@ -18,6 +21,9 @@
     "name": "Helium Mobile",
     "archetype": "Class A (Real Yield)",
     "insider_score": 30,
+    "rank": 120,
+    "token_type": "ProtocolUtility",
+    "ai_category": "AIEnabled",
     "tags": [
       "depin",
       "5g",
@@ -32,6 +38,9 @@
     "name": "Helium IOT",
     "archetype": "Class A (Real Yield)",
     "insider_score": 30,
+    "rank": 150,
+    "token_type": "ProtocolUtility",
+    "ai_category": "AIEnabled",
     "tags": [
       "depin",
       "sensors",
@@ -45,11 +54,15 @@
     "name": "Hivemapper",
     "archetype": "Class A (Real Yield)",
     "insider_score": 20,
+    "rank": 200,
+    "token_type": "ProtocolUtility",
+    "ai_category": "AIEnabled",
     "tags": [
       "depin",
       "mapping",
       "logistics",
-      "hardware-gated"
+      "hardware-gated",
+      "ai"
     ],
     "tariff_override": 15,
     "reason": "Decentralized Google Maps. Hardware requirement (Dashcam) acts as 'Proof of Work'. High merit."
@@ -59,10 +72,14 @@
     "name": "Natix Network",
     "archetype": "Class A (Real Yield)",
     "insider_score": 25,
+    "rank": 400,
+    "token_type": "ProtocolUtility",
+    "ai_category": "AIEnabled",
     "tags": [
       "depin",
       "mapping",
-      "drive-to-earn"
+      "drive-to-earn",
+      "ai"
     ],
     "tariff_override": 25,
     "reason": "Smartphone-based mapping. Lower barrier to entry than Hivemapper (softer Proof of Work), higher tariff."
@@ -72,6 +89,9 @@
     "name": "WiFi Map",
     "archetype": "Class A (Real Yield)",
     "insider_score": 20,
+    "rank": 180,
+    "token_type": "ProtocolUtility",
+    "ai_category": "AIEnabled",
     "tags": [
       "depin",
       "connectivity",
@@ -85,6 +105,9 @@
     "name": "Onde Network",
     "archetype": "Class A (Real Yield)",
     "insider_score": 25,
+    "rank": 350,
+    "token_type": "ProtocolUtility",
+    "ai_category": "AIEnabled",
     "tags": [
       "depin",
       "energy",

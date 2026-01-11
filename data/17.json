@@ -4,6 +4,9 @@
     "name": "Serum",
     "archetype": "Class C (Speculative)",
     "insider_score": 90,
+    "rank": 300,
+    "token_type": "ProtocolUtility",
+    "ai_category": "PassiveUtility",
     "tags": [
       "defi",
       "dex",
@@ -18,6 +21,9 @@
     "name": "Maps.me",
     "archetype": "Class C (Speculative)",
     "insider_score": 85,
+    "rank": 400,
+    "token_type": "ProtocolUtility",
+    "ai_category": "PassiveUtility",
     "tags": [
       "defi",
       "payments",
@@ -32,6 +38,9 @@
     "name": "Oxygen",
     "archetype": "Class C (Speculative)",
     "insider_score": 85,
+    "rank": 450,
+    "token_type": "ProtocolUtility",
+    "ai_category": "PassiveUtility",
     "tags": [
       "defi",
       "prime-brokerage",
@@ -46,6 +55,9 @@
     "name": "OpenBook",
     "archetype": "Class B (Systemic)",
     "insider_score": 20,
+    "rank": 350,
+    "token_type": "ProtocolUtility",
+    "ai_category": "PassiveUtility",
     "tags": [
       "infrastructure",
       "dex",
@@ -60,6 +72,9 @@
     "name": "Zignaly",
     "archetype": "Class B (Systemic)",
     "insider_score": 30,
+    "rank": 400,
+    "token_type": "ProtocolUtility",
+    "ai_category": "PassiveUtility",
     "tags": [
       "defi",
       "social-trading",
@@ -74,6 +89,9 @@
     "name": "Mean DAO",
     "archetype": "Class B (Systemic)",
     "insider_score": 40,
+    "rank": 500,
+    "token_type": "ProtocolUtility",
+    "ai_category": "PassiveUtility",
     "tags": [
       "defi",
       "payments",
@@ -88,6 +106,9 @@
     "name": "Prism",
     "archetype": "Class C (Speculative)",
     "insider_score": 45,
+    "rank": 600,
+    "token_type": "Governance",
+    "ai_category": "PassiveUtility",
     "tags": [
       "defi",
       "derivatives",
@@ -102,6 +123,9 @@
     "name": "Saros",
     "archetype": "Class C (Speculative)",
     "insider_score": 55,
+    "rank": 500,
+    "token_type": "ProtocolUtility",
+    "ai_category": "PassiveUtility",
     "tags": [
       "defi",
       "mobile",
@@ -116,6 +140,9 @@
     "name": "GooseFX",
     "archetype": "Class C (Speculative)",
     "insider_score": 45,
+    "rank": 600,
+    "token_type": "ProtocolUtility",
+    "ai_category": "PassiveUtility",
     "tags": [
       "defi",
       "derivatives",

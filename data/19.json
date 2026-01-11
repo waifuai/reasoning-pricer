@@ -4,6 +4,9 @@
     "name": "Solchat",
     "archetype": "Class B (Systemic)",
     "insider_score": 35,
+    "rank": 500,
+    "token_type": "ProtocolUtility",
+    "ai_category": "PassiveUtility",
     "tags": [
       "infrastructure",
       "privacy",
@@ -18,6 +21,9 @@
     "name": "Synesis One",
     "archetype": "Class E (Experimental)",
     "insider_score": 45,
+    "rank": 450,
+    "token_type": "ProtocolUtility",
+    "ai_category": "AIEnabled",
     "tags": [
       "ai",
       "data",
@@ -32,11 +38,15 @@
     "name": "UpRock",
     "archetype": "Class B (Systemic)",
     "insider_score": 40,
+    "rank": 350,
+    "token_type": "ProtocolUtility",
+    "ai_category": "AIEnabled",
     "tags": [
       "depin",
       "mobile",
       "data",
-      "ai"
+      "ai",
+      "gpu-compute"
     ],
     "tariff_override": 5,
     "reason": "Mobile-first DePIN project utilizing spare internet bandwidth for AI data scraping. Strong growth metrics but relies heavily on the team's central coordination of data buyers."
@@ -46,11 +56,15 @@
     "name": "Goatseus Maximus",
     "archetype": "Class E (Experimental)",
     "insider_score": 25,
+    "rank": 150,
+    "token_type": "Meme",
+    "ai_category": "AINative",
     "tags": [
       "ai",
       "meme",
       "autonomous-agent",
-      "culture"
+      "culture",
+      "agent"
     ],
     "tariff_override": 6,
     "reason": "The first major token endorsed and promoted by an autonomous AI agent (Terminal of Truths). Represents a novel intersection of Memetics and AI behavior."
@@ -60,6 +74,9 @@
     "name": "ai16z",
     "archetype": "Class E (Experimental)",
     "insider_score": 55,
+    "rank": 120,
+    "token_type": "Governance",
+    "ai_category": "AINative",
     "tags": [
       "ai",
       "dao",
@@ -74,11 +91,15 @@
     "name": "Act I: The AI Prophecy",
     "archetype": "Class E (Experimental)",
     "insider_score": 30,
+    "rank": 200,
+    "token_type": "ProtocolUtility",
+    "ai_category": "AINative",
     "tags": [
       "ai",
       "social-fi",
       "narrative",
-      "community"
+      "community",
+      "agent"
     ],
     "tariff_override": 7,
     "reason": "A multi-agent AI interaction experiment. Value is derived from the emerging narrative of the AI swarm. Highly speculative and community-driven."
@@ -88,6 +109,9 @@
     "name": "FluxBot",
     "archetype": "Class C (Speculative)",
     "insider_score": 60,
+    "rank": 400,
+    "token_type": "ProtocolUtility",
+    "ai_category": "AIEnabled",
     "tags": [
       "ai",
       "trading-bot",
@@ -102,6 +126,9 @@
     "name": "Analysoor",
     "archetype": "Class E (Experimental)",
     "insider_score": 40,
+    "rank": 500,
+    "token_type": "ProtocolUtility",
+    "ai_category": "PassiveUtility",
     "tags": [
       "data",
       "fair-launch",
@@ -116,11 +143,15 @@
     "name": "Koii Network",
     "archetype": "Class B (Systemic)",
     "insider_score": 50,
+    "rank": 250,
+    "token_type": "ProtocolUtility",
+    "ai_category": "AIEnabled",
     "tags": [
       "depin",
       "compute",
       "infrastructure",
-      "cross-chain"
+      "cross-chain",
+      "gpu-compute"
     ],
     "tariff_override": 5,
     "reason": "Distributed cloud computing platform rewarding users for running nodes. Bridges to Solana. Moderate centralization in the early stages of network bootstrapping."
@@ -130,6 +161,9 @@
     "name": "Zerebro",
     "archetype": "Class E (Experimental)",
     "insider_score": 35,
+    "rank": 200,
+    "token_type": "Meme",
+    "ai_category": "AINative",
     "tags": [
       "ai",
       "content-creation",

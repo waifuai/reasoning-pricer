@@ -6,23 +6,29 @@
 |-------|-------|
 | **Symbol** | `XAUT` |
 | **Name** | Tether Gold (Portal) |
+| **Token Type** | Commodity-Backed |
 | **Risk Class** | Class A (Real Yield) |
 | **Insider Score** | 15/100 |
 | **Tariff Override** | 8% |
-| **Exchange Multiplier** | 1.08x |
+| **Calculated Tariff** | 0% |
+| **Exchange Multiplier** | 1.0x |
 
 ## Risk Analysis
+
+### Token Type
+Commodity-Backed
 
 ### Archetype
 Class A (Real Yield)
 
-### Insider Control Score
+### Insider Score
 **15/100** - Low insider control
 
-### Exchange Rate Impact
-**1.08x** (Tariff: 8%)
+### Exchange Rate
+**1.0x** (Tariff: 0%)
 
 ## Tags
+
 - commodity
 - gold
 - reserve
@@ -30,6 +36,30 @@ Class A (Real Yield)
 ## Analyst Notes
 
 Tether-backed Gold. Higher trust assumption than Paxos, warranting a slightly higher tariff.
+
+---
+
+## Reasoning Pricer Analysis
+
+### Post-Fiat Collapse Valuation
+
+| Metric | Value |
+|--------|-------|
+| **Token Type** | CommodityBacked |
+| **Base Multiplier Range** | 50x - 100x |
+| **Type Adjustment Factor** | 75x |
+| **Risk Class Adjustment** | 1.2x |
+| **Insider Risk Factor** | 0.93x |
+| **AI Timeline Factor** | 0.20x |
+| **AI Category** | Static (Cannot Evolve) |
+| **Current AI Phase** | Creative Renaissance |
+| **Real Valuation Multiplier** | 13x |
+| **Uncertainty Range** | 10x - 17x |
+| **Current vs Real Price** | $1.00 → $13.30 |
+| **Trading Signal** | HOLD |
+
+### Analysis
+[AI Timeline: Creative Renaissance] Asset classified as Static (Cannot Evolve) (Static assets that cannot adapt to AI acceleration. These assets decline in value as AI progresses.). AI Timeline Factor: 0.20x (AI acceleration penalizes this static asset). Commodity-Backed: tracks commodity price discovery (base range: 50x - 100x). Class A (Real Yield) receives 1.2x risk class boost - resilient during market stress. Insider control (15/100) reduces multiplier by 0.93x due to centralization risks. Rank #90 applies 0.8x adjustment (mid-tier liquidity). Final real valuation multiplier: 13.3x. Token trading at $1.00 today would be worth $13.32 post-fiat collapse. AI acceleration creates headwinds for this asset class. Trading signal (HOLD): Moderate value post-collapse. Maintain current position.
 
 ---
 

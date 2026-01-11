@@ -1,0 +1,96 @@
+{
+  "version": "1.0",
+  "description": "AI-Acceleration Pricing Configuration - Adjust these values to tune the pricing model",
+  "ai_progress_factor": {
+    "value": 0.8,
+    "description": "Weight given to AI acceleration in valuation (0.0 = ignore AI, 1.0 = full AI weighting)"
+  },
+  "fiat_collapse_factor": {
+    "value": 0.9,
+    "description": "Weight given to fiat collapse impact (0.0 = ignore, 1.0 = full collapse scenario)"
+  },
+  "timeline_phases": {
+    "description": "AI Timeline phases with multipliers for different asset types",
+    "phases": [
+      {
+        "year": 2024,
+        "quarter": null,
+        "name": "Pre-AI Baseline",
+        "hard_money_multiplier": 25.0,
+        "ai_utility_multiplier": 3.0,
+        "protocol_utility_multiplier": 10.0,
+        "description": "Current baseline before AI acceleration"
+      },
+      {
+        "year": 2025,
+        "quarter": 2,
+        "name": "Personal Architect",
+        "hard_money_multiplier": 15.0,
+        "ai_utility_multiplier": 8.0,
+        "protocol_utility_multiplier": 12.0,
+        "description": "Personal AI agents emerge (mid-2025)"
+      },
+      {
+        "year": 2025,
+        "quarter": 4,
+        "name": "Global Acceleration Accord",
+        "hard_money_multiplier": 10.0,
+        "ai_utility_multiplier": 15.0,
+        "protocol_utility_multiplier": 15.0,
+        "description": "Global AI governance + trust dividend (late-2025)"
+      },
+      {
+        "year": 2026,
+        "quarter": null,
+        "name": "Creative Renaissance",
+        "hard_money_multiplier": 5.0,
+        "ai_utility_multiplier": 25.0,
+        "protocol_utility_multiplier": 18.0,
+        "description": "AI creative explosion + work revolution (2026)"
+      },
+      {
+        "year": 2027,
+        "quarter": null,
+        "name": "Agentic (Great Aligner)",
+        "hard_money_multiplier": 2.0,
+        "ai_utility_multiplier": 50.0,
+        "protocol_utility_multiplier": 25.0,
+        "description": "Agentic AGI alignment + Great Aligner (2027)"
+      }
+    ]
+  },
+  "baseline_multipliers": {
+    "description": "Baseline multipliers for AI evolution categories (pre-AI, ~2024)",
+    "categories": {
+      "static": 25.0,
+      "passive_utility": 10.0,
+      "ai_enabled": 5.0,
+      "ai_native": 3.0,
+      "ai_evolving": 3.0
+    }
+  },
+  "risk_class_multipliers": {
+    "ClassA": 1.2,
+    "ClassB": 1.0,
+    "ClassC": 0.8,
+    "ClassD": 0.6
+  },
+  "capital_flight_factors": {
+    "top_10_rank": 1.2,
+    "mid_100_rank": 0.8,
+    "low_rank": 0.2
+  },
+  "ai_evolving_bonus": {
+    "value": 1.25,
+    "description": "Bonus multiplier for AI-evolving assets (can self-modify)"
+  },
+  "tariff_formula": {
+    "floor_tariff": 0,
+    "max_tariff_cap": 10000
+  },
+  "current_date": {
+    "year": 2026,
+    "month": 1,
+    "description": "Current simulation date for timeline phase selection"
+  }
+}

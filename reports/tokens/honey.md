@@ -6,31 +6,62 @@
 |-------|-------|
 | **Symbol** | `HONEY` |
 | **Name** | Hivemapper |
+| **Token Type** | Protocol Utility Token |
 | **Risk Class** | Class A (Real Yield) |
 | **Insider Score** | 20/100 |
 | **Tariff Override** | 15% |
-| **Exchange Multiplier** | 1.15x |
+| **Calculated Tariff** | 0% |
+| **Exchange Multiplier** | 1.0x |
 
 ## Risk Analysis
+
+### Token Type
+Protocol Utility Token
 
 ### Archetype
 Class A (Real Yield)
 
-### Insider Control Score
+### Insider Score
 **20/100** - Low insider control
 
-### Exchange Rate Impact
-**1.15x** (Tariff: 15%)
+### Exchange Rate
+**1.0x** (Tariff: 0%)
 
 ## Tags
+
 - depin
 - mapping
 - logistics
 - hardware-gated
+- ai
 
 ## Analyst Notes
 
 Decentralized Google Maps. Hardware requirement (Dashcam) acts as 'Proof of Work'. High merit.
+
+---
+
+## Reasoning Pricer Analysis
+
+### Post-Fiat Collapse Valuation
+
+| Metric | Value |
+|--------|-------|
+| **Token Type** | ProtocolUtility |
+| **Base Multiplier Range** | 10x - 25x |
+| **Type Adjustment Factor** | 18x |
+| **Risk Class Adjustment** | 1.2x |
+| **Insider Risk Factor** | 0.90x |
+| **AI Timeline Factor** | 8.33x |
+| **AI Category** | AI-Native |
+| **Current AI Phase** | Creative Renaissance |
+| **Real Valuation Multiplier** | 32x |
+| **Uncertainty Range** | 22x - 41x |
+| **Current vs Real Price** | $1.00 → $31.50 |
+| **Trading Signal** | BUY |
+
+### Analysis
+[AI Timeline: Creative Renaissance] Asset classified as AI-Native (Built specifically for AI ecosystems. Maximum AI acceleration benefits.). AI Timeline Factor: 8.33x (AI acceleration boosts this asset significantly). Protocol Utility Token: benefits from network effects and protocol utility (base range: 10x - 25x). Class A (Real Yield) receives 1.2x risk class boost - resilient during market stress. Insider control (20/100) reduces multiplier by 0.90x due to centralization risks. Rank #200 imposes 0.2x penalty (illiquid, capital flight crushes value). Final real valuation multiplier: 31.5x. Token trading at $1.00 today would be worth $31.50 post-fiat collapse. AI acceleration provides strong tailwinds. Trading signal (BUY): Undervalued post-collapse. Accumulate before systemic shift.
 
 ---
 

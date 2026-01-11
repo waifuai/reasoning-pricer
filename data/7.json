@@ -4,6 +4,9 @@
     "name": "Drift Protocol",
     "archetype": "Class C (Venture Risk)",
     "insider_score": 47,
+    "rank": 150,
+    "token_type": "ProtocolUtility",
+    "ai_category": "PassiveUtility",
     "tags": [
       "perps",
       "vc-chain",
@@ -18,6 +21,9 @@
     "name": "Zeta Markets",
     "archetype": "Class C (Venture Risk)",
     "insider_score": 40,
+    "rank": 180,
+    "token_type": "ProtocolUtility",
+    "ai_category": "PassiveUtility",
     "tags": [
       "perps",
       "vc-chain",
@@ -32,6 +38,9 @@
     "name": "Kamino",
     "archetype": "Class C (Venture Risk)",
     "insider_score": 42,
+    "rank": 170,
+    "token_type": "ProtocolUtility",
+    "ai_category": "PassiveUtility",
     "tags": [
       "lending",
       "liquidity",
@@ -46,6 +55,9 @@
     "name": "Parcl",
     "archetype": "Class C (Venture Risk)",
     "insider_score": 45,
+    "rank": 300,
+    "token_type": "ProtocolUtility",
+    "ai_category": "PassiveUtility",
     "tags": [
       "rwa",
       "real-estate",
@@ -60,6 +72,9 @@
     "name": "Phoenix (Ellipsis)",
     "archetype": "Class A (Real Yield)",
     "insider_score": 25,
+    "rank": 350,
+    "token_type": "ProtocolUtility",
+    "ai_category": "PassiveUtility",
     "tags": [
       "dex",
       "orderbook",
@@ -73,10 +88,14 @@
     "name": "Jupiter Perps LP",
     "archetype": "Class A (Real Yield)",
     "insider_score": 10,
+    "rank": 40,
+    "token_type": "RealYield",
+    "ai_category": "PassiveUtility",
     "tags": [
       "yield",
       "liquidity-provider",
-      "index"
+      "index",
+      "real-yield"
     ],
     "tariff_override": 10,
     "reason": "This is NOT a governance token. It is a liquidity index (SOL/BTC/USDC). It represents actual capital, not empty votes."
@@ -86,6 +105,9 @@
     "name": "Hxro Network",
     "archetype": "Class C (Venture Risk)",
     "insider_score": 35,
+    "rank": 400,
+    "token_type": "ProtocolUtility",
+    "ai_category": "PassiveUtility",
     "tags": [
       "derivatives",
       "options",
@@ -99,6 +121,9 @@
     "name": "Dual Finance",
     "archetype": "Class A (Real Yield)",
     "insider_score": 20,
+    "rank": 450,
+    "token_type": "ProtocolUtility",
+    "ai_category": "PassiveUtility",
     "tags": [
       "options",
       "structured-products",

@@ -6,23 +6,29 @@
 |-------|-------|
 | **Symbol** | `PAXG` |
 | **Name** | Paxos Gold (Portal) |
+| **Token Type** | Commodity-Backed |
 | **Risk Class** | Class A (Real Yield) |
 | **Insider Score** | 10/100 |
 | **Tariff Override** | 5% |
-| **Exchange Multiplier** | 1.05x |
+| **Calculated Tariff** | 0% |
+| **Exchange Multiplier** | 1.0x |
 
 ## Risk Analysis
+
+### Token Type
+Commodity-Backed
 
 ### Archetype
 Class A (Real Yield)
 
-### Insider Control Score
+### Insider Score
 **10/100** - Low insider control
 
-### Exchange Rate Impact
-**1.05x** (Tariff: 5%)
+### Exchange Rate
+**1.0x** (Tariff: 0%)
 
 ## Tags
+
 - commodity
 - gold
 - reserve
@@ -30,6 +36,30 @@ Class A (Real Yield)
 ## Analyst Notes
 
 Tokenized Physical Gold. A classic store of value, though custodial.
+
+---
+
+## Reasoning Pricer Analysis
+
+### Post-Fiat Collapse Valuation
+
+| Metric | Value |
+|--------|-------|
+| **Token Type** | CommodityBacked |
+| **Base Multiplier Range** | 50x - 100x |
+| **Type Adjustment Factor** | 75x |
+| **Risk Class Adjustment** | 1.2x |
+| **Insider Risk Factor** | 0.95x |
+| **AI Timeline Factor** | 0.20x |
+| **AI Category** | Static (Cannot Evolve) |
+| **Current AI Phase** | Creative Renaissance |
+| **Real Valuation Multiplier** | 14x |
+| **Uncertainty Range** | 10x - 17x |
+| **Current vs Real Price** | $1.00 → $13.70 |
+| **Trading Signal** | HOLD |
+
+### Analysis
+[AI Timeline: Creative Renaissance] Asset classified as Static (Cannot Evolve) (Static assets that cannot adapt to AI acceleration. These assets decline in value as AI progresses.). AI Timeline Factor: 0.20x (AI acceleration penalizes this static asset). Commodity-Backed: tracks commodity price discovery (base range: 50x - 100x). Class A (Real Yield) receives 1.2x risk class boost - resilient during market stress. Insider control (10/100) reduces multiplier by 0.95x due to centralization risks. Rank #80 applies 0.8x adjustment (mid-tier liquidity). Final real valuation multiplier: 13.7x. Token trading at $1.00 today would be worth $13.68 post-fiat collapse. AI acceleration creates headwinds for this asset class. Trading signal (HOLD): Moderate value post-collapse. Maintain current position.
 
 ---
 

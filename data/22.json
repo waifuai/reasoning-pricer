@@ -4,11 +4,15 @@
     "name": "Hubble Protocol",
     "archetype": "Class A (Real Yield)",
     "insider_score": 35,
+    "rank": 400,
+    "token_type": "RealYield",
+    "ai_category": "PassiveUtility",
     "tags": [
       "defi",
       "stablecoin",
       "lending",
-      "yield-bearing"
+      "yield-bearing",
+      "real-yield"
     ],
     "tariff_override": 4,
     "reason": "A borrowing protocol enabling the minting of USDH against collateral. Generates protocol revenue through minting and redemption fees. Moderate governance concentration."
@@ -18,6 +22,9 @@
     "name": "SonarWatch",
     "archetype": "Class B (Systemic)",
     "insider_score": 25,
+    "rank": 450,
+    "token_type": "ProtocolUtility",
+    "ai_category": "PassiveUtility",
     "tags": [
       "infrastructure",
       "data",
@@ -32,11 +39,15 @@
     "name": "Frakt",
     "archetype": "Class A (Real Yield)",
     "insider_score": 30,
+    "rank": 450,
+    "token_type": "RealYield",
+    "ai_category": "PassiveUtility",
     "tags": [
       "defi",
       "nft-fi",
       "lending",
-      "yield-bearing"
+      "yield-bearing",
+      "real-yield"
     ],
     "tariff_override": 5,
     "reason": "A decentralized NFT lending protocol. Allows users to borrow against NFTs or lend liquidity for yield. Generates real revenue from interest spreads."
@@ -46,6 +57,9 @@
     "name": "MonkeyLeague",
     "archetype": "Class C (Speculative)",
     "insider_score": 55,
+    "rank": 550,
+    "token_type": "ProtocolUtility",
+    "ai_category": "PassiveUtility",
     "tags": [
       "gaming",
       "esports",
@@ -60,6 +74,9 @@
     "name": "Investin",
     "archetype": "Class B (Systemic)",
     "insider_score": 40,
+    "rank": 550,
+    "token_type": "ProtocolUtility",
+    "ai_category": "PassiveUtility",
     "tags": [
       "defi",
       "asset-management",
@@ -74,6 +91,9 @@
     "name": "ALL.ART",
     "archetype": "Class B (Systemic)",
     "insider_score": 45,
+    "rank": 500,
+    "token_type": "ProtocolUtility",
+    "ai_category": "PassiveUtility",
     "tags": [
       "infrastructure",
       "nft-standard",
@@ -88,6 +108,9 @@
     "name": "Crowny",
     "archetype": "Class C (Speculative)",
     "insider_score": 50,
+    "rank": 600,
+    "token_type": "ProtocolUtility",
+    "ai_category": "PassiveUtility",
     "tags": [
       "marketing",
       "loyalty",
@@ -102,6 +125,9 @@
     "name": "Liq Protocol",
     "archetype": "Class B (Systemic)",
     "insider_score": 60,
+    "rank": 550,
+    "token_type": "ProtocolUtility",
+    "ai_category": "PassiveUtility",
     "tags": [
       "defi",
       "infrastructure",
@@ -116,6 +142,9 @@
     "name": "SolRazr",
     "archetype": "Class C (Speculative)",
     "insider_score": 40,
+    "rank": 650,
+    "token_type": "ProtocolUtility",
+    "ai_category": "PassiveUtility",
     "tags": [
       "launchpad",
       "fundraising",
@@ -130,6 +159,9 @@
     "name": "Cyclos",
     "archetype": "Class C (Speculative)",
     "insider_score": 65,
+    "rank": 600,
+    "token_type": "ProtocolUtility",
+    "ai_category": "PassiveUtility",
     "tags": [
       "defi",
       "amm",

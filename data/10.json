@@ -4,6 +4,9 @@
     "name": "Jupiter",
     "archetype": "Class C (Venture Risk)",
     "insider_score": 50,
+    "rank": 35,
+    "token_type": "Governance",
+    "ai_category": "PassiveUtility",
     "tags": [
       "aggregator",
       "governance",
@@ -18,6 +21,9 @@
     "name": "Sanctum",
     "archetype": "Class A (Real Yield)",
     "insider_score": 30,
+    "rank": 200,
+    "token_type": "ProtocolUtility",
+    "ai_category": "PassiveUtility",
     "tags": [
       "launchpad",
       "lst-infrastructure",
@@ -31,6 +37,9 @@
     "name": "Meteora",
     "archetype": "Class A (Real Yield)",
     "insider_score": 20,
+    "rank": 180,
+    "token_type": "ProtocolUtility",
+    "ai_category": "PassiveUtility",
     "tags": [
       "liquidity",
       "dlmm",
@@ -45,6 +54,9 @@
     "name": "Streamflow",
     "archetype": "Class A (Real Yield)",
     "insider_score": 15,
+    "rank": 400,
+    "token_type": "ProtocolUtility",
+    "ai_category": "PassiveUtility",
     "tags": [
       "tooling",
       "vesting",
@@ -59,6 +71,9 @@
     "name": "Bonfida",
     "archetype": "Class A (Real Yield)",
     "insider_score": 25,
+    "rank": 300,
+    "token_type": "ProtocolUtility",
+    "ai_category": "PassiveUtility",
     "tags": [
       "identity",
       "sns",
@@ -72,6 +87,9 @@
     "name": "Solanium",
     "archetype": "Class C (Venture Risk)",
     "insider_score": 40,
+    "rank": 600,
+    "token_type": "ProtocolUtility",
+    "ai_category": "PassiveUtility",
     "tags": [
       "launchpad",
       "legacy",
@@ -85,6 +103,9 @@
     "name": "1inch (Wormhole)",
     "archetype": "Class B (Systemic)",
     "insider_score": 30,
+    "rank": 150,
+    "token_type": "ProtocolUtility",
+    "ai_category": "PassiveUtility",
     "tags": [
       "aggregator",
       "legacy",
@@ -98,6 +119,9 @@
     "name": "Less Fn Gas",
     "archetype": "Class D (Speculative)",
     "insider_score": 5,
+    "rank": 800,
+    "token_type": "ProtocolUtility",
+    "ai_category": "PassiveUtility",
     "tags": [
       "onboarding",
       "community",

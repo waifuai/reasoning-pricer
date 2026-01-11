@@ -4,8 +4,11 @@
     "name": "BiLira",
     "archetype": "Class B (Systemic)",
     "insider_score": 25,
+    "rank": 400,
+    "token_type": "FiatPegged",
+    "ai_category": "Static",
     "tags": [
-      "stable",
+      "fiat-pegged",
       "forex",
       "emerging-market",
       "payments"
@@ -18,8 +21,11 @@
     "name": "BRZ Token",
     "archetype": "Class B (Systemic)",
     "insider_score": 30,
+    "rank": 350,
+    "token_type": "FiatPegged",
+    "ai_category": "Static",
     "tags": [
-      "stable",
+      "fiat-pegged",
       "forex",
       "latin-america",
       "payments"
@@ -32,6 +38,9 @@
     "name": "Zebec Network",
     "archetype": "Class B (Systemic)",
     "insider_score": 45,
+    "rank": 300,
+    "token_type": "ProtocolUtility",
+    "ai_category": "PassiveUtility",
     "tags": [
       "payments",
       "rwa",
@@ -46,6 +55,9 @@
     "name": "SolCard",
     "archetype": "Class C (Speculative)",
     "insider_score": 50,
+    "rank": 600,
+    "token_type": "ProtocolUtility",
+    "ai_category": "PassiveUtility",
     "tags": [
       "payments",
       "debit-card",
@@ -60,6 +72,9 @@
     "name": "Allbridge",
     "archetype": "Class B (Systemic)",
     "insider_score": 35,
+    "rank": 400,
+    "token_type": "ProtocolUtility",
+    "ai_category": "PassiveUtility",
     "tags": [
       "infrastructure",
       "bridge",
@@ -74,6 +89,9 @@
     "name": "Parallel",
     "archetype": "Class A (Real Yield)",
     "insider_score": 20,
+    "rank": 500,
+    "token_type": "StableYield",
+    "ai_category": "PassiveUtility",
     "tags": [
       "stable",
       "algorithmic",
@@ -88,6 +106,9 @@
     "name": "Yawww",
     "archetype": "Class C (Speculative)",
     "insider_score": 60,
+    "rank": 700,
+    "token_type": "ProtocolUtility",
+    "ai_category": "PassiveUtility",
     "tags": [
       "defi",
       "escrow",

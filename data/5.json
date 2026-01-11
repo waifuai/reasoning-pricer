@@ -4,8 +4,11 @@
     "name": "USD Coin",
     "archetype": "Class B (Systemic)",
     "insider_score": 10,
+    "rank": 6,
+    "token_type": "FiatPegged",
+    "ai_category": "Static",
     "tags": [
-      "fiat",
+      "fiat-pegged",
       "stable",
       "banking",
       "centralized"
@@ -18,8 +21,11 @@
     "name": "Tether USD",
     "archetype": "Class B (Systemic)",
     "insider_score": 20,
+    "rank": 4,
+    "token_type": "FiatPegged",
+    "ai_category": "Static",
     "tags": [
-      "fiat",
+      "fiat-pegged",
       "stable",
       "banking",
       "opaque"
@@ -32,8 +38,11 @@
     "name": "Euro Coin",
     "archetype": "Class B (Systemic)",
     "insider_score": 10,
+    "rank": 150,
+    "token_type": "FiatPegged",
+    "ai_category": "Static",
     "tags": [
-      "fiat",
+      "fiat-pegged",
       "stable",
       "banking",
       "euro"
@@ -46,8 +55,11 @@
     "name": "PayPal USD",
     "archetype": "Class B (Systemic)",
     "insider_score": 15,
+    "rank": 100,
+    "token_type": "FiatPegged",
+    "ai_category": "Static",
     "tags": [
-      "fiat",
+      "fiat-pegged",
       "stable",
       "banking",
       "corporate"
@@ -60,6 +72,9 @@
     "name": "Hubble USD",
     "archetype": "Class A (Real Yield)",
     "insider_score": 25,
+    "rank": 500,
+    "token_type": "StableYield",
+    "ai_category": "PassiveUtility",
     "tags": [
       "stable",
       "decentralized",
@@ -73,6 +88,9 @@
     "name": "UXD Stablecoin",
     "archetype": "Class C (Venture Risk)",
     "insider_score": 40,
+    "rank": 800,
+    "token_type": "StableYield",
+    "ai_category": "PassiveUtility",
     "tags": [
       "stable",
       "algorithmic",
@@ -86,6 +104,9 @@
     "name": "International Stable Currency",
     "archetype": "Class A (Real Yield)",
     "insider_score": 20,
+    "rank": 600,
+    "token_type": "StableYield",
+    "ai_category": "PassiveUtility",
     "tags": [
       "stable",
       "rwa-basket",
@@ -99,8 +120,11 @@
     "name": "Sky Dollar (Solana)",
     "archetype": "Class B (Systemic)",
     "insider_score": 10,
+    "rank": 200,
+    "token_type": "FiatPegged",
+    "ai_category": "Static",
     "tags": [
-      "fiat",
+      "fiat-pegged",
       "stable",
       "maker-dao"
     ],

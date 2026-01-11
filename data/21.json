@@ -4,6 +4,9 @@
     "name": "Gh0st",
     "archetype": "Class E (Experimental)",
     "insider_score": 5,
+    "rank": 400,
+    "token_type": "ProtocolUtility",
+    "ai_category": "PassiveUtility",
     "tags": [
       "token-2022",
       "standard",
@@ -18,6 +21,9 @@
     "name": "Catwifhat",
     "archetype": "Class E (Experimental)",
     "insider_score": 20,
+    "rank": 300,
+    "token_type": "Meme",
+    "ai_category": "PassiveUtility",
     "tags": [
       "token-2022",
       "deflationary",
@@ -32,6 +38,9 @@
     "name": "SPL20 Inscriptions",
     "archetype": "Class E (Experimental)",
     "insider_score": 10,
+    "rank": 400,
+    "token_type": "ProtocolUtility",
+    "ai_category": "PassiveUtility",
     "tags": [
       "inscription",
       "ordinals",
@@ -46,6 +55,9 @@
     "name": "Pip",
     "archetype": "Class B (Systemic)",
     "insider_score": 55,
+    "rank": 400,
+    "token_type": "ProtocolUtility",
+    "ai_category": "PassiveUtility",
     "tags": [
       "infrastructure",
       "payments",
@@ -60,6 +72,9 @@
     "name": "Dean's List",
     "archetype": "Class B (Systemic)",
     "insider_score": 25,
+    "rank": 600,
+    "token_type": "Governance",
+    "ai_category": "PassiveUtility",
     "tags": [
       "dao",
       "governance",
@@ -74,6 +89,9 @@
     "name": "Hawk Protocol",
     "archetype": "Class C (Speculative)",
     "insider_score": 50,
+    "rank": 600,
+    "token_type": "ProtocolUtility",
+    "ai_category": "PassiveUtility",
     "tags": [
       "defi",
       "privacy",
@@ -88,6 +106,9 @@
     "name": "Mumu the Bull",
     "archetype": "Class D (Memetic)",
     "insider_score": 30,
+    "rank": 350,
+    "token_type": "Meme",
+    "ai_category": "PassiveUtility",
     "tags": [
       "meme",
       "culture",
@@ -102,6 +123,9 @@
     "name": "Michi",
     "archetype": "Class D (Memetic)",
     "insider_score": 35,
+    "rank": 300,
+    "token_type": "Meme",
+    "ai_category": "PassiveUtility",
     "tags": [
       "meme",
       "cat-coin",
@@ -116,6 +140,9 @@
     "name": "Lock In",
     "archetype": "Class D (Memetic)",
     "insider_score": 40,
+    "rank": 400,
+    "token_type": "Meme",
+    "ai_category": "PassiveUtility",
     "tags": [
       "meme",
       "cult",
@@ -130,6 +157,9 @@
     "name": "Loaf Cat",
     "archetype": "Class E (Experimental)",
     "insider_score": 45,
+    "rank": 500,
+    "token_type": "Meme",
+    "ai_category": "PassiveUtility",
     "tags": [
       "gaming",
       "pixel-art",

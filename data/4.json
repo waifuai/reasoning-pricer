@@ -4,6 +4,9 @@
     "name": "Solana",
     "archetype": "Class B (Systemic)",
     "insider_score": 48,
+    "rank": 5,
+    "token_type": "ProtocolUtility",
+    "ai_category": "PassiveUtility",
     "tags": [
       "native",
       "gas",
@@ -18,7 +21,11 @@
     "name": "Jito Staked SOL",
     "archetype": "Class B (Systemic)",
     "insider_score": 48,
+    "rank": 25,
+    "token_type": "LiquidStaking",
+    "ai_category": "PassiveUtility",
     "tags": [
+      "liquid-staking",
       "lst",
       "yield",
       "mev",
@@ -32,7 +39,11 @@
     "name": "Marinade Staked SOL",
     "archetype": "Class B (Systemic)",
     "insider_score": 48,
+    "rank": 30,
+    "token_type": "LiquidStaking",
+    "ai_category": "PassiveUtility",
     "tags": [
+      "liquid-staking",
       "lst",
       "yield",
       "bond"
@@ -45,7 +56,11 @@
     "name": "Blaze Staked SOL",
     "archetype": "Class B (Systemic)",
     "insider_score": 48,
+    "rank": 50,
+    "token_type": "LiquidStaking",
+    "ai_category": "PassiveUtility",
     "tags": [
+      "liquid-staking",
       "lst",
       "yield",
       "bond"
@@ -58,7 +73,11 @@
     "name": "Sanctum Infinity",
     "archetype": "Class B (Systemic)",
     "insider_score": 40,
+    "rank": 80,
+    "token_type": "LiquidStaking",
+    "ai_category": "PassiveUtility",
     "tags": [
+      "liquid-staking",
       "lst",
       "aggregator",
       "yield-basket"
@@ -71,7 +90,11 @@
     "name": "JPool Staked SOL",
     "archetype": "Class B (Systemic)",
     "insider_score": 48,
+    "rank": 150,
+    "token_type": "LiquidStaking",
+    "ai_category": "PassiveUtility",
     "tags": [
+      "liquid-staking",
       "lst",
       "yield"
     ],
@@ -83,7 +106,11 @@
     "name": "Helius Staked SOL",
     "archetype": "Class B (Systemic)",
     "insider_score": 48,
+    "rank": 200,
+    "token_type": "LiquidStaking",
+    "ai_category": "PassiveUtility",
     "tags": [
+      "liquid-staking",
       "lst",
       "yield",
       "infrastructure"
@@ -96,7 +123,11 @@
     "name": "daoSOL",
     "archetype": "Class B (Systemic)",
     "insider_score": 48,
+    "rank": 300,
+    "token_type": "LiquidStaking",
+    "ai_category": "PassiveUtility",
     "tags": [
+      "liquid-staking",
       "lst",
       "yield",
       "governance"

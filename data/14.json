@@ -4,6 +4,9 @@
     "name": "Kin",
     "archetype": "Class B (Systemic)",
     "insider_score": 15,
+    "rank": 200,
+    "token_type": "ProtocolUtility",
+    "ai_category": "PassiveUtility",
     "tags": [
       "gaming",
       "payments",
@@ -18,6 +21,9 @@
     "name": "DeFi Land",
     "archetype": "Class E (Experimental)",
     "insider_score": 35,
+    "rank": 600,
+    "token_type": "ProtocolUtility",
+    "ai_category": "PassiveUtility",
     "tags": [
       "gaming",
       "defi",
@@ -32,6 +38,9 @@
     "name": "Walken",
     "archetype": "Class E (Experimental)",
     "insider_score": 55,
+    "rank": 450,
+    "token_type": "ProtocolUtility",
+    "ai_category": "PassiveUtility",
     "tags": [
       "gaming",
       "move-to-earn",
@@ -46,6 +55,9 @@
     "name": "CaveWorld",
     "archetype": "Class C (Speculative)",
     "insider_score": 45,
+    "rank": 700,
+    "token_type": "ProtocolUtility",
+    "ai_category": "PassiveUtility",
     "tags": [
       "gaming",
       "p2e",
@@ -60,6 +72,9 @@
     "name": "Green Satoshi Token",
     "archetype": "Class E (Experimental)",
     "insider_score": 10,
+    "rank": 300,
+    "token_type": "ProtocolUtility",
+    "ai_category": "PassiveUtility",
     "tags": [
       "gaming",
       "move-to-earn",
@@ -74,6 +89,9 @@
     "name": "Tap Fantasy",
     "archetype": "Class C (Speculative)",
     "insider_score": 40,
+    "rank": 650,
+    "token_type": "Governance",
+    "ai_category": "PassiveUtility",
     "tags": [
       "gaming",
       "mmorpg",
@@ -88,6 +106,9 @@
     "name": "Realy Metaverse",
     "archetype": "Class C (Speculative)",
     "insider_score": 60,
+    "rank": 600,
+    "token_type": "ProtocolUtility",
+    "ai_category": "PassiveUtility",
     "tags": [
       "gaming",
       "metaverse",
@@ -102,6 +123,9 @@
     "name": "Space Falcon",
     "archetype": "Class C (Speculative)",
     "insider_score": 50,
+    "rank": 700,
+    "token_type": "ProtocolUtility",
+    "ai_category": "PassiveUtility",
     "tags": [
       "gaming",
       "shooter",
@@ -116,6 +140,9 @@
     "name": "Decimated",
     "archetype": "Class C (Speculative)",
     "insider_score": 40,
+    "rank": 650,
+    "token_type": "ProtocolUtility",
+    "ai_category": "PassiveUtility",
     "tags": [
       "gaming",
       "survival",
@@ -130,6 +157,9 @@
     "name": "Yaku",
     "archetype": "Class C (Speculative)",
     "insider_score": 30,
+    "rank": 550,
+    "token_type": "ProtocolUtility",
+    "ai_category": "PassiveUtility",
     "tags": [
       "gaming",
       "metaverse",

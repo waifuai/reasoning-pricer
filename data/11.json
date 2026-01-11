@@ -4,6 +4,9 @@
     "name": "Bonk",
     "archetype": "Class D (Memetic)",
     "insider_score": 15,
+    "rank": 60,
+    "token_type": "Meme",
+    "ai_category": "PassiveUtility",
     "tags": [
       "meme",
       "community",
@@ -18,6 +21,9 @@
     "name": "dogwifhat",
     "archetype": "Class D (Memetic)",
     "insider_score": 35,
+    "rank": 70,
+    "token_type": "Meme",
+    "ai_category": "PassiveUtility",
     "tags": [
       "meme",
       "community",
@@ -32,6 +38,9 @@
     "name": "Popcat",
     "archetype": "Class D (Memetic)",
     "insider_score": 25,
+    "rank": 100,
+    "token_type": "Meme",
+    "ai_category": "PassiveUtility",
     "tags": [
       "meme",
       "community",
@@ -46,6 +55,9 @@
     "name": "BOOK OF MEME",
     "archetype": "Class D (Memetic)",
     "insider_score": 65,
+    "rank": 120,
+    "token_type": "Meme",
+    "ai_category": "PassiveUtility",
     "tags": [
       "meme",
       "experimental",
@@ -60,6 +72,9 @@
     "name": "Slerf",
     "archetype": "Class D (Memetic)",
     "insider_score": 10,
+    "rank": 200,
+    "token_type": "Meme",
+    "ai_category": "PassiveUtility",
     "tags": [
       "meme",
       "community",
@@ -74,6 +89,9 @@
     "name": "Myro",
     "archetype": "Class D (Memetic)",
     "insider_score": 45,
+    "rank": 300,
+    "token_type": "Meme",
+    "ai_category": "PassiveUtility",
     "tags": [
       "meme",
       "dog-coin",
@@ -88,6 +106,9 @@
     "name": "Wen",
     "archetype": "Class D (Memetic)",
     "insider_score": 5,
+    "rank": 180,
+    "token_type": "Meme",
+    "ai_category": "PassiveUtility",
     "tags": [
       "meme",
       "community",
@@ -102,6 +123,9 @@
     "name": "Ponke",
     "archetype": "Class D (Memetic)",
     "insider_score": 55,
+    "rank": 250,
+    "token_type": "Meme",
+    "ai_category": "PassiveUtility",
     "tags": [
       "meme",
       "gambling",
@@ -116,6 +140,9 @@
     "name": "cat in a dogs world",
     "archetype": "Class D (Memetic)",
     "insider_score": 60,
+    "rank": 150,
+    "token_type": "Meme",
+    "ai_category": "PassiveUtility",
     "tags": [
       "meme",
       "cat-coin",
@@ -130,6 +157,9 @@
     "name": "Silly Dragon",
     "archetype": "Class D (Memetic)",
     "insider_score": 40,
+    "rank": 350,
+    "token_type": "Meme",
+    "ai_category": "PassiveUtility",
     "tags": [
       "meme",
       "community",

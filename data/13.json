@@ -4,6 +4,9 @@
     "name": "Saber",
     "archetype": "Class C (Speculative)",
     "insider_score": 65,
+    "rank": 400,
+    "token_type": "ProtocolUtility",
+    "ai_category": "PassiveUtility",
     "tags": [
       "defi",
       "stable-swap",
@@ -18,6 +21,9 @@
     "name": "Sunny Aggregator",
     "archetype": "Class C (Speculative)",
     "insider_score": 40,
+    "rank": 700,
+    "token_type": "Governance",
+    "ai_category": "PassiveUtility",
     "tags": [
       "defi",
       "yield-aggregator",
@@ -32,6 +38,9 @@
     "name": "Port Finance",
     "archetype": "Class C (Speculative)",
     "insider_score": 45,
+    "rank": 600,
+    "token_type": "Governance",
+    "ai_category": "PassiveUtility",
     "tags": [
       "defi",
       "lending",
@@ -46,6 +55,9 @@
     "name": "Larix",
     "archetype": "Class C (Speculative)",
     "insider_score": 50,
+    "rank": 550,
+    "token_type": "ProtocolUtility",
+    "ai_category": "PassiveUtility",
     "tags": [
       "defi",
       "lending",
@@ -60,6 +72,9 @@
     "name": "Synthetify",
     "archetype": "Class E (Experimental)",
     "insider_score": 45,
+    "rank": 700,
+    "token_type": "ProtocolUtility",
+    "ai_category": "PassiveUtility",
     "tags": [
       "defi",
       "synthetic",
@@ -74,6 +89,9 @@
     "name": "Cropper",
     "archetype": "Class C (Speculative)",
     "insider_score": 30,
+    "rank": 600,
+    "token_type": "ProtocolUtility",
+    "ai_category": "PassiveUtility",
     "tags": [
       "defi",
       "yield-farming",
@@ -88,6 +106,9 @@
     "name": "Aldrin",
     "archetype": "Class B (Systemic)",
     "insider_score": 50,
+    "rank": 500,
+    "token_type": "ProtocolUtility",
+    "ai_category": "PassiveUtility",
     "tags": [
       "defi",
       "dex",
@@ -102,11 +123,15 @@
     "name": "Media Network",
     "archetype": "Class B (Systemic)",
     "insider_score": 25,
+    "rank": 400,
+    "token_type": "ProtocolUtility",
+    "ai_category": "AIEnabled",
     "tags": [
       "infrastructure",
       "cdn",
       "web3",
-      "decentralized"
+      "decentralized",
+      "depin"
     ],
     "tariff_override": 4,
     "reason": "Decentralized Content Delivery Network (CDN). Provides actual utility and infrastructure services, separating it from pure yield farming plays."

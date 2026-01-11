@@ -6,23 +6,29 @@
 |-------|-------|
 | **Symbol** | `ATLAS` |
 | **Name** | Star Atlas |
+| **Token Type** | Governance Token |
 | **Risk Class** | Class C (Venture Risk) |
 | **Insider Score** | 45/100 |
 | **Tariff Override** | 80% |
-| **Exchange Multiplier** | 1.80x |
+| **Calculated Tariff** | 490% |
+| **Exchange Multiplier** | 5.9x |
 
 ## Risk Analysis
+
+### Token Type
+Governance Token
 
 ### Archetype
 Class C (Venture Risk)
 
-### Insider Control Score
+### Insider Score
 **45/100** - Medium insider control
 
-### Exchange Rate Impact
-**1.80x** (Tariff: 80%)
+### Exchange Rate
+**5.9x** (Tariff: 490%)
 
 ## Tags
+
 - gaming
 - metaverse
 - high-fdv
@@ -31,6 +37,30 @@ Class C (Venture Risk)
 ## Analyst Notes
 
 Infinite inflation utility token. The game is ambitious but the token supply is endless. High dilution risk.
+
+---
+
+## Reasoning Pricer Analysis
+
+### Post-Fiat Collapse Valuation
+
+| Metric | Value |
+|--------|-------|
+| **Token Type** | Governance |
+| **Base Multiplier Range** | 0.2x - 1.5x |
+| **Type Adjustment Factor** | 0.9x |
+| **Risk Class Adjustment** | 0.8x |
+| **Insider Risk Factor** | 0.78x |
+| **AI Timeline Factor** | 1.80x |
+| **AI Category** | Passive Utility |
+| **Current AI Phase** | Creative Renaissance |
+| **Real Valuation Multiplier** | 0.2x |
+| **Uncertainty Range** | 0.1x - 0.3x |
+| **Current vs Real Price** | $1.00 → $0.20 |
+| **Trading Signal** | SELL |
+
+### Analysis
+[AI Timeline: Creative Renaissance] Asset classified as Passive Utility (Standard utility tokens with limited AI integration potential. Moderate performance through AI timeline.). AI Timeline Factor: 1.80x (AI acceleration boosts this asset significantly). Governance Token: speculative value based on protocol governance (zombie DAOs have treasury value) (base range: 0.2x - 1.5x). Class C (Venture Risk) receives 0.8x risk class reduction - higher uncertainty. Insider control (45/100) reduces multiplier by 0.78x due to centralization risks. Rank #200 imposes 0.2x penalty (illiquid, capital flight crushes value). Final real valuation multiplier: 0.2x. Token trading at $1.00 today would be worth $0.19 post-fiat collapse (loss of purchasing power). AI acceleration provides strong tailwinds. Trading signal (SELL): Overvalued or high risk post-collapse. Reduce exposure.
 
 ---
 
