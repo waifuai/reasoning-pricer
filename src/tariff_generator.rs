@@ -142,20 +142,54 @@ pub fn load_tokens(data_dir: &str) -> Vec<Token> {
     tokens
 }
 
-/// Converts PascalCase token type to space-separated display name
+/// Converts PascalCase token type to space-separated display name with emojis
 fn format_token_type(token_type: &str) -> String {
     match token_type {
-        "HardMoney" => "Hard Money".to_string(),
-        "WrappedBridge" => "Wrapped Bridge".to_string(),
-        "CommodityBacked" => "Commodity Backed".to_string(),
-        "RealYield" => "Real Yield".to_string(),
-        "StableYield" => "Stable Yield".to_string(),
-        "FiatPegged" => "Fiat Pegged".to_string(),
-        "LiquidStaking" => "Liquid Staking".to_string(),
-        "ProtocolUtility" => "Protocol Utility".to_string(),
-        "AINative" => "AI Native".to_string(),
-        "AIEnabled" => "AI Enabled".to_string(),
-        _ => token_type.to_string(),
+        "HardMoney" => "🪙 Hard Money".to_string(),
+        "WrappedBridge" => "🌉 Wrapped Bridge".to_string(),
+        "CommodityBacked" => "🧈 Commodity Backed".to_string(),
+        "RealYield" => "💸 Real Yield".to_string(),
+        "StableYield" => "🛡️ Stable Yield".to_string(),
+        "FiatPegged" => "💵 Fiat Pegged".to_string(),
+        "LiquidStaking" => "💧 Liquid Staking".to_string(),
+        "ProtocolUtility" => "⚙️ Protocol Utility".to_string(),
+        "Governance" => "🗳️ Governance".to_string(),
+        "Meme" => "🤣 Meme".to_string(),
+        "AINative" => "🤖 AI Native".to_string(),
+        "AIEnabled" => "🧠 AI Enabled".to_string(),
+        _ => format!("🔸 {}", token_type),
+    }
+}
+
+fn format_risk_class(risk_class: &str) -> String {
+    let emoji = match risk_class {
+        rc if rc.contains("Class A") => "🛡️",
+        rc if rc.contains("Class B") => "🏦",
+        rc if rc.contains("Class C") => "🚀",
+        rc if rc.contains("Class D") => "🤣",
+        rc if rc.contains("Class E") => "🧪",
+        _ => "🔸",
+    };
+    format!("{} {}", emoji, risk_class)
+}
+
+fn format_ai_category(category: &str) -> String {
+    let emoji = match category {
+        "Static" => "🗿",
+        "Passive Utility" => "🔋",
+        "AI-Enabled" => "🧠",
+        "AI-Native" => "🤖",
+        "AI-Evolving" => "🧬",
+        _ => "🔸",
+    };
+    format!("{} {}", emoji, category)
+}
+
+fn format_trend(multiplier: f64) -> &'static str {
+    if multiplier >= 1.0 {
+        "📈"
+    } else {
+        "📉"
     }
 }
 
@@ -453,9 +487,9 @@ pub fn generate_tariffs_report(analyses: &[TokenAnalysisResult]) -> String {
 ");
     for a in &premium {
         let tariff = calculate_tariff(a.real_valuation_multiplier);
-        report.push_str(&format!("| {} | {} | {} | {:.2}x | {:.0}% | $1.00 → ${:.2} | {} | {} |\n",
-            a.symbol, a.name, a.risk_class, a.real_valuation_multiplier, tariff,
-            a.projected_price, format_token_type(&a.token_type), a.ai_category));
+        report.push_str(&format!("| {} | {} | {} | {:.2}x | {:.0}% | {} $1.00 → ${:.2} | {} | {} |\n",
+            a.symbol, a.name, format_risk_class(&a.risk_class), a.real_valuation_multiplier, tariff,
+            format_trend(a.real_valuation_multiplier), a.projected_price, format_token_type(&a.token_type), format_ai_category(&a.ai_category)));
     }
     
     // Tier 2: Good
@@ -465,9 +499,9 @@ pub fn generate_tariffs_report(analyses: &[TokenAnalysisResult]) -> String {
     report.push_str("|--------|------|------------|------------|------------------|---------------|------------|-------------|\n");
     for a in &good {
         let tariff = calculate_tariff(a.real_valuation_multiplier);
-        report.push_str(&format!("| {} | {} | {} | {:.2}x | {:.0}% | $1.00 → ${:.2} | {} | {} |\n",
-            a.symbol, a.name, a.risk_class, a.real_valuation_multiplier, tariff,
-            a.projected_price, format_token_type(&a.token_type), a.ai_category));
+        report.push_str(&format!("| {} | {} | {} | {:.2}x | {:.0}% | {} $1.00 → ${:.2} | {} | {} |\n",
+            a.symbol, a.name, format_risk_class(&a.risk_class), a.real_valuation_multiplier, tariff,
+            format_trend(a.real_valuation_multiplier), a.projected_price, format_token_type(&a.token_type), format_ai_category(&a.ai_category)));
     }
     
     // Tier 3: Neutral
@@ -477,9 +511,9 @@ pub fn generate_tariffs_report(analyses: &[TokenAnalysisResult]) -> String {
     report.push_str("|--------|------|------------|------------|------------------|---------------|------------|-------------|\n");
     for a in &neutral {
         let tariff = calculate_tariff(a.real_valuation_multiplier);
-        report.push_str(&format!("| {} | {} | {} | {:.2}x | {:.0}% | $1.00 → ${:.2} | {} | {} |\n",
-            a.symbol, a.name, a.risk_class, a.real_valuation_multiplier, tariff,
-            a.projected_price, format_token_type(&a.token_type), a.ai_category));
+        report.push_str(&format!("| {} | {} | {} | {:.2}x | {:.0}% | {} $1.00 → ${:.2} | {} | {} |\n",
+            a.symbol, a.name, format_risk_class(&a.risk_class), a.real_valuation_multiplier, tariff,
+            format_trend(a.real_valuation_multiplier), a.projected_price, format_token_type(&a.token_type), format_ai_category(&a.ai_category)));
     }
     
     // Tier 4: Discounted
@@ -489,9 +523,9 @@ pub fn generate_tariffs_report(analyses: &[TokenAnalysisResult]) -> String {
     report.push_str("|--------|------|------------|------------|------------------|---------------|------------|-------------|\n");
     for a in &discounted {
         let tariff = calculate_tariff(a.real_valuation_multiplier);
-        report.push_str(&format!("| {} | {} | {} | {:.2}x | {:.0}% | $1.00 → ${:.2} | {} | {} |\n",
-            a.symbol, a.name, a.risk_class, a.real_valuation_multiplier, tariff,
-            a.projected_price, format_token_type(&a.token_type), a.ai_category));
+        report.push_str(&format!("| {} | {} | {} | {:.2}x | {:.0}% | {} $1.00 → ${:.2} | {} | {} |\n",
+            a.symbol, a.name, format_risk_class(&a.risk_class), a.real_valuation_multiplier, tariff,
+            format_trend(a.real_valuation_multiplier), a.projected_price, format_token_type(&a.token_type), format_ai_category(&a.ai_category)));
     }
     
     // Tier 5: Poor
@@ -501,9 +535,9 @@ pub fn generate_tariffs_report(analyses: &[TokenAnalysisResult]) -> String {
     report.push_str("|--------|------|------------|------------|------------------|---------------|------------|-------------|\n");
     for a in &poor {
         let tariff = calculate_tariff(a.real_valuation_multiplier);
-        report.push_str(&format!("| {} | {} | {} | {:.2}x | {:.0}% | $1.00 → ${:.2} | {} | {} |\n",
-            a.symbol, a.name, a.risk_class, a.real_valuation_multiplier, tariff,
-            a.projected_price, a.token_type, a.ai_category));
+        report.push_str(&format!("| {} | {} | {} | {:.2}x | {:.0}% | {} $1.00 → ${:.2} | {} | {} |\n",
+            a.symbol, a.name, format_risk_class(&a.risk_class), a.real_valuation_multiplier, tariff,
+            format_trend(a.real_valuation_multiplier), a.projected_price, format_token_type(&a.token_type), format_ai_category(&a.ai_category)));
     }
     
     // Tier 6: Catastrophic
@@ -513,9 +547,9 @@ pub fn generate_tariffs_report(analyses: &[TokenAnalysisResult]) -> String {
     report.push_str("|--------|------|------------|------------|------------------|---------------|------------|-------------|\n");
     for a in &catastrophic {
         let tariff = calculate_tariff(a.real_valuation_multiplier);
-        report.push_str(&format!("| {} | {} | {} | {:.2}x | {:.0}% | $1.00 → ${:.2} | {} | {} |\n",
-            a.symbol, a.name, a.risk_class, a.real_valuation_multiplier, tariff,
-            a.projected_price, a.token_type, a.ai_category));
+        report.push_str(&format!("| {} | {} | {} | {:.2}x | {:.0}% | {} $1.00 → ${:.2} | {} | {} |\n",
+            a.symbol, a.name, format_risk_class(&a.risk_class), a.real_valuation_multiplier, tariff,
+            format_trend(a.real_valuation_multiplier), a.projected_price, format_token_type(&a.token_type), format_ai_category(&a.ai_category)));
     }
     
     // Summary Statistics
