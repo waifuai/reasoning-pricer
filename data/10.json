@@ -14,7 +14,9 @@
       "high-fdv"
     ],
     "tariff_override": 50,
-    "reason": "The King of Aggregators. Incredible product, but the token is 50% team/reserve controlled. High central planning risk."
+    "reason": "The King of Aggregators. Incredible product, but the token is 50% team/reserve controlled. High central planning risk.",
+    "market_cap": 685133075,
+    "fdv": 1474020089
   },
   {
     "symbol": "CLOUD",
@@ -80,7 +82,9 @@
       "infrastructure"
     ],
     "tariff_override": 15,
-    "reason": "Solana Name Service (.sol). Pure utility protocol for identity. Moderate tariff due to old-school heavy vesting."
+    "reason": "Solana Name Service (.sol). Pure utility protocol for identity. Moderate tariff due to old-school heavy vesting.",
+    "market_cap": 35302830,
+    "fdv": 35626641
   },
   {
     "symbol": "SLIM",
@@ -96,7 +100,9 @@
       "rent-seeker"
     ],
     "tariff_override": 100,
-    "reason": "Legacy launchpad. Charges rent to launch other tokens. Minimal technical innovation in recent years."
+    "reason": "Legacy launchpad. Charges rent to launch other tokens. Minimal technical innovation in recent years.",
+    "market_cap": 2461030,
+    "fdv": 2461030
   },
   {
     "symbol": "1INCH",
@@ -112,7 +118,9 @@
       "multi-chain"
     ],
     "tariff_override": 40,
-    "reason": "Competitor aggregator. Good utility, but token is pure governance/rent-seeking."
+    "reason": "Competitor aggregator. Good utility, but token is pure governance/rent-seeking.",
+    "market_cap": 213956002,
+    "fdv": 229308603
   },
   {
     "symbol": "LFG",

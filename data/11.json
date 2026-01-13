@@ -14,7 +14,9 @@
       "dog-coin"
     ],
     "tariff_override": 4,
-    "reason": "The flagship cultural token of Solana that catalyzed the 2023 revival. Highly decentralized distribution via massive airdrops to developers and NFT holders. Low insider concentration."
+    "reason": "The flagship cultural token of Solana that catalyzed the 2023 revival. Highly decentralized distribution via massive airdrops to developers and NFT holders. Low insider concentration.",
+    "market_cap": 941335998,
+    "fdv": 941335998
   },
   {
     "symbol": "WIF",
@@ -31,7 +33,9 @@
       "speculative"
     ],
     "tariff_override": 5,
-    "reason": "A leading viral meme asset with significant market capitalization. While distribution is broader now, early supply concentration in sniper wallets suggests moderate insider influence."
+    "reason": "A leading viral meme asset with significant market capitalization. While distribution is broader now, early supply concentration in sniper wallets suggests moderate insider influence.",
+    "market_cap": 386921019,
+    "fdv": 386921019
   },
   {
     "symbol": "POPCAT",
@@ -48,7 +52,9 @@
       "volatile"
     ],
     "tariff_override": 6,
-    "reason": "Top-tier cat-themed meme coin. Community takeover narrative reduces insider scoring, but volatility remains high requiring elevated tariff friction."
+    "reason": "Top-tier cat-themed meme coin. Community takeover narrative reduces insider scoring, but volatility remains high requiring elevated tariff friction.",
+    "market_cap": 97060573,
+    "fdv": 97060573
   },
   {
     "symbol": "BOME",
@@ -65,7 +71,9 @@
       "presale"
     ],
     "tariff_override": 8,
-    "reason": "Launched via a controversial presale model where a single entity handled initial liquidity. High insider score due to the mechanics of the launch and supply concentration."
+    "reason": "Launched via a controversial presale model where a single entity handled initial liquidity. High insider score due to the mechanics of the launch and supply concentration.",
+    "market_cap": 48422178,
+    "fdv": 48422178
   },
   {
     "symbol": "SLERF",
@@ -99,7 +107,9 @@
       "community"
     ],
     "tariff_override": 6,
-    "reason": "Tribute token named after the Solana co-founder's dog. Moderate insider control observed in top holder clusters. Standard meme coin volatility profile."
+    "reason": "Tribute token named after the Solana co-founder's dog. Moderate insider control observed in top holder clusters. Standard meme coin volatility profile.",
+    "market_cap": 6029025,
+    "fdv": 6029025
   },
   {
     "symbol": "WEN",
@@ -133,7 +143,9 @@
       "community"
     ],
     "tariff_override": 7,
-    "reason": "High-velocity meme coin with aggressive marketing. On-chain analysis suggests coordinated market making and significant wallet clustering."
+    "reason": "High-velocity meme coin with aggressive marketing. On-chain analysis suggests coordinated market making and significant wallet clustering.",
+    "market_cap": 31388451,
+    "fdv": 31391945
   },
   {
     "symbol": "MEW",
@@ -150,7 +162,9 @@
       "speculative"
     ],
     "tariff_override": 6,
-    "reason": "Large cap cat coin distributed partly via airdrop to phone holders, but retaining significant supply for market makers and team, indicating higher insider control."
+    "reason": "Large cap cat coin distributed partly via airdrop to phone holders, but retaining significant supply for market makers and team, indicating higher insider control.",
+    "market_cap": 90705642,
+    "fdv": 90705642
   },
   {
     "symbol": "SILLY",

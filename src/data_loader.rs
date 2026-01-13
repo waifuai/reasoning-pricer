@@ -25,6 +25,12 @@ struct TokenJson {
     rank: Option<i32>,
     #[serde(default)]
     ai_category: Option<String>,
+    #[serde(default)]
+    market_cap: Option<f64>,
+    #[serde(default)]
+    fdv: Option<f64>,
+    #[serde(default)]
+    launch_date: Option<String>,
 }
 
 /// Convert JSON token to domain model.
@@ -85,6 +91,9 @@ impl From<TokenJson> for Token {
             commodity_type: json.commodity_type,
             rank: json.rank.unwrap_or(9999), // Default to 9999 for unknown rank
             ai_category,
+            market_cap: json.market_cap,
+            fdv: json.fdv,
+            launch_date: json.launch_date,
         }
     }
 }

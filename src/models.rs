@@ -349,6 +349,14 @@ pub struct Token {
     // AI evolution category for AI-acceleration valuation
     #[serde(default = "AIEvolutionCategory::default")]
     pub ai_category: AIEvolutionCategory,
+
+    // Fundamental Data
+    #[serde(default)]
+    pub market_cap: Option<f64>,
+    #[serde(default)]
+    pub fdv: Option<f64>,
+    #[serde(default)]
+    pub launch_date: Option<String>,
 }
 
 fn default_rank() -> i32 { 9999 }

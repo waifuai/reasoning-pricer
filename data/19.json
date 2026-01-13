@@ -14,7 +14,9 @@
       "web3"
     ],
     "tariff_override": 4,
-    "reason": "A decentralized communication protocol allowing wallet-to-wallet text, voice, and video calls. Strong utility narrative with moderate insider holdings for development."
+    "reason": "A decentralized communication protocol allowing wallet-to-wallet text, voice, and video calls. Strong utility narrative with moderate insider holdings for development.",
+    "market_cap": 773474,
+    "fdv": 774165
   },
   {
     "symbol": "SNS",
@@ -67,7 +69,9 @@
       "agent"
     ],
     "tariff_override": 6,
-    "reason": "The first major token endorsed and promoted by an autonomous AI agent (Terminal of Truths). Represents a novel intersection of Memetics and AI behavior."
+    "reason": "The first major token endorsed and promoted by an autonomous AI agent (Terminal of Truths). Represents a novel intersection of Memetics and AI behavior.",
+    "market_cap": 38527244,
+    "fdv": 38527244
   },
   {
     "symbol": "AI16Z",
@@ -84,7 +88,9 @@
       "agent"
     ],
     "tariff_override": 7,
-    "reason": "An AI-managed venture DAO. Investors trust an AI agent to make trading decisions. High innovation risk and reliance on the model's performance."
+    "reason": "An AI-managed venture DAO. Investors trust an AI agent to make trading decisions. High innovation risk and reliance on the model's performance.",
+    "market_cap": 1596282,
+    "fdv": 1596282
   },
   {
     "symbol": "ACT",
@@ -102,7 +108,9 @@
       "agent"
     ],
     "tariff_override": 7,
-    "reason": "A multi-agent AI interaction experiment. Value is derived from the emerging narrative of the AI swarm. Highly speculative and community-driven."
+    "reason": "A multi-agent AI interaction experiment. Value is derived from the emerging narrative of the AI swarm. Highly speculative and community-driven.",
+    "market_cap": 23383739,
+    "fdv": 23383739
   },
   {
     "symbol": "FLUXB",
@@ -119,7 +127,9 @@
       "utility"
     ],
     "tariff_override": 7,
-    "reason": "Telegram trading bot on Solana offering copy trading and sniping. High insider score due to the team's control over the bot infrastructure and fee collection."
+    "reason": "Telegram trading bot on Solana offering copy trading and sniping. High insider score due to the team's control over the bot infrastructure and fee collection.",
+    "market_cap": 1988802,
+    "fdv": 2309078
   },
   {
     "symbol": "ZERO",
@@ -154,7 +164,9 @@
       "gpu-compute"
     ],
     "tariff_override": 5,
-    "reason": "Distributed cloud computing platform rewarding users for running nodes. Bridges to Solana. Moderate centralization in the early stages of network bootstrapping."
+    "reason": "Distributed cloud computing platform rewarding users for running nodes. Bridges to Solana. Moderate centralization in the early stages of network bootstrapping.",
+    "market_cap": 197382,
+    "fdv": 1770880
   },
   {
     "symbol": "ZEREBRO",
@@ -171,6 +183,8 @@
       "meme"
     ],
     "tariff_override": 6,
-    "reason": "An AI agent that generates its own content and memes across social platforms. Represents the 'autonomous influencer' sector of the AI crypto market."
+    "reason": "An AI agent that generates its own content and memes across social platforms. Represents the 'autonomous influencer' sector of the AI crypto market.",
+    "market_cap": 19223896,
+    "fdv": 19223896
   }
 ]

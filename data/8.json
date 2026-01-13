@@ -14,7 +14,9 @@
       "high-fdv"
     ],
     "tariff_override": 300,
-    "reason": "The Oracle Monopoly. Massive locked supply awaiting release. Token is purely a tax on data consumption."
+    "reason": "The Oracle Monopoly. Massive locked supply awaiting release. Token is purely a tax on data consumption.",
+    "market_cap": 391976668,
+    "fdv": 681700609
   },
   {
     "symbol": "W",
@@ -31,7 +33,9 @@
       "high-fdv"
     ],
     "tariff_override": 300,
-    "reason": "The Bridge Troll. 82% of supply locked at launch. Represents the ultimate 'VC Exit Liquidity' vehicle."
+    "reason": "The Bridge Troll. 82% of supply locked at launch. Represents the ultimate 'VC Exit Liquidity' vehicle.",
+    "market_cap": 196901845,
+    "fdv": 375339130
   },
   {
     "symbol": "JTO",
@@ -47,7 +51,9 @@
       "staking-infra"
     ],
     "tariff_override": 200,
-    "reason": "Bureaucratic Governance. The protocol (JitoSOL) is great; the token (JTO) is a useless governance coupon with high inflation."
+    "reason": "Bureaucratic Governance. The protocol (JitoSOL) is great; the token (JTO) is a useless governance coupon with high inflation.",
+    "market_cap": 189361647,
+    "fdv": 446854254
   },
   {
     "symbol": "NEON",
@@ -63,7 +69,9 @@
       "vc-chain"
     ],
     "tariff_override": 150,
-    "reason": "Ethereum emulation on Solana. Heavy VC allocation. Utility is abstract compared to native production."
+    "reason": "Ethereum emulation on Solana. Heavy VC allocation. Utility is abstract compared to native production.",
+    "market_cap": 13997581,
+    "fdv": 58453432
   },
   {
     "symbol": "ZEUS",
@@ -79,7 +87,9 @@
       "infrastructure"
     ],
     "tariff_override": 20,
-    "reason": "Bitcoin-Solana communication layer. Lower VC overhang than Wormhole. Enables hard money inflow."
+    "reason": "Bitcoin-Solana communication layer. Lower VC overhang than Wormhole. Enables hard money inflow.",
+    "market_cap": 16089820,
+    "fdv": 19655185
   },
   {
     "symbol": "DBR",
@@ -95,7 +105,9 @@
       "points-farm"
     ],
     "tariff_override": 100,
-    "reason": "Cross-chain liquidity layer. Another 'Points Program' token launch that favors farmers over builders."
+    "reason": "Cross-chain liquidity layer. Another 'Points Program' token launch that favors farmers over builders.",
+    "market_cap": 78410033,
+    "fdv": 190409983
   },
   {
     "symbol": "PICA",
@@ -128,6 +140,8 @@
       "gpu-compute"
     ],
     "tariff_override": 20,
-    "reason": "Hashrate routing marketplace. Technically DePIN but functions as infrastructure routing."
+    "reason": "Hashrate routing marketplace. Technically DePIN but functions as infrastructure routing.",
+    "market_cap": 561329,
+    "fdv": 887417
   }
 ]

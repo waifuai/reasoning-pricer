@@ -14,7 +14,9 @@
       "app-currency"
     ],
     "tariff_override": 4,
-    "reason": "One of the oldest app-currencies in crypto, migrated to Solana. Widely integrated into various apps and games. High decentralization due to long history and distribution."
+    "reason": "One of the oldest app-currencies in crypto, migrated to Solana. Widely integrated into various apps and games. High decentralization due to long history and distribution.",
+    "market_cap": 2050882,
+    "fdv": 2050882
   },
   {
     "symbol": "DFL",
@@ -31,7 +33,9 @@
       "yield-bearing"
     ],
     "tariff_override": 5,
-    "reason": "Gamifies decentralized finance protocols into a farming simulation. Unique intersection of gaming and DeFi utility, with a moderate insider allocation for development."
+    "reason": "Gamifies decentralized finance protocols into a farming simulation. Unique intersection of gaming and DeFi utility, with a moderate insider allocation for development.",
+    "market_cap": 358972,
+    "fdv": 502951
   },
   {
     "symbol": "WLKN",
@@ -48,7 +52,9 @@
       "incentive-driven"
     ],
     "tariff_override": 7,
-    "reason": "Move-to-earn lifestyle app connecting physical activity with gameplay. High insider score reflects the centralized nature of the app's economy management."
+    "reason": "Move-to-earn lifestyle app connecting physical activity with gameplay. High insider score reflects the centralized nature of the app's economy management.",
+    "market_cap": 301778,
+    "fdv": 392918
   },
   {
     "symbol": "CAVE",
@@ -116,7 +122,9 @@
       "luxury"
     ],
     "tariff_override": 7,
-    "reason": "Metaverse project focused on street culture and luxury. High insider score due to significant backing and concentrated control over the virtual world's development."
+    "reason": "Metaverse project focused on street culture and luxury. High insider score due to significant backing and concentrated control over the virtual world's development.",
+    "market_cap": 3234858,
+    "fdv": 3252356
   },
   {
     "symbol": "FCON",
@@ -150,7 +158,9 @@
       "unreal-engine"
     ],
     "tariff_override": 7,
-    "reason": "Post-apocalyptic survival game. Token serves as the in-game currency. High tariff due to the long development cycle typical of high-fidelity blockchain games."
+    "reason": "Post-apocalyptic survival game. Token serves as the in-game currency. High tariff due to the long development cycle typical of high-fidelity blockchain games.",
+    "market_cap": 463057,
+    "fdv": 852367
   },
   {
     "symbol": "YAKU",
@@ -167,6 +177,8 @@
       "community"
     ],
     "tariff_override": 6,
-    "reason": "Community-driven metaverse hub. Lower insider score compared to larger studios, but carries standard speculative risks associated with metaverse projects."
+    "reason": "Community-driven metaverse hub. Lower insider score compared to larger studios, but carries standard speculative risks associated with metaverse projects.",
+    "market_cap": 560143,
+    "fdv": 565464
   }
 ]

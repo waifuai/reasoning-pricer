@@ -14,7 +14,9 @@
       "inflationary"
     ],
     "tariff_override": 30,
-    "reason": "The Currency of the Realm. Useful for taxes (gas), but represents the central inflation engine."
+    "reason": "The Currency of the Realm. Useful for taxes (gas), but represents the central inflation engine.",
+    "market_cap": 80592564163,
+    "fdv": 88153696747
   },
   {
     "symbol": "JitoSOL",

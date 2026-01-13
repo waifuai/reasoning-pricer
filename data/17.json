@@ -14,7 +14,9 @@
       "legacy"
     ],
     "tariff_override": 12,
-    "reason": "The legacy central limit order book token. Following the FTX collapse, the original program keys were compromised, rendering the governance token highly speculative with maximum insider baggage."
+    "reason": "The legacy central limit order book token. Following the FTX collapse, the original program keys were compromised, rendering the governance token highly speculative with maximum insider baggage.",
+    "market_cap": 4131889,
+    "fdv": 12113005
   },
   {
     "symbol": "MAPS",
@@ -48,7 +50,9 @@
       "legacy"
     ],
     "tariff_override": 10,
-    "reason": "Prime brokerage protocol from the previous cycle. Like Maps and Serum, it suffers from heavy concentration of supply in the hands of defunct entities."
+    "reason": "Prime brokerage protocol from the previous cycle. Like Maps and Serum, it suffers from heavy concentration of supply in the hands of defunct entities.",
+    "market_cap": 1475876,
+    "fdv": 72932668
   },
   {
     "symbol": "OPEN",
@@ -82,7 +86,9 @@
       "cross-chain"
     ],
     "tariff_override": 5,
-    "reason": "Social investment platform allowing copy-trading. Established utility and revenue generation with a moderate distribution of governance power."
+    "reason": "Social investment platform allowing copy-trading. Established utility and revenue generation with a moderate distribution of governance power.",
+    "market_cap": 83167902,
+    "fdv": 115338527
   },
   {
     "symbol": "MEAN",
@@ -116,7 +122,9 @@
       "governance"
     ],
     "tariff_override": 6,
-    "reason": "Spot and derivatives aggregator. While the tech is functional, the token struggles for market share in a crowded aggregator landscape, increasing investment risk."
+    "reason": "Spot and derivatives aggregator. While the tech is functional, the token struggles for market share in a crowded aggregator landscape, increasing investment risk.",
+    "market_cap": 1150763,
+    "fdv": 1199937
   },
   {
     "symbol": "SAROS",
@@ -133,7 +141,9 @@
       "id-solution"
     ],
     "tariff_override": 6,
-    "reason": "A unified DeFi product suite designed for mobile. Higher insider score reflects the strategic backing and centralized development roadmap typical of 'super-app' plays."
+    "reason": "A unified DeFi product suite designed for mobile. Higher insider score reflects the strategic backing and centralized development roadmap typical of 'super-app' plays.",
+    "market_cap": 6545126,
+    "fdv": 24933815
   },
   {
     "symbol": "GOFX",

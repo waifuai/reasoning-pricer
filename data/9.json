@@ -31,7 +31,9 @@
       "p2e"
     ],
     "tariff_override": 25,
-    "reason": "One of the few playable games on Solana. High production value, though tokenomics struggle with emission pressure."
+    "reason": "One of the few playable games on Solana. High production value, though tokenomics struggle with emission pressure.",
+    "market_cap": 5352170,
+    "fdv": 7123947
   },
   {
     "symbol": "ATLAS",
@@ -48,7 +50,9 @@
       "inflationary"
     ],
     "tariff_override": 80,
-    "reason": "Infinite inflation utility token. The game is ambitious but the token supply is endless. High dilution risk."
+    "reason": "Infinite inflation utility token. The game is ambitious but the token supply is endless. High dilution risk.",
+    "market_cap": 6863566,
+    "fdv": 10842755
   },
   {
     "symbol": "POLIS",
@@ -64,7 +68,9 @@
       "vc-chain"
     ],
     "tariff_override": 100,
-    "reason": "Governance token for a game still in alpha. Heavy VC bag-holder presence."
+    "reason": "Governance token for a game still in alpha. Heavy VC bag-holder presence.",
+    "market_cap": 8702125,
+    "fdv": 9720358
   },
   {
     "symbol": "GMT",
@@ -80,7 +86,9 @@
       "inflationary"
     ],
     "tariff_override": 200,
-    "reason": "The poster child for unsustainable 'Earn' mechanics. Paying people to walk is not production; it is subsidies."
+    "reason": "The poster child for unsustainable 'Earn' mechanics. Paying people to walk is not production; it is subsidies.",
+    "market_cap": 59233876,
+    "fdv": 96594393
   },
   {
     "symbol": "SHRAP",
@@ -114,7 +122,9 @@
       "inflationary"
     ],
     "tariff_override": 100,
-    "reason": "Content monetization layer with nearly 100% inflation rates in early years to pay creators. Dilution engine."
+    "reason": "Content monetization layer with nearly 100% inflation rates in early years to pay creators. Dilution engine.",
+    "market_cap": 13788120,
+    "fdv": 27476134
   },
   {
     "symbol": "GENE",
@@ -130,7 +140,9 @@
       "rpg"
     ],
     "tariff_override": 40,
-    "reason": "Gamified fitness. Better economic controls than STEPN, but still relies on emissions to sustain interest."
+    "reason": "Gamified fitness. Better economic controls than STEPN, but still relies on emissions to sustain interest.",
+    "market_cap": 219450,
+    "fdv": 249076
   },
   {
     "symbol": "GUAC",
@@ -146,6 +158,8 @@
       "community"
     ],
     "tariff_override": 25,
-    "reason": "Consumer rewards app. Community-driven distribution. Functions more like loyalty points than a VC dump."
+    "reason": "Consumer rewards app. Community-driven distribution. Functions more like loyalty points than a VC dump.",
+    "market_cap": 1221457,
+    "fdv": 1221457
   }
 ]

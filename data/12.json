@@ -14,7 +14,9 @@
       "aggregator"
     ],
     "tariff_override": 5,
-    "reason": "The dominant professional NFT trading platform on Solana. High utility but significant venture capital backing and insider allocation necessitates a moderate score."
+    "reason": "The dominant professional NFT trading platform on Solana. High utility but significant venture capital backing and insider allocation necessitates a moderate score.",
+    "market_cap": 23662467,
+    "fdv": 70717141
   },
   {
     "symbol": "ME",
@@ -48,7 +50,9 @@
       "governance"
     ],
     "tariff_override": 3,
-    "reason": "The underlying protocol standard for nearly all NFTs on Solana. Crucial ecosystem infrastructure with a DAO structure, though early supply was tightly held."
+    "reason": "The underlying protocol standard for nearly all NFTs on Solana. Crucial ecosystem infrastructure with a DAO structure, though early supply was tightly held.",
+    "market_cap": 28487280,
+    "fdv": 54394791
   },
   {
     "symbol": "HADES",
@@ -117,7 +121,9 @@
       "real-yield"
     ],
     "tariff_override": 5,
-    "reason": "Lending and borrowing protocol using NFTs as collateral. Generates real yield through interest, positioning it as a productive asset within NFT-Fi."
+    "reason": "Lending and borrowing protocol using NFTs as collateral. Generates real yield through interest, positioning it as a productive asset within NFT-Fi.",
+    "market_cap": 4397779,
+    "fdv": 4397779
   },
   {
     "symbol": "GARI",
@@ -134,6 +140,8 @@
       "incentive-driven"
     ],
     "tariff_override": 8,
-    "reason": "Social token for a short-video app. High insider score due to corporate backing and centralized platform control, with complex tokenomics."
+    "reason": "Social token for a short-video app. High insider score due to corporate backing and centralized platform control, with complex tokenomics.",
+    "market_cap": 765999,
+    "fdv": 1156976
   }
 ]

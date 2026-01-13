@@ -14,7 +14,9 @@
       "payments"
     ],
     "tariff_override": 3,
-    "reason": "The dominant Turkish Lira stablecoin on blockchain. Connects DeFi to the Turkish banking system. Moderate centralization due to the issuer's control over reserves."
+    "reason": "The dominant Turkish Lira stablecoin on blockchain. Connects DeFi to the Turkish banking system. Moderate centralization due to the issuer's control over reserves.",
+    "market_cap": 1994244,
+    "fdv": 1994244
   },
   {
     "symbol": "BRZ",
@@ -48,7 +50,9 @@
       "infrastructure"
     ],
     "tariff_override": 4,
-    "reason": "Protocol enabling continuous money streaming and payroll. Recently migrated from ZBC. Strong utility in real-world payments, with moderate insider governance control."
+    "reason": "Protocol enabling continuous money streaming and payroll. Recently migrated from ZBC. Strong utility in real-world payments, with moderate insider governance control.",
+    "market_cap": 279947193,
+    "fdv": 288866393
   },
   {
     "symbol": "SOLC",
@@ -82,7 +86,9 @@
       "payments"
     ],
     "tariff_override": 4,
-    "reason": "Facilitates cross-chain transfers between EVM and non-EVM chains. Critical plumbing for capital efficiency, though bridge smart contract risks apply."
+    "reason": "Facilitates cross-chain transfers between EVM and non-EVM chains. Critical plumbing for capital efficiency, though bridge smart contract risks apply.",
+    "market_cap": 1428099,
+    "fdv": 6762618
   },
   {
     "symbol": "PAR",

@@ -14,7 +14,9 @@
       "derivatives"
     ],
     "tariff_override": 150,
-    "reason": "Top-tier tech, but nearly 50% insider allocation. Token is a VC exit vehicle with high inflation."
+    "reason": "Top-tier tech, but nearly 50% insider allocation. Token is a VC exit vehicle with high inflation.",
+    "market_cap": 89299757,
+    "fdv": 160621817
   },
   {
     "symbol": "ZETA",
@@ -31,7 +33,9 @@
       "derivatives"
     ],
     "tariff_override": 120,
-    "reason": "Options/Perps DEX. High utility but heavy 'Points Farming' distribution model favors insiders."
+    "reason": "Options/Perps DEX. High utility but heavy 'Points Farming' distribution model favors insiders.",
+    "market_cap": 12732619,
+    "fdv": 67809747
   },
   {
     "symbol": "KMNO",
@@ -48,7 +52,9 @@
       "vc-chain"
     ],
     "tariff_override": 100,
-    "reason": "Liquidity automation. Useful product, but the token exists primarily to monetize the VC investment."
+    "reason": "Liquidity automation. Useful product, but the token exists primarily to monetize the VC investment.",
+    "market_cap": 212775621,
+    "fdv": 576026586
   },
   {
     "symbol": "PRCL",
@@ -65,7 +71,9 @@
       "points-farm"
     ],
     "tariff_override": 100,
-    "reason": "Real Estate Perps. Innovative, but the 'Points' airdrop model created a massive mercenary dump pressure."
+    "reason": "Real Estate Perps. Innovative, but the 'Points' airdrop model created a massive mercenary dump pressure.",
+    "market_cap": 12622256,
+    "fdv": 27882531
   },
   {
     "symbol": "PHOENIX",
@@ -98,7 +106,9 @@
       "real-yield"
     ],
     "tariff_override": 10,
-    "reason": "This is NOT a governance token. It is a liquidity index (SOL/BTC/USDC). It represents actual capital, not empty votes."
+    "reason": "This is NOT a governance token. It is a liquidity index (SOL/BTC/USDC). It represents actual capital, not empty votes.",
+    "market_cap": 1596193765,
+    "fdv": 1596065571
   },
   {
     "symbol": "HXRO",
@@ -114,7 +124,9 @@
       "gambling"
     ],
     "tariff_override": 100,
-    "reason": "Backend derivatives infrastructure. Tokenomics have struggled with inflation and unlock pressure."
+    "reason": "Backend derivatives infrastructure. Tokenomics have struggled with inflation and unlock pressure.",
+    "market_cap": 3004108,
+    "fdv": 4842323
   },
   {
     "symbol": "DUAL",

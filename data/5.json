@@ -14,7 +14,9 @@
       "centralized"
     ],
     "tariff_override": 5,
-    "reason": "The standard unit of account. Centralized (Circle) and subject to censorship. 5% risk premium."
+    "reason": "The standard unit of account. Centralized (Circle) and subject to censorship. 5% risk premium.",
+    "market_cap": 74297729011,
+    "fdv": 74311685927
   },
   {
     "symbol": "USDT",
@@ -31,7 +33,9 @@
       "opaque"
     ],
     "tariff_override": 5,
-    "reason": "Offshore banking dollar. Higher opacity risk than USDC, but equal utility. Same tariff class."
+    "reason": "Offshore banking dollar. Higher opacity risk than USDC, but equal utility. Same tariff class.",
+    "market_cap": 186737012579,
+    "fdv": 192198207593
   },
   {
     "symbol": "EURC",
@@ -48,7 +52,9 @@
       "euro"
     ],
     "tariff_override": 5,
-    "reason": "European fiat standard. Same censorship profile as USDC."
+    "reason": "European fiat standard. Same censorship profile as USDC.",
+    "market_cap": 357472674,
+    "fdv": 357472674
   },
   {
     "symbol": "PYUSD",
@@ -65,7 +71,9 @@
       "corporate"
     ],
     "tariff_override": 5,
-    "reason": "Corporate Fintech dollar. Highly regulated, high seizure risk."
+    "reason": "Corporate Fintech dollar. Highly regulated, high seizure risk.",
+    "market_cap": 3623455524,
+    "fdv": 3623455524
   },
   {
     "symbol": "USDH",
@@ -81,7 +89,9 @@
       "crypto-backed"
     ],
     "tariff_override": 8,
-    "reason": "Decentralized stablecoin backed by SOL collateral. Harder to censor than USDC, but peg risk is higher."
+    "reason": "Decentralized stablecoin backed by SOL collateral. Harder to censor than USDC, but peg risk is higher.",
+    "market_cap": 5245015,
+    "fdv": 5245015
   },
   {
     "symbol": "UXD",
@@ -97,7 +107,9 @@
       "failed-peg"
     ],
     "tariff_override": 50,
-    "reason": "Algorithmic stablecoin with troubled history and insurance fund issues. High risk."
+    "reason": "Algorithmic stablecoin with troubled history and insurance fund issues. High risk.",
+    "market_cap": 306526,
+    "fdv": 9169608
   },
   {
     "symbol": "ISC",
@@ -113,7 +125,9 @@
       "commodities"
     ],
     "tariff_override": 5,
-    "reason": "Flatcoin pegged to a basket of commodities/assets, not just USD. Better inflation hedge."
+    "reason": "Flatcoin pegged to a basket of commodities/assets, not just USD. Better inflation hedge.",
+    "market_cap": 2429657,
+    "fdv": 2429657
   },
   {
     "symbol": "USDS",
@@ -129,6 +143,8 @@
       "maker-dao"
     ],
     "tariff_override": 5,
-    "reason": "Rebranded DAI. Decentralized governance but heavy RWA backing means regulatory exposure."
+    "reason": "Rebranded DAI. Decentralized governance but heavy RWA backing means regulatory exposure.",
+    "market_cap": 1135057,
+    "fdv": 1135057
   }
 ]
