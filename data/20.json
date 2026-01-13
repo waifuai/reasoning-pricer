@@ -100,8 +100,9 @@
     ],
     "tariff_override": 5,
     "reason": "An attempt to create an on-chain email standard. Functionality is novel, but the long-term viability of paying for individual messages remains an experimental economic model.",
-    "market_cap": 533013,
-    "fdv": 533013
+    "market_cap": 538946,
+    "fdv": 538946,
+    "price": 0.00053618
   },
   {
     "symbol": "ANALOS",
@@ -137,7 +138,8 @@
     "tariff_override": 6,
     "reason": "A decentralized social platform similar to Patreon. Users buy NFTs to stake on creators. Moderate insider score due to VC backing and platform development centralization.",
     "market_cap": 2214277,
-    "fdv": 2740107
+    "fdv": 2740107,
+    "price": 0.00182674
   },
   {
     "symbol": "SAMO",
@@ -155,8 +157,9 @@
     ],
     "tariff_override": 4,
     "reason": "The original Solana dog coin. Unlike newer memes, its supply is well-distributed over years, resulting in a very low insider score and 'blue-chip' meme status.",
-    "market_cap": 3808164,
-    "fdv": 3808328
+    "market_cap": 3814690,
+    "fdv": 3814854,
+    "price": 0.00080437
   },
   {
     "symbol": "BLOCK",

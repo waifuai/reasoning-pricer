@@ -15,8 +15,9 @@
     ],
     "tariff_override": 5,
     "reason": "The standard unit of account. Centralized (Circle) and subject to censorship. 5% risk premium.",
-    "market_cap": 74297729011,
-    "fdv": 74311685927
+    "market_cap": 74294583019,
+    "fdv": 74296611051,
+    "price": 0.999732
   },
   {
     "symbol": "USDT",
@@ -34,8 +35,9 @@
     ],
     "tariff_override": 5,
     "reason": "Offshore banking dollar. Higher opacity risk than USDC, but equal utility. Same tariff class.",
-    "market_cap": 186737012579,
-    "fdv": 192198207593
+    "market_cap": 186738606231,
+    "fdv": 192199847852,
+    "price": 0.998987
   },
   {
     "symbol": "EURC",
@@ -53,8 +55,9 @@
     ],
     "tariff_override": 5,
     "reason": "European fiat standard. Same censorship profile as USDC.",
-    "market_cap": 357472674,
-    "fdv": 357472674
+    "market_cap": 357281024,
+    "fdv": 357281024,
+    "price": 1.17
   },
   {
     "symbol": "PYUSD",
@@ -72,8 +75,9 @@
     ],
     "tariff_override": 5,
     "reason": "Corporate Fintech dollar. Highly regulated, high seizure risk.",
-    "market_cap": 3623455524,
-    "fdv": 3623455524
+    "market_cap": 3623268106,
+    "fdv": 3623268106,
+    "price": 0.999959
   },
   {
     "symbol": "USDH",
@@ -90,8 +94,9 @@
     ],
     "tariff_override": 8,
     "reason": "Decentralized stablecoin backed by SOL collateral. Harder to censor than USDC, but peg risk is higher.",
-    "market_cap": 5245015,
-    "fdv": 5245015
+    "market_cap": 5245513,
+    "fdv": 5245513,
+    "price": 1.0
   },
   {
     "symbol": "UXD",
@@ -108,8 +113,9 @@
     ],
     "tariff_override": 50,
     "reason": "Algorithmic stablecoin with troubled history and insurance fund issues. High risk.",
-    "market_cap": 306526,
-    "fdv": 9169608
+    "market_cap": 306536,
+    "fdv": 9169908,
+    "price": 1.019
   },
   {
     "symbol": "ISC",
@@ -126,8 +132,9 @@
     ],
     "tariff_override": 5,
     "reason": "Flatcoin pegged to a basket of commodities/assets, not just USD. Better inflation hedge.",
-    "market_cap": 2429657,
-    "fdv": 2429657
+    "market_cap": 2442159,
+    "fdv": 2442159,
+    "price": 2.19
   },
   {
     "symbol": "USDS",
@@ -144,7 +151,8 @@
     ],
     "tariff_override": 5,
     "reason": "Rebranded DAI. Decentralized governance but heavy RWA backing means regulatory exposure.",
-    "market_cap": 1135057,
-    "fdv": 1135057
+    "market_cap": 1134865,
+    "fdv": 1134865,
+    "price": 1.0
   }
 ]

@@ -15,8 +15,9 @@
     ],
     "tariff_override": 50,
     "reason": "The original Toll Booth. High utility, but tokenomics have historically been highly inflationary. Pure rent-seeking.",
-    "market_cap": 317001529,
-    "fdv": 655012316
+    "market_cap": 319371220,
+    "fdv": 659908749,
+    "price": 1.19
   },
   {
     "symbol": "ORCA",
@@ -35,8 +36,9 @@
     ],
     "tariff_override": 30,
     "reason": "Concentrated Liquidity AMM. Better tokenomics than Raydium, but still an intermediary tax on the system.",
-    "market_cap": 71920532,
-    "fdv": 89665297
+    "market_cap": 71996770,
+    "fdv": 89760344,
+    "price": 1.2
   },
   {
     "symbol": "SLND",
@@ -87,8 +89,9 @@
     ],
     "tariff_override": 40,
     "reason": "Governance token for the LST protocol. Purely bureaucratic utility (voting).",
-    "market_cap": 25150095,
-    "fdv": 32149859
+    "market_cap": 25135968,
+    "fdv": 32131799,
+    "price": 0.04619732
   },
   {
     "symbol": "STEP",
@@ -105,8 +108,9 @@
     ],
     "tariff_override": 15,
     "reason": "The 'Bloomberg Terminal' of Solana. Provides data utility. Honest business model.",
-    "market_cap": 7372986,
-    "fdv": 7650258
+    "market_cap": 7414902,
+    "fdv": 7693751,
+    "price": 0.0233146
   },
   {
     "symbol": "MNGO",
@@ -124,8 +128,9 @@
     ],
     "tariff_override": 100,
     "reason": "Governance token with heavy regulatory baggage (SEC) and exploit history. High risk.",
-    "market_cap": 23074806,
-    "fdv": 103246032
+    "market_cap": 23077105,
+    "fdv": 103256315,
+    "price": 0.02064816
   },
   {
     "symbol": "TULIP",

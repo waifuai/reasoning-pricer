@@ -356,7 +356,7 @@ pub struct Token {
     #[serde(default)]
     pub fdv: Option<f64>,
     #[serde(default)]
-    pub launch_date: Option<String>,
+    pub price: Option<f64>,
 }
 
 fn default_rank() -> i32 { 9999 }

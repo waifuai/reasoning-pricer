@@ -15,8 +15,9 @@
     ],
     "tariff_override": 25,
     "reason": "The 'Flagship' of Physical DePIN. Manages the network state. Higher insider score due to original a16z backing.",
-    "market_cap": 257552555,
-    "fdv": 308253416
+    "market_cap": 258296265,
+    "fdv": 309143530,
+    "price": 1.39
   },
   {
     "symbol": "MOBILE",
@@ -34,8 +35,9 @@
     ],
     "tariff_override": 20,
     "reason": "Sub-DAO token for 5G coverage. Directly tied to subscriber revenue and hardware deployment. Productive.",
-    "market_cap": 11525850,
-    "fdv": 42385271
+    "market_cap": 11572003,
+    "fdv": 42554996,
+    "price": 0.00018506
   },
   {
     "symbol": "IOT",
@@ -52,8 +54,9 @@
     ],
     "tariff_override": 20,
     "reason": "Sub-DAO token for LoRaWAN. Used for sensor data transfer. High utility, moderate inflation.",
-    "market_cap": 4799832,
-    "fdv": 41739546
+    "market_cap": 4830312,
+    "fdv": 42004602,
+    "price": 0.00021002
   },
   {
     "symbol": "HONEY",
@@ -72,8 +75,9 @@
     ],
     "tariff_override": 15,
     "reason": "Decentralized Google Maps. Hardware requirement (Dashcam) acts as 'Proof of Work'. High merit.",
-    "market_cap": 43437951,
-    "fdv": 50990672
+    "market_cap": 43453191,
+    "fdv": 51008561,
+    "price": 0.00782326
   },
   {
     "symbol": "NATIX",
@@ -91,8 +95,9 @@
     ],
     "tariff_override": 25,
     "reason": "Smartphone-based mapping. Lower barrier to entry than Hivemapper (softer Proof of Work), higher tariff.",
-    "market_cap": 11693885,
-    "fdv": 28656329
+    "market_cap": 11691100,
+    "fdv": 28649503,
+    "price": 0.00028834
   },
   {
     "symbol": "WIFI",

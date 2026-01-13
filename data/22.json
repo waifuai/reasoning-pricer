@@ -16,8 +16,9 @@
     ],
     "tariff_override": 4,
     "reason": "A borrowing protocol enabling the minting of USDH against collateral. Generates protocol revenue through minting and redemption fees. Moderate governance concentration.",
-    "market_cap": 325503,
-    "fdv": 476407
+    "market_cap": 326471,
+    "fdv": 477823,
+    "price": 0.00477823
   },
   {
     "symbol": "SONAR",
@@ -104,8 +105,9 @@
     ],
     "tariff_override": 4,
     "reason": "Infrastructure focusing on NFT licensing and rights management standards (VRDA). Builds critical intellectual property rails for the ecosystem.",
-    "market_cap": 208669,
-    "fdv": 253266
+    "market_cap": 209367,
+    "fdv": 254113,
+    "price": 5.073e-05
   },
   {
     "symbol": "CRWNY",
@@ -123,8 +125,9 @@
     ],
     "tariff_override": 5,
     "reason": "Advertising platform connecting brands with users via a loyalty app. Token value is tied to brand adoption and ad-spend within the closed ecosystem.",
-    "market_cap": 1012116,
-    "fdv": 1174639
+    "market_cap": 1016958,
+    "fdv": 1180258,
+    "price": 0.00145156
   },
   {
     "symbol": "LIQ",
@@ -143,7 +146,8 @@
     "tariff_override": 6,
     "reason": "A decentralized liquidation engine powering other lending protocols. Critical backend infrastructure, but high insider score due to the technical niche and team control.",
     "market_cap": 941425,
-    "fdv": 2132990
+    "fdv": 2132990,
+    "price": 0.064872
   },
   {
     "symbol": "SOLR",
@@ -178,7 +182,8 @@
     ],
     "tariff_override": 6,
     "reason": "Concentrated liquidity market maker. While technologically sound, it struggles for market share against dominant aggregators, increasing the speculative risk for holders.",
-    "market_cap": 75659067,
-    "fdv": 470516585
+    "market_cap": 74713017,
+    "fdv": 464633192,
+    "price": 0.467957
   }
 ]

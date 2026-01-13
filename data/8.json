@@ -15,8 +15,9 @@
     ],
     "tariff_override": 300,
     "reason": "The Oracle Monopoly. Massive locked supply awaiting release. Token is purely a tax on data consumption.",
-    "market_cap": 391976668,
-    "fdv": 681700609
+    "market_cap": 395106688,
+    "fdv": 687144138,
+    "price": 0.068713
   },
   {
     "symbol": "W",
@@ -34,8 +35,9 @@
     ],
     "tariff_override": 300,
     "reason": "The Bridge Troll. 82% of supply locked at launch. Represents the ultimate 'VC Exit Liquidity' vehicle.",
-    "market_cap": 196901845,
-    "fdv": 375339130
+    "market_cap": 197532601,
+    "fdv": 376541493,
+    "price": 0.03765415
   },
   {
     "symbol": "JTO",
@@ -52,8 +54,9 @@
     ],
     "tariff_override": 200,
     "reason": "Bureaucratic Governance. The protocol (JitoSOL) is great; the token (JTO) is a useless governance coupon with high inflation.",
-    "market_cap": 189361647,
-    "fdv": 446854254
+    "market_cap": 190590051,
+    "fdv": 449753034,
+    "price": 0.449816
   },
   {
     "symbol": "NEON",
@@ -70,8 +73,9 @@
     ],
     "tariff_override": 150,
     "reason": "Ethereum emulation on Solana. Heavy VC allocation. Utility is abstract compared to native production.",
-    "market_cap": 13997581,
-    "fdv": 58453432
+    "market_cap": 13985245,
+    "fdv": 58401916,
+    "price": 0.058337
   },
   {
     "symbol": "ZEUS",
@@ -88,8 +92,9 @@
     ],
     "tariff_override": 20,
     "reason": "Bitcoin-Solana communication layer. Lower VC overhang than Wormhole. Enables hard money inflow.",
-    "market_cap": 16089820,
-    "fdv": 19655185
+    "market_cap": 16136399,
+    "fdv": 19712086,
+    "price": 0.01978962
   },
   {
     "symbol": "DBR",
@@ -106,8 +111,9 @@
     ],
     "tariff_override": 100,
     "reason": "Cross-chain liquidity layer. Another 'Points Program' token launch that favors farmers over builders.",
-    "market_cap": 78410033,
-    "fdv": 190409983
+    "market_cap": 78389202,
+    "fdv": 190359399,
+    "price": 0.01904009
   },
   {
     "symbol": "PICA",
@@ -142,6 +148,7 @@
     "tariff_override": 20,
     "reason": "Hashrate routing marketplace. Technically DePIN but functions as infrastructure routing.",
     "market_cap": 561329,
-    "fdv": 887417
+    "fdv": 887417,
+    "price": 0.00088742
   }
 ]

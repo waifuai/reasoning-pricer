@@ -15,8 +15,9 @@
     ],
     "tariff_override": 150,
     "reason": "Top-tier tech, but nearly 50% insider allocation. Token is a VC exit vehicle with high inflation.",
-    "market_cap": 89299757,
-    "fdv": 160621817
+    "market_cap": 89494213,
+    "fdv": 160971580,
+    "price": 0.16137
   },
   {
     "symbol": "ZETA",
@@ -34,8 +35,9 @@
     ],
     "tariff_override": 120,
     "reason": "Options/Perps DEX. High utility but heavy 'Points Farming' distribution model favors insiders.",
-    "market_cap": 12732619,
-    "fdv": 67809747
+    "market_cap": 12741507,
+    "fdv": 67857084,
+    "price": 0.06776
   },
   {
     "symbol": "KMNO",
@@ -53,8 +55,9 @@
     ],
     "tariff_override": 100,
     "reason": "Liquidity automation. Useful product, but the token exists primarily to monetize the VC investment.",
-    "market_cap": 212775621,
-    "fdv": 576026586
+    "market_cap": 213544567,
+    "fdv": 578108279,
+    "price": 0.057811
   },
   {
     "symbol": "PRCL",
@@ -72,8 +75,9 @@
     ],
     "tariff_override": 100,
     "reason": "Real Estate Perps. Innovative, but the 'Points' airdrop model created a massive mercenary dump pressure.",
-    "market_cap": 12622256,
-    "fdv": 27882531
+    "market_cap": 13085189,
+    "fdv": 28905149,
+    "price": 0.02889687
   },
   {
     "symbol": "PHOENIX",
@@ -107,8 +111,9 @@
     ],
     "tariff_override": 10,
     "reason": "This is NOT a governance token. It is a liquidity index (SOL/BTC/USDC). It represents actual capital, not empty votes.",
-    "market_cap": 1596193765,
-    "fdv": 1596065571
+    "market_cap": 1602032042,
+    "fdv": 1602032042,
+    "price": 4.85
   },
   {
     "symbol": "HXRO",
@@ -125,8 +130,9 @@
     ],
     "tariff_override": 100,
     "reason": "Backend derivatives infrastructure. Tokenomics have struggled with inflation and unlock pressure.",
-    "market_cap": 3004108,
-    "fdv": 4842323
+    "market_cap": 3021737,
+    "fdv": 4870738,
+    "price": 0.00487074
   },
   {
     "symbol": "DUAL",

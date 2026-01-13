@@ -32,8 +32,9 @@
     ],
     "tariff_override": 5,
     "reason": "Based on the Japanese beckoning cat. Gained traction through airdrops to Solana mobile users. Moderate insider score due to team marketing wallet allocation.",
-    "market_cap": 4828962,
-    "fdv": 4845465
+    "market_cap": 4834570,
+    "fdv": 4851093,
+    "price": 0.00054574
   },
   {
     "symbol": "BILLY",
@@ -51,7 +52,8 @@
     ],
     "tariff_override": 6,
     "reason": "A cute-meta dog coin that gained rapid traction. The original developer sold early, leading to a community takeover (CTO) which reduced the insider risk profile.",
-    "market_cap": 1052978,
-    "fdv": 1052978
+    "market_cap": 1060261,
+    "fdv": 1060261,
+    "price": 0.00107196
   }
 ]

@@ -47,8 +47,9 @@
     ],
     "tariff_override": 5,
     "reason": "Standard Corporate Bitcoin. Custodial risk (BitGo) requires a small friction tariff compared to tBTC.",
-    "market_cap": 11470578033,
-    "fdv": 11470578033
+    "market_cap": 11517973098,
+    "fdv": 11517973098,
+    "price": 92341
   },
   {
     "symbol": "cbBTC",
@@ -82,8 +83,9 @@
     ],
     "tariff_override": 2,
     "reason": "Tokenized Short-Term US Treasuries. Represents productive capital (Yield) vs idle cash.",
-    "market_cap": 684931182,
-    "fdv": 694804481
+    "market_cap": 689532322,
+    "fdv": 699471947,
+    "price": 1.11
   },
   {
     "symbol": "OUSG",
@@ -117,8 +119,9 @@
     ],
     "tariff_override": 5,
     "reason": "Tokenized Physical Gold. A classic store of value, though custodial.",
-    "market_cap": 1768808704,
-    "fdv": 1768808704
+    "market_cap": 1768117413,
+    "fdv": 1768117413,
+    "price": 4621.66
   },
   {
     "symbol": "XAUT",
@@ -135,7 +138,8 @@
     ],
     "tariff_override": 8,
     "reason": "Tether-backed Gold. Higher trust assumption than Paxos, warranting a slightly higher tariff.",
-    "market_cap": 2397157060,
-    "fdv": 2397157060
+    "market_cap": 2396777723,
+    "fdv": 2396777723,
+    "price": 4608.07
   }
 ]

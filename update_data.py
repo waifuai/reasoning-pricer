@@ -188,7 +188,7 @@ for i in range(0, len(ids_to_fetch), chunk_size):
                 market_data[cid] = {
                     "market_cap": item.get('market_cap'),
                     "fdv": item.get('fully_diluted_valuation'),
-                    "launch_date": item.get('atl_date') # Rough proxy if needed, but keeping logic
+                    "price": item.get('current_price')
                 }
         time.sleep(1.5)
     except Exception as e:
@@ -214,7 +214,9 @@ for fpath in files:
             if data['fdv'] is not None:
                 token['fdv'] = data['fdv']
                 file_updated = True
-            # Skipping launch_date for now as it's not reliable from markets endpoint
+            if data['price'] is not None:
+                token['price'] = data['price']
+                file_updated = True
             
     if file_updated:
         with open(fpath, 'w', encoding='utf-8') as f:

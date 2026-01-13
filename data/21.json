@@ -100,8 +100,9 @@
     ],
     "tariff_override": 7,
     "reason": "DeFi protocol attempting to merge privacy with regulatory compliance. The dual mandate creates technical and adoption hurdles, increasing the risk profile.",
-    "market_cap": 1968143,
-    "fdv": 2897202
+    "market_cap": 1980427,
+    "fdv": 2915283,
+    "price": 3.649e-05
   },
   {
     "symbol": "MUMU",
@@ -119,8 +120,9 @@
     ],
     "tariff_override": 5,
     "reason": "Represents the 'Bull Market' avatar. Established community with organic growth, serving as a counter-narrative to bear market memes.",
-    "market_cap": 301778,
-    "fdv": 301778
+    "market_cap": 299178,
+    "fdv": 299178,
+    "price": 4.34826e-10
   },
   {
     "symbol": "MICHI",
@@ -155,8 +157,9 @@
     ],
     "tariff_override": 7,
     "reason": "A cult-like meme based on the 'Lock In' phrase. Value is driven by high-conviction holders and social reinforcement, creating a rigid but volatile price floor.",
-    "market_cap": 2625380,
-    "fdv": 2625380
+    "market_cap": 2630361,
+    "fdv": 2630361,
+    "price": 0.00264449
   },
   {
     "symbol": "LOAF",

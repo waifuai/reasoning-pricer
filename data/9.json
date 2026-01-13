@@ -32,8 +32,9 @@
     ],
     "tariff_override": 25,
     "reason": "One of the few playable games on Solana. High production value, though tokenomics struggle with emission pressure.",
-    "market_cap": 5352170,
-    "fdv": 7123947
+    "market_cap": 5352290,
+    "fdv": 7124106,
+    "price": 0.071241
   },
   {
     "symbol": "ATLAS",
@@ -51,8 +52,9 @@
     ],
     "tariff_override": 80,
     "reason": "Infinite inflation utility token. The game is ambitious but the token supply is endless. High dilution risk.",
-    "market_cap": 6863566,
-    "fdv": 10842755
+    "market_cap": 6891006,
+    "fdv": 10886103,
+    "price": 0.00030261
   },
   {
     "symbol": "POLIS",
@@ -69,8 +71,9 @@
     ],
     "tariff_override": 100,
     "reason": "Governance token for a game still in alpha. Heavy VC bag-holder presence.",
-    "market_cap": 8702125,
-    "fdv": 9720358
+    "market_cap": 8712820,
+    "fdv": 9732304,
+    "price": 0.02703583
   },
   {
     "symbol": "GMT",
@@ -87,8 +90,9 @@
     ],
     "tariff_override": 200,
     "reason": "The poster child for unsustainable 'Earn' mechanics. Paying people to walk is not production; it is subsidies.",
-    "market_cap": 59233876,
-    "fdv": 96594393
+    "market_cap": 59415296,
+    "fdv": 96890240,
+    "price": 0.01909816
   },
   {
     "symbol": "SHRAP",
@@ -123,8 +127,9 @@
     ],
     "tariff_override": 100,
     "reason": "Content monetization layer with nearly 100% inflation rates in early years to pay creators. Dilution engine.",
-    "market_cap": 13788120,
-    "fdv": 27476134
+    "market_cap": 13726141,
+    "fdv": 27352625,
+    "price": 0.00030392
   },
   {
     "symbol": "GENE",
@@ -141,8 +146,9 @@
     ],
     "tariff_override": 40,
     "reason": "Gamified fitness. Better economic controls than STEPN, but still relies on emissions to sustain interest.",
-    "market_cap": 219450,
-    "fdv": 249076
+    "market_cap": 219979,
+    "fdv": 249676,
+    "price": 0.0025006
   },
   {
     "symbol": "GUAC",
@@ -159,7 +165,8 @@
     ],
     "tariff_override": 25,
     "reason": "Consumer rewards app. Community-driven distribution. Functions more like loyalty points than a VC dump.",
-    "market_cap": 1221457,
-    "fdv": 1221457
+    "market_cap": 1226224,
+    "fdv": 1226224,
+    "price": 1.2479e-08
   }
 ]

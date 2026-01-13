@@ -15,8 +15,9 @@
     ],
     "tariff_override": 12,
     "reason": "The legacy central limit order book token. Following the FTX collapse, the original program keys were compromised, rendering the governance token highly speculative with maximum insider baggage.",
-    "market_cap": 4131889,
-    "fdv": 12113005
+    "market_cap": 4134471,
+    "fdv": 12120575,
+    "price": 0.01100522
   },
   {
     "symbol": "MAPS",
@@ -51,8 +52,9 @@
     ],
     "tariff_override": 10,
     "reason": "Prime brokerage protocol from the previous cycle. Like Maps and Serum, it suffers from heavy concentration of supply in the hands of defunct entities.",
-    "market_cap": 1475876,
-    "fdv": 72932668
+    "market_cap": 1480525,
+    "fdv": 73162405,
+    "price": 0.00731624
   },
   {
     "symbol": "OPEN",
@@ -87,8 +89,9 @@
     ],
     "tariff_override": 5,
     "reason": "Social investment platform allowing copy-trading. Established utility and revenue generation with a moderate distribution of governance power.",
-    "market_cap": 83167902,
-    "fdv": 115338527
+    "market_cap": 83199984,
+    "fdv": 115383020,
+    "price": 0.059064
   },
   {
     "symbol": "MEAN",
@@ -123,8 +126,9 @@
     ],
     "tariff_override": 6,
     "reason": "Spot and derivatives aggregator. While the tech is functional, the token struggles for market share in a crowded aggregator landscape, increasing investment risk.",
-    "market_cap": 1150763,
-    "fdv": 1199937
+    "market_cap": 1150754,
+    "fdv": 1199928,
+    "price": 0.00062853
   },
   {
     "symbol": "SAROS",
@@ -142,8 +146,9 @@
     ],
     "tariff_override": 6,
     "reason": "A unified DeFi product suite designed for mobile. Higher insider score reflects the strategic backing and centralized development roadmap typical of 'super-app' plays.",
-    "market_cap": 6545126,
-    "fdv": 24933815
+    "market_cap": 6716286,
+    "fdv": 25585852,
+    "price": 0.00255488
   },
   {
     "symbol": "GOFX",

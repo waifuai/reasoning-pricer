@@ -30,7 +30,7 @@ struct TokenJson {
     #[serde(default)]
     fdv: Option<f64>,
     #[serde(default)]
-    launch_date: Option<String>,
+    price: Option<f64>,
 }
 
 /// Convert JSON token to domain model.
@@ -93,7 +93,7 @@ impl From<TokenJson> for Token {
             ai_category,
             market_cap: json.market_cap,
             fdv: json.fdv,
-            launch_date: json.launch_date,
+            price: json.price,
         }
     }
 }

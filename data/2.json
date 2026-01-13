@@ -15,8 +15,9 @@
     ],
     "tariff_override": 15,
     "reason": "The standard for decentralized GPU rendering. High utility, though carries some historical VC baggage.",
-    "market_cap": 1249857039,
-    "fdv": 1285424915
+    "market_cap": 1262672091,
+    "fdv": 1298604652,
+    "price": 2.43
   },
   {
     "symbol": "NOS",
@@ -34,8 +35,9 @@
     ],
     "tariff_override": 10,
     "reason": "Focused AI inference grid. Cleaner distribution than competitors. Represents true productive capacity.",
-    "market_cap": 24749150,
-    "fdv": 29675239
+    "market_cap": 24767486,
+    "fdv": 29697225,
+    "price": 0.296707
   },
   {
     "symbol": "SHDW",
@@ -107,8 +109,9 @@
     ],
     "tariff_override": 20,
     "reason": "The Airbnb of Cloud Compute. Imported via Wormhole. Solid utility, standard bridge risk tariff.",
-    "market_cap": 140756609,
-    "fdv": 141349204
+    "market_cap": 142137403,
+    "fdv": 142735811,
+    "price": 0.499578
   },
   {
     "symbol": "SYN",
@@ -126,8 +129,9 @@
     ],
     "tariff_override": 25,
     "reason": "Crowdsourced RLHF data for AI. 'Data Farming' utility. Moderate tariff due to smaller cap volatility.",
-    "market_cap": 15155424,
-    "fdv": 17295459
+    "market_cap": 15163203,
+    "fdv": 17304336,
+    "price": 0.069135
   },
   {
     "symbol": "UPT",
@@ -146,8 +150,9 @@
     ],
     "tariff_override": 15,
     "reason": "Unused bandwidth sharing for AI scraping. 'Fairer' distribution model via mobile mining.",
-    "market_cap": 1473076,
-    "fdv": 6355111
+    "market_cap": 1475279,
+    "fdv": 6364619,
+    "price": 0.00644877
   },
   {
     "symbol": "GRASS",
@@ -166,7 +171,8 @@
     ],
     "tariff_override": 80,
     "reason": "High-hype bandwidth scraping. Tokenomics lean heavily towards early insiders and points-farming dilution.",
-    "market_cap": 156426720,
-    "fdv": 344921146
+    "market_cap": 157090834,
+    "fdv": 346385519,
+    "price": 0.346802
   }
 ]

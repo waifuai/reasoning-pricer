@@ -15,8 +15,9 @@
     ],
     "tariff_override": 7,
     "reason": "Once the dominant stablecoin swap on Solana. Tokenomics suffered from high inflationary emissions and heavy VC unlocks, leading to significant value erosion despite functional tech.",
-    "market_cap": 1407309,
-    "fdv": 1906504
+    "market_cap": 1413954,
+    "fdv": 1915506,
+    "price": 0.00062975
   },
   {
     "symbol": "SUNNY",
@@ -102,8 +103,9 @@
     ],
     "tariff_override": 7,
     "reason": "Yield farming platform focused on helping new projects launch liquidity. High inflation mechanics and speculative nature of launched tokens drive the score.",
-    "market_cap": 915244,
-    "fdv": 915244
+    "market_cap": 925991,
+    "fdv": 925991,
+    "price": 0.04032357
   },
   {
     "symbol": "RIN",
