@@ -6,12 +6,14 @@
 |-------|-------|
 | **Symbol** | `1INCH` |
 | **Name** | 1inch (Wormhole) |
+| **Price** | `$1.5e-1` |
+| **Market Cap** | `$2.2e8` |
 | **Token Type** | Protocol Utility Token |
 | **Risk Class** | Class B (Systemic) |
 | **Insider Score** | 30/100 |
 | **Tariff Override** | 40% |
-| **Calculated Tariff** | 0% |
-| **Exchange Multiplier** | 1.0x |
+| **Calculated Tariff** | 15% |
+| **Exchange Multiplier** | 1.1x |
 
 ## Risk Analysis
 
@@ -25,7 +27,7 @@ Class B (Systemic)
 **30/100** - Medium insider control
 
 ### Exchange Rate
-**1.0x** (Tariff: 0%)
+**1.1x** (Tariff: 15%)
 
 ## Tags
 
@@ -53,13 +55,14 @@ Competitor aggregator. Good utility, but token is pure governance/rent-seeking.
 | **AI Timeline Factor** | 8.33x |
 | **AI Category** | AI-Native |
 | **Current AI Phase** | Creative Renaissance |
-| **Real Valuation Multiplier** | 25x |
-| **Uncertainty Range** | 17x - 32x |
-| **Current vs Real Price** | $1.00 → $24.80 |
+| **Liquidity Risk Factor** | 0.95x |
+| **Real Valuation Multiplier** | 24x |
+| **Uncertainty Range** | 16x - 31x |
+| **Current vs Real Price** | `$1.5e-1` → `$3.6e0` |
 | **Trading Signal** | BUY |
 
 ### Analysis
-[AI Timeline: Creative Renaissance] Asset classified as AI-Native (Built specifically for AI ecosystems. Maximum AI acceleration benefits.). AI Timeline Factor: 8.33x (AI acceleration boosts this asset significantly). Protocol Utility Token: benefits from network effects and protocol utility (base range: 10x - 25x). Insider control (30/100) reduces multiplier by 0.85x due to centralization risks. Rank #150 imposes 0.2x penalty (illiquid, capital flight crushes value). Final real valuation multiplier: 24.8x. Token trading at $1.00 today would be worth $24.79 post-fiat collapse. AI acceleration provides strong tailwinds. Trading signal (BUY): Undervalued post-collapse. Accumulate before systemic shift.
+[AI Timeline: Creative Renaissance] Asset classified as AI-Native (Built specifically for AI ecosystems. Maximum AI acceleration benefits.). AI Timeline Factor: 8.33x (AI acceleration boosts this asset significantly). Protocol Utility Token: benefits from network effects and protocol utility (base range: 10x - 25x). Insider control (30/100) reduces multiplier by 0.85x due to centralization risks. Rank #150 imposes 0.2x penalty (illiquid, capital flight crushes value). Liquidity friction (Market Cap: $2.2e8) adds a 15% baseline tariff. Final real valuation multiplier: 23.6x. Token trading at $1.00 today would be worth $23.55 post-fiat collapse. AI acceleration provides strong tailwinds. Trading signal (BUY): Undervalued post-collapse. Accumulate before systemic shift.
 
 ---
 

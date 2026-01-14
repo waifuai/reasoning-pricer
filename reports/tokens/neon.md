@@ -6,12 +6,14 @@
 |-------|-------|
 | **Symbol** | `NEON` |
 | **Name** | Neon EVM |
+| **Price** | `$5.8e-2` |
+| **Market Cap** | `$1.4e7` |
 | **Token Type** | Governance Token |
 | **Risk Class** | Class C (Venture Risk) |
 | **Insider Score** | 55/100 |
 | **Tariff Override** | 150% |
-| **Calculated Tariff** | 115% |
-| **Exchange Multiplier** | 2.1x |
+| **Calculated Tariff** | 153% |
+| **Exchange Multiplier** | 2.5x |
 
 ## Risk Analysis
 
@@ -25,7 +27,7 @@ Class C (Venture Risk)
 **55/100** - Medium insider control
 
 ### Exchange Rate
-**2.1x** (Tariff: 115%)
+**2.5x** (Tariff: 153%)
 
 ## Tags
 
@@ -53,13 +55,14 @@ Ethereum emulation on Solana. Heavy VC allocation. Utility is abstract compared 
 | **AI Timeline Factor** | 8.33x |
 | **AI Category** | AI-Native |
 | **Current AI Phase** | Creative Renaissance |
-| **Real Valuation Multiplier** | 0.8x |
+| **Liquidity Risk Factor** | 0.90x |
+| **Real Valuation Multiplier** | 0.7x |
 | **Uncertainty Range** | 0.4x - 1x |
-| **Current vs Real Price** | $1.00 → $0.80 |
+| **Current vs Real Price** | `$5.8e-2` → `$4.1e-2` |
 | **Trading Signal** | SELL |
 
 ### Analysis
-[AI Timeline: Creative Renaissance] Asset classified as AI-Native (Built specifically for AI ecosystems. Maximum AI acceleration benefits.). AI Timeline Factor: 8.33x (AI acceleration boosts this asset significantly). Governance Token: speculative value based on protocol governance (zombie DAOs have treasury value) (base range: 0.2x - 1.5x). Class C (Venture Risk) receives 0.8x risk class reduction - higher uncertainty. Insider control (55/100) reduces multiplier by 0.72x due to centralization risks. Rank #250 imposes 0.2x penalty (illiquid, capital flight crushes value). Final real valuation multiplier: 0.8x. Token trading at $1.00 today would be worth $0.82 post-fiat collapse (loss of purchasing power). AI acceleration provides strong tailwinds. Trading signal (SELL): Overvalued or high risk post-collapse. Reduce exposure.
+[AI Timeline: Creative Renaissance] Asset classified as AI-Native (Built specifically for AI ecosystems. Maximum AI acceleration benefits.). AI Timeline Factor: 8.33x (AI acceleration boosts this asset significantly). Governance Token: speculative value based on protocol governance (zombie DAOs have treasury value) (base range: 0.2x - 1.5x). Class C (Venture Risk) receives 0.8x risk class reduction - higher uncertainty. Insider control (55/100) reduces multiplier by 0.72x due to centralization risks. Rank #250 imposes 0.2x penalty (illiquid, capital flight crushes value). Liquidity friction (Market Cap: $1.4e7) adds a 20% baseline tariff. Final real valuation multiplier: 0.7x. Token trading at $1.00 today would be worth $0.74 post-fiat collapse (loss of purchasing power). AI acceleration provides strong tailwinds. Trading signal (SELL): Overvalued or high risk post-collapse. Reduce exposure.
 
 ---
 

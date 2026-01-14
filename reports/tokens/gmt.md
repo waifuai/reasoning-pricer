@@ -6,12 +6,14 @@
 |-------|-------|
 | **Symbol** | `GMT` |
 | **Name** | STEPN |
+| **Price** | `$1.9e-2` |
+| **Market Cap** | `$5.9e7` |
 | **Token Type** | Governance Token |
 | **Risk Class** | Class C (Venture Risk) |
 | **Insider Score** | 40/100 |
 | **Tariff Override** | 200% |
-| **Calculated Tariff** | 115% |
-| **Exchange Multiplier** | 2.1x |
+| **Calculated Tariff** | 153% |
+| **Exchange Multiplier** | 2.5x |
 
 ## Risk Analysis
 
@@ -25,7 +27,7 @@ Class C (Venture Risk)
 **40/100** - Medium insider control
 
 ### Exchange Rate
-**2.1x** (Tariff: 115%)
+**2.5x** (Tariff: 153%)
 
 ## Tags
 
@@ -53,13 +55,14 @@ The poster child for unsustainable 'Earn' mechanics. Paying people to walk is no
 | **AI Timeline Factor** | 1.80x |
 | **AI Category** | Passive Utility |
 | **Current AI Phase** | Creative Renaissance |
-| **Real Valuation Multiplier** | 0.8x |
+| **Liquidity Risk Factor** | 0.90x |
+| **Real Valuation Multiplier** | 0.7x |
 | **Uncertainty Range** | 0.4x - 1x |
-| **Current vs Real Price** | $1.00 → $0.80 |
+| **Current vs Real Price** | `$1.9e-2` → `$1.3e-2` |
 | **Trading Signal** | SELL |
 
 ### Analysis
-[AI Timeline: Creative Renaissance] Asset classified as Passive Utility (Standard utility tokens with limited AI integration potential. Moderate performance through AI timeline.). AI Timeline Factor: 1.80x (AI acceleration boosts this asset significantly). Governance Token: speculative value based on protocol governance (zombie DAOs have treasury value) (base range: 0.2x - 1.5x). Class C (Venture Risk) receives 0.8x risk class reduction - higher uncertainty. Insider control (40/100) reduces multiplier by 0.80x due to centralization risks. Rank #80 applies 0.8x adjustment (mid-tier liquidity). Final real valuation multiplier: 0.8x. Token trading at $1.00 today would be worth $0.78 post-fiat collapse (loss of purchasing power). AI acceleration provides strong tailwinds. Trading signal (SELL): Overvalued or high risk post-collapse. Reduce exposure.
+[AI Timeline: Creative Renaissance] Asset classified as Passive Utility (Standard utility tokens with limited AI integration potential. Moderate performance through AI timeline.). AI Timeline Factor: 1.80x (AI acceleration boosts this asset significantly). Governance Token: speculative value based on protocol governance (zombie DAOs have treasury value) (base range: 0.2x - 1.5x). Class C (Venture Risk) receives 0.8x risk class reduction - higher uncertainty. Insider control (40/100) reduces multiplier by 0.80x due to centralization risks. Rank #80 applies 0.8x adjustment (mid-tier liquidity). Liquidity friction (Market Cap: $5.9e7) adds a 20% baseline tariff. Final real valuation multiplier: 0.7x. Token trading at $1.00 today would be worth $0.71 post-fiat collapse (loss of purchasing power). AI acceleration provides strong tailwinds. Trading signal (SELL): Overvalued or high risk post-collapse. Reduce exposure.
 
 ---
 

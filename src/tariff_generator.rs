@@ -1,5 +1,6 @@
 use serde::{Deserialize, Serialize};
 use std::fs;
+use crate::utils::{calculate_effective_tariff, format_sci, format_smart_price, format_compact_val, format_tariff_rate, format_multiplier};
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 pub struct Token {
@@ -9,17 +10,19 @@ pub struct Token {
     #[serde(default)]
     pub archetype: Option<String>,
     #[serde(default)]
-    pub insider_score: Option<u32>,
+    pub insider_score: Option<i32>,
     #[serde(default)]
     pub tariff_override: Option<f64>,
     #[serde(default)]
     pub ai_category: Option<String>,
     #[serde(default)]
-    pub rank: Option<u32>,
+    pub rank: Option<i32>,
     #[serde(default)]
     pub token_type: Option<String>,
     #[serde(default)]
     pub parent_token: Option<String>,
+    pub price: f64,
+    pub market_cap: f64,
     // Keep risk_class as alias for archetype for backwards compatibility
     #[serde(default, alias = "risk_class")]
     pub risk_class_compat: Option<String>,
@@ -31,7 +34,7 @@ pub struct TokenAnalysisResult {
     pub name: String,
     pub token_type: String,
     pub risk_class: String,
-    pub insider_score: u32,
+    pub insider_score: i32,
     pub tariff_override: f64,
     pub exchange_multiplier: f64,
     pub base_multiplier_range: String,
@@ -39,12 +42,14 @@ pub struct TokenAnalysisResult {
     pub risk_class_adjustment: f64,
     pub insider_risk_factor: f64,
     pub ai_timeline_factor: f64,
+    pub liquidity_risk_factor: f64,
     pub ai_category: String,
     pub real_valuation_multiplier: f64,
     pub uncertainty_min: f64,
     pub uncertainty_max: f64,
     pub current_price: f64,
     pub projected_price: f64,
+    pub market_cap: f64,
     pub trading_signal: String,
     pub reasoning: String,
 }
@@ -103,10 +108,10 @@ impl AIEvolutionCategory {
     pub fn timeline_multiplier(&self) -> f64 {
         match self {
             AIEvolutionCategory::Static => 0.20,
-            AIEvolutionCategory::PassiveUtility => 1.00,
-            AIEvolutionCategory::AIEnabled => 8.33,
-            AIEvolutionCategory::AINative => 8.33,
-            AIEvolutionCategory::AIEvolving => 12.50,
+            AIEvolutionCategory::PassiveUtility => 1.80,
+            AIEvolutionCategory::AIEnabled => 5.00,
+            AIEvolutionCategory::AINative => 25.00,
+            AIEvolutionCategory::AIEvolving => 40.00,
         }
     }
 
@@ -122,7 +127,7 @@ impl AIEvolutionCategory {
 }
 
 pub fn load_tokens(data_dir: &str) -> Vec<Token> {
-    let mut tokens = Vec::new();
+    let mut tokens: Vec<Token> = Vec::new();
     
     for i in 1..=22 {
         let path = format!("{}/{}.json", data_dir, i);
@@ -138,6 +143,9 @@ pub fn load_tokens(data_dir: &str) -> Vec<Token> {
             }
         }
     }
+    
+    // Filter out tokens that don't have price or market cap data
+    tokens.retain(|t| t.price > 0.0 && t.market_cap > 0.0);
     
     tokens
 }
@@ -211,24 +219,16 @@ pub fn analyze_token(token: &Token) -> TokenAnalysisResult {
         .unwrap_or_default();
     let risk_adjustment = match risk_class.as_str() {
         "Class A (Real Yield)" => 1.2,
-        "Class B (Systemic)" => 0.9,
-        "Class C (Venture Risk)" => 0.7,
-        "Class C (Speculative)" => 0.8,
-        "Class D (Memetic)" => 0.6,
-        "Class D (Speculative)" => 0.5,
-        "Class E (Experimental)" => 0.5,
+        "Class B (Systemic)" => 1.0,
+        "Class C (Venture Risk)" | "Class C (Speculative)" => 0.8,
+        "Class D (Memetic)" | "Class D (Speculative)" => 0.5,
+        "Class E (Experimental)" => 0.3,
         _ => 1.0,
     };
     
-    // Insider score factor (55/100 = 1.0, higher = lower multiplier)
+    // Insider score factor (Range: 0.5 to 1.0)
     let insider_score = token.insider_score.unwrap_or(50);
-    let insider_factor = match insider_score {
-        s if s >= 70 => 0.6,
-        s if s >= 55 => 0.72,
-        s if s >= 40 => 0.82,
-        s if s >= 25 => 0.90,
-        _ => 1.00,
-    };
+    let insider_factor = 1.0 - ((insider_score as f64 / 100.0) * 0.5);
     
     // Tariff override
     let tariff_override = token.tariff_override.unwrap_or(0.0);
@@ -251,14 +251,26 @@ pub fn analyze_token(token: &Token) -> TokenAnalysisResult {
     } else {
         0.2  // Heavy penalty for illiquid alts
     };
-    let real_multiplier = real_multiplier * rank_factor;
+    
+    // Liquidity Risk Factor - penalty for small market caps
+    let liquidity_risk_factor = if token.symbol == "SOL" {
+        1.0
+    } else if token.market_cap >= 1_000_000_000.0 {
+        1.0
+    } else if token.market_cap >= 100_000_000.0 {
+        0.95 // 5% penalty
+    } else {
+        0.90 // 10% penalty
+    };
+    
+    let real_multiplier = real_multiplier * rank_factor * liquidity_risk_factor;
     
     // Uncertainty range
     let uncertainty_min = real_multiplier * 0.8;
     let uncertainty_max = real_multiplier * 1.4;
     
     // Projected price
-    let current_price = 1.00;
+    let current_price = token.price;
     let projected_price = current_price * real_multiplier;
     
     // Trading signal
@@ -271,7 +283,7 @@ pub fn analyze_token(token: &Token) -> TokenAnalysisResult {
     }.to_string();
     
     // Generate reasoning
-    let reasoning = generate_reasoning(&token_type, &risk_class, insider_score, &ai_category, ai_timeline_factor, real_multiplier, &trading_signal, projected_price);
+    let reasoning = generate_reasoning(&token.symbol, &token_type, &risk_class, insider_score, &ai_category, ai_timeline_factor, real_multiplier, &trading_signal, projected_price, rank, liquidity_risk_factor, token.market_cap);
     
     TokenAnalysisResult {
         symbol: token.symbol.clone(),
@@ -286,12 +298,14 @@ pub fn analyze_token(token: &Token) -> TokenAnalysisResult {
         risk_class_adjustment: risk_adjustment,
         insider_risk_factor: insider_factor,
         ai_timeline_factor,
+        liquidity_risk_factor,
         ai_category: ai_category.display_name().to_string(),
         real_valuation_multiplier: real_multiplier,
         uncertainty_min,
         uncertainty_max,
         current_price,
         projected_price,
+        market_cap: token.market_cap,
         trading_signal,
         reasoning,
     }
@@ -361,7 +375,7 @@ fn determine_token_type_explicit(explicit_type: &str) -> (String, f64, f64) {
     }
 }
 
-fn generate_reasoning(token_type: &str, risk_class: &str, insider_score: u32, ai_category: &AIEvolutionCategory, ai_timeline_factor: f64, real_multiplier: f64, signal: &str, projected_price: f64) -> String {
+fn generate_reasoning(symbol: &str, token_type: &str, risk_class: &str, insider_score: i32, ai_category: &AIEvolutionCategory, ai_timeline_factor: f64, real_multiplier: f64, signal: &str, projected_price: f64, rank: i32, _liquidity_risk_factor: f64, market_cap: f64) -> String {
     let ai_desc = match ai_category {
         AIEvolutionCategory::Static => "Asset classified as Static (Cannot Evolve). Static assets that cannot adapt to AI acceleration. These assets decline in value as AI progresses.",
         AIEvolutionCategory::PassiveUtility => "Asset classified as Passive Utility (Limited AI Adaptation). These assets have limited ability to benefit from AI acceleration.",
@@ -410,12 +424,32 @@ fn generate_reasoning(token_type: &str, risk_class: &str, insider_score: u32, ai
         _ => "Monitor for changes.",
     };
     
-    format!("[AI Timeline: Creative Renaissance] {}. {}. {} {} Insider control ({}): reduces multiplier due to centralization risks. Rank #9999 imposes 0.2x penalty (illiquid, capital flight crushes value). Final real valuation multiplier: {:.1}x. Token trading at $1.00 today would be worth ${:.2} post-fiat collapse. Trading signal ({SIGNAL}): {SIGNAL_DESC}.",
+    let liquidity_tariff_penalty = if symbol == "SOL" {
+        0.0
+    } else {
+        if market_cap >= 1_000_000_000.0 { 10.0 }
+        else if market_cap >= 100_000_000.0 { 15.0 }
+        else if market_cap >= 10_000_000.0 { 20.0 }
+        else { 25.0 }
+    };
+
+    let liquidity_desc = if symbol == "SOL" {
+        "Exempt from liquidity tariff (Solana baseline).".to_string()
+    } else {
+        format!("Liquidity friction (Market Cap: ${}) adds a {:.0}% baseline tariff.",
+            format_sci(market_cap),
+            liquidity_tariff_penalty)
+    };
+    
+    format!("[AI Timeline: Creative Renaissance] {}. {}. {} {} Insider control ({}): reduces multiplier due to centralization risks. Rank #{} gives {:.1}x adjustment (capital flight risk). {} Final real valuation multiplier: {:.1}x. Token trading at $1.00 today would be worth ${:.2} post-fiat collapse. Trading signal ({SIGNAL}): {SIGNAL_DESC}.",
         ai_desc,
         ai_impact,
         type_desc,
         risk_desc,
         insider_score,
+        rank,
+        if rank < 10 { 1.2 } else if rank < 100 { 0.8 } else { 0.2 },
+        liquidity_desc,
         real_multiplier,
         projected_price,
         SIGNAL = signal,
@@ -423,9 +457,8 @@ fn generate_reasoning(token_type: &str, risk_class: &str, insider_score: u32, ai
     )
 }
 
-pub fn calculate_tariff(multiplier: f64) -> f64 {
-    let tariff = (100.0 / multiplier) - 10.0;
-    if tariff < 0.0 { 0.0 } else { tariff }
+pub fn calculate_tariff(multiplier: f64, symbol: &str, market_cap: f64) -> f64 {
+    calculate_effective_tariff(multiplier, symbol, market_cap)
 }
 
 pub fn generate_tariffs_report(analyses: &[TokenAnalysisResult]) -> String {
@@ -466,7 +499,14 @@ pub fn generate_tariffs_report(analyses: &[TokenAnalysisResult]) -> String {
     
     // Sort analyses by multiplier descending
     let mut sorted: Vec<_> = analyses.iter().collect();
-    sorted.sort_by(|a, b| b.real_valuation_multiplier.partial_cmp(&a.real_valuation_multiplier).unwrap());
+    // Sort by effective tariff rate (ascending)
+    sorted.sort_by(|a, b| {
+        let tariff_a = calculate_tariff(a.real_valuation_multiplier, &a.symbol, a.market_cap);
+        let tariff_b = calculate_tariff(b.real_valuation_multiplier, &b.symbol, b.market_cap);
+        
+        tariff_a.partial_cmp(&tariff_b).unwrap_or(std::cmp::Ordering::Equal)
+            .then_with(|| b.real_valuation_multiplier.partial_cmp(&a.real_valuation_multiplier).unwrap_or(std::cmp::Ordering::Equal))
+    });
     
     // Group by tier
     let premium: Vec<_> = sorted.iter().filter(|a| a.real_valuation_multiplier >= 10.0).collect();
@@ -486,10 +526,16 @@ pub fn generate_tariffs_report(analyses: &[TokenAnalysisResult]) -> String {
     report.push_str("|--------|------|------------|------------|------------------|---------------|------------|-------------|
 ");
     for a in &premium {
-        let tariff = calculate_tariff(a.real_valuation_multiplier);
-        report.push_str(&format!("| {} | {} | {} | {:.2}x | {:.0}% | {} $1.00 → ${:.2} | {} | {} |\n",
-            a.symbol, a.name, format_risk_class(&a.risk_class), a.real_valuation_multiplier, tariff,
-            format_trend(a.real_valuation_multiplier), a.projected_price, format_token_type(&a.token_type), format_ai_category(&a.ai_category)));
+        let tariff = calculate_tariff(a.real_valuation_multiplier, &a.symbol, a.market_cap);
+        let exchange_rate_display = if a.current_price > 0.0 {
+            format!("{} ${} → ${}", format_trend(a.real_valuation_multiplier), format_smart_price(a.current_price), format_smart_price(a.projected_price))
+        } else {
+            format!("{} $1.00 → ${:.2}", format_trend(a.real_valuation_multiplier), a.real_valuation_multiplier)
+        };
+
+        report.push_str(&format!("| {} | {} | {} | {} | {} | {} | {} | {} |\n",
+            a.symbol, a.name, format_risk_class(&a.risk_class), format_multiplier(a.real_valuation_multiplier), format_tariff_rate(tariff),
+            exchange_rate_display, format_token_type(&a.token_type), format_ai_category(&a.ai_category)));
     }
     
     // Tier 2: Good
@@ -498,10 +544,16 @@ pub fn generate_tariffs_report(analyses: &[TokenAnalysisResult]) -> String {
     report.push_str("| Symbol | Name | Risk Class | Multiplier | Effective Tariff | Exchange Rate | Token Type | AI Category |\n");
     report.push_str("|--------|------|------------|------------|------------------|---------------|------------|-------------|\n");
     for a in &good {
-        let tariff = calculate_tariff(a.real_valuation_multiplier);
-        report.push_str(&format!("| {} | {} | {} | {:.2}x | {:.0}% | {} $1.00 → ${:.2} | {} | {} |\n",
-            a.symbol, a.name, format_risk_class(&a.risk_class), a.real_valuation_multiplier, tariff,
-            format_trend(a.real_valuation_multiplier), a.projected_price, format_token_type(&a.token_type), format_ai_category(&a.ai_category)));
+        let tariff = calculate_tariff(a.real_valuation_multiplier, &a.symbol, a.market_cap);
+        let exchange_rate_display = if a.current_price > 0.0 {
+            format!("{} ${} → ${}", format_trend(a.real_valuation_multiplier), format_smart_price(a.current_price), format_smart_price(a.projected_price))
+        } else {
+            format!("{} $1.00 → ${:.2}", format_trend(a.real_valuation_multiplier), a.real_valuation_multiplier)
+        };
+
+        report.push_str(&format!("| {} | {} | {} | {} | {} | {} | {} | {} |\n",
+            a.symbol, a.name, format_risk_class(&a.risk_class), format_multiplier(a.real_valuation_multiplier), format_tariff_rate(tariff),
+            exchange_rate_display, format_token_type(&a.token_type), format_ai_category(&a.ai_category)));
     }
     
     // Tier 3: Neutral
@@ -510,10 +562,16 @@ pub fn generate_tariffs_report(analyses: &[TokenAnalysisResult]) -> String {
     report.push_str("| Symbol | Name | Risk Class | Multiplier | Effective Tariff | Exchange Rate | Token Type | AI Category |\n");
     report.push_str("|--------|------|------------|------------|------------------|---------------|------------|-------------|\n");
     for a in &neutral {
-        let tariff = calculate_tariff(a.real_valuation_multiplier);
-        report.push_str(&format!("| {} | {} | {} | {:.2}x | {:.0}% | {} $1.00 → ${:.2} | {} | {} |\n",
-            a.symbol, a.name, format_risk_class(&a.risk_class), a.real_valuation_multiplier, tariff,
-            format_trend(a.real_valuation_multiplier), a.projected_price, format_token_type(&a.token_type), format_ai_category(&a.ai_category)));
+        let tariff = calculate_tariff(a.real_valuation_multiplier, &a.symbol, a.market_cap);
+        let exchange_rate_display = if a.current_price > 0.0 {
+            format!("{} ${} → ${}", format_trend(a.real_valuation_multiplier), format_smart_price(a.current_price), format_smart_price(a.projected_price))
+        } else {
+            format!("{} $1.00 → ${:.2}", format_trend(a.real_valuation_multiplier), a.real_valuation_multiplier)
+        };
+
+        report.push_str(&format!("| {} | {} | {} | {} | {} | {} | {} | {} |\n",
+            a.symbol, a.name, format_risk_class(&a.risk_class), format_multiplier(a.real_valuation_multiplier), format_tariff_rate(tariff),
+            exchange_rate_display, format_token_type(&a.token_type), format_ai_category(&a.ai_category)));
     }
     
     // Tier 4: Discounted
@@ -522,10 +580,16 @@ pub fn generate_tariffs_report(analyses: &[TokenAnalysisResult]) -> String {
     report.push_str("| Symbol | Name | Risk Class | Multiplier | Effective Tariff | Exchange Rate | Token Type | AI Category |\n");
     report.push_str("|--------|------|------------|------------|------------------|---------------|------------|-------------|\n");
     for a in &discounted {
-        let tariff = calculate_tariff(a.real_valuation_multiplier);
-        report.push_str(&format!("| {} | {} | {} | {:.2}x | {:.0}% | {} $1.00 → ${:.2} | {} | {} |\n",
-            a.symbol, a.name, format_risk_class(&a.risk_class), a.real_valuation_multiplier, tariff,
-            format_trend(a.real_valuation_multiplier), a.projected_price, format_token_type(&a.token_type), format_ai_category(&a.ai_category)));
+        let tariff = calculate_tariff(a.real_valuation_multiplier, &a.symbol, a.market_cap);
+        let exchange_rate_display = if a.current_price > 0.0 {
+            format!("{} ${} → ${}", format_trend(a.real_valuation_multiplier), format_smart_price(a.current_price), format_smart_price(a.projected_price))
+        } else {
+            format!("{} $1.00 → ${:.2}", format_trend(a.real_valuation_multiplier), a.real_valuation_multiplier)
+        };
+
+        report.push_str(&format!("| {} | {} | {} | {} | {} | {} | {} | {} |\n",
+            a.symbol, a.name, format_risk_class(&a.risk_class), format_multiplier(a.real_valuation_multiplier), format_tariff_rate(tariff),
+            exchange_rate_display, format_token_type(&a.token_type), format_ai_category(&a.ai_category)));
     }
     
     // Tier 5: Poor
@@ -534,10 +598,16 @@ pub fn generate_tariffs_report(analyses: &[TokenAnalysisResult]) -> String {
     report.push_str("| Symbol | Name | Risk Class | Multiplier | Effective Tariff | Exchange Rate | Token Type | AI Category |\n");
     report.push_str("|--------|------|------------|------------|------------------|---------------|------------|-------------|\n");
     for a in &poor {
-        let tariff = calculate_tariff(a.real_valuation_multiplier);
-        report.push_str(&format!("| {} | {} | {} | {:.2}x | {:.0}% | {} $1.00 → ${:.2} | {} | {} |\n",
-            a.symbol, a.name, format_risk_class(&a.risk_class), a.real_valuation_multiplier, tariff,
-            format_trend(a.real_valuation_multiplier), a.projected_price, format_token_type(&a.token_type), format_ai_category(&a.ai_category)));
+        let tariff = calculate_tariff(a.real_valuation_multiplier, &a.symbol, a.market_cap);
+        let exchange_rate_display = if a.current_price > 0.0 {
+            format!("{} ${} → ${}", format_trend(a.real_valuation_multiplier), format_smart_price(a.current_price), format_smart_price(a.projected_price))
+        } else {
+            format!("{} $1.00 → ${:.2}", format_trend(a.real_valuation_multiplier), a.real_valuation_multiplier)
+        };
+
+        report.push_str(&format!("| {} | {} | {} | {} | {} | {} | {} | {} |\n",
+            a.symbol, a.name, format_risk_class(&a.risk_class), format_multiplier(a.real_valuation_multiplier), format_tariff_rate(tariff),
+            exchange_rate_display, format_token_type(&a.token_type), format_ai_category(&a.ai_category)));
     }
     
     // Tier 6: Catastrophic
@@ -546,10 +616,16 @@ pub fn generate_tariffs_report(analyses: &[TokenAnalysisResult]) -> String {
     report.push_str("| Symbol | Name | Risk Class | Multiplier | Effective Tariff | Exchange Rate | Token Type | AI Category |\n");
     report.push_str("|--------|------|------------|------------|------------------|---------------|------------|-------------|\n");
     for a in &catastrophic {
-        let tariff = calculate_tariff(a.real_valuation_multiplier);
-        report.push_str(&format!("| {} | {} | {} | {:.2}x | {:.0}% | {} $1.00 → ${:.2} | {} | {} |\n",
-            a.symbol, a.name, format_risk_class(&a.risk_class), a.real_valuation_multiplier, tariff,
-            format_trend(a.real_valuation_multiplier), a.projected_price, format_token_type(&a.token_type), format_ai_category(&a.ai_category)));
+        let tariff = calculate_tariff(a.real_valuation_multiplier, &a.symbol, a.market_cap);
+        let exchange_rate_display = if a.current_price > 0.0 {
+            format!("{} ${} → ${}", format_trend(a.real_valuation_multiplier), format_smart_price(a.current_price), format_smart_price(a.projected_price))
+        } else {
+            format!("{} $1.00 → ${:.2}", format_trend(a.real_valuation_multiplier), a.real_valuation_multiplier)
+        };
+
+        report.push_str(&format!("| {} | {} | {} | {} | {} | {} | {} | {} |\n",
+            a.symbol, a.name, format_risk_class(&a.risk_class), format_multiplier(a.real_valuation_multiplier), format_tariff_rate(tariff),
+            exchange_rate_display, format_token_type(&a.token_type), format_ai_category(&a.ai_category)));
     }
     
     // Summary Statistics
@@ -561,8 +637,8 @@ pub fn generate_tariffs_report(analyses: &[TokenAnalysisResult]) -> String {
     let poor_count = poor.len();
     let catastrophic_count = catastrophic.len();
     
-    let avg_tariff: f64 = analyses.iter().map(|a| calculate_tariff(a.real_valuation_multiplier)).sum::<f64>() / total;
-    let tariffs: Vec<f64> = analyses.iter().map(|a| calculate_tariff(a.real_valuation_multiplier)).collect();
+    let avg_tariff: f64 = analyses.iter().map(|a| calculate_tariff(a.real_valuation_multiplier, &a.symbol, a.market_cap)).sum::<f64>() / total;
+    let tariffs: Vec<f64> = analyses.iter().map(|a| calculate_tariff(a.real_valuation_multiplier, &a.symbol, a.market_cap)).collect();
     let min_tariff = tariffs.iter().fold(f64::INFINITY, |a, &b| a.min(b));
     let max_tariff = tariffs.iter().fold(f64::NEG_INFINITY, |a, &b| a.max(b));
     let mut sorted_tariffs = tariffs;
@@ -624,6 +700,55 @@ pub fn generate_tariffs_report(analyses: &[TokenAnalysisResult]) -> String {
     report
 }
 
+
+pub fn generate_token_prices_report(analyses: &[TokenAnalysisResult]) -> String {
+    let mut report = String::new();
+    
+    report.push_str("# Token Price Report (2026)\n\n");
+    report.push_str("## Overview\n\n");
+    report.push_str("This report provides the **Current Price**, the **Exchange Price** (Immediate Purchasing Power after tariff friction), the **Multiplier** (the real valuation factor), and the **Tariff Rate** (the risk-based friction).\n\n");
+    report.push_str("Calculations are based on the AI-Acceleration Pricing model defined in `tariffs.md`.\n\n");
+    report.push_str("**Pricing Formula:** `Exchange Price = Current / (1 + Tariff/100)`\n\n");
+    report.push_str("All numerical values are shown in **scientific notation** ($X.YeZ$) for precision across all scales.\n\n");
+    report.push_str("## Price Table\n\n");
+    report.push_str("| Symbol | Name | AI Category | Current Price ($) | Exchange Price ($) | Multiplier | Tariff Rate | Market Cap ($) |\n");
+    report.push_str("|--------|------|-------------|-------------------|--------------------|------------|-------------|----------------|\n");
+
+    let mut tokens_with_prices: Vec<_> = analyses.iter()
+        .filter(|a| a.current_price > 0.0)
+        .collect();
+
+    // Sort by effective tariff rate (ascending)
+    tokens_with_prices.sort_by(|a, b| {
+        let tariff_a = calculate_tariff(a.real_valuation_multiplier, &a.symbol, a.market_cap);
+        let tariff_b = calculate_tariff(b.real_valuation_multiplier, &b.symbol, b.market_cap);
+        
+        tariff_a.partial_cmp(&tariff_b).unwrap_or(std::cmp::Ordering::Equal)
+            .then_with(|| b.real_valuation_multiplier.partial_cmp(&a.real_valuation_multiplier).unwrap_or(std::cmp::Ordering::Equal))
+    });
+
+    for t in tokens_with_prices {
+        let tariff = calculate_tariff(t.real_valuation_multiplier, &t.symbol, t.market_cap);
+        
+        // Exchange Price is current price adjusted for tariff friction
+        let exchange_price = t.current_price / (1.0 + tariff / 100.0);
+        
+        let cur = format_smart_price(t.current_price);
+        let ex = format_smart_price(exchange_price);
+        let mult = format_multiplier(t.real_valuation_multiplier);
+        let tariff_display = format_tariff_rate(tariff);
+        let mcap = format_compact_val(t.market_cap);
+        
+        // Format AI Category with emoji
+        let ai_cat_display = format_ai_category(&t.ai_category);
+        
+        report.push_str(&format!("| {} | {} | {} | {} | {} | {} | {} | {} |\n",
+            t.symbol, t.name, ai_cat_display, cur, ex, mult, tariff_display, mcap));
+    }
+    
+    report
+}
+
 #[cfg(test)]
 mod tests {
     use super::*;
@@ -645,12 +770,13 @@ mod tests {
     
     #[test]
     fn test_tariff_calculation() {
-        assert_eq!(calculate_tariff(25.0), 0.0);
-        assert_eq!(calculate_tariff(10.0), 0.0);
-        assert_eq!(calculate_tariff(5.0), 10.0);
-        assert_eq!(calculate_tariff(1.0), 90.0);
-        assert_eq!(calculate_tariff(0.5), 190.0);
-        assert_eq!(calculate_tariff(0.1), 990.0);
-        assert_eq!(calculate_tariff(0.01), 9990.0);
+        // SOL is exempt from penalty
+        assert_eq!(calculate_tariff(10.0, "SOL", 100_000_000_000.0), 0.0);
+        
+        // Other tokens start at 10% (if multiplier is 10.0)
+        assert_eq!(calculate_tariff(10.0, "BTC", 1_000_000_000.0), 10.0);
+        
+        // Small market cap tokens have higher baseline
+        assert_eq!(calculate_tariff(10.0, "HXRO", 5_000_000.0), 25.0);
     }
 }

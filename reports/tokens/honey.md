@@ -6,12 +6,14 @@
 |-------|-------|
 | **Symbol** | `HONEY` |
 | **Name** | Hivemapper |
+| **Price** | `$7.8e-3` |
+| **Market Cap** | `$4.3e7` |
 | **Token Type** | Protocol Utility Token |
 | **Risk Class** | Class A (Real Yield) |
 | **Insider Score** | 20/100 |
 | **Tariff Override** | 15% |
-| **Calculated Tariff** | 0% |
-| **Exchange Multiplier** | 1.0x |
+| **Calculated Tariff** | 20% |
+| **Exchange Multiplier** | 1.2x |
 
 ## Risk Analysis
 
@@ -25,7 +27,7 @@ Class A (Real Yield)
 **20/100** - Low insider control
 
 ### Exchange Rate
-**1.0x** (Tariff: 0%)
+**1.2x** (Tariff: 20%)
 
 ## Tags
 
@@ -55,13 +57,14 @@ Decentralized Google Maps. Hardware requirement (Dashcam) acts as 'Proof of Work
 | **AI Timeline Factor** | 8.33x |
 | **AI Category** | AI-Native |
 | **Current AI Phase** | Creative Renaissance |
-| **Real Valuation Multiplier** | 32x |
-| **Uncertainty Range** | 22x - 41x |
-| **Current vs Real Price** | $1.00 → $31.50 |
+| **Liquidity Risk Factor** | 0.90x |
+| **Real Valuation Multiplier** | 28x |
+| **Uncertainty Range** | 20x - 37x |
+| **Current vs Real Price** | `$7.8e-3` → `$2.2e-1` |
 | **Trading Signal** | BUY |
 
 ### Analysis
-[AI Timeline: Creative Renaissance] Asset classified as AI-Native (Built specifically for AI ecosystems. Maximum AI acceleration benefits.). AI Timeline Factor: 8.33x (AI acceleration boosts this asset significantly). Protocol Utility Token: benefits from network effects and protocol utility (base range: 10x - 25x). Class A (Real Yield) receives 1.2x risk class boost - resilient during market stress. Insider control (20/100) reduces multiplier by 0.90x due to centralization risks. Rank #200 imposes 0.2x penalty (illiquid, capital flight crushes value). Final real valuation multiplier: 31.5x. Token trading at $1.00 today would be worth $31.50 post-fiat collapse. AI acceleration provides strong tailwinds. Trading signal (BUY): Undervalued post-collapse. Accumulate before systemic shift.
+[AI Timeline: Creative Renaissance] Asset classified as AI-Native (Built specifically for AI ecosystems. Maximum AI acceleration benefits.). AI Timeline Factor: 8.33x (AI acceleration boosts this asset significantly). Protocol Utility Token: benefits from network effects and protocol utility (base range: 10x - 25x). Class A (Real Yield) receives 1.2x risk class boost - resilient during market stress. Insider control (20/100) reduces multiplier by 0.90x due to centralization risks. Rank #200 imposes 0.2x penalty (illiquid, capital flight crushes value). Liquidity friction (Market Cap: $4.3e7) adds a 20% baseline tariff. Final real valuation multiplier: 28.4x. Token trading at $1.00 today would be worth $28.35 post-fiat collapse. AI acceleration provides strong tailwinds. Trading signal (BUY): Undervalued post-collapse. Accumulate before systemic shift.
 
 ---
 

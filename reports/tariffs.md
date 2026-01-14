@@ -58,46 +58,34 @@ The gold standard assets that achieve 10x or higher multipliers. These have no t
 
 | Symbol | Name | Risk Class | Multiplier | Effective Tariff | Exchange Rate | Token Type | AI Category |
 |--------|------|------------|------------|------------------|---------------|------------|-------------|
-| RENDER | Render Network | 🛡️ Class A (Real Yield) | 144.84x | 0% | 📈 $1.00 → $144.84 | ⚙️ Protocol Utility | 🧠 AI-Enabled |
-| HNT | Helium Network | 🛡️ Class A (Real Yield) | 143.44x | 0% | 📈 $1.00 → $143.44 | ⚙️ Protocol Utility | 🧠 AI-Enabled |
-| ORCA | Orca | 🏦 Class B (Systemic) | 136.45x | 0% | 📈 $1.00 → $136.45 | ⚙️ Protocol Utility | 🧠 AI-Enabled |
-| IO | io.net | 🚀 Class C (Venture Risk) | 133.88x | 0% | 📈 $1.00 → $133.88 | ⚙️ Protocol Utility | 🧠 AI-Enabled |
-| GRASS | Grass | 🚀 Class C (Venture Risk) | 120.49x | 0% | 📈 $1.00 → $120.49 | ⚙️ Protocol Utility | 🧠 AI-Enabled |
-| WIFI | WiFi Map | 🛡️ Class A (Real Yield) | 109.33x | 0% | 📈 $1.00 → $109.33 | ⚙️ Protocol Utility | 🧠 AI-Enabled |
-| AKT | Akash Network (Wormhole) | 🛡️ Class A (Real Yield) | 104.96x | 0% | 📈 $1.00 → $104.96 | ⚙️ Protocol Utility | 🧠 AI-Enabled |
-| ALEPH | Aleph.im | 🛡️ Class A (Real Yield) | 100.58x | 0% | 📈 $1.00 → $100.58 | ⚙️ Protocol Utility | 🧠 AI-Enabled |
-| HONEY | Hivemapper | 🛡️ Class A (Real Yield) | 100.58x | 0% | 📈 $1.00 → $100.58 | ⚙️ Protocol Utility | 🧠 AI-Enabled |
-| SHDW | Shadow Token | 🛡️ Class A (Real Yield) | 97.96x | 0% | 📈 $1.00 → $97.96 | ⚙️ Protocol Utility | 🧠 AI-Enabled |
-| NOS | Nosana | 🛡️ Class A (Real Yield) | 96.21x | 0% | 📈 $1.00 → $96.21 | ⚙️ Protocol Utility | 🧠 AI-Enabled |
-| MOBILE | Helium Mobile | 🛡️ Class A (Real Yield) | 94.46x | 0% | 📈 $1.00 → $94.46 | ⚙️ Protocol Utility | 🧠 AI-Enabled |
-| IOT | Helium IOT | 🛡️ Class A (Real Yield) | 94.46x | 0% | 📈 $1.00 → $94.46 | ⚙️ Protocol Utility | 🧠 AI-Enabled |
-| KOII | Koii Network | 🏦 Class B (Systemic) | 56.48x | 0% | 📈 $1.00 → $56.48 | ⚙️ Protocol Utility | 🧠 AI-Enabled |
-| LMR | Lumerin | 🛡️ Class A (Real Yield) | 41.98x | 0% | 📈 $1.00 → $41.98 | ⚙️ Protocol Utility | 🧠 AI-Enabled |
-| UPT | UpRock | 🛡️ Class A (Real Yield) | 40.23x | 0% | 📈 $1.00 → $40.23 | ⚙️ Protocol Utility | 🧠 AI-Enabled |
-| SYN | Synesis One | 🛡️ Class A (Real Yield) | 39.36x | 0% | 📈 $1.00 → $39.36 | ⚙️ Protocol Utility | 🧠 AI-Enabled |
-| NATIX | Natix Network | 🛡️ Class A (Real Yield) | 39.36x | 0% | 📈 $1.00 → $39.36 | ⚙️ Protocol Utility | 🧠 AI-Enabled |
-| ONDE | Onde Network | 🛡️ Class A (Real Yield) | 37.78x | 0% | 📈 $1.00 → $37.78 | ⚙️ Protocol Utility | 🧠 AI-Enabled |
-| ACT | Act I: The AI Prophecy | 🧪 Class E (Experimental) | 35.10x | 0% | 📈 $1.00 → $35.10 | ⚙️ Protocol Utility | 🤖 AI-Native |
-| PYTH | Pyth Network | 🚀 Class C (Venture Risk) | 32.14x | 0% | 📈 $1.00 → $32.14 | ⚙️ Protocol Utility | 🔋 Passive Utility |
-| W | Wormhole | 🚀 Class C (Venture Risk) | 32.14x | 0% | 📈 $1.00 → $32.14 | ⚙️ Protocol Utility | 🔋 Passive Utility |
-| MEDIA | Media Network | 🏦 Class B (Systemic) | 24.56x | 0% | 📈 $1.00 → $24.56 | ⚙️ Protocol Utility | 🧠 AI-Enabled |
-| GMT | STEPN | 🚀 Class C (Venture Risk) | 24.11x | 0% | 📈 $1.00 → $24.11 | ⚙️ Protocol Utility | 🔋 Passive Utility |
-| UPC | UpRock | 🏦 Class B (Systemic) | 22.59x | 0% | 📈 $1.00 → $22.59 | ⚙️ Protocol Utility | 🧠 AI-Enabled |
-| SOL | Solana | 🏦 Class B (Systemic) | 20.15x | 0% | 📈 $1.00 → $20.15 | ⚙️ Protocol Utility | 🔋 Passive Utility |
-| RAY | Raydium | 🏦 Class B (Systemic) | 18.90x | 0% | 📈 $1.00 → $18.90 | ⚙️ Protocol Utility | 🔋 Passive Utility |
-| FLUXB | FluxBot | 🚀 Class C (Speculative) | 17.97x | 0% | 📈 $1.00 → $17.97 | ⚙️ Protocol Utility | 🧠 AI-Enabled |
-| wETH | Wrapped Ether (Portal) | 🏦 Class B (Systemic) | 12.98x | 0% | 📈 $1.00 → $12.98 | 🌉 Wrapped Bridge | 🔋 Passive Utility |
-| SNS | Synesis One | 🧪 Class E (Experimental) | 12.67x | 0% | 📈 $1.00 → $12.67 | ⚙️ Protocol Utility | 🧠 AI-Enabled |
-| MET | Meteora | 🛡️ Class A (Real Yield) | 12.60x | 0% | 📈 $1.00 → $12.60 | ⚙️ Protocol Utility | 🔋 Passive Utility |
-| DRIFT | Drift Protocol | 🚀 Class C (Venture Risk) | 12.56x | 0% | 📈 $1.00 → $12.56 | ⚙️ Protocol Utility | 🔋 Passive Utility |
-| SHRAP | Shrapnel | 🚀 Class C (Venture Risk) | 12.56x | 0% | 📈 $1.00 → $12.56 | ⚙️ Protocol Utility | 🔋 Passive Utility |
-| CLOUD | Sanctum | 🛡️ Class A (Real Yield) | 11.81x | 0% | 📈 $1.00 → $11.81 | ⚙️ Protocol Utility | 🔋 Passive Utility |
-| ZETA | Zeta Markets | 🚀 Class C (Venture Risk) | 11.05x | 0% | 📈 $1.00 → $11.05 | ⚙️ Protocol Utility | 🔋 Passive Utility |
-| NEON | Neon EVM | 🚀 Class C (Venture Risk) | 11.03x | 0% | 📈 $1.00 → $11.03 | ⚙️ Protocol Utility | 🔋 Passive Utility |
-| DBR | deBridge | 🚀 Class C (Venture Risk) | 11.03x | 0% | 📈 $1.00 → $11.03 | ⚙️ Protocol Utility | 🔋 Passive Utility |
-| wLDO | Wrapped Lido DAO (Portal) | 🏦 Class B (Systemic) | 10.75x | 0% | 📈 $1.00 → $10.75 | 🌉 Wrapped Bridge | 🔋 Passive Utility |
-| WBTC | Wrapped Bitcoin (Portal) | 🛡️ Class A (Real Yield) | 10.58x | 0% | 📈 $1.00 → $10.58 | 🪙 Hard Money | 🗿 Static |
-| KMNO | Kamino | 🚀 Class C (Venture Risk) | 10.04x | 0% | 📈 $1.00 → $10.04 | ⚙️ Protocol Utility | 🔋 Passive Utility |
+| SOL | Solana | 🏦 Class B (Systemic) | 37.3x | 0% | 📈 $143.20 → $5348.00 | ⚙️ Protocol Utility | 🔋 Passive Utility |
+| RENDER | Render Network | 🛡️ Class A (Real Yield) | 79.7x | 10% | 📈 $2.43 → $193.66 | ⚙️ Protocol Utility | 🧠 AI-Enabled |
+| HNT | Helium Network | 🛡️ Class A (Real Yield) | 79.8x | 15% | 📈 $1.39 → $110.92 | ⚙️ Protocol Utility | 🧠 AI-Enabled |
+| GRASS | Grass | 🚀 Class C (Venture Risk) | 76.6x | 15% | 📈 $0.3468 → $26.57 | ⚙️ Protocol Utility | 🧠 AI-Enabled |
+| W | Wormhole | 🚀 Class C (Venture Risk) | 58.6x | 15% | 📈 $0.0377 → $2.21 | ⚙️ Protocol Utility | 🔋 Passive Utility |
+| PYTH | Pyth Network | 🚀 Class C (Venture Risk) | 56.7x | 15% | 📈 $0.0687 → $3.90 | ⚙️ Protocol Utility | 🔋 Passive Utility |
+| AKT | Akash Network (Wormhole) | 🛡️ Class A (Real Yield) | 53.9x | 15% | 📈 $0.4996 → $26.91 | ⚙️ Protocol Utility | 🧠 AI-Enabled |
+| RAY | Raydium | 🏦 Class B (Systemic) | 32.3x | 15% | 📈 $1.19 → $38.46 | ⚙️ Protocol Utility | 🔋 Passive Utility |
+| KMNO | Kamino | 🚀 Class C (Venture Risk) | 18.9x | 15% | 📈 $0.0578 → $1.09 | ⚙️ Protocol Utility | 🔋 Passive Utility |
+| 1INCH | 1inch (Wormhole) | 🏦 Class B (Systemic) | 17.8x | 15% | 📈 $0.1540 → $2.74 | ⚙️ Protocol Utility | 🔋 Passive Utility |
+| ORCA | Orca | 🏦 Class B (Systemic) | 73.7x | 20% | 📈 $1.20 → $88.45 | ⚙️ Protocol Utility | 🧠 AI-Enabled |
+| ACT | Act I: The AI Prophecy | 🧪 Class E (Experimental) | 53.7x | 20% | 📈 $0.0247 → $1.33 | ⚙️ Protocol Utility | 🤖 AI-Native |
+| HONEY | Hivemapper | 🛡️ Class A (Real Yield) | 48.9x | 20% | 📈 $0.0078 → $0.3826 | ⚙️ Protocol Utility | 🧠 AI-Enabled |
+| MOBILE | Helium Mobile | 🛡️ Class A (Real Yield) | 48.2x | 20% | 📈 $0.00019 → $0.0089 | ⚙️ Protocol Utility | 🧠 AI-Enabled |
+| NOS | Nosana | 🛡️ Class A (Real Yield) | 48.1x | 20% | 📈 $0.2967 → $14.26 | ⚙️ Protocol Utility | 🧠 AI-Enabled |
+| GMT | STEPN | 🚀 Class C (Venture Risk) | 43.5x | 20% | 📈 $0.0191 → $0.8316 | ⚙️ Protocol Utility | 🔋 Passive Utility |
+| DRIFT | Drift Protocol | 🚀 Class C (Venture Risk) | 21.7x | 20% | 📈 $0.1614 → $3.50 | ⚙️ Protocol Utility | 🔋 Passive Utility |
+| SYN | Synesis One | 🛡️ Class A (Real Yield) | 20.7x | 20% | 📈 $0.0691 → $1.43 | ⚙️ Protocol Utility | 🧠 AI-Enabled |
+| NATIX | Natix Network | 🛡️ Class A (Real Yield) | 20.7x | 20% | 📈 $0.00029 → $0.0060 | ⚙️ Protocol Utility | 🧠 AI-Enabled |
+| NEON | Neon EVM | 🚀 Class C (Venture Risk) | 20.6x | 20% | 📈 $0.0583 → $1.20 | ⚙️ Protocol Utility | 🔋 Passive Utility |
+| ZETA | Zeta Markets | 🚀 Class C (Venture Risk) | 20.0x | 20% | 📈 $0.0678 → $1.35 | ⚙️ Protocol Utility | 🔋 Passive Utility |
+| DBR | deBridge | 🚀 Class C (Venture Risk) | 18.7x | 20% | 📈 $0.0190 → $0.3563 | ⚙️ Protocol Utility | 🔋 Passive Utility |
+| IOT | Helium IOT | 🛡️ Class A (Real Yield) | 48.2x | 25% | 📈 $0.00021 → $0.0101 | ⚙️ Protocol Utility | 🧠 AI-Enabled |
+| KOII | Koii Network | 🏦 Class B (Systemic) | 31.0x | 25% | 📈 $0.00017 → $0.0053 | ⚙️ Protocol Utility | 🧠 AI-Enabled |
+| UPT | UpRock | 🛡️ Class A (Real Yield) | 20.6x | 25% | 📈 $0.0064 → $0.1332 | ⚙️ Protocol Utility | 🧠 AI-Enabled |
+| LMR | Lumerin | 🛡️ Class A (Real Yield) | 20.4x | 25% | 📈 $0.00089 → $0.0181 | ⚙️ Protocol Utility | 🧠 AI-Enabled |
+| ATLAS | Star Atlas | 🚀 Class C (Venture Risk) | 15.8x | 25% | 📈 $0.00030 → $0.0048 | ⚙️ Protocol Utility | 🔋 Passive Utility |
+| KIN | Kin | 🏦 Class B (Systemic) | 13.6x | 25% | 📈 $0.77μ → $10μ | ⚙️ Protocol Utility | 🔋 Passive Utility |
 
 ### Tier 2: Good (1% - 100%)
 
@@ -105,24 +93,19 @@ Strong assets with 5x-9.99x multipliers. Low friction, good store of value.
 
 | Symbol | Name | Risk Class | Multiplier | Effective Tariff | Exchange Rate | Token Type | AI Category |
 |--------|------|------------|------------|------------------|---------------|------------|-------------|
-| 1INCH | 1inch (Wormhole) | 🏦 Class B (Systemic) | 9.92x | 0% | 📈 $1.00 → $9.92 | ⚙️ Protocol Utility | 🔋 Passive Utility |
-| wUNI | Wrapped Uniswap (Portal) | 🛡️ Class A (Real Yield) | 9.73x | 0% | 📈 $1.00 → $9.73 | 🌉 Wrapped Bridge | 🔋 Passive Utility |
-| wBNB | Wrapped BNB (Portal) | 🏦 Class B (Systemic) | 9.43x | 1% | 📈 $1.00 → $9.43 | 🌉 Wrapped Bridge | 🔋 Passive Utility |
-| SLND | Solend (Save) | 🏦 Class B (Systemic) | 9.21x | 1% | 📈 $1.00 → $9.21 | ⚙️ Protocol Utility | 🔋 Passive Utility |
-| ATLAS | Star Atlas | 🚀 Class C (Venture Risk) | 9.04x | 1% | 📈 $1.00 → $9.04 | ⚙️ Protocol Utility | 🔋 Passive Utility |
-| zBTC | Zeus Bitcoin | 🛡️ Class A (Real Yield) | 8.57x | 2% | 📈 $1.00 → $8.57 | 🪙 Hard Money | 🗿 Static |
-| tBTC | Threshold Bitcoin | 🛡️ Class A (Real Yield) | 8.40x | 2% | 📈 $1.00 → $8.40 | 🪙 Hard Money | 🗿 Static |
-| KIN | Kin | 🏦 Class B (Systemic) | 8.19x | 2% | 📈 $1.00 → $8.19 | ⚙️ Protocol Utility | 🔋 Passive Utility |
-| wLINK | Wrapped Chainlink (Portal) | 🏦 Class B (Systemic) | 7.30x | 4% | 📈 $1.00 → $7.30 | 🌉 Wrapped Bridge | 🔋 Passive Utility |
-| wMATIC | Wrapped Matic (Portal) | 🏦 Class B (Systemic) | 6.72x | 5% | 📈 $1.00 → $6.72 | 🌉 Wrapped Bridge | 🔋 Passive Utility |
-| wAVAX | Wrapped AVAX (Portal) | 🏦 Class B (Systemic) | 6.72x | 5% | 📈 $1.00 → $6.72 | 🌉 Wrapped Bridge | 🔋 Passive Utility |
-| wNEAR | Wrapped NEAR (Portal) | 🚀 Class C (Speculative) | 6.03x | 7% | 📈 $1.00 → $6.03 | 🌉 Wrapped Bridge | 🔋 Passive Utility |
-| wCRV | Wrapped Curve DAO (Portal) | 🏦 Class B (Systemic) | 5.95x | 7% | 📈 $1.00 → $5.95 | 🌉 Wrapped Bridge | 🔋 Passive Utility |
-| GENE | Genopets | 🛡️ Class A (Real Yield) | 5.29x | 9% | 📈 $1.00 → $5.29 | ⚙️ Protocol Utility | 🔋 Passive Utility |
-| DUAL | Dual Finance | 🛡️ Class A (Real Yield) | 5.25x | 9% | 📈 $1.00 → $5.25 | ⚙️ Protocol Utility | 🔋 Passive Utility |
-| PICA | Picasso | 🛡️ Class A (Real Yield) | 5.25x | 9% | 📈 $1.00 → $5.25 | ⚙️ Protocol Utility | 🔋 Passive Utility |
-| GUAC | Guacamole | 🛡️ Class A (Real Yield) | 5.25x | 9% | 📈 $1.00 → $5.25 | ⚙️ Protocol Utility | 🔋 Passive Utility |
-| LFG | Less Fn Gas | 🤣 Class D (Speculative) | 5.25x | 9% | 📈 $1.00 → $5.25 | ⚙️ Protocol Utility | 🔋 Passive Utility |
+| WBTC | Wrapped Bitcoin (Portal) | 🛡️ Class A (Real Yield) | 9.5x | 10% | 📈 $92341.00 → $8.8e5 | 🪙 Hard Money | 🗿 Static |
+| ZEUS | Zeus Network | 🛡️ Class A (Real Yield) | 7.1x | 24% | 📈 $0.0198 → $0.1414 | ⚙️ Protocol Utility | 🔋 Passive Utility |
+| PRCL | Parcl | 🚀 Class C (Venture Risk) | 7.0x | 24% | 📈 $0.0289 → $0.2032 | ⚙️ Protocol Utility | 🔋 Passive Utility |
+| ACS | Access Protocol | 🚀 Class C (Venture Risk) | 7.0x | 24% | 📈 $0.00030 → $0.0021 | ⚙️ Protocol Utility | 🔋 Passive Utility |
+| FIDA | Bonfida | 🛡️ Class A (Real Yield) | 6.8x | 25% | 📈 $0.0357 → $0.2442 | ⚙️ Protocol Utility | 🔋 Passive Utility |
+| FLUXB | FluxBot | 🚀 Class C (Speculative) | 9.4x | 26% | 📈 $0.0046 → $0.0436 | ⚙️ Protocol Utility | 🧠 AI-Enabled |
+| GUAC | Guacamole | 🛡️ Class A (Real Yield) | 8.1x | 27% | 📈 $0.01μ → $0.10μ | ⚙️ Protocol Utility | 🔋 Passive Utility |
+| GENE | Genopets | 🛡️ Class A (Real Yield) | 7.9x | 28% | 📈 $0.0025 → $0.0197 | ⚙️ Protocol Utility | 🔋 Passive Utility |
+| HXRO | Hxro Network | 🚀 Class C (Venture Risk) | 7.5x | 28% | 📈 $0.0049 → $0.0365 | ⚙️ Protocol Utility | 🔋 Passive Utility |
+| SLIM | Solanium | 🚀 Class C (Venture Risk) | 7.3x | 29% | 📈 $0.0247 → $0.1790 | ⚙️ Protocol Utility | 🔋 Passive Utility |
+| STEP | Step Finance | 🛡️ Class A (Real Yield) | 7.2x | 29% | 📈 $0.0233 → $0.1687 | ⚙️ Protocol Utility | 🔋 Passive Utility |
+| AURY | Aurory | 🛡️ Class A (Real Yield) | 7.2x | 29% | 📈 $0.0712 → $0.5150 | ⚙️ Protocol Utility | 🔋 Passive Utility |
+| ZIG | Zignaly | 🏦 Class B (Systemic) | 5.1x | 30% | 📈 $0.0591 → $0.2989 | ⚙️ Protocol Utility | 🔋 Passive Utility |
 
 ### Tier 3: Neutral (101% - 500%)
 
@@ -130,91 +113,43 @@ Assets with 0.20x-4.99x multipliers. Moderate friction, reasonable utility.
 
 | Symbol | Name | Risk Class | Multiplier | Effective Tariff | Exchange Rate | Token Type | AI Category |
 |--------|------|------------|------------|------------------|---------------|------------|-------------|
-| PHOENIX | Phoenix (Ellipsis) | 🛡️ Class A (Real Yield) | 4.91x | 10% | 📈 $1.00 → $4.91 | ⚙️ Protocol Utility | 🔋 Passive Utility |
-| STEP | Step Finance | 🛡️ Class A (Real Yield) | 4.83x | 11% | 📈 $1.00 → $4.83 | ⚙️ Protocol Utility | 🔋 Passive Utility |
-| AURY | Aurory | 🛡️ Class A (Real Yield) | 4.73x | 11% | 📈 $1.00 → $4.73 | ⚙️ Protocol Utility | 🔋 Passive Utility |
-| STRM | Streamflow | 🛡️ Class A (Real Yield) | 4.62x | 12% | 📈 $1.00 → $4.62 | ⚙️ Protocol Utility | 🔋 Passive Utility |
-| ZEUS | Zeus Network | 🛡️ Class A (Real Yield) | 4.54x | 12% | 📈 $1.00 → $4.54 | ⚙️ Protocol Utility | 🔋 Passive Utility |
-| HXRO | Hxro Network | 🚀 Class C (Venture Risk) | 4.41x | 13% | 📈 $1.00 → $4.41 | ⚙️ Protocol Utility | 🔋 Passive Utility |
-| FIDA | Bonfida | 🛡️ Class A (Real Yield) | 4.35x | 13% | 📈 $1.00 → $4.35 | ⚙️ Protocol Utility | 🔋 Passive Utility |
-| TULIP | Tulip Protocol | 🏦 Class B (Systemic) | 4.25x | 14% | 📈 $1.00 → $4.25 | ⚙️ Protocol Utility | 🔋 Passive Utility |
-| cbBTC | Coinbase Wrapped BTC | 🏦 Class B (Systemic) | 4.16x | 14% | 📈 $1.00 → $4.16 | 🪙 Hard Money | 🗿 Static |
-| PRCL | Parcl | 🚀 Class C (Venture Risk) | 4.02x | 15% | 📈 $1.00 → $4.02 | ⚙️ Protocol Utility | 🔋 Passive Utility |
-| ACS | Access Protocol | 🚀 Class C (Venture Risk) | 4.02x | 15% | 📈 $1.00 → $4.02 | ⚙️ Protocol Utility | 🔋 Passive Utility |
-| SLIM | Solanium | 🚀 Class C (Venture Risk) | 4.02x | 15% | 📈 $1.00 → $4.02 | ⚙️ Protocol Utility | 🔋 Passive Utility |
-| OPEN | OpenBook | 🏦 Class B (Systemic) | 3.28x | 21% | 📈 $1.00 → $3.28 | ⚙️ Protocol Utility | 🔋 Passive Utility |
-| HADES | Hadeswap | 🚀 Class C (Speculative) | 3.00x | 23% | 📈 $1.00 → $3.00 | ⚙️ Protocol Utility | 🔋 Passive Utility |
-| ZIG | Zignaly | 🏦 Class B (Systemic) | 2.98x | 24% | 📈 $1.00 → $2.98 | ⚙️ Protocol Utility | 🔋 Passive Utility |
-| ABR | Allbridge | 🏦 Class B (Systemic) | 2.95x | 24% | 📈 $1.00 → $2.95 | ⚙️ Protocol Utility | 🔋 Passive Utility |
-| CHAT | Solchat | 🏦 Class B (Systemic) | 2.95x | 24% | 📈 $1.00 → $2.95 | ⚙️ Protocol Utility | 🔋 Passive Utility |
-| SONAR | SonarWatch | 🏦 Class B (Systemic) | 2.92x | 24% | 📈 $1.00 → $2.92 | ⚙️ Protocol Utility | 🔋 Passive Utility |
-| RIN | Aldrin | 🏦 Class B (Systemic) | 2.71x | 27% | 📈 $1.00 → $2.71 | ⚙️ Protocol Utility | 🔋 Passive Utility |
-| MEAN | Mean DAO | 🏦 Class B (Systemic) | 2.71x | 27% | 📈 $1.00 → $2.71 | ⚙️ Protocol Utility | 🔋 Passive Utility |
-| IVN | Investin | 🏦 Class B (Systemic) | 2.71x | 27% | 📈 $1.00 → $2.71 | ⚙️ Protocol Utility | 🔋 Passive Utility |
-| CRP | Cropper | 🚀 Class C (Speculative) | 2.70x | 27% | 📈 $1.00 → $2.70 | ⚙️ Protocol Utility | 🔋 Passive Utility |
-| ZBCN | Zebec Network | 🏦 Class B (Systemic) | 2.69x | 27% | 📈 $1.00 → $2.69 | ⚙️ Protocol Utility | 🔋 Passive Utility |
-| GRAPE | Grape Network | 🏦 Class B (Systemic) | 2.69x | 27% | 📈 $1.00 → $2.69 | ⚙️ Protocol Utility | 🔋 Passive Utility |
-| AART | ALL.ART | 🏦 Class B (Systemic) | 2.69x | 27% | 📈 $1.00 → $2.69 | ⚙️ Protocol Utility | 🔋 Passive Utility |
-| DUST | Dust Protocol | 🚀 Class C (Speculative) | 2.67x | 27% | 📈 $1.00 → $2.67 | ⚙️ Protocol Utility | 🔋 Passive Utility |
-| YAKU | Yaku | 🚀 Class C (Speculative) | 2.67x | 27% | 📈 $1.00 → $2.67 | ⚙️ Protocol Utility | 🔋 Passive Utility |
-| CAVE | CaveWorld | 🚀 Class C (Speculative) | 2.48x | 30% | 📈 $1.00 → $2.48 | ⚙️ Protocol Utility | 🔋 Passive Utility |
-| FCON | Space Falcon | 🚀 Class C (Speculative) | 2.46x | 31% | 📈 $1.00 → $2.46 | ⚙️ Protocol Utility | 🔋 Passive Utility |
-| DIO | Decimated | 🚀 Class C (Speculative) | 2.46x | 31% | 📈 $1.00 → $2.46 | ⚙️ Protocol Utility | 🔋 Passive Utility |
-| GOFX | GooseFX | 🚀 Class C (Speculative) | 2.46x | 31% | 📈 $1.00 → $2.46 | ⚙️ Protocol Utility | 🔋 Passive Utility |
-| HAWK | Hawk Protocol | 🚀 Class C (Speculative) | 2.46x | 31% | 📈 $1.00 → $2.46 | ⚙️ Protocol Utility | 🔋 Passive Utility |
-| SOLR | SolRazr | 🚀 Class C (Speculative) | 2.46x | 31% | 📈 $1.00 → $2.46 | ⚙️ Protocol Utility | 🔋 Passive Utility |
-| LARIX | Larix | 🚀 Class C (Speculative) | 2.43x | 31% | 📈 $1.00 → $2.43 | ⚙️ Protocol Utility | 🔋 Passive Utility |
-| SOLC | SolCard | 🚀 Class C (Speculative) | 2.43x | 31% | 📈 $1.00 → $2.43 | ⚙️ Protocol Utility | 🔋 Passive Utility |
-| LIKE | Only1 | 🚀 Class C (Speculative) | 2.43x | 31% | 📈 $1.00 → $2.43 | ⚙️ Protocol Utility | 🔋 Passive Utility |
-| CRWNY | Crowny | 🚀 Class C (Speculative) | 2.41x | 31% | 📈 $1.00 → $2.41 | ⚙️ Protocol Utility | 🔋 Passive Utility |
-| LIQ | Liq Protocol | 🏦 Class B (Systemic) | 2.40x | 32% | 📈 $1.00 → $2.40 | ⚙️ Protocol Utility | 🔋 Passive Utility |
-| PIP | Pip | 🏦 Class B (Systemic) | 2.36x | 32% | 📈 $1.00 → $2.36 | ⚙️ Protocol Utility | 🔋 Passive Utility |
-| SBR | Saber | 🚀 Class C (Speculative) | 2.16x | 36% | 📈 $1.00 → $2.16 | ⚙️ Protocol Utility | 🔋 Passive Utility |
-| REAL | Realy Metaverse | 🚀 Class C (Speculative) | 2.16x | 36% | 📈 $1.00 → $2.16 | ⚙️ Protocol Utility | 🔋 Passive Utility |
-| YAW | Yawww | 🚀 Class C (Speculative) | 2.16x | 36% | 📈 $1.00 → $2.16 | ⚙️ Protocol Utility | 🔋 Passive Utility |
-| SAROS | Saros | 🚀 Class C (Speculative) | 2.14x | 37% | 📈 $1.00 → $2.14 | ⚙️ Protocol Utility | 🔋 Passive Utility |
-| BLOCK | Blockasset | 🚀 Class C (Speculative) | 2.14x | 37% | 📈 $1.00 → $2.14 | ⚙️ Protocol Utility | 🔋 Passive Utility |
-| MBS | MonkeyLeague | 🚀 Class C (Speculative) | 2.14x | 37% | 📈 $1.00 → $2.14 | ⚙️ Protocol Utility | 🔋 Passive Utility |
-| CYS | Cyclos | 🚀 Class C (Speculative) | 2.14x | 37% | 📈 $1.00 → $2.14 | ⚙️ Protocol Utility | 🔋 Passive Utility |
-| GST | Green Satoshi Token | 🧪 Class E (Experimental) | 1.91x | 42% | 📈 $1.00 → $1.91 | ⚙️ Protocol Utility | 🔋 Passive Utility |
-| SOLS | SPL20 Inscriptions | 🧪 Class E (Experimental) | 1.91x | 42% | 📈 $1.00 → $1.91 | ⚙️ Protocol Utility | 🔋 Passive Utility |
-| SRM | Serum | 🚀 Class C (Speculative) | 1.88x | 43% | 📈 $1.00 → $1.88 | ⚙️ Protocol Utility | 🔋 Passive Utility |
-| GH0ST | Gh0st | 🧪 Class E (Experimental) | 1.86x | 44% | 📈 $1.00 → $1.86 | ⚙️ Protocol Utility | 🔋 Passive Utility |
-| MAPS | Maps.me | 🚀 Class C (Speculative) | 1.85x | 44% | 📈 $1.00 → $1.85 | ⚙️ Protocol Utility | 🔋 Passive Utility |
-| OXY | Oxygen | 🚀 Class C (Speculative) | 1.85x | 44% | 📈 $1.00 → $1.85 | ⚙️ Protocol Utility | 🔋 Passive Utility |
-| BERN | BonkEarn | 🧪 Class E (Experimental) | 1.67x | 50% | 📈 $1.00 → $1.67 | ⚙️ Protocol Utility | 🔋 Passive Utility |
-| BOZO | Bozo Hybrid | 🧪 Class E (Experimental) | 1.67x | 50% | 📈 $1.00 → $1.67 | ⚙️ Protocol Utility | 🔋 Passive Utility |
-| DFL | DeFi Land | 🧪 Class E (Experimental) | 1.65x | 50% | 📈 $1.00 → $1.65 | ⚙️ Protocol Utility | 🔋 Passive Utility |
-| XAUT | Tether Gold (Portal) | 🛡️ Class A (Real Yield) | 1.56x | 54% | 📈 $1.00 → $1.56 | 🧈 Commodity Backed | 🗿 Static |
-| ZERO | Analysoor | 🧪 Class E (Experimental) | 1.55x | 55% | 📈 $1.00 → $1.55 | ⚙️ Protocol Utility | 🔋 Passive Utility |
-| SNY | Synthetify | 🧪 Class E (Experimental) | 1.54x | 55% | 📈 $1.00 → $1.54 | ⚙️ Protocol Utility | 🔋 Passive Utility |
-| PAXG | Paxos Gold (Portal) | 🛡️ Class A (Real Yield) | 1.51x | 56% | 📈 $1.00 → $1.51 | 🧈 Commodity Backed | 🗿 Static |
-| MAIL | SolMail | 🧪 Class E (Experimental) | 1.51x | 56% | 📈 $1.00 → $1.51 | ⚙️ Protocol Utility | 🔋 Passive Utility |
-| ROPE | Rope | 🧪 Class E (Experimental) | 1.36x | 63% | 📈 $1.00 → $1.36 | ⚙️ Protocol Utility | 🔋 Passive Utility |
-| WLKN | Walken | 🧪 Class E (Experimental) | 1.35x | 64% | 📈 $1.00 → $1.35 | ⚙️ Protocol Utility | 🔋 Passive Utility |
-| COPE | Cope | 🧪 Class E (Experimental) | 1.35x | 64% | 📈 $1.00 → $1.35 | ⚙️ Protocol Utility | 🔋 Passive Utility |
-| JLP | Jupiter Perps LP | 🛡️ Class A (Real Yield) | 1.32x | 66% | 📈 $1.00 → $1.32 | 💸 Real Yield | 🔋 Passive Utility |
-| GARI | Gari Network | 🧪 Class E (Experimental) | 1.13x | 78% | 📈 $1.00 → $1.13 | ⚙️ Protocol Utility | 🔋 Passive Utility |
-| JitoSOL | Jito Staked SOL | 🏦 Class B (Systemic) | 0.96x | 94% | 📉 $1.00 → $0.96 | 💧 Liquid Staking | 🔋 Passive Utility |
-| mSOL | Marinade Staked SOL | 🏦 Class B (Systemic) | 0.96x | 94% | 📉 $1.00 → $0.96 | 💧 Liquid Staking | 🔋 Passive Utility |
-| AI16Z | ai16z | 🧪 Class E (Experimental) | 0.88x | 103% | 📉 $1.00 → $0.88 | 🗳️ Governance | 🤖 AI-Native |
-| bSOL | Blaze Staked SOL | 🏦 Class B (Systemic) | 0.77x | 120% | 📉 $1.00 → $0.77 | 💧 Liquid Staking | 🔋 Passive Utility |
-| INF | Sanctum Infinity | 🏦 Class B (Systemic) | 0.77x | 120% | 📉 $1.00 → $0.77 | 💧 Liquid Staking | 🔋 Passive Utility |
-| JTO | Jito | 🚀 Class C (Venture Risk) | 0.76x | 122% | 📉 $1.00 → $0.76 | 🗳️ Governance | 🔋 Passive Utility |
-| LFNTY | Lifinity | 🛡️ Class A (Real Yield) | 0.66x | 142% | 📉 $1.00 → $0.66 | 💸 Real Yield | 🔋 Passive Utility |
-| USDY | Ondo US Dollar Yield | 🛡️ Class A (Real Yield) | 0.61x | 153% | 📉 $1.00 → $0.61 | 💸 Real Yield | 🔋 Passive Utility |
-| OUSG | Ondo Short-Term US Gov | 🛡️ Class A (Real Yield) | 0.61x | 153% | 📉 $1.00 → $0.61 | 💸 Real Yield | 🔋 Passive Utility |
-| jSOL | JPool Staked SOL | 🏦 Class B (Systemic) | 0.48x | 198% | 📉 $1.00 → $0.48 | 💧 Liquid Staking | 🔋 Passive Utility |
-| hSOL | Helius Staked SOL | 🏦 Class B (Systemic) | 0.48x | 198% | 📉 $1.00 → $0.48 | 💧 Liquid Staking | 🔋 Passive Utility |
-| JUP | Jupiter | 🚀 Class C (Venture Risk) | 0.47x | 201% | 📉 $1.00 → $0.47 | 🗳️ Governance | 🔋 Passive Utility |
-| MNDE | Marinade | 🏦 Class B (Systemic) | 0.31x | 311% | 📉 $1.00 → $0.31 | 🗳️ Governance | 🔋 Passive Utility |
-| CROWN | Photo Finish LIVE | 🛡️ Class A (Real Yield) | 0.26x | 369% | 📉 $1.00 → $0.26 | 💸 Real Yield | 🔋 Passive Utility |
-| RAIN | Rain.fi | 🛡️ Class A (Real Yield) | 0.23x | 431% | 📉 $1.00 → $0.23 | 💸 Real Yield | 🔋 Passive Utility |
-| FRKT | Frakt | 🛡️ Class A (Real Yield) | 0.23x | 431% | 📉 $1.00 → $0.23 | 💸 Real Yield | 🔋 Passive Utility |
-| HBB | Hubble Protocol | 🛡️ Class A (Real Yield) | 0.22x | 435% | 📉 $1.00 → $0.22 | 💸 Real Yield | 🔋 Passive Utility |
-| MPLX | Metaplex | 🏦 Class B (Systemic) | 0.21x | 468% | 📉 $1.00 → $0.21 | 🗳️ Governance | 🔋 Passive Utility |
-| GOAT | Goatseus Maximus | 🧪 Class E (Experimental) | 0.21x | 469% | 📉 $1.00 → $0.21 | 🤣 Meme | 🤖 AI-Native |
-| ZEREBRO | Zerebro | 🧪 Class E (Experimental) | 0.21x | 469% | 📉 $1.00 → $0.21 | 🤣 Meme | 🤖 AI-Native |
+| ZBCN | Zebec Network | 🏦 Class B (Systemic) | 4.8x | 26% | 📈 $0.0029 → $0.0140 | ⚙️ Protocol Utility | 🔋 Passive Utility |
+| ABR | Allbridge | 🏦 Class B (Systemic) | 4.9x | 36% | 📈 $0.0699 → $0.3400 | ⚙️ Protocol Utility | 🔋 Passive Utility |
+| CHAT | Solchat | 🏦 Class B (Systemic) | 4.9x | 36% | 📈 $0.0788 → $0.3836 | ⚙️ Protocol Utility | 🔋 Passive Utility |
+| AART | ALL.ART | 🏦 Class B (Systemic) | 4.6x | 37% | 📈 $51μ → $0.00023 | ⚙️ Protocol Utility | 🔋 Passive Utility |
+| LIQ | Liq Protocol | 🏦 Class B (Systemic) | 4.2x | 39% | 📈 $0.0649 → $0.2729 | ⚙️ Protocol Utility | 🔋 Passive Utility |
+| CRP | Cropper | 🚀 Class C (Speculative) | 4.1x | 39% | 📈 $0.0403 → $0.1664 | ⚙️ Protocol Utility | 🔋 Passive Utility |
+| YAKU | Yaku | 🚀 Class C (Speculative) | 4.1x | 39% | 📈 $0.0011 → $0.0046 | ⚙️ Protocol Utility | 🔋 Passive Utility |
+| DIO | Decimated | 🚀 Class C (Speculative) | 3.9x | 41% | 📈 $0.00085 → $0.0033 | ⚙️ Protocol Utility | 🔋 Passive Utility |
+| CYS | Cyclos | 🚀 Class C (Speculative) | 3.2x | 41% | 📈 $0.4680 → $1.52 | ⚙️ Protocol Utility | 🔋 Passive Utility |
+| LIKE | Only1 | 🚀 Class C (Speculative) | 3.8x | 41% | 📈 $0.0018 → $0.0070 | ⚙️ Protocol Utility | 🔋 Passive Utility |
+| HAWK | Hawk Protocol | 🚀 Class C (Speculative) | 3.6x | 42% | 📈 $36μ → $0.00013 | ⚙️ Protocol Utility | 🔋 Passive Utility |
+| CRWNY | Crowny | 🚀 Class C (Speculative) | 3.6x | 43% | 📈 $0.0015 → $0.0052 | ⚙️ Protocol Utility | 🔋 Passive Utility |
+| SAROS | Saros | 🚀 Class C (Speculative) | 3.5x | 44% | 📈 $0.0026 → $0.0089 | ⚙️ Protocol Utility | 🔋 Passive Utility |
+| JLP | Jupiter Perps LP | 🛡️ Class A (Real Yield) | 2.3x | 44% | 📈 $4.85 → $10.95 | 💸 Real Yield | 🔋 Passive Utility |
+| REAL | Realy Metaverse | 🚀 Class C (Speculative) | 3.4x | 44% | 📈 $0.0108 → $0.0367 | ⚙️ Protocol Utility | 🔋 Passive Utility |
+| SBR | Saber | 🚀 Class C (Speculative) | 3.3x | 46% | 📈 $0.00063 → $0.0021 | ⚙️ Protocol Utility | 🔋 Passive Utility |
+| OXY | Oxygen | 🚀 Class C (Speculative) | 2.9x | 50% | 📈 $0.0073 → $0.0210 | ⚙️ Protocol Utility | 🔋 Passive Utility |
+| SRM | Serum | 🚀 Class C (Speculative) | 2.8x | 51% | 📈 $0.0110 → $0.0308 | ⚙️ Protocol Utility | 🔋 Passive Utility |
+| XAUT | Tether Gold (Portal) | 🛡️ Class A (Real Yield) | 1.4x | 70% | 📈 $4608.07 → $6628.99 | 🧈 Commodity Backed | 🗿 Static |
+| PAXG | Paxos Gold (Portal) | 🛡️ Class A (Real Yield) | 1.4x | 70% | 📈 $4621.66 → $6638.55 | 🧈 Commodity Backed | 🗿 Static |
+| JTO | Jito | 🚀 Class C (Venture Risk) | 1.4x | 74% | 📈 $0.4498 → $0.6498 | 🗳️ Governance | 🔋 Passive Utility |
+| DFL | DeFi Land | 🧪 Class E (Experimental) | 1.5x | 83% | 📈 $50μ → $74μ | ⚙️ Protocol Utility | 🔋 Passive Utility |
+| AI16Z | ai16z | 🧪 Class E (Experimental) | 1.4x | 84% | 📈 $0.0015 → $0.0021 | 🗳️ Governance | 🤖 AI-Native |
+| MAIL | SolMail | 🧪 Class E (Experimental) | 1.4x | 85% | 📈 $0.00054 → $0.00077 | ⚙️ Protocol Utility | 🔋 Passive Utility |
+| WLKN | Walken | 🧪 Class E (Experimental) | 1.3x | 91% | 📈 $0.00020 → $0.00026 | ⚙️ Protocol Utility | 🔋 Passive Utility |
+| GARI | Gari Network | 🧪 Class E (Experimental) | 1.2x | 99% | 📈 $0.0012 → $0.0014 | ⚙️ Protocol Utility | 🔋 Passive Utility |
+| USDY | Ondo US Dollar Yield | 🛡️ Class A (Real Yield) | 1.0x | 103% | 📈 $1.11 → $1.13 | 💸 Real Yield | 🔋 Passive Utility |
+| JUP | Jupiter | 🚀 Class C (Venture Risk) | 0.85x | 123% | 📉 $0.2164 → $0.1832 | 🗳️ Governance | 🔋 Passive Utility |
+| MNDE | Marinade | 🏦 Class B (Systemic) | 0.53x | 199% | 📉 $0.0462 → $0.0245 | 🗳️ Governance | 🔋 Passive Utility |
+| MPLX | Metaplex | 🏦 Class B (Systemic) | 0.37x | 282% | 📉 $0.0545 → $0.0200 | 🗳️ Governance | 🔋 Passive Utility |
+| RAIN | Rain.fi | 🛡️ Class A (Real Yield) | 0.34x | 312% | 📉 $4.39 → $1.48 | 💸 Real Yield | 🔋 Passive Utility |
+| GOAT | Goatseus Maximus | 🧪 Class E (Experimental) | 0.33x | 314% | 📉 $0.0388 → $0.0128 | 🤣 Meme | 🤖 AI-Native |
+| HBB | Hubble Protocol | 🛡️ Class A (Real Yield) | 0.33x | 315% | 📉 $0.0048 → $0.0016 | 💸 Real Yield | 🔋 Passive Utility |
+| TNSR | Tensor | 🏦 Class B (Systemic) | 0.33x | 315% | 📉 $0.0712 → $0.0233 | 🗳️ Governance | 🔋 Passive Utility |
+| ZEREBRO | Zerebro | 🧪 Class E (Experimental) | 0.31x | 333% | 📉 $0.0193 → $0.0060 | 🤣 Meme | 🤖 AI-Native |
+| MNGO | Mango Markets | 🚀 Class C (Venture Risk) | 0.23x | 448% | 📉 $0.0206 → $0.0047 | 🗳️ Governance | 🔋 Passive Utility |
+| POLIS | Star Atlas DAO | 🚀 Class C (Venture Risk) | 0.21x | 483% | 📉 $0.0270 → $0.0058 | 🗳️ Governance | 🔋 Passive Utility |
 
 ### Tier 4: Discounted (501% - 1000%)
 
@@ -222,11 +157,9 @@ Assets with 0.10x-0.19x multipliers. Significant friction, underperforms baselin
 
 | Symbol | Name | Risk Class | Multiplier | Effective Tariff | Exchange Rate | Token Type | AI Category |
 |--------|------|------------|------------|------------------|---------------|------------|-------------|
-| daosol | daoSOL | 🏦 Class B (Systemic) | 0.19x | 511% | 📉 $1.00 → $0.19 | 💧 Liquid Staking | 🔋 Passive Utility |
-| TNSR | Tensor | 🏦 Class B (Systemic) | 0.19x | 524% | 📉 $1.00 → $0.19 | 🗳️ Governance | 🔋 Passive Utility |
-| ME | Magic Eden | 🏦 Class B (Systemic) | 0.19x | 530% | 📉 $1.00 → $0.19 | 🗳️ Governance | 🔋 Passive Utility |
-| MNGO | Mango Markets | 🚀 Class C (Venture Risk) | 0.13x | 782% | 📉 $1.00 → $0.13 | 🗳️ Governance | 🔋 Passive Utility |
-| POLIS | Star Atlas DAO | 🚀 Class C (Venture Risk) | 0.13x | 782% | 📉 $1.00 → $0.13 | 🗳️ Governance | 🔋 Passive Utility |
+| PRISM | Prism | 🚀 Class C (Speculative) | 0.12x | 869% | 📉 $0.00063 → $74μ | 🗳️ Governance | 🔋 Passive Utility |
+| USDH | Hubble USD | 🛡️ Class A (Real Yield) | 0.11x | 922% | 📉 $1.00 → $0.1102 | 🛡️ Stable Yield | 🔋 Passive Utility |
+| ISC | International Stable Currency | 🛡️ Class A (Real Yield) | 0.11x | 922% | 📉 $2.19 → $0.2414 | 🛡️ Stable Yield | 🔋 Passive Utility |
 
 ### Tier 5: Poor (1001% - 5000%)
 
@@ -234,25 +167,14 @@ Assets with 0.02x-0.09x multipliers. High friction, weak utility.
 
 | Symbol | Name | Risk Class | Multiplier | Effective Tariff | Exchange Rate | Token Type | AI Category |
 |--------|------|------------|------------|------------------|---------------|------------|-------------|
-| DEAN | Dean's List | 🏦 Class B (Systemic) | 0.09x | 1069% | 📉 $1.00 → $0.09 | 🗳️ Governance | 🔋 Passive Utility |
-| FORGE | Blocksmith Labs Forge | 🚀 Class C (Speculative) | 0.08x | 1181% | 📉 $1.00 → $0.08 | 🗳️ Governance | 🔋 Passive Utility |
-| SUNNY | Sunny Aggregator | 🚀 Class C (Speculative) | 0.08x | 1273% | 📉 $1.00 → $0.08 | 🗳️ Governance | 🔋 Passive Utility |
-| PORT | Port Finance | 🚀 Class C (Speculative) | 0.08x | 1297% | 📉 $1.00 → $0.08 | 🗳️ Governance | 🔋 Passive Utility |
-| TAPS | Tap Fantasy | 🚀 Class C (Speculative) | 0.08x | 1297% | 📉 $1.00 → $0.08 | 🗳️ Governance | 🔋 Passive Utility |
-| PRISM | Prism | 🚀 Class C (Speculative) | 0.08x | 1297% | 📉 $1.00 → $0.08 | 🗳️ Governance | 🔋 Passive Utility |
-| ISC | International Stable Currency | 🛡️ Class A (Real Yield) | 0.08x | 1313% | 📉 $1.00 → $0.08 | 🛡️ Stable Yield | 🔋 Passive Utility |
-| PAR | Parallel | 🛡️ Class A (Real Yield) | 0.07x | 1338% | 📉 $1.00 → $0.07 | 🛡️ Stable Yield | 🔋 Passive Utility |
-| USDH | Hubble USD | 🛡️ Class A (Real Yield) | 0.07x | 1419% | 📉 $1.00 → $0.07 | 🛡️ Stable Yield | 🔋 Passive Utility |
-| BONK | Bonk | 🤣 Class D (Memetic) | 0.05x | 1898% | 📉 $1.00 → $0.05 | 🤣 Meme | 🔋 Passive Utility |
-| UXD | UXD Stablecoin | 🚀 Class C (Venture Risk) | 0.05x | 1926% | 📉 $1.00 → $0.05 | 🛡️ Stable Yield | 🔋 Passive Utility |
-| WIF | dogwifhat | 🤣 Class D (Memetic) | 0.05x | 2090% | 📉 $1.00 → $0.05 | 🤣 Meme | 🔋 Passive Utility |
-| SLERF | Slerf | 🤣 Class D (Memetic) | 0.03x | 2957% | 📉 $1.00 → $0.03 | 🤣 Meme | 🔋 Passive Utility |
-| SAMO | Samoyedcoin | 🤣 Class D (Memetic) | 0.03x | 3043% | 📉 $1.00 → $0.03 | 🤣 Meme | 🔋 Passive Utility |
-| WEN | Wen | 🤣 Class D (Memetic) | 0.03x | 3072% | 📉 $1.00 → $0.03 | 🤣 Meme | 🔋 Passive Utility |
-| POPCAT | Popcat | 🤣 Class D (Memetic) | 0.03x | 3318% | 📉 $1.00 → $0.03 | 🤣 Meme | 🔋 Passive Utility |
-| BOME | BOOK OF MEME | 🤣 Class D (Memetic) | 0.02x | 4073% | 📉 $1.00 → $0.02 | 🤣 Meme | 🔋 Passive Utility |
-| PONKE | Ponke | 🤣 Class D (Memetic) | 0.02x | 4111% | 📉 $1.00 → $0.02 | 🤣 Meme | 🔋 Passive Utility |
-| MEW | cat in a dogs world | 🤣 Class D (Memetic) | 0.02x | 4150% | 📉 $1.00 → $0.02 | 🤣 Meme | 🔋 Passive Utility |
+| UXD | UXD Stablecoin | 🚀 Class C (Venture Risk) | 0.09x | 1.1k% | 📉 $1.02 → $0.0951 | 🛡️ Stable Yield | 🔋 Passive Utility |
+| BONK | Bonk | 🤣 Class D (Memetic) | 0.07x | 1.5k% | 📉 $11μ → $0.75μ | 🤣 Meme | 🔋 Passive Utility |
+| WIF | dogwifhat | 🤣 Class D (Memetic) | 0.06x | 1.6k% | 📉 $0.3941 → $0.0245 | 🤣 Meme | 🔋 Passive Utility |
+| SAMO | Samoyedcoin | 🤣 Class D (Memetic) | 0.04x | 2.4k% | 📉 $0.00080 → $34μ | 🤣 Meme | 🔋 Passive Utility |
+| POPCAT | Popcat | 🤣 Class D (Memetic) | 0.04x | 2.5k% | 📉 $0.1008 → $0.0040 | 🤣 Meme | 🔋 Passive Utility |
+| PONKE | Ponke | 🤣 Class D (Memetic) | 0.03x | 3.0k% | 📉 $0.0566 → $0.0019 | 🤣 Meme | 🔋 Passive Utility |
+| MEW | cat in a dogs world | 🤣 Class D (Memetic) | 0.03x | 3.2k% | 📉 $0.0010 → $32μ | 🤣 Meme | 🔋 Passive Utility |
+| BOME | BOOK OF MEME | 🤣 Class D (Memetic) | 0.03x | 3.2k% | 📉 $0.00071 → $22μ | 🤣 Meme | 🔋 Passive Utility |
 
 ### Tier 6: Catastrophic (>5000%)
 
@@ -260,24 +182,17 @@ Assets with multipliers below 0.02x. Maximum friction, near-worthless in collaps
 
 | Symbol | Name | Risk Class | Multiplier | Effective Tariff | Exchange Rate | Token Type | AI Category |
 |--------|------|------------|------------|------------------|---------------|------------|-------------|
-| SC | Shark Cat | 🤣 Class D (Memetic) | 0.01x | 7549% | 📉 $1.00 → $0.01 | 🤣 Meme | 🔋 Passive Utility |
-| BILLY | Billy | 🤣 Class D (Memetic) | 0.01x | 8309% | 📉 $1.00 → $0.01 | 🤣 Meme | 🔋 Passive Utility |
-| MANEKI | Maneki-neko | 🤣 Class D (Memetic) | 0.01x | 8388% | 📉 $1.00 → $0.01 | 🤣 Meme | 🔋 Passive Utility |
-| MUMU | Mumu the Bull | 🤣 Class D (Memetic) | 0.01x | 8388% | 📉 $1.00 → $0.01 | 🤣 Meme | 🔋 Passive Utility |
-| MICHI | Michi | 🤣 Class D (Memetic) | 0.01x | 8388% | 📉 $1.00 → $0.01 | 🤣 Meme | 🔋 Passive Utility |
-| ANALOS | Analos | 🤣 Class D (Memetic) | 0.01x | 9035% | 📉 $1.00 → $0.01 | 🤣 Meme | 🔋 Passive Utility |
-| LOCKIN | Lock In | 🤣 Class D (Memetic) | 0.01x | 9035% | 📉 $1.00 → $0.01 | 🤣 Meme | 🔋 Passive Utility |
-| CWIF | Catwifhat | 🧪 Class E (Experimental) | 0.01x | 9060% | 📉 $1.00 → $0.01 | 🤣 Meme | 🔋 Passive Utility |
-| MYRO | Myro | 🤣 Class D (Memetic) | 0.01x | 9121% | 📉 $1.00 → $0.01 | 🤣 Meme | 🔋 Passive Utility |
-| SILLY | Silly Dragon | 🤣 Class D (Memetic) | 0.01x | 9121% | 📉 $1.00 → $0.01 | 🤣 Meme | 🔋 Passive Utility |
-| LOAF | Loaf Cat | 🧪 Class E (Experimental) | 0.01x | 10947% | 📉 $1.00 → $0.01 | 🤣 Meme | 🔋 Passive Utility |
-| USDC | USD Coin | 🏦 Class B (Systemic) | 0.01x | 14687% | 📉 $1.00 → $0.01 | 💵 Fiat Pegged | 🗿 Static |
-| USDT | Tether USD | 🏦 Class B (Systemic) | 0.01x | 14687% | 📉 $1.00 → $0.01 | 💵 Fiat Pegged | 🗿 Static |
-| EURC | Euro Coin | 🏦 Class B (Systemic) | 0.00x | 35263% | 📉 $1.00 → $0.00 | 💵 Fiat Pegged | 🗿 Static |
-| PYUSD | PayPal USD | 🏦 Class B (Systemic) | 0.00x | 35263% | 📉 $1.00 → $0.00 | 💵 Fiat Pegged | 🗿 Static |
-| USDS | Sky Dollar (Solana) | 🏦 Class B (Systemic) | 0.00x | 35263% | 📉 $1.00 → $0.00 | 💵 Fiat Pegged | 🗿 Static |
-| TRYB | BiLira | 🏦 Class B (Systemic) | 0.00x | 99874% | 📉 $1.00 → $0.00 | 💵 Fiat Pegged | 🗿 Static |
-| BRZ | BRZ Token | 🏦 Class B (Systemic) | 0.00x | 99874% | 📉 $1.00 → $0.00 | 💵 Fiat Pegged | 🗿 Static |
+| BILLY | Billy | 🤣 Class D (Memetic) | 0.02x | 6.5k% | 📉 $0.0011 → $16μ | 🤣 Meme | 🔋 Passive Utility |
+| MUMU | Mumu the Bull | 🤣 Class D (Memetic) | 0.02x | 6.6k% | 📉 $4.3e-10 → $6.6e-12 | 🤣 Meme | 🔋 Passive Utility |
+| MANEKI | Maneki-neko | 🤣 Class D (Memetic) | 0.01x | 6.8k% | 📉 $0.00055 → $8 | 🤣 Meme | 🔋 Passive Utility |
+| LOCKIN | Lock In | 🤣 Class D (Memetic) | 0.01x | 6.9k% | 📉 $0.0026 → $39μ | 🤣 Meme | 🔋 Passive Utility |
+| MYRO | Myro | 🤣 Class D (Memetic) | 0.01x | 7.2k% | 📉 $0.0060 → $84μ | 🤣 Meme | 🔋 Passive Utility |
+| USDC | USD Coin | 🏦 Class B (Systemic) | 0.0072x | 13.9k% | 📉 $0.9997 → $0.0072 | 💵 Fiat Pegged | 🗿 Static |
+| USDT | Tether USD | 🏦 Class B (Systemic) | 0.0068x | 14.7k% | 📉 $0.9990 → $0.0068 | 💵 Fiat Pegged | 🗿 Static |
+| PYUSD | PayPal USD | 🏦 Class B (Systemic) | 0.0029x | 34.3k% | 📉 $1.0000 → $0.0029 | 💵 Fiat Pegged | 🗿 Static |
+| EURC | Euro Coin | 🏦 Class B (Systemic) | 0.0028x | 35.2k% | 📉 $1.17 → $0.0033 | 💵 Fiat Pegged | 🗿 Static |
+| USDS | Sky Dollar (Solana) | 🏦 Class B (Systemic) | 0.0027x | 37.1k% | 📉 $1.00 → $0.0027 | 💵 Fiat Pegged | 🗿 Static |
+| TRYB | BiLira | 🏦 Class B (Systemic) | 0.0010x | 102.8k% | 📉 $0.0232 → $23μ | 💵 Fiat Pegged | 🗿 Static |
 ---
 
 ## Summary Statistics
@@ -286,30 +201,30 @@ Assets with multipliers below 0.02x. Maximum friction, near-worthless in collaps
 
 | Tier | Count | Percentage |
 |------|-------|------------|
-| Premium (0%) | 40 | 21.6% |
-| Good (1%-100%) | 18 | 9.7% |
-| Neutral (101%-500%) | 85 | 45.9% |
-| Discounted (501%-1000%) | 5 | 2.7% |
-| Poor (1001%-5000%) | 19 | 10.3% |
-| Catastrophic (>5000%) | 18 | 9.7% |
+| Premium (0%) | 28 | 28.0% |
+| Good (1%-100%) | 13 | 13.0% |
+| Neutral (101%-500%) | 37 | 37.0% |
+| Discounted (501%-1000%) | 3 | 3.0% |
+| Poor (1001%-5000%) | 8 | 8.0% |
+| Catastrophic (>5000%) | 11 | 11.0% |
 
 ### Overall Statistics
 
 | Metric | Value |
 |--------|-------|
-| Total Tokens | 185 |
+| Total Tokens | 100 |
 | Minimum Tariff | 0% |
-| Maximum Tariff | 99874% |
-| Median Tariff | 31% |
-| Average Tariff | 2621% |
+| Maximum Tariff | 102753% |
+| Median Tariff | 41% |
+| Average Tariff | 2988% |
 
 ### AI Timeline Impact Summary
 
 | Category | Count | Average Multiplier |
 |----------|-------|-------------------|
-| Static Assets | 13 | 2.68x |
-| AI-Native/AI-Enabled | 27 | 68.41x |
-| Multiplier Ratio (AI/Static) | - | 25.6x |
+| Static Assets | 9 | 1.38x |
+| AI-Native/AI-Enabled | 19 | 38.72x |
+| Multiplier Ratio (AI/Static) | - | 28.0x |
 
 ---
 

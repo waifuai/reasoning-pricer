@@ -6,12 +6,14 @@
 |-------|-------|
 | **Symbol** | `ZEUS` |
 | **Name** | Zeus Network |
+| **Price** | `$2.0e-2` |
+| **Market Cap** | `$1.6e7` |
 | **Token Type** | Protocol Utility Token |
 | **Risk Class** | Class A (Real Yield) |
 | **Insider Score** | 25/100 |
 | **Tariff Override** | 20% |
-| **Calculated Tariff** | 133% |
-| **Exchange Multiplier** | 2.3x |
+| **Calculated Tariff** | 153% |
+| **Exchange Multiplier** | 2.5x |
 
 ## Risk Analysis
 
@@ -25,7 +27,7 @@ Class A (Real Yield)
 **25/100** - Low insider control
 
 ### Exchange Rate
-**2.3x** (Tariff: 133%)
+**2.5x** (Tariff: 153%)
 
 ## Tags
 
@@ -53,13 +55,14 @@ Bitcoin-Solana communication layer. Lower VC overhang than Wormhole. Enables har
 | **AI Timeline Factor** | 0.20x |
 | **AI Category** | Static (Cannot Evolve) |
 | **Current AI Phase** | Creative Renaissance |
+| **Liquidity Risk Factor** | 0.90x |
 | **Real Valuation Multiplier** | 0.7x |
-| **Uncertainty Range** | 0.5x - 1x |
-| **Current vs Real Price** | $1.00 → $0.70 |
+| **Uncertainty Range** | 0.5x - 0.9x |
+| **Current vs Real Price** | `$2.0e-2` → `$1.4e-2` |
 | **Trading Signal** | SELL |
 
 ### Analysis
-[AI Timeline: Creative Renaissance] Asset classified as Static (Cannot Evolve) (Static assets that cannot adapt to AI acceleration. These assets decline in value as AI progresses.). AI Timeline Factor: 0.20x (AI acceleration penalizes this static asset). Protocol Utility Token: benefits from network effects and protocol utility (base range: 10x - 25x). Class A (Real Yield) receives 1.2x risk class boost - resilient during market stress. Insider control (25/100) reduces multiplier by 0.88x due to centralization risks. Rank #300 imposes 0.2x penalty (illiquid, capital flight crushes value). Final real valuation multiplier: 0.7x. Token trading at $1.00 today would be worth $0.74 post-fiat collapse (loss of purchasing power). AI acceleration creates headwinds for this asset class. Trading signal (SELL): Overvalued or high risk post-collapse. Reduce exposure.
+[AI Timeline: Creative Renaissance] Asset classified as Static (Cannot Evolve) (Static assets that cannot adapt to AI acceleration. These assets decline in value as AI progresses.). AI Timeline Factor: 0.20x (AI acceleration penalizes this static asset). Protocol Utility Token: benefits from network effects and protocol utility (base range: 10x - 25x). Class A (Real Yield) receives 1.2x risk class boost - resilient during market stress. Insider control (25/100) reduces multiplier by 0.88x due to centralization risks. Rank #300 imposes 0.2x penalty (illiquid, capital flight crushes value). Liquidity friction (Market Cap: $1.6e7) adds a 20% baseline tariff. Final real valuation multiplier: 0.7x. Token trading at $1.00 today would be worth $0.66 post-fiat collapse (loss of purchasing power). AI acceleration creates headwinds for this asset class. Trading signal (SELL): Overvalued or high risk post-collapse. Reduce exposure.
 
 ---
 

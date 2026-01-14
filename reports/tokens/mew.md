@@ -6,12 +6,14 @@
 |-------|-------|
 | **Symbol** | `MEW` |
 | **Name** | cat in a dogs world |
+| **Price** | `$1.0e-3` |
+| **Market Cap** | `$9.1e7` |
 | **Token Type** | Meme/Speculative |
 | **Risk Class** | Class A (Real Yield) |
 | **Insider Score** | 60/100 |
 | **Tariff Override** | 6% |
-| **Calculated Tariff** | 240% |
-| **Exchange Multiplier** | 3.4x |
+| **Calculated Tariff** | 343% |
+| **Exchange Multiplier** | 4.4x |
 
 ## Risk Analysis
 
@@ -25,7 +27,7 @@ Class A (Real Yield)
 **60/100** - Medium insider control
 
 ### Exchange Rate
-**3.4x** (Tariff: 240%)
+**4.4x** (Tariff: 343%)
 
 ## Tags
 
@@ -54,13 +56,14 @@ Large cap cat coin distributed partly via airdrop to phone holders, but retainin
 | **AI Timeline Factor** | 8.33x |
 | **AI Category** | AI-Native |
 | **Current AI Phase** | Creative Renaissance |
-| **Real Valuation Multiplier** | 0.4x |
-| **Uncertainty Range** | 0.1x - 0.7x |
-| **Current vs Real Price** | $1.00 → $0.40 |
+| **Liquidity Risk Factor** | 0.90x |
+| **Real Valuation Multiplier** | 0.3x |
+| **Uncertainty Range** | 0.1x - 0.6x |
+| **Current vs Real Price** | `$1.0e-3` → `$3.1e-4` |
 | **Trading Signal** | SELL |
 
 ### Analysis
-[AI Timeline: Creative Renaissance] Asset classified as AI-Native (Built specifically for AI ecosystems. Maximum AI acceleration benefits.). AI Timeline Factor: 8.33x (AI acceleration boosts this asset significantly). Meme/Speculative: pure speculation with minimal fundamental value (0.05x floor - collector value) (base range: 0.05x - 0.50x). Class A (Real Yield) receives 1.2x risk class boost - resilient during market stress. Insider control (60/100) reduces multiplier by 0.70x due to centralization risks. Rank #150 imposes 0.2x penalty (illiquid, capital flight crushes value). Final real valuation multiplier: 0.4x. Token trading at $1.00 today would be worth $0.39 post-fiat collapse (loss of purchasing power). AI acceleration provides strong tailwinds. Trading signal (SELL): Overvalued or high risk post-collapse. Reduce exposure.
+[AI Timeline: Creative Renaissance] Asset classified as AI-Native (Built specifically for AI ecosystems. Maximum AI acceleration benefits.). AI Timeline Factor: 8.33x (AI acceleration boosts this asset significantly). Meme/Speculative: pure speculation with minimal fundamental value (0.05x floor - collector value) (base range: 0.05x - 0.50x). Class A (Real Yield) receives 1.2x risk class boost - resilient during market stress. Insider control (60/100) reduces multiplier by 0.70x due to centralization risks. Rank #150 imposes 0.2x penalty (illiquid, capital flight crushes value). Liquidity friction (Market Cap: $9.1e7) adds a 20% baseline tariff. Final real valuation multiplier: 0.3x. Token trading at $1.00 today would be worth $0.35 post-fiat collapse (loss of purchasing power). AI acceleration provides strong tailwinds. Trading signal (SELL): Overvalued or high risk post-collapse. Reduce exposure.
 
 ---
 

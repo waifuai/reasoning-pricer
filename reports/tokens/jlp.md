@@ -6,12 +6,14 @@
 |-------|-------|
 | **Symbol** | `JLP` |
 | **Name** | Jupiter Perps LP |
+| **Price** | `$4.9e0` |
+| **Market Cap** | `$1.6e9` |
 | **Token Type** | Real Yield Asset |
 | **Risk Class** | Class A (Real Yield) |
 | **Insider Score** | 10/100 |
 | **Tariff Override** | 10% |
-| **Calculated Tariff** | 0% |
-| **Exchange Multiplier** | 1.0x |
+| **Calculated Tariff** | 10% |
+| **Exchange Multiplier** | 1.1x |
 
 ## Risk Analysis
 
@@ -25,7 +27,7 @@ Class A (Real Yield)
 **10/100** - Low insider control
 
 ### Exchange Rate
-**1.0x** (Tariff: 0%)
+**1.1x** (Tariff: 10%)
 
 ## Tags
 
@@ -54,13 +56,14 @@ This is NOT a governance token. It is a liquidity index (SOL/BTC/USDC). It repre
 | **AI Timeline Factor** | 1.80x |
 | **AI Category** | Passive Utility |
 | **Current AI Phase** | Creative Renaissance |
+| **Liquidity Risk Factor** | 1.00x |
 | **Real Valuation Multiplier** | 12x |
 | **Uncertainty Range** | 9x - 16x |
-| **Current vs Real Price** | $1.00 → $12.30 |
+| **Current vs Real Price** | `$4.9e0` → `$6.0e1` |
 | **Trading Signal** | BUY |
 
 ### Analysis
-[AI Timeline: Creative Renaissance] Asset classified as Passive Utility (Standard utility tokens with limited AI integration potential. Moderate performance through AI timeline.). AI Timeline Factor: 1.80x (AI acceleration boosts this asset significantly). Real Yield Asset: yield persists but currency debasement affects valuation (base range: 5x - 10x). Class A (Real Yield) receives 1.2x risk class boost - resilient during market stress. Insider control (10/100) reduces multiplier by 0.95x due to centralization risks. Rank #40 applies 0.8x adjustment (mid-tier liquidity). Final real valuation multiplier: 12.3x. Token trading at $1.00 today would be worth $12.31 post-fiat collapse. AI acceleration provides strong tailwinds. Trading signal (BUY): Undervalued post-collapse. Accumulate before systemic shift.
+[AI Timeline: Creative Renaissance] Asset classified as Passive Utility (Standard utility tokens with limited AI integration potential. Moderate performance through AI timeline.). AI Timeline Factor: 1.80x (AI acceleration boosts this asset significantly). Real Yield Asset: yield persists but currency debasement affects valuation (base range: 5x - 10x). Class A (Real Yield) receives 1.2x risk class boost - resilient during market stress. Insider control (10/100) reduces multiplier by 0.95x due to centralization risks. Rank #40 applies 0.8x adjustment (mid-tier liquidity). Liquidity friction (Market Cap: $1.6e9) adds a 10% baseline tariff. Final real valuation multiplier: 12.3x. Token trading at $1.00 today would be worth $12.31 post-fiat collapse. AI acceleration provides strong tailwinds. Trading signal (BUY): Undervalued post-collapse. Accumulate before systemic shift.
 
 ---
 

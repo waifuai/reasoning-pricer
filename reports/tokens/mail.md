@@ -6,12 +6,14 @@
 |-------|-------|
 | **Symbol** | `MAIL` |
 | **Name** | SolMail |
+| **Price** | `$5.4e-4` |
+| **Market Cap** | `$5.4e5` |
 | **Token Type** | Protocol Utility Token |
 | **Risk Class** | Class A (Real Yield) |
 | **Insider Score** | 40/100 |
 | **Tariff Override** | 5% |
-| **Calculated Tariff** | 7% |
-| **Exchange Multiplier** | 1.1x |
+| **Calculated Tariff** | 34% |
+| **Exchange Multiplier** | 1.3x |
 
 ## Risk Analysis
 
@@ -25,7 +27,7 @@ Class A (Real Yield)
 **40/100** - Medium insider control
 
 ### Exchange Rate
-**1.1x** (Tariff: 7%)
+**1.3x** (Tariff: 34%)
 
 ## Tags
 
@@ -54,13 +56,14 @@ An attempt to create an on-chain email standard. Functionality is novel, but the
 | **AI Timeline Factor** | 1.80x |
 | **AI Category** | Passive Utility |
 | **Current AI Phase** | Creative Renaissance |
-| **Real Valuation Multiplier** | 6x |
-| **Uncertainty Range** | 4x - 8x |
-| **Current vs Real Price** | $1.00 → $6.00 |
+| **Liquidity Risk Factor** | 0.90x |
+| **Real Valuation Multiplier** | 5x |
+| **Uncertainty Range** | 4x - 7x |
+| **Current vs Real Price** | `$5.4e-4` → `$2.9e-3` |
 | **Trading Signal** | HOLD |
 
 ### Analysis
-[AI Timeline: Creative Renaissance] Asset classified as Passive Utility (Standard utility tokens with limited AI integration potential. Moderate performance through AI timeline.). AI Timeline Factor: 1.80x (AI acceleration boosts this asset significantly). Protocol Utility Token: benefits from network effects and protocol utility (base range: 10x - 25x). Class A (Real Yield) receives 1.2x risk class boost - resilient during market stress. Insider control (40/100) reduces multiplier by 0.80x due to centralization risks. Rank #600 imposes 0.2x penalty (illiquid, capital flight crushes value). Final real valuation multiplier: 6.0x. Token trading at $1.00 today would be worth $6.05 post-fiat collapse. AI acceleration provides strong tailwinds. Trading signal (HOLD): Moderate value post-collapse. Maintain current position.
+[AI Timeline: Creative Renaissance] Asset classified as Passive Utility (Standard utility tokens with limited AI integration potential. Moderate performance through AI timeline.). AI Timeline Factor: 1.80x (AI acceleration boosts this asset significantly). Protocol Utility Token: benefits from network effects and protocol utility (base range: 10x - 25x). Class A (Real Yield) receives 1.2x risk class boost - resilient during market stress. Insider control (40/100) reduces multiplier by 0.80x due to centralization risks. Rank #600 imposes 0.2x penalty (illiquid, capital flight crushes value). Liquidity friction (Market Cap: $5.4e5) adds a 25% baseline tariff. Final real valuation multiplier: 5.4x. Token trading at $1.00 today would be worth $5.44 post-fiat collapse. AI acceleration provides strong tailwinds. Trading signal (HOLD): Moderate value post-collapse. Maintain current position.
 
 ---
 

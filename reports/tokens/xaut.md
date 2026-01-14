@@ -6,12 +6,14 @@
 |-------|-------|
 | **Symbol** | `XAUT` |
 | **Name** | Tether Gold (Portal) |
+| **Price** | `$4.6e3` |
+| **Market Cap** | `$2.4e9` |
 | **Token Type** | Commodity-Backed |
 | **Risk Class** | Class A (Real Yield) |
 | **Insider Score** | 15/100 |
 | **Tariff Override** | 8% |
-| **Calculated Tariff** | 0% |
-| **Exchange Multiplier** | 1.0x |
+| **Calculated Tariff** | 10% |
+| **Exchange Multiplier** | 1.1x |
 
 ## Risk Analysis
 
@@ -25,7 +27,7 @@ Class A (Real Yield)
 **15/100** - Low insider control
 
 ### Exchange Rate
-**1.0x** (Tariff: 0%)
+**1.1x** (Tariff: 10%)
 
 ## Tags
 
@@ -53,13 +55,14 @@ Tether-backed Gold. Higher trust assumption than Paxos, warranting a slightly hi
 | **AI Timeline Factor** | 0.20x |
 | **AI Category** | Static (Cannot Evolve) |
 | **Current AI Phase** | Creative Renaissance |
+| **Liquidity Risk Factor** | 1.00x |
 | **Real Valuation Multiplier** | 13x |
 | **Uncertainty Range** | 10x - 17x |
-| **Current vs Real Price** | $1.00 → $13.30 |
+| **Current vs Real Price** | `$4.6e3` → `$6.1e4` |
 | **Trading Signal** | HOLD |
 
 ### Analysis
-[AI Timeline: Creative Renaissance] Asset classified as Static (Cannot Evolve) (Static assets that cannot adapt to AI acceleration. These assets decline in value as AI progresses.). AI Timeline Factor: 0.20x (AI acceleration penalizes this static asset). Commodity-Backed: tracks commodity price discovery (base range: 50x - 100x). Class A (Real Yield) receives 1.2x risk class boost - resilient during market stress. Insider control (15/100) reduces multiplier by 0.93x due to centralization risks. Rank #90 applies 0.8x adjustment (mid-tier liquidity). Final real valuation multiplier: 13.3x. Token trading at $1.00 today would be worth $13.32 post-fiat collapse. AI acceleration creates headwinds for this asset class. Trading signal (HOLD): Moderate value post-collapse. Maintain current position.
+[AI Timeline: Creative Renaissance] Asset classified as Static (Cannot Evolve) (Static assets that cannot adapt to AI acceleration. These assets decline in value as AI progresses.). AI Timeline Factor: 0.20x (AI acceleration penalizes this static asset). Commodity-Backed: tracks commodity price discovery (base range: 50x - 100x). Class A (Real Yield) receives 1.2x risk class boost - resilient during market stress. Insider control (15/100) reduces multiplier by 0.93x due to centralization risks. Rank #90 applies 0.8x adjustment (mid-tier liquidity). Liquidity friction (Market Cap: $2.4e9) adds a 10% baseline tariff. Final real valuation multiplier: 13.3x. Token trading at $1.00 today would be worth $13.32 post-fiat collapse. AI acceleration creates headwinds for this asset class. Trading signal (HOLD): Moderate value post-collapse. Maintain current position.
 
 ---
 

@@ -2,7 +2,7 @@
 
 use crate::reasoning_pricer::ReasoningPricer;
 use crate::models::Token;
-use crate::utils::{get_insider_score_level, get_risk_class_filename};
+use crate::utils::{get_insider_score_level, get_risk_class_filename, format_sci, calculate_effective_tariff};
 use std::fs;
 use std::path::Path;
 
@@ -17,15 +17,6 @@ fn format_multiplier(value: f64) -> String {
     }
 }
 
-/// Calculate the AI-acceleration tariff from real valuation multiplier
-/// Formula: max(0, (100 / multiplier) - 10)
-fn calculate_tariff(multiplier: f64) -> f64 {
-    if multiplier <= 0.0 {
-        return 0.0;
-    }
-    let t = (100.0 / multiplier) - 10.0;
-    if t < 0.0 { 0.0 } else { t }
-}
 
 /// Generate individual token report with reasoning pricer analysis.
 pub fn generate_token_report(token: &Token, tokens_dir: &Path) -> Result<String, std::io::Error> {
@@ -40,7 +31,7 @@ pub fn generate_token_report(token: &Token, tokens_dir: &Path) -> Result<String,
     let analysis = pricer.analyze_token(token);
     
     // Calculate the AI-acceleration tariff from real valuation multiplier
-    let calculated_tariff = calculate_tariff(analysis.real_valuation_multiplier);
+    let calculated_tariff = calculate_effective_tariff(analysis.real_valuation_multiplier, &token.symbol, token.market_cap);
     
     // Exchange multiplier should be based on calculated tariff (1 + tariff/100)
     let exchange_multiplier = 1.0 + (calculated_tariff / 100.0);
@@ -54,6 +45,8 @@ pub fn generate_token_report(token: &Token, tokens_dir: &Path) -> Result<String,
 |-------|-------|
 | **Symbol** | `{}` |
 | **Name** | {} |
+| **Price** | `${}` |
+| **Market Cap** | `${}` |
 | **Token Type** | {} |
 | **Risk Class** | {} |
 | **Insider Score** | {}/100 |
@@ -99,9 +92,10 @@ pub fn generate_token_report(token: &Token, tokens_dir: &Path) -> Result<String,
 | **AI Timeline Factor** | {:.2}x |
 | **AI Category** | {} |
 | **Current AI Phase** | {} |
+| **Liquidity Risk Factor** | {:.2}x |
 | **Real Valuation Multiplier** | {} |
 | **Uncertainty Range** | {} - {} |
-| **Current vs Real Price** | $1.00 → ${:.2} |
+| **Current vs Real Price** | `${}` → `${}` |
 | **Trading Signal** | {} |
 
 ### Analysis
@@ -119,6 +113,8 @@ pub fn generate_token_report(token: &Token, tokens_dir: &Path) -> Result<String,
         token.name,
         token.symbol,
         token.name,
+        format_sci(token.price),
+        format_sci(token.market_cap),
         analysis.token_type_display,
         token.archetype.display_name(),
         token.insider_score,
@@ -141,10 +137,12 @@ pub fn generate_token_report(token: &Token, tokens_dir: &Path) -> Result<String,
         analysis.ai_timeline_factor,
         analysis.ai_category_display,
         analysis.current_ai_phase,
+        analysis.liquidity_risk_factor,
         format_multiplier(analysis.real_valuation_multiplier),
         format_multiplier(analysis.uncertainty_range.lower),
         format_multiplier(analysis.uncertainty_range.upper),
-        analysis.real_valuation_multiplier,
+        format_sci(token.price),
+        format_sci(analysis.real_valuation_multiplier * token.price),
         analysis.trading_signal,
         analysis.reasoning,
         get_risk_class_filename(token.archetype.display_name())

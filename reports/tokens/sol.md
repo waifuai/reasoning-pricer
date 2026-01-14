@@ -6,6 +6,8 @@
 |-------|-------|
 | **Symbol** | `SOL` |
 | **Name** | Solana |
+| **Price** | `$1.4e2` |
+| **Market Cap** | `$8.1e10` |
 | **Token Type** | Protocol Utility Token |
 | **Risk Class** | Class B (Systemic) |
 | **Insider Score** | 48/100 |
@@ -54,13 +56,14 @@ The Currency of the Realm. Useful for taxes (gas), but represents the central in
 | **AI Timeline Factor** | 1.80x |
 | **AI Category** | Passive Utility |
 | **Current AI Phase** | Creative Renaissance |
+| **Liquidity Risk Factor** | 1.00x |
 | **Real Valuation Multiplier** | 29x |
 | **Uncertainty Range** | 20x - 37x |
-| **Current vs Real Price** | $1.00 → $28.70 |
+| **Current vs Real Price** | `$1.4e2` → `$4.1e3` |
 | **Trading Signal** | BUY |
 
 ### Analysis
-[AI Timeline: Creative Renaissance] Asset classified as Passive Utility (Standard utility tokens with limited AI integration potential. Moderate performance through AI timeline.). AI Timeline Factor: 1.80x (AI acceleration boosts this asset significantly). Protocol Utility Token: benefits from network effects and protocol utility (base range: 10x - 25x). Insider control (48/100) reduces multiplier by 0.76x due to centralization risks. Rank #5 gives 1.2x premium (blue-chip safety asset). Final real valuation multiplier: 28.7x. Token trading at $1.00 today would be worth $28.73 post-fiat collapse. AI acceleration provides strong tailwinds. Trading signal (BUY): Undervalued post-collapse. Accumulate before systemic shift.
+[AI Timeline: Creative Renaissance] Asset classified as Passive Utility (Standard utility tokens with limited AI integration potential. Moderate performance through AI timeline.). AI Timeline Factor: 1.80x (AI acceleration boosts this asset significantly). Protocol Utility Token: benefits from network effects and protocol utility (base range: 10x - 25x). Insider control (48/100) reduces multiplier by 0.76x due to centralization risks. Rank #5 gives 1.2x premium (blue-chip safety asset). Exempt from liquidity tariff (Solana baseline). Final real valuation multiplier: 28.7x. Token trading at $1.00 today would be worth $28.73 post-fiat collapse. AI acceleration provides strong tailwinds. Trading signal (BUY): Undervalued post-collapse. Accumulate before systemic shift.
 
 ---
 

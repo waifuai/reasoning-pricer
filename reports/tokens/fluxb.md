@@ -6,12 +6,14 @@
 |-------|-------|
 | **Symbol** | `FLUXB` |
 | **Name** | FluxBot |
+| **Price** | `$4.6e-3` |
+| **Market Cap** | `$2.0e6` |
 | **Token Type** | Protocol Utility Token |
 | **Risk Class** | Class A (Real Yield) |
 | **Insider Score** | 60/100 |
 | **Tariff Override** | 7% |
-| **Calculated Tariff** | 0% |
-| **Exchange Multiplier** | 1.0x |
+| **Calculated Tariff** | 25% |
+| **Exchange Multiplier** | 1.2x |
 
 ## Risk Analysis
 
@@ -25,7 +27,7 @@ Class A (Real Yield)
 **60/100** - Medium insider control
 
 ### Exchange Rate
-**1.0x** (Tariff: 0%)
+**1.2x** (Tariff: 25%)
 
 ## Tags
 
@@ -54,13 +56,14 @@ Telegram trading bot on Solana offering copy trading and sniping. High insider s
 | **AI Timeline Factor** | 8.33x |
 | **AI Category** | AI-Native |
 | **Current AI Phase** | Creative Renaissance |
-| **Real Valuation Multiplier** | 24x |
-| **Uncertainty Range** | 17x - 32x |
-| **Current vs Real Price** | $1.00 → $24.50 |
+| **Liquidity Risk Factor** | 0.90x |
+| **Real Valuation Multiplier** | 22x |
+| **Uncertainty Range** | 15x - 29x |
+| **Current vs Real Price** | `$4.6e-3` → `$1.0e-1` |
 | **Trading Signal** | BUY |
 
 ### Analysis
-[AI Timeline: Creative Renaissance] Asset classified as AI-Native (Built specifically for AI ecosystems. Maximum AI acceleration benefits.). AI Timeline Factor: 8.33x (AI acceleration boosts this asset significantly). Protocol Utility Token: benefits from network effects and protocol utility (base range: 10x - 25x). Class A (Real Yield) receives 1.2x risk class boost - resilient during market stress. Insider control (60/100) reduces multiplier by 0.70x due to centralization risks. Rank #400 imposes 0.2x penalty (illiquid, capital flight crushes value). Final real valuation multiplier: 24.5x. Token trading at $1.00 today would be worth $24.50 post-fiat collapse. AI acceleration provides strong tailwinds. Trading signal (BUY): Undervalued post-collapse. Accumulate before systemic shift.
+[AI Timeline: Creative Renaissance] Asset classified as AI-Native (Built specifically for AI ecosystems. Maximum AI acceleration benefits.). AI Timeline Factor: 8.33x (AI acceleration boosts this asset significantly). Protocol Utility Token: benefits from network effects and protocol utility (base range: 10x - 25x). Class A (Real Yield) receives 1.2x risk class boost - resilient during market stress. Insider control (60/100) reduces multiplier by 0.70x due to centralization risks. Rank #400 imposes 0.2x penalty (illiquid, capital flight crushes value). Liquidity friction (Market Cap: $2.0e6) adds a 25% baseline tariff. Final real valuation multiplier: 22.1x. Token trading at $1.00 today would be worth $22.05 post-fiat collapse. AI acceleration provides strong tailwinds. Trading signal (BUY): Undervalued post-collapse. Accumulate before systemic shift.
 
 ---
 

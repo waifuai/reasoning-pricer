@@ -6,12 +6,14 @@
 |-------|-------|
 | **Symbol** | `AKT` |
 | **Name** | Akash Network (Wormhole) |
+| **Price** | `$5.0e-1` |
+| **Market Cap** | `$1.4e8` |
 | **Token Type** | Protocol Utility Token |
 | **Risk Class** | Class A (Real Yield) |
 | **Insider Score** | 20/100 |
 | **Tariff Override** | 20% |
-| **Calculated Tariff** | 0% |
-| **Exchange Multiplier** | 1.0x |
+| **Calculated Tariff** | 15% |
+| **Exchange Multiplier** | 1.1x |
 
 ## Risk Analysis
 
@@ -25,7 +27,7 @@ Class A (Real Yield)
 **20/100** - Low insider control
 
 ### Exchange Rate
-**1.0x** (Tariff: 0%)
+**1.1x** (Tariff: 15%)
 
 ## Tags
 
@@ -54,13 +56,14 @@ The Airbnb of Cloud Compute. Imported via Wormhole. Solid utility, standard brid
 | **AI Timeline Factor** | 4.44x |
 | **AI Category** | AI-Enabled |
 | **Current AI Phase** | Creative Renaissance |
-| **Real Valuation Multiplier** | 17x |
-| **Uncertainty Range** | 12x - 22x |
-| **Current vs Real Price** | $1.00 → $16.80 |
+| **Liquidity Risk Factor** | 0.95x |
+| **Real Valuation Multiplier** | 16x |
+| **Uncertainty Range** | 11x - 21x |
+| **Current vs Real Price** | `$5.0e-1` → `$7.9e0` |
 | **Trading Signal** | BUY |
 
 ### Analysis
-[AI Timeline: Creative Renaissance] Asset classified as AI-Enabled (Assets that can integrate AI capabilities. Strong growth as AI adoption increases.). AI Timeline Factor: 4.44x (AI acceleration boosts this asset significantly). Protocol Utility Token: benefits from network effects and protocol utility (base range: 10x - 25x). Class A (Real Yield) receives 1.2x risk class boost - resilient during market stress. Insider control (20/100) reduces multiplier by 0.90x due to centralization risks. Rank #100 imposes 0.2x penalty (illiquid, capital flight crushes value). Final real valuation multiplier: 16.8x. Token trading at $1.00 today would be worth $16.78 post-fiat collapse. AI acceleration provides strong tailwinds. Trading signal (BUY): Undervalued post-collapse. Accumulate before systemic shift.
+[AI Timeline: Creative Renaissance] Asset classified as AI-Enabled (Assets that can integrate AI capabilities. Strong growth as AI adoption increases.). AI Timeline Factor: 4.44x (AI acceleration boosts this asset significantly). Protocol Utility Token: benefits from network effects and protocol utility (base range: 10x - 25x). Class A (Real Yield) receives 1.2x risk class boost - resilient during market stress. Insider control (20/100) reduces multiplier by 0.90x due to centralization risks. Rank #100 imposes 0.2x penalty (illiquid, capital flight crushes value). Liquidity friction (Market Cap: $1.4e8) adds a 15% baseline tariff. Final real valuation multiplier: 15.9x. Token trading at $1.00 today would be worth $15.94 post-fiat collapse. AI acceleration provides strong tailwinds. Trading signal (BUY): Undervalued post-collapse. Accumulate before systemic shift.
 
 ---
 

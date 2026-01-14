@@ -6,12 +6,14 @@
 |-------|-------|
 | **Symbol** | `GARI` |
 | **Name** | Gari Network |
+| **Price** | `$1.2e-3` |
+| **Market Cap** | `$7.6e5` |
 | **Token Type** | Protocol Utility Token |
 | **Risk Class** | Class A (Real Yield) |
 | **Insider Score** | 70/100 |
 | **Tariff Override** | 8% |
-| **Calculated Tariff** | 10% |
-| **Exchange Multiplier** | 1.1x |
+| **Calculated Tariff** | 38% |
+| **Exchange Multiplier** | 1.4x |
 
 ## Risk Analysis
 
@@ -25,7 +27,7 @@ Class A (Real Yield)
 **70/100** - High insider control
 
 ### Exchange Rate
-**1.1x** (Tariff: 10%)
+**1.4x** (Tariff: 38%)
 
 ## Tags
 
@@ -54,13 +56,14 @@ Social token for a short-video app. High insider score due to corporate backing 
 | **AI Timeline Factor** | 1.80x |
 | **AI Category** | Passive Utility |
 | **Current AI Phase** | Creative Renaissance |
-| **Real Valuation Multiplier** | 5x |
+| **Liquidity Risk Factor** | 0.90x |
+| **Real Valuation Multiplier** | 4x |
 | **Uncertainty Range** | 3x - 6x |
-| **Current vs Real Price** | $1.00 → $4.90 |
+| **Current vs Real Price** | `$1.2e-3` → `$5.1e-3` |
 | **Trading Signal** | HOLD |
 
 ### Analysis
-[AI Timeline: Creative Renaissance] Asset classified as Passive Utility (Standard utility tokens with limited AI integration potential. Moderate performance through AI timeline.). AI Timeline Factor: 1.80x (AI acceleration boosts this asset significantly). Protocol Utility Token: benefits from network effects and protocol utility (base range: 10x - 25x). Class A (Real Yield) receives 1.2x risk class boost - resilient during market stress. Insider control (70/100) reduces multiplier by 0.65x due to centralization risks. Rank #300 imposes 0.2x penalty (illiquid, capital flight crushes value). Final real valuation multiplier: 4.9x. Token trading at $1.00 today would be worth $4.91 post-fiat collapse. AI acceleration provides strong tailwinds. Trading signal (HOLD): Moderate value post-collapse. Maintain current position.
+[AI Timeline: Creative Renaissance] Asset classified as Passive Utility (Standard utility tokens with limited AI integration potential. Moderate performance through AI timeline.). AI Timeline Factor: 1.80x (AI acceleration boosts this asset significantly). Protocol Utility Token: benefits from network effects and protocol utility (base range: 10x - 25x). Class A (Real Yield) receives 1.2x risk class boost - resilient during market stress. Insider control (70/100) reduces multiplier by 0.65x due to centralization risks. Rank #300 imposes 0.2x penalty (illiquid, capital flight crushes value). Liquidity friction (Market Cap: $7.6e5) adds a 25% baseline tariff. Final real valuation multiplier: 4.4x. Token trading at $1.00 today would be worth $4.42 post-fiat collapse. AI acceleration provides strong tailwinds. Trading signal (HOLD): Moderate value post-collapse. Maintain current position.
 
 ---
 

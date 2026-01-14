@@ -6,12 +6,14 @@
 |-------|-------|
 | **Symbol** | `LMR` |
 | **Name** | Lumerin |
+| **Price** | `$8.9e-4` |
+| **Market Cap** | `$5.6e5` |
 | **Token Type** | Protocol Utility Token |
 | **Risk Class** | Class A (Real Yield) |
 | **Insider Score** | 20/100 |
 | **Tariff Override** | 20% |
-| **Calculated Tariff** | 0% |
-| **Exchange Multiplier** | 1.0x |
+| **Calculated Tariff** | 25% |
+| **Exchange Multiplier** | 1.2x |
 
 ## Risk Analysis
 
@@ -25,7 +27,7 @@ Class A (Real Yield)
 **20/100** - Low insider control
 
 ### Exchange Rate
-**1.0x** (Tariff: 0%)
+**1.2x** (Tariff: 25%)
 
 ## Tags
 
@@ -54,13 +56,14 @@ Hashrate routing marketplace. Technically DePIN but functions as infrastructure 
 | **AI Timeline Factor** | 4.44x |
 | **AI Category** | AI-Enabled |
 | **Current AI Phase** | Creative Renaissance |
-| **Real Valuation Multiplier** | 17x |
-| **Uncertainty Range** | 12x - 22x |
-| **Current vs Real Price** | $1.00 → $16.80 |
+| **Liquidity Risk Factor** | 0.90x |
+| **Real Valuation Multiplier** | 15x |
+| **Uncertainty Range** | 11x - 20x |
+| **Current vs Real Price** | `$8.9e-4` → `$1.3e-2` |
 | **Trading Signal** | BUY |
 
 ### Analysis
-[AI Timeline: Creative Renaissance] Asset classified as AI-Enabled (Assets that can integrate AI capabilities. Strong growth as AI adoption increases.). AI Timeline Factor: 4.44x (AI acceleration boosts this asset significantly). Protocol Utility Token: benefits from network effects and protocol utility (base range: 10x - 25x). Class A (Real Yield) receives 1.2x risk class boost - resilient during market stress. Insider control (20/100) reduces multiplier by 0.90x due to centralization risks. Rank #350 imposes 0.2x penalty (illiquid, capital flight crushes value). Final real valuation multiplier: 16.8x. Token trading at $1.00 today would be worth $16.78 post-fiat collapse. AI acceleration provides strong tailwinds. Trading signal (BUY): Undervalued post-collapse. Accumulate before systemic shift.
+[AI Timeline: Creative Renaissance] Asset classified as AI-Enabled (Assets that can integrate AI capabilities. Strong growth as AI adoption increases.). AI Timeline Factor: 4.44x (AI acceleration boosts this asset significantly). Protocol Utility Token: benefits from network effects and protocol utility (base range: 10x - 25x). Class A (Real Yield) receives 1.2x risk class boost - resilient during market stress. Insider control (20/100) reduces multiplier by 0.90x due to centralization risks. Rank #350 imposes 0.2x penalty (illiquid, capital flight crushes value). Liquidity friction (Market Cap: $5.6e5) adds a 25% baseline tariff. Final real valuation multiplier: 15.1x. Token trading at $1.00 today would be worth $15.10 post-fiat collapse. AI acceleration provides strong tailwinds. Trading signal (BUY): Undervalued post-collapse. Accumulate before systemic shift.
 
 ---
 

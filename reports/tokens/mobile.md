@@ -6,12 +6,14 @@
 |-------|-------|
 | **Symbol** | `MOBILE` |
 | **Name** | Helium Mobile |
+| **Price** | `$1.9e-4` |
+| **Market Cap** | `$1.2e7` |
 | **Token Type** | Protocol Utility Token |
 | **Risk Class** | Class A (Real Yield) |
 | **Insider Score** | 30/100 |
 | **Tariff Override** | 20% |
-| **Calculated Tariff** | 6% |
-| **Exchange Multiplier** | 1.1x |
+| **Calculated Tariff** | 27% |
+| **Exchange Multiplier** | 1.3x |
 
 ## Risk Analysis
 
@@ -25,7 +27,7 @@ Class A (Real Yield)
 **30/100** - Medium insider control
 
 ### Exchange Rate
-**1.1x** (Tariff: 6%)
+**1.3x** (Tariff: 27%)
 
 ## Tags
 
@@ -54,13 +56,14 @@ Sub-DAO token for 5G coverage. Directly tied to subscriber revenue and hardware 
 | **AI Timeline Factor** | 1.80x |
 | **AI Category** | Passive Utility |
 | **Current AI Phase** | Creative Renaissance |
+| **Liquidity Risk Factor** | 0.90x |
 | **Real Valuation Multiplier** | 6x |
 | **Uncertainty Range** | 4x - 8x |
-| **Current vs Real Price** | $1.00 → $6.40 |
+| **Current vs Real Price** | `$1.9e-4` → `$1.1e-3` |
 | **Trading Signal** | HOLD |
 
 ### Analysis
-[AI Timeline: Creative Renaissance] Asset classified as Passive Utility (Standard utility tokens with limited AI integration potential. Moderate performance through AI timeline.). AI Timeline Factor: 1.80x (AI acceleration boosts this asset significantly). Protocol Utility Token: benefits from network effects and protocol utility (base range: 10x - 25x). Class A (Real Yield) receives 1.2x risk class boost - resilient during market stress. Insider control (30/100) reduces multiplier by 0.85x due to centralization risks. Rank #120 imposes 0.2x penalty (illiquid, capital flight crushes value). Final real valuation multiplier: 6.4x. Token trading at $1.00 today would be worth $6.43 post-fiat collapse. AI acceleration provides strong tailwinds. Trading signal (HOLD): Moderate value post-collapse. Maintain current position.
+[AI Timeline: Creative Renaissance] Asset classified as Passive Utility (Standard utility tokens with limited AI integration potential. Moderate performance through AI timeline.). AI Timeline Factor: 1.80x (AI acceleration boosts this asset significantly). Protocol Utility Token: benefits from network effects and protocol utility (base range: 10x - 25x). Class A (Real Yield) receives 1.2x risk class boost - resilient during market stress. Insider control (30/100) reduces multiplier by 0.85x due to centralization risks. Rank #120 imposes 0.2x penalty (illiquid, capital flight crushes value). Liquidity friction (Market Cap: $1.2e7) adds a 20% baseline tariff. Final real valuation multiplier: 5.8x. Token trading at $1.00 today would be worth $5.78 post-fiat collapse. AI acceleration provides strong tailwinds. Trading signal (HOLD): Moderate value post-collapse. Maintain current position.
 
 ---
 

@@ -6,12 +6,14 @@
 |-------|-------|
 | **Symbol** | `UPT` |
 | **Name** | UpRock |
+| **Price** | `$6.4e-3` |
+| **Market Cap** | `$1.5e6` |
 | **Token Type** | Protocol Utility Token |
 | **Risk Class** | Class A (Real Yield) |
 | **Insider Score** | 10/100 |
 | **Tariff Override** | 15% |
-| **Calculated Tariff** | 0% |
-| **Exchange Multiplier** | 1.0x |
+| **Calculated Tariff** | 25% |
+| **Exchange Multiplier** | 1.2x |
 
 ## Risk Analysis
 
@@ -25,7 +27,7 @@ Class A (Real Yield)
 **10/100** - Low insider control
 
 ### Exchange Rate
-**1.0x** (Tariff: 0%)
+**1.2x** (Tariff: 25%)
 
 ## Tags
 
@@ -55,13 +57,14 @@ Unused bandwidth sharing for AI scraping. 'Fairer' distribution model via mobile
 | **AI Timeline Factor** | 8.33x |
 | **AI Category** | AI-Native |
 | **Current AI Phase** | Creative Renaissance |
-| **Real Valuation Multiplier** | 33x |
-| **Uncertainty Range** | 23x - 43x |
-| **Current vs Real Price** | $1.00 → $33.30 |
+| **Liquidity Risk Factor** | 0.90x |
+| **Real Valuation Multiplier** | 30x |
+| **Uncertainty Range** | 21x - 39x |
+| **Current vs Real Price** | `$6.4e-3` → `$1.9e-1` |
 | **Trading Signal** | BUY |
 
 ### Analysis
-[AI Timeline: Creative Renaissance] Asset classified as AI-Native (Built specifically for AI ecosystems. Maximum AI acceleration benefits.). AI Timeline Factor: 8.33x (AI acceleration boosts this asset significantly). Protocol Utility Token: benefits from network effects and protocol utility (base range: 10x - 25x). Class A (Real Yield) receives 1.2x risk class boost - resilient during market stress. Insider control (10/100) reduces multiplier by 0.95x due to centralization risks. Rank #350 imposes 0.2x penalty (illiquid, capital flight crushes value). Final real valuation multiplier: 33.2x. Token trading at $1.00 today would be worth $33.25 post-fiat collapse. AI acceleration provides strong tailwinds. Trading signal (BUY): Undervalued post-collapse. Accumulate before systemic shift.
+[AI Timeline: Creative Renaissance] Asset classified as AI-Native (Built specifically for AI ecosystems. Maximum AI acceleration benefits.). AI Timeline Factor: 8.33x (AI acceleration boosts this asset significantly). Protocol Utility Token: benefits from network effects and protocol utility (base range: 10x - 25x). Class A (Real Yield) receives 1.2x risk class boost - resilient during market stress. Insider control (10/100) reduces multiplier by 0.95x due to centralization risks. Rank #350 imposes 0.2x penalty (illiquid, capital flight crushes value). Liquidity friction (Market Cap: $1.5e6) adds a 25% baseline tariff. Final real valuation multiplier: 29.9x. Token trading at $1.00 today would be worth $29.93 post-fiat collapse. AI acceleration provides strong tailwinds. Trading signal (BUY): Undervalued post-collapse. Accumulate before systemic shift.
 
 ---
 

@@ -6,12 +6,14 @@
 |-------|-------|
 | **Symbol** | `ACS` |
 | **Name** | Access Protocol |
+| **Price** | `$3.0e-4` |
+| **Market Cap** | `$1.4e7` |
 | **Token Type** | Governance Token |
 | **Risk Class** | Class C (Venture Risk) |
 | **Insider Score** | 45/100 |
 | **Tariff Override** | 100% |
-| **Calculated Tariff** | 101% |
-| **Exchange Multiplier** | 2.0x |
+| **Calculated Tariff** | 135% |
+| **Exchange Multiplier** | 2.4x |
 
 ## Risk Analysis
 
@@ -25,7 +27,7 @@ Class C (Venture Risk)
 **45/100** - Medium insider control
 
 ### Exchange Rate
-**2.0x** (Tariff: 101%)
+**2.4x** (Tariff: 135%)
 
 ## Tags
 
@@ -54,13 +56,14 @@ Content monetization layer with nearly 100% inflation rates in early years to pa
 | **AI Timeline Factor** | 8.33x |
 | **AI Category** | AI-Native |
 | **Current AI Phase** | Creative Renaissance |
-| **Real Valuation Multiplier** | 0.9x |
+| **Liquidity Risk Factor** | 0.90x |
+| **Real Valuation Multiplier** | 0.8x |
 | **Uncertainty Range** | 0.4x - 1x |
-| **Current vs Real Price** | $1.00 → $0.90 |
+| **Current vs Real Price** | `$3.0e-4` → `$2.4e-4` |
 | **Trading Signal** | SELL |
 
 ### Analysis
-[AI Timeline: Creative Renaissance] Asset classified as AI-Native (Built specifically for AI ecosystems. Maximum AI acceleration benefits.). AI Timeline Factor: 8.33x (AI acceleration boosts this asset significantly). Governance Token: speculative value based on protocol governance (zombie DAOs have treasury value) (base range: 0.2x - 1.5x). Class C (Venture Risk) receives 0.8x risk class reduction - higher uncertainty. Insider control (45/100) reduces multiplier by 0.78x due to centralization risks. Rank #400 imposes 0.2x penalty (illiquid, capital flight crushes value). Final real valuation multiplier: 0.9x. Token trading at $1.00 today would be worth $0.88 post-fiat collapse (loss of purchasing power). AI acceleration provides strong tailwinds. Trading signal (SELL): Overvalued or high risk post-collapse. Reduce exposure.
+[AI Timeline: Creative Renaissance] Asset classified as AI-Native (Built specifically for AI ecosystems. Maximum AI acceleration benefits.). AI Timeline Factor: 8.33x (AI acceleration boosts this asset significantly). Governance Token: speculative value based on protocol governance (zombie DAOs have treasury value) (base range: 0.2x - 1.5x). Class C (Venture Risk) receives 0.8x risk class reduction - higher uncertainty. Insider control (45/100) reduces multiplier by 0.78x due to centralization risks. Rank #400 imposes 0.2x penalty (illiquid, capital flight crushes value). Liquidity friction (Market Cap: $1.4e7) adds a 20% baseline tariff. Final real valuation multiplier: 0.8x. Token trading at $1.00 today would be worth $0.79 post-fiat collapse (loss of purchasing power). AI acceleration provides strong tailwinds. Trading signal (SELL): Overvalued or high risk post-collapse. Reduce exposure.
 
 ---
 

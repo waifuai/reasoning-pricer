@@ -4,7 +4,7 @@ use crate::data_loader::load_tokens;
 use crate::index_generator::generate_all_indices;
 use crate::models::TokenAnalysis;
 use crate::summary_reporter::generate_multiple_summaries;
-use crate::tariff_generator::{analyze_token, generate_tariffs_report, load_tokens as load_tokens_for_tariff};
+use crate::tariff_generator::{analyze_token, generate_tariffs_report, generate_token_prices_report, load_tokens as load_tokens_for_tariff};
 use crate::token_reporter::generate_multiple_reports;
 use std::path::Path;
 
@@ -99,6 +99,20 @@ fn main() {
         }
         Err(e) => {
             eprintln!("❌ Error writing tariffs report: {}", e);
+            std::process::exit(1);
+        }
+    }
+
+    // Generate token prices report
+    println!("📊 Generating token price report...");
+    let prices_report = generate_token_prices_report(&analyses);
+    let prices_path = output_path.join("token_prices.md");
+    match std::fs::write(&prices_path, &prices_report) {
+        Ok(_) => {
+            println!("✅ Generated token price report");
+        }
+        Err(e) => {
+            eprintln!("❌ Error writing token price report: {}", e);
             std::process::exit(1);
         }
     }

@@ -6,12 +6,14 @@
 |-------|-------|
 | **Symbol** | `ZBCN` |
 | **Name** | Zebec Network |
+| **Price** | `$2.9e-3` |
+| **Market Cap** | `$2.8e8` |
 | **Token Type** | Real Yield Asset |
 | **Risk Class** | Class B (Systemic) |
 | **Insider Score** | 45/100 |
 | **Tariff Override** | 4% |
-| **Calculated Tariff** | 38% |
-| **Exchange Multiplier** | 1.4x |
+| **Calculated Tariff** | 55% |
+| **Exchange Multiplier** | 1.6x |
 
 ## Risk Analysis
 
@@ -25,7 +27,7 @@ Class B (Systemic)
 **45/100** - Medium insider control
 
 ### Exchange Rate
-**1.4x** (Tariff: 38%)
+**1.6x** (Tariff: 55%)
 
 ## Tags
 
@@ -54,13 +56,14 @@ Protocol enabling continuous money streaming and payroll. Recently migrated from
 | **AI Timeline Factor** | 1.80x |
 | **AI Category** | Passive Utility |
 | **Current AI Phase** | Creative Renaissance |
+| **Liquidity Risk Factor** | 0.95x |
 | **Real Valuation Multiplier** | 2x |
-| **Uncertainty Range** | 2x - 3x |
-| **Current vs Real Price** | $1.00 → $2.10 |
+| **Uncertainty Range** | 1x - 3x |
+| **Current vs Real Price** | `$2.9e-3` → `$5.8e-3` |
 | **Trading Signal** | SELL |
 
 ### Analysis
-[AI Timeline: Creative Renaissance] Asset classified as Passive Utility (Standard utility tokens with limited AI integration potential. Moderate performance through AI timeline.). AI Timeline Factor: 1.80x (AI acceleration boosts this asset significantly). Real Yield Asset: yield persists but currency debasement affects valuation (base range: 5x - 10x). Insider control (45/100) reduces multiplier by 0.78x due to centralization risks. Rank #300 imposes 0.2x penalty (illiquid, capital flight crushes value). Final real valuation multiplier: 2.1x. Token trading at $1.00 today would be worth $2.09 post-fiat collapse. AI acceleration provides strong tailwinds. Trading signal (SELL): Overvalued or high risk post-collapse. Reduce exposure.
+[AI Timeline: Creative Renaissance] Asset classified as Passive Utility (Standard utility tokens with limited AI integration potential. Moderate performance through AI timeline.). AI Timeline Factor: 1.80x (AI acceleration boosts this asset significantly). Real Yield Asset: yield persists but currency debasement affects valuation (base range: 5x - 10x). Insider control (45/100) reduces multiplier by 0.78x due to centralization risks. Rank #300 imposes 0.2x penalty (illiquid, capital flight crushes value). Liquidity friction (Market Cap: $2.8e8) adds a 15% baseline tariff. Final real valuation multiplier: 2.0x. Token trading at $1.00 today would be worth $1.99 post-fiat collapse. AI acceleration provides strong tailwinds. Trading signal (SELL): Overvalued or high risk post-collapse. Reduce exposure.
 
 ---
 

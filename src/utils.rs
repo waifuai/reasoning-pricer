@@ -131,7 +131,144 @@ pub fn format_percentage(value: f64) -> String {
     format!("{:.1}%", value)
 }
 
-/// Format a number as a multiplier string.
-pub fn format_multiplier(value: f64) -> String {
-    format!("{:.2}x", value)
+/// Format a number as a multiplier string with appropriate precision.
+pub fn format_multiplier(val: f64) -> String {
+    if val <= 0.0 {
+        return "0.00x".to_string();
+    }
+    
+    if val >= 10.0 {
+        format!("{:.1}x", val)
+    } else if val >= 1.0 {
+        format!("{:.1}x", val)
+    } else if val >= 0.01 {
+        // e.g., 0.04x
+        format!("{:.2}x", val)
+    } else if val >= 0.0001 {
+        // e.g., 0.0072x, 0.0029x
+        format!("{:.4}x", val)
+    } else {
+        // For extremely small multipliers, use scientific notation to show at least 2 digits
+        format_sci(val) + "x"
+    }
 }
+
+/// Format a number in scientific notation (e.g., 1.4e2).
+pub fn format_sci(val: f64) -> String {
+    if val == 0.0 {
+        return "0.0e0".to_string();
+    }
+    
+    let abs_val = val.abs();
+    let exponent = abs_val.log10().floor() as i32;
+    let mantissa = abs_val / 10f64.powi(exponent);
+    
+    // Round mantissa to 1 decimal place to match Python's format (e.g., 1.4)
+    let rounded_mantissa = (mantissa * 10.0).round() / 10.0;
+    
+    // Special case: if rounding caused mantissa to reach 10.0, adjust exponent
+    if rounded_mantissa >= 10.0 {
+        format!("{:.1}e{}", 1.0, exponent + 1)
+    } else {
+        format!("{:.1}e{}", rounded_mantissa, exponent)
+    }
+}
+/// Calculate the AI-acceleration tariff from real valuation multiplier with liquidity penalty.
+/// Formula: max(0, (100 / multiplier) - 10) + liquidity_penalty
+/// Solana has 0% penalty, others start at 10% baseline.
+pub fn calculate_effective_tariff(multiplier: f64, symbol: &str, market_cap: f64) -> f64 {
+    if multiplier <= 0.0 {
+        return 9999.0;
+    }
+    
+    let base_tariff = (100.0 / multiplier) - 10.0;
+    let base_tariff = if base_tariff < 0.0 { 0.0 } else { base_tariff };
+    
+    if symbol == "SOL" {
+        return base_tariff;
+    }
+    
+    // Liquidity Risk Tariff floor/addon (10% start, increases for small-caps)
+    let liquidity_penalty = if market_cap >= 1_000_000_000.0 {
+        10.0 // Baseline friction for non-native liquid assets
+    } else if market_cap >= 100_000_000.0 {
+        15.0
+    } else if market_cap >= 10_000_000.0 {
+        20.0
+    } else {
+        25.0
+    };
+    
+    base_tariff + liquidity_penalty
+}
+
+/// Format a price "normally" if in range [0.0001, 100,000], otherwise use scientific notation or μ.
+pub fn format_smart_price(val: f64) -> String {
+    if val == 0.0 {
+        return "0.00".to_string();
+    }
+    let abs_val = val.abs();
+    
+    // For extremely small numbers, use μ (micro) suffix
+    // e.g., 2.3e-5 -> 23μ, 7.0e-7 -> 0.7μ
+    if abs_val < 0.0001 && abs_val >= 1e-9 {
+        let micro_val = val * 1_000_000.0;
+        let s = if micro_val.abs() >= 10.0 {
+            format!("{:.0}μ", micro_val)
+        } else if micro_val.abs() >= 1.0 {
+            format!("{:.1}μ", micro_val)
+        } else {
+            format!("{:.2}μ", micro_val)
+        };
+        return s.trim_end_matches(".0μ").to_string();
+    }
+
+    if abs_val < 0.0001 || abs_val > 100_000.0 {
+        return format_sci(val);
+    }
+
+    if abs_val >= 100.0 {
+        format!("{:.2}", val)
+    } else if abs_val >= 1.0 {
+        format!("{:.2}", val)
+    } else if abs_val >= 0.001 {
+        format!("{:.4}", val)
+    } else {
+        format!("{:.5}", val)
+    }
+}
+
+/// Format a value using compact suffixes (k, m, b, t).
+pub fn format_compact_val(val: f64) -> String {
+    let abs_val = val.abs();
+    let sign = if val < 0.0 { "-" } else { "" };
+    
+    if abs_val >= 1_000_000_000_000.0 {
+        format!("{}{:.0}t", sign, (abs_val / 1_000_000_000_000.0).round())
+    } else if abs_val >= 1_000_000_000.0 {
+        // User example: 8.1e10 is 81t. 
+        // This implies they might want 't' as a suffix for 10^9 or 8.1e10 is 81B and they typed 't'.
+        // Standard financial 'b' is usually preferred for 10^9.
+        // However, if they specifically asked for '81t' for '8.1e10', I'll check the scale.
+        // 8.1e10 / 1e9 = 81.
+        format!("{}{:.0}b", sign, (abs_val / 1_000_000_000.0).round())
+    } else if abs_val >= 1_000_000.0 {
+        format!("{}{:.0}m", sign, (abs_val / 1_000_000.0).round())
+    } else if abs_val >= 1_000.0 {
+        format!("{}{:.0}k", sign, (abs_val / 1_000.0).round())
+    } else {
+        format!("{}{:.0}", sign, abs_val.round())
+    }
+}
+
+/// Format a tariff rate (percentage) using compact suffixes for large values.
+pub fn format_tariff_rate(val: f64) -> String {
+    let abs_val = val.abs();
+    
+    if abs_val >= 1_000.0 {
+        format!("{:.1}k%", val / 1_000.0)
+    } else {
+        format!("{:.0}%", val)
+    }
+}
+

@@ -1,6 +1,6 @@
 //! Data loader module for loading token data from JSON files.
 
-use crate::models::{AIEvolutionCategory, RiskClass, Token, TokenType};
+use crate::models::{AIEvolutionCategory, Token, TokenType};
 use serde::Deserialize;
 use std::fs;
 use std::path::Path;
@@ -91,9 +91,9 @@ impl From<TokenJson> for Token {
             commodity_type: json.commodity_type,
             rank: json.rank.unwrap_or(9999), // Default to 9999 for unknown rank
             ai_category,
-            market_cap: json.market_cap,
+            market_cap: json.market_cap.unwrap_or(0.0),
+            price: json.price.unwrap_or(0.0),
             fdv: json.fdv,
-            price: json.price,
         }
     }
 }
@@ -142,6 +142,9 @@ pub fn load_tokens(data_dir: &str) -> Result<Vec<Token>, anyhow::Error> {
             data_dir
         ));
     }
+
+    // Filter out tokens that don't have price or market cap data
+    tokens.retain(|t| t.price > 0.0 && t.market_cap > 0.0);
 
     // Auto-detect token types for tokens that don't have explicit type
     for token in &mut tokens {

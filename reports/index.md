@@ -2,33 +2,32 @@
 
 ## Overview
 
-This repository contains comprehensive analysis reports for 185 Solana tokens, organized by risk classification and individual token details.
+This repository contains comprehensive analysis reports for 100 Solana tokens, organized by risk classification and individual token details.
 
 ## 📊 Risk Class Summary
 
 | Risk Class | Token Count | Description |
 |------------|-------------|-------------|
-| [**Class A (Real Yield)**](./summaries/class-a-real-yield.md) | 113 | Low-risk foundation assets |
-| [**Class B (Systemic)**](./summaries/class-b-systemic.md) | 50 | Medium-risk ecosystem tokens |
-| [**Class C (Venture Risk)**](./summaries/class-c-venture-risk.md) | 21 | Higher-risk growth opportunities |
-| [**Class D (Speculative)**](./summaries/class-d-speculative.md) | 1 | Maximum-risk speculative assets |
+| [**Class A (Real Yield)**](./summaries/class-a-real-yield.md) | 60 | Low-risk foundation assets |
+| [**Class B (Systemic)**](./summaries/class-b-systemic.md) | 21 | Medium-risk ecosystem tokens |
+| [**Class C (Venture Risk)**](./summaries/class-c-venture-risk.md) | 19 | Higher-risk growth opportunities |
+| [**Class D (Speculative)**](./summaries/class-d-speculative.md) | 0 | Maximum-risk speculative assets |
 
 ## 📈 Quick Stats
 
-- **Total Tokens Analyzed:** 185
+- **Total Tokens Analyzed:** 100
 - **Data Source:** JSON files in `data/` directory
-- **Average Insider Score:** 35.7/100
-- **Average Tariff:** 25.2%
-- **AI-Native/Enabled Tokens:** 49
-- **Static/Hard-Money Tokens:** 6
+- **Average Insider Score:** 36.2/100
+- **Average Tariff:** 33.6%
+- **AI-Native/Enabled Tokens:** 33
+- **Static/Hard-Money Tokens:** 3
 
 ## 📁 Report Structure
 
 ### By Risk Class
-- [Class A (Real Yield)](./summaries/class-a-real-yield.md) - 113 tokens
-- [Class B (Systemic)](./summaries/class-b-systemic.md) - 50 tokens
-- [Class C (Venture Risk)](./summaries/class-c-venture-risk.md) - 21 tokens
-- [Class D (Speculative)](./summaries/class-d-speculative.md) - 1 tokens
+- [Class A (Real Yield)](./summaries/class-a-real-yield.md) - 60 tokens
+- [Class B (Systemic)](./summaries/class-b-systemic.md) - 21 tokens
+- [Class C (Venture Risk)](./summaries/class-c-venture-risk.md) - 19 tokens
 
 ### AI-Acceleration Pricing
 - [📊 Tariffs Report](./tariffs.md) - AI timeline impact analysis and exchange rates

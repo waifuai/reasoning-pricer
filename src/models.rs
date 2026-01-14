@@ -5,7 +5,7 @@
 
 use serde::{Deserialize, Serialize};
 use std::cmp::Ordering;
-use std::hash::{Hash, Hasher};
+use std::hash::Hash;
 
 // ============================================================================
 // AI Timeline Configuration
@@ -351,12 +351,10 @@ pub struct Token {
     pub ai_category: AIEvolutionCategory,
 
     // Fundamental Data
-    #[serde(default)]
-    pub market_cap: Option<f64>,
+    pub market_cap: f64,
     #[serde(default)]
     pub fdv: Option<f64>,
-    #[serde(default)]
-    pub price: Option<f64>,
+    pub price: f64,
 }
 
 fn default_rank() -> i32 { 9999 }
@@ -546,6 +544,7 @@ pub struct TokenAnalysisResult {
     pub risk_class_adjustment: f64,
     pub insider_risk_factor: f64,
     pub ai_timeline_factor: f64,
+    pub liquidity_risk_factor: f64,
     pub ai_category: String,
     pub ai_category_display: String,
     pub current_ai_phase: String,

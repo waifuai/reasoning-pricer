@@ -6,12 +6,14 @@
 |-------|-------|
 | **Symbol** | `W` |
 | **Name** | Wormhole |
+| **Price** | `$3.8e-2` |
+| **Market Cap** | `$2.0e8` |
 | **Token Type** | Governance Token |
 | **Risk Class** | Class C (Venture Risk) |
 | **Insider Score** | 47/100 |
 | **Tariff Override** | 300% |
-| **Calculated Tariff** | 19% |
-| **Exchange Multiplier** | 1.2x |
+| **Calculated Tariff** | 35% |
+| **Exchange Multiplier** | 1.4x |
 
 ## Risk Analysis
 
@@ -25,7 +27,7 @@ Class C (Venture Risk)
 **47/100** - Medium insider control
 
 ### Exchange Rate
-**1.2x** (Tariff: 19%)
+**1.4x** (Tariff: 35%)
 
 ## Tags
 
@@ -54,13 +56,14 @@ The Bridge Troll. 82% of supply locked at launch. Represents the ultimate 'VC Ex
 | **AI Timeline Factor** | 8.33x |
 | **AI Category** | AI-Native |
 | **Current AI Phase** | Creative Renaissance |
-| **Real Valuation Multiplier** | 4x |
+| **Liquidity Risk Factor** | 0.95x |
+| **Real Valuation Multiplier** | 3x |
 | **Uncertainty Range** | 2x - 5x |
-| **Current vs Real Price** | $1.00 → $3.50 |
+| **Current vs Real Price** | `$3.8e-2` → `$1.2e-1` |
 | **Trading Signal** | BUY |
 
 ### Analysis
-[AI Timeline: Creative Renaissance] Asset classified as AI-Native (Built specifically for AI ecosystems. Maximum AI acceleration benefits.). AI Timeline Factor: 8.33x (AI acceleration boosts this asset significantly). Governance Token: speculative value based on protocol governance (zombie DAOs have treasury value) (base range: 0.2x - 1.5x). Class C (Venture Risk) receives 0.8x risk class reduction - higher uncertainty. Insider control (47/100) reduces multiplier by 0.77x due to centralization risks. Rank #70 applies 0.8x adjustment (mid-tier liquidity). Final real valuation multiplier: 3.5x. Token trading at $1.00 today would be worth $3.47 post-fiat collapse. AI acceleration provides strong tailwinds. Trading signal (BUY): Undervalued post-collapse. Accumulate before systemic shift.
+[AI Timeline: Creative Renaissance] Asset classified as AI-Native (Built specifically for AI ecosystems. Maximum AI acceleration benefits.). AI Timeline Factor: 8.33x (AI acceleration boosts this asset significantly). Governance Token: speculative value based on protocol governance (zombie DAOs have treasury value) (base range: 0.2x - 1.5x). Class C (Venture Risk) receives 0.8x risk class reduction - higher uncertainty. Insider control (47/100) reduces multiplier by 0.77x due to centralization risks. Rank #70 applies 0.8x adjustment (mid-tier liquidity). Liquidity friction (Market Cap: $2.0e8) adds a 15% baseline tariff. Final real valuation multiplier: 3.3x. Token trading at $1.00 today would be worth $3.29 post-fiat collapse. AI acceleration provides strong tailwinds. Trading signal (BUY): Undervalued post-collapse. Accumulate before systemic shift.
 
 ---
 

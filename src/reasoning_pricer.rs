@@ -46,12 +46,6 @@ impl ReasoningPricer {
         1.0 - (insider_factor * 0.5)
     }
 
-    /// Calculate the "Capital Flight" factor based on token liquidity/rank.
-    /// In a collapse, capital flees TO the top (BTC, ETH, SOL) and AWAY from small-cap alts.
-    ///
-    /// - rank < 10: Blue-chip premium (1.2x) - safety assets become "new fiat"
-    /// - rank < 100: Slight drag (0.8x) - still relatively liquid
-    /// - rank >= 100: Heavy penalty (0.2x) - illiquid, capital flight crushes value
     pub fn calculate_capital_flight_factor(&self, token: &Token) -> f64 {
         if token.rank < 10 {
             1.2 // Premium for being a "Blue Chip" safety asset
@@ -59,6 +53,23 @@ impl ReasoningPricer {
             0.8 // Slight drag for mid-tier tokens
         } else {
             0.2 // 80% penalty for illiquid alts (everyone sells to buy BTC/Food)
+        }
+    }
+    
+    /// Calculate the liquidity risk factor based on market cap.
+    /// Solana is exempt as the primary liquidity hub.
+    pub fn calculate_liquidity_risk_factor(&self, token: &Token) -> f64 {
+        if token.symbol == "SOL" {
+            return 1.0;
+        }
+
+        // Penalty for smaller market caps (liquidity risk)
+        if token.market_cap >= 1_000_000_000.0 {
+            1.0
+        } else if token.market_cap >= 100_000_000.0 {
+            0.95 // 5% penalty
+        } else {
+            0.90 // 10% penalty
         }
     }
 
@@ -177,8 +188,11 @@ impl ReasoningPricer {
         // Capital Flight Factor - rewards liquidity and penalizes illiquid alts
         let capital_flight_factor = self.calculate_capital_flight_factor(token);
 
+        // Liquidity Risk Factor - penalty for small market caps
+        let liquidity_risk_factor = self.calculate_liquidity_risk_factor(token);
+
         // Calculate final multiplier with AI timeline factor
-        base_multiplier * ai_timeline_factor * risk_multiplier * insider_risk_factor * capital_flight_factor
+        base_multiplier * ai_timeline_factor * risk_multiplier * insider_risk_factor * capital_flight_factor * liquidity_risk_factor
     }
 
     /// Calculate uncertainty factor based on token type.
@@ -302,6 +316,7 @@ impl ReasoningPricer {
         let phase = self.get_current_ai_phase();
         let ai_category = token.get_ai_category();
         let ai_timeline_factor = self.calculate_ai_timeline_factor(token, &phase);
+        let liquidity_risk_factor = self.calculate_liquidity_risk_factor(token);
         
         // Calculate core metrics
         let real_multiplier = self.calculate_ai_acceleration_multiplier(token, &phase);
@@ -332,6 +347,7 @@ impl ReasoningPricer {
             risk_class_adjustment,
             insider_risk_factor: self.calculate_insider_risk_factor(token.insider_score),
             ai_timeline_factor: (ai_timeline_factor * 100.0).round() / 100.0,
+            liquidity_risk_factor,
             ai_category: format!("{:?}", ai_category),
             ai_category_display: ai_category.display_name().to_string(),
             current_ai_phase: phase.name.to_string(),
@@ -447,6 +463,21 @@ impl ReasoningPricer {
         };
         reasoning_parts.push(capital_flight_desc);
 
+        // Liquidity friction explanation
+        if token.symbol == "SOL" {
+            reasoning_parts.push("Exempt from liquidity tariff (Solana baseline).".to_string());
+        } else {
+            let liquidity_penalty = if token.market_cap >= 1_000_000_000.0 { 10.0 }
+                else if token.market_cap >= 100_000_000.0 { 15.0 }
+                else if token.market_cap >= 10_000_000.0 { 20.0 }
+                else { 25.0 };
+            reasoning_parts.push(format!(
+                "Liquidity friction (Market Cap: ${}) adds a {:.0}% baseline tariff.",
+                crate::utils::format_sci(token.market_cap),
+                liquidity_penalty
+            ));
+        }
+
         // Final multiplier explanation with AI context
         let ai_context = if ai_timeline_factor > 1.2 {
             "AI acceleration provides strong tailwinds."
@@ -504,128 +535,6 @@ impl ReasoningPricer {
         reasoning_parts.join(" ")
     }
 
-    /// Generate detailed reasoning for the analysis.
-    fn generate_reasoning(&self, token: &Token, real_multiplier: f64, signal: &str) -> String {
-        let token_type = token.get_token_type();
-        let risk_class = &token.archetype;
-        let risk_adj = self.risk_class_multipliers
-            .get(risk_class)
-            .copied()
-            .unwrap_or(1.0);
-        let insider_factor = self.calculate_insider_risk_factor(token.insider_score);
-        let capital_flight_factor = self.calculate_capital_flight_factor(token);
-        let (min_multiplier, max_multiplier) = token_type.base_multiplier_range();
-
-        let mut reasoning_parts = Vec::new();
-
-        // Token type explanation
-        // Use dynamic formatting based on multiplier magnitude
-        let range_str = if min_multiplier < 0.1 {
-            format!("{:.2}x - {:.2}x", min_multiplier, max_multiplier)
-        } else if min_multiplier < 1.0 {
-            format!("{:.1}x - {:.1}x", min_multiplier, max_multiplier)
-        } else {
-            format!("{:.0}x - {:.0}x", min_multiplier, max_multiplier)
-        };
-        reasoning_parts.push(format!(
-            "{}: {} (base range: {}).",
-            token_type.display_name(),
-            self.get_type_description(&token_type),
-            range_str
-        ));
-
-        // Risk class adjustment
-        if (risk_adj - 1.0).abs() > f64::EPSILON {
-            if risk_adj > 1.0 {
-                reasoning_parts.push(format!(
-                    "{} receives {:.1}x risk class boost - resilient during market stress.",
-                    risk_class.display_name(),
-                    risk_adj
-                ));
-            } else {
-                reasoning_parts.push(format!(
-                    "{} receives {:.1}x risk class reduction - higher uncertainty.",
-                    risk_class.display_name(),
-                    risk_adj
-                ));
-            }
-        }
-
-        // Insider control adjustment
-        if insider_factor < 1.0 {
-            reasoning_parts.push(format!(
-                "Insider control ({}/100) reduces multiplier by {:.2}x due to centralization risks.",
-                token.insider_score, insider_factor
-            ));
-        }
-
-        // Capital Flight Factor explanation
-        let capital_flight_desc = if capital_flight_factor > 1.0 {
-            format!(
-                "Rank #{} gives {:.1}x premium (blue-chip safety asset).",
-                token.rank, capital_flight_factor
-            )
-        } else if capital_flight_factor < 0.5 {
-            format!(
-                "Rank #{} imposes {:.1}x penalty (illiquid, capital flight crushes value).",
-                token.rank, capital_flight_factor
-            )
-        } else {
-            format!(
-                "Rank #{} applies {:.1}x adjustment (mid-tier liquidity).",
-                token.rank, capital_flight_factor
-            )
-        };
-        reasoning_parts.push(capital_flight_desc);
-
-        // Final multiplier explanation
-        // Use higher precision for small multipliers
-        if real_multiplier < 0.1 {
-            if matches!(token_type, TokenType::FiatPegged) {
-                reasoning_parts.push(format!(
-                    "Final real valuation multiplier: {:.2}x. Token trading at $1.00 today would be worth ${:.2} post-fiat collapse ({}).",
-                    real_multiplier, real_multiplier, "collapses with fiat"
-                ));
-            } else {
-                reasoning_parts.push(format!(
-                    "Final real valuation multiplier: {:.2}x. Token trading at $1.00 today would be worth ${:.2} post-fiat collapse ({}).",
-                    real_multiplier, real_multiplier, "loss of purchasing power"
-                ));
-            }
-        } else {
-            if real_multiplier < 1.0 {
-                reasoning_parts.push(format!(
-                    "Final real valuation multiplier: {:.1}x. Token trading at $1.00 today would be worth ${:.2} post-fiat collapse ({}).",
-                    real_multiplier, real_multiplier,
-                    if matches!(token_type, TokenType::FiatPegged) { "collapses with fiat" } else { "loss of purchasing power" }
-                ));
-            } else {
-                reasoning_parts.push(format!(
-                    "Final real valuation multiplier: {:.1}x. Token trading at $1.00 today would be worth ${:.2} post-fiat collapse.",
-                    real_multiplier, real_multiplier
-                ));
-            }
-        }
-
-        // Trading signal explanation
-        let signal_explanation = match signal {
-            "BUY" => match token_type {
-                TokenType::FiatPegged => unreachable!(),
-                TokenType::Meme => "High upside potential despite extreme risk. Position small.",
-                TokenType::HardMoney | TokenType::CommodityBacked => "Strong store of value. Accumulate before scarcity kicks in.",
-                _ => "Undervalued post-collapse. Accumulate before systemic shift.",
-            },
-            "HOLD" => "Moderate value post-collapse. Maintain current position.",
-            _ => match token_type {
-                TokenType::FiatPegged => "Collapses with fiat currency. Exit immediately.",
-                _ => "Overvalued or high risk post-collapse. Reduce exposure.",
-            },
-        };
-
-        reasoning_parts.push(format!("Trading signal ({}): {}", signal, signal_explanation));
-
-        reasoning_parts.join(" ")
-    }
 
     /// Get a description of the token type's behavior.
     /// Updated to reflect the "Universal Non-Zero Doctrine" - every asset has a floor of existence.

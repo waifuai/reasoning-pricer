@@ -6,12 +6,14 @@
 |-------|-------|
 | **Symbol** | `HAWK` |
 | **Name** | Hawk Protocol |
+| **Price** | `$3.6e-5` |
+| **Market Cap** | `$2.0e6` |
 | **Token Type** | Protocol Utility Token |
 | **Risk Class** | Class A (Real Yield) |
 | **Insider Score** | 50/100 |
 | **Tariff Override** | 7% |
-| **Calculated Tariff** | 8% |
-| **Exchange Multiplier** | 1.1x |
+| **Calculated Tariff** | 35% |
+| **Exchange Multiplier** | 1.3x |
 
 ## Risk Analysis
 
@@ -25,7 +27,7 @@ Class A (Real Yield)
 **50/100** - Medium insider control
 
 ### Exchange Rate
-**1.1x** (Tariff: 8%)
+**1.3x** (Tariff: 35%)
 
 ## Tags
 
@@ -54,13 +56,14 @@ DeFi protocol attempting to merge privacy with regulatory compliance. The dual m
 | **AI Timeline Factor** | 1.80x |
 | **AI Category** | Passive Utility |
 | **Current AI Phase** | Creative Renaissance |
-| **Real Valuation Multiplier** | 6x |
+| **Liquidity Risk Factor** | 0.90x |
+| **Real Valuation Multiplier** | 5x |
 | **Uncertainty Range** | 4x - 7x |
-| **Current vs Real Price** | $1.00 → $5.70 |
+| **Current vs Real Price** | `$3.6e-5` → `$1.9e-4` |
 | **Trading Signal** | HOLD |
 
 ### Analysis
-[AI Timeline: Creative Renaissance] Asset classified as Passive Utility (Standard utility tokens with limited AI integration potential. Moderate performance through AI timeline.). AI Timeline Factor: 1.80x (AI acceleration boosts this asset significantly). Protocol Utility Token: benefits from network effects and protocol utility (base range: 10x - 25x). Class A (Real Yield) receives 1.2x risk class boost - resilient during market stress. Insider control (50/100) reduces multiplier by 0.75x due to centralization risks. Rank #600 imposes 0.2x penalty (illiquid, capital flight crushes value). Final real valuation multiplier: 5.7x. Token trading at $1.00 today would be worth $5.67 post-fiat collapse. AI acceleration provides strong tailwinds. Trading signal (HOLD): Moderate value post-collapse. Maintain current position.
+[AI Timeline: Creative Renaissance] Asset classified as Passive Utility (Standard utility tokens with limited AI integration potential. Moderate performance through AI timeline.). AI Timeline Factor: 1.80x (AI acceleration boosts this asset significantly). Protocol Utility Token: benefits from network effects and protocol utility (base range: 10x - 25x). Class A (Real Yield) receives 1.2x risk class boost - resilient during market stress. Insider control (50/100) reduces multiplier by 0.75x due to centralization risks. Rank #600 imposes 0.2x penalty (illiquid, capital flight crushes value). Liquidity friction (Market Cap: $2.0e6) adds a 25% baseline tariff. Final real valuation multiplier: 5.1x. Token trading at $1.00 today would be worth $5.10 post-fiat collapse. AI acceleration provides strong tailwinds. Trading signal (HOLD): Moderate value post-collapse. Maintain current position.
 
 ---
 
