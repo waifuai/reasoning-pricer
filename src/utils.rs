@@ -70,9 +70,9 @@ pub fn generate_tag_analysis(tokens: &[&Token]) -> String {
         }
     }
 
-    // Sort by frequency
+    // Sort by frequency descending, then alphabetically ascending for same frequency
     let mut sorted_tags: Vec<(&str, usize)> = tag_counts.into_iter().collect();
-    sorted_tags.sort_by(|a, b| b.1.cmp(&a.1));
+    sorted_tags.sort_by(|a, b| b.1.cmp(&a.1).then(a.0.cmp(b.0)));
 
     let rows: Vec<String> = sorted_tags
         .iter()

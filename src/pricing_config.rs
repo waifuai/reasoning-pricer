@@ -3,6 +3,7 @@
 //! Loads and manages AI-acceleration pricing parameters from pricing_config.json
 //! This allows easy tuning without modifying Rust code.
 
+use chrono::{Datelike, Utc};
 use serde::{Deserialize, Serialize};
 use std::fs;
 use std::path::Path;
@@ -95,8 +96,8 @@ impl PricingConfig {
     /// Load configuration from pricing_config.json
     pub fn load() -> Self {
         let config_path = Path::new("pricing_config.json");
-        
-        if config_path.exists() {
+
+        let mut config = if config_path.exists() {
             let config_str = fs::read_to_string(config_path)
                 .expect("Failed to read pricing_config.json");
             serde_json::from_str(&config_str)
@@ -104,7 +105,14 @@ impl PricingConfig {
         } else {
             // Return default configuration if file doesn't exist
             Self::default()
-        }
+        };
+
+        // Update current_date to current system time for more frequent monetary policy updates
+        let now = Utc::now();
+        config.current_date.year = now.year() as i32;
+        config.current_date.month = now.month() as u32;
+
+        config
     }
     
     /// Save current configuration to pricing_config.json
