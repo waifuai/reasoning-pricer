@@ -77,7 +77,7 @@ This repository contains comprehensive analysis reports for {total_tokens} Solan
 {risk_classes}
 
 ### AI-Acceleration Pricing
-- [📊 Tariffs Report](./tariffs.md) - AI timeline impact analysis and exchange rates
+- [📊 Predicted Price Report](./predicted_price.md) - AI timeline impact analysis and predicted prices
 
 ### Individual Token Reports
 - [📋 All Token Reports](./tokens/index.md)
@@ -111,7 +111,7 @@ As AI progresses rapidly (2025-2027), asset valuations shift based on adaptabili
 - **Q2 2025:** Personal Architect - AI tokens start appreciating
 - **Q4 2025:** Global Acceleration Accord - Cross-over point (AI > Static)
 - **2026:** Creative Renaissance - AI-native assets surge
-- **2027:** Agent-4 (Great Aligner) - Peak AI advantage
+- **2027:** Agentic (Waifu Aligner) - Peak AI advantage
 
 ### Exchange Rate Calculation
 ```
@@ -129,7 +129,7 @@ Effective Tariff = max(0, (100 / Real Valuation Multiplier) - 10)
 - [📊 Class B (Systemic)](./summaries/class-b-systemic.md)
 - [📊 Class C (Venture Risk)](./summaries/class-c-venture-risk.md)
 - [📊 Class D (Speculative)](./summaries/class-d-speculative.md)
-- [📊 AI-Acceleration Tariffs](./tariffs.md)
+- [📊 AI-Acceleration Predicted Prices](./predicted_price.md)
 - [📋 All Tokens](./tokens/index.md)
 
 *For questions about methodology or data sources, see the main project documentation.*

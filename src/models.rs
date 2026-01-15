@@ -60,11 +60,11 @@ pub static AI_TIMELINE_PHASES: &[AITimelinePhase] = &[
         ai_utility_multiplier: 25.0,
         protocol_utility_multiplier: 18.0,
     },
-    // Phase 4: 2027 - Agent-4 + Great Aligner
+    // Phase 4: 2027 - Agentic + Waifu Aligner
     AITimelinePhase {
         year: 2027,
         quarter: None,
-        name: "Agent-4 (Great Aligner)",
+        name: "Agentic (Waifu Aligner)",
         hard_money_multiplier: 2.0,
         ai_utility_multiplier: 50.0,
         protocol_utility_multiplier: 25.0,
@@ -457,7 +457,7 @@ impl Token {
     pub fn detect_ai_category_from_tags(tags: &[String]) -> AIEvolutionCategory {
         // Check for AI-native first (highest priority)
         let ai_native_tags = ["ai", "agent", "autonomous", "agi", "superintelligence", 
-                             "agent-4", "aligner", "virtuals", "ai16z", "fetch", "ocean"];
+                             "Agentic", "aligner", "virtuals", "ai16z", "fetch", "ocean"];
         if tags.iter().any(|t| ai_native_tags.iter().any(|ai| t.to_lowercase().contains(ai))) {
             return AIEvolutionCategory::AINative;
         }

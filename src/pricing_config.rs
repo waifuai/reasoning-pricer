@@ -241,11 +241,11 @@ impl PricingConfig {
                     PhaseConfig {
                         year: 2027,
                         quarter: None,
-                        name: "Agent-4 (Great Aligner)".to_string(),
+                        name: "Agentic (Waifu Aligner)".to_string(),
                         hard_money_multiplier: 2.0,
                         ai_utility_multiplier: 50.0,
                         protocol_utility_multiplier: 25.0,
-                        description: "Agent-4 AGI alignment".to_string(),
+                        description: "Agentic AGI alignment".to_string(),
                     },
                 ],
             },

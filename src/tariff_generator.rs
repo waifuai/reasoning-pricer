@@ -463,21 +463,11 @@ pub fn calculate_tariff(multiplier: f64, symbol: &str, market_cap: f64) -> f64 {
 
 pub fn generate_tariffs_report(analyses: &[TokenAnalysisResult]) -> String {
     let mut report = String::new();
-    
-    report.push_str("# Comprehensive Tariff Table\n\n");
+
+    report.push_str("# AI-Acceleration Predicted Price Report\n\n");
     report.push_str("## Overview\n\n");
-    report.push_str("This document provides a complete reference of all tokens in the Predictive Reasoning Pricer system along with their **effective tariff rates**. The tariff rate externalizes the risk of each asset by showing how much friction is applied when exchanging into higher-quality assets.\n\n");
-    report.push_str("### Tariff Philosophy\n\n");
-    report.push_str("The tariff system is designed to be intuitive:\n");
-    report.push_str("- **Higher multiplier** = **Lower tariff** (better asset, less friction)\n");
-    report.push_str("- **Lower multiplier** = **Higher tariff** (worse asset, more friction)\n");
-    report.push_str("- **Minimum tariff is 0%** - no negative tariffs allowed\n\n");
-    report.push_str("### Calculation Formula\n\n");
-    report.push_str("The **effective tariff rate** is calculated from the real valuation multiplier:\n\n");
-    report.push_str("```\nEffective Tariff Rate = max(0, (100 / Real Valuation Multiplier) - 10)\n```\n\n");
-    report.push_str("The `max(0, ...)` ensures no negative tariffs - assets can only have 0% or higher tariffs.\n\n");
-    report.push_str("This means a 10x multiplier asset has 0% tariff (the baseline). Each 10x reduction in multiplier adds approximately 1000% to the tariff.\n\n");
-    report.push_str("### AI Timeline Impact\n\n");
+    report.push_str("This document provides AI-accelerated predicted prices for all tokens in the Predictive Reasoning Pricer system, showing current market prices and forward-looking valuations based on AI timeline projections. The multiplier represents the real valuation factor, adjusted for risk class, AI category, and evolutionary potential.\n\n");
+    report.push_str("### Pricing Model Timeline\n\n");
     report.push_str("The pricing model now incorporates AI acceleration based on the 2027 timeline:\n\n");
     report.push_str("| Phase | Year | Static Assets | AI-Native Assets |\n");
     report.push_str("|-------|------|---------------|------------------|\n");
@@ -485,17 +475,8 @@ pub fn generate_tariffs_report(analyses: &[TokenAnalysisResult]) -> String {
     report.push_str("| Personal Architect | 2025 Q2 | 15.0x | 8.0x |\n");
     report.push_str("| Global Acceleration Accord | 2025 Q4 | 10.0x | 15.0x |\n");
     report.push_str("| **Creative Renaissance** | **2026** | **5.0x** | **25.0x** |\n");
-    report.push_str("| Agent-4 (Great Aligner) | 2027 | 2.0x | 50.0x |\n\n");
+    report.push_str("| Agentic (Waifu Aligner) | 2027 | 2.0x | 50.0x |\n\n");
     report.push_str("Static assets (BTC, gold) decline as AI progresses, while AI-native/AI-evolving assets appreciate.\n\n");
-    report.push_str("### Tariff Tier Definitions\n\n");
-    report.push_str("| Tier | Tariff Rate | Multiplier Range | Description |\n");
-    report.push_str("|------|-------------|------------------|-------------|\n");
-    report.push_str("| **Premium** | 0% | ≥10.00x | Gold standard, reserve currencies |\n");
-    report.push_str("| **Good** | 1% - 100% | 5.00x - 9.99x | Strong assets, commodity-backed |\n");
-    report.push_str("| **Neutral** | 101% - 500% | 0.20x - 4.99x | Moderate utility, stable value |\n");
-    report.push_str("| **Discounted** | 501% - 1000% | 0.10x - 0.19x | Underperforms baseline |\n");
-    report.push_str("| **Poor** | 1001% - 5000% | 0.02x - 0.09x | Weak utility, high risk |\n");
-    report.push_str("| **Catastrophic** | >5000% | <0.02x | Collapses with fiat, dead assets |\n\n");
     
     // Sort analyses by multiplier descending
     let mut sorted: Vec<_> = analyses.iter().collect();
@@ -517,115 +498,138 @@ pub fn generate_tariffs_report(analyses: &[TokenAnalysisResult]) -> String {
     let catastrophic: Vec<_> = sorted.iter().filter(|a| a.real_valuation_multiplier < 0.02).collect();
     
     report.push_str("---\n\n");
-    report.push_str("## Complete Tariff Table\n\n");
+    report.push_str("## Complete Predicted Price Table\n\n");
     
     // Tier 1: Premium
     report.push_str("### Tier 1: Premium (0%)\n\n");
     report.push_str("The gold standard assets that achieve 10x or higher multipliers. These have no tariff friction.\n\n");
-    report.push_str("| Symbol | Name | Risk Class | Multiplier | Effective Tariff | Exchange Rate | Token Type | AI Category |\n");
-    report.push_str("|--------|------|------------|------------|------------------|---------------|------------|-------------|
-");
+    report.push_str("| Symbol | Name | Risk Class | Multiplier | Current Price ($) | Predicted Price ($) | Token Type | AI Category |\n");
+    report.push_str("|--------|------|------------|------------|-------------------|---------------------|------------|-------------|\n");
     for a in &premium {
-        let tariff = calculate_tariff(a.real_valuation_multiplier, &a.symbol, a.market_cap);
-        let exchange_rate_display = if a.current_price > 0.0 {
-            format!("{} ${} → ${}", format_trend(a.real_valuation_multiplier), format_smart_price(a.current_price), format_smart_price(a.projected_price))
+        let current_price_display = if a.current_price > 0.0 {
+            format_smart_price(a.current_price)
         } else {
-            format!("{} $1.00 → ${:.2}", format_trend(a.real_valuation_multiplier), a.real_valuation_multiplier)
+            format!("$1.00")
+        };
+        let predicted_price_display = if a.current_price > 0.0 {
+            format_smart_price(a.projected_price)
+        } else {
+            format!("${:.2}", a.real_valuation_multiplier)
         };
 
         report.push_str(&format!("| {} | {} | {} | {} | {} | {} | {} | {} |\n",
-            a.symbol, a.name, format_risk_class(&a.risk_class), format_multiplier(a.real_valuation_multiplier), format_tariff_rate(tariff),
-            exchange_rate_display, format_token_type(&a.token_type), format_ai_category(&a.ai_category)));
+            a.symbol, a.name, format_risk_class(&a.risk_class), format_multiplier(a.real_valuation_multiplier), current_price_display,
+            predicted_price_display, format_token_type(&a.token_type), format_ai_category(&a.ai_category)));
     }
     
     // Tier 2: Good
     report.push_str("\n### Tier 2: Good (1% - 100%)\n\n");
     report.push_str("Strong assets with 5x-9.99x multipliers. Low friction, good store of value.\n\n");
-    report.push_str("| Symbol | Name | Risk Class | Multiplier | Effective Tariff | Exchange Rate | Token Type | AI Category |\n");
-    report.push_str("|--------|------|------------|------------|------------------|---------------|------------|-------------|\n");
+    report.push_str("| Symbol | Name | Risk Class | Multiplier | Current Price ($) | Predicted Price ($) | Token Type | AI Category |\n");
+    report.push_str("|--------|------|------------|------------|-------------------|---------------------|------------|-------------|\n");
     for a in &good {
-        let tariff = calculate_tariff(a.real_valuation_multiplier, &a.symbol, a.market_cap);
-        let exchange_rate_display = if a.current_price > 0.0 {
-            format!("{} ${} → ${}", format_trend(a.real_valuation_multiplier), format_smart_price(a.current_price), format_smart_price(a.projected_price))
+        let current_price_display = if a.current_price > 0.0 {
+            format_smart_price(a.current_price)
         } else {
-            format!("{} $1.00 → ${:.2}", format_trend(a.real_valuation_multiplier), a.real_valuation_multiplier)
+            format!("$1.00")
+        };
+        let predicted_price_display = if a.current_price > 0.0 {
+            format_smart_price(a.projected_price)
+        } else {
+            format!("${:.2}", a.real_valuation_multiplier)
         };
 
         report.push_str(&format!("| {} | {} | {} | {} | {} | {} | {} | {} |\n",
-            a.symbol, a.name, format_risk_class(&a.risk_class), format_multiplier(a.real_valuation_multiplier), format_tariff_rate(tariff),
-            exchange_rate_display, format_token_type(&a.token_type), format_ai_category(&a.ai_category)));
+            a.symbol, a.name, format_risk_class(&a.risk_class), format_multiplier(a.real_valuation_multiplier), current_price_display,
+            predicted_price_display, format_token_type(&a.token_type), format_ai_category(&a.ai_category)));
     }
     
     // Tier 3: Neutral
     report.push_str("\n### Tier 3: Neutral (101% - 500%)\n\n");
     report.push_str("Assets with 0.20x-4.99x multipliers. Moderate friction, reasonable utility.\n\n");
-    report.push_str("| Symbol | Name | Risk Class | Multiplier | Effective Tariff | Exchange Rate | Token Type | AI Category |\n");
-    report.push_str("|--------|------|------------|------------|------------------|---------------|------------|-------------|\n");
+    report.push_str("| Symbol | Name | Risk Class | Multiplier | Current Price ($) | Predicted Price ($) | Token Type | AI Category |\n");
+    report.push_str("|--------|------|------------|------------|-------------------|---------------------|------------|-------------|\n");
     for a in &neutral {
-        let tariff = calculate_tariff(a.real_valuation_multiplier, &a.symbol, a.market_cap);
-        let exchange_rate_display = if a.current_price > 0.0 {
-            format!("{} ${} → ${}", format_trend(a.real_valuation_multiplier), format_smart_price(a.current_price), format_smart_price(a.projected_price))
+        let current_price_display = if a.current_price > 0.0 {
+            format_smart_price(a.current_price)
         } else {
-            format!("{} $1.00 → ${:.2}", format_trend(a.real_valuation_multiplier), a.real_valuation_multiplier)
+            format!("$1.00")
+        };
+        let predicted_price_display = if a.current_price > 0.0 {
+            format_smart_price(a.projected_price)
+        } else {
+            format!("${:.2}", a.real_valuation_multiplier)
         };
 
         report.push_str(&format!("| {} | {} | {} | {} | {} | {} | {} | {} |\n",
-            a.symbol, a.name, format_risk_class(&a.risk_class), format_multiplier(a.real_valuation_multiplier), format_tariff_rate(tariff),
-            exchange_rate_display, format_token_type(&a.token_type), format_ai_category(&a.ai_category)));
+            a.symbol, a.name, format_risk_class(&a.risk_class), format_multiplier(a.real_valuation_multiplier), current_price_display,
+            predicted_price_display, format_token_type(&a.token_type), format_ai_category(&a.ai_category)));
     }
     
     // Tier 4: Discounted
     report.push_str("\n### Tier 4: Discounted (501% - 1000%)\n\n");
     report.push_str("Assets with 0.10x-0.19x multipliers. Significant friction, underperforms baseline.\n\n");
-    report.push_str("| Symbol | Name | Risk Class | Multiplier | Effective Tariff | Exchange Rate | Token Type | AI Category |\n");
-    report.push_str("|--------|------|------------|------------|------------------|---------------|------------|-------------|\n");
+    report.push_str("| Symbol | Name | Risk Class | Multiplier | Current Price ($) | Predicted Price ($) | Token Type | AI Category |\n");
+    report.push_str("|--------|------|------------|------------|-------------------|---------------------|------------|-------------|\n");
     for a in &discounted {
-        let tariff = calculate_tariff(a.real_valuation_multiplier, &a.symbol, a.market_cap);
-        let exchange_rate_display = if a.current_price > 0.0 {
-            format!("{} ${} → ${}", format_trend(a.real_valuation_multiplier), format_smart_price(a.current_price), format_smart_price(a.projected_price))
+        let current_price_display = if a.current_price > 0.0 {
+            format_smart_price(a.current_price)
         } else {
-            format!("{} $1.00 → ${:.2}", format_trend(a.real_valuation_multiplier), a.real_valuation_multiplier)
+            format!("$1.00")
+        };
+        let predicted_price_display = if a.current_price > 0.0 {
+            format_smart_price(a.projected_price)
+        } else {
+            format!("${:.2}", a.real_valuation_multiplier)
         };
 
         report.push_str(&format!("| {} | {} | {} | {} | {} | {} | {} | {} |\n",
-            a.symbol, a.name, format_risk_class(&a.risk_class), format_multiplier(a.real_valuation_multiplier), format_tariff_rate(tariff),
-            exchange_rate_display, format_token_type(&a.token_type), format_ai_category(&a.ai_category)));
+            a.symbol, a.name, format_risk_class(&a.risk_class), format_multiplier(a.real_valuation_multiplier), current_price_display,
+            predicted_price_display, format_token_type(&a.token_type), format_ai_category(&a.ai_category)));
     }
     
     // Tier 5: Poor
     report.push_str("\n### Tier 5: Poor (1001% - 5000%)\n\n");
     report.push_str("Assets with 0.02x-0.09x multipliers. High friction, weak utility.\n\n");
-    report.push_str("| Symbol | Name | Risk Class | Multiplier | Effective Tariff | Exchange Rate | Token Type | AI Category |\n");
-    report.push_str("|--------|------|------------|------------|------------------|---------------|------------|-------------|\n");
+    report.push_str("| Symbol | Name | Risk Class | Multiplier | Current Price ($) | Predicted Price ($) | Token Type | AI Category |\n");
+    report.push_str("|--------|------|------------|------------|-------------------|---------------------|------------|-------------|\n");
     for a in &poor {
-        let tariff = calculate_tariff(a.real_valuation_multiplier, &a.symbol, a.market_cap);
-        let exchange_rate_display = if a.current_price > 0.0 {
-            format!("{} ${} → ${}", format_trend(a.real_valuation_multiplier), format_smart_price(a.current_price), format_smart_price(a.projected_price))
+        let current_price_display = if a.current_price > 0.0 {
+            format_smart_price(a.current_price)
         } else {
-            format!("{} $1.00 → ${:.2}", format_trend(a.real_valuation_multiplier), a.real_valuation_multiplier)
+            format!("$1.00")
+        };
+        let predicted_price_display = if a.current_price > 0.0 {
+            format_smart_price(a.projected_price)
+        } else {
+            format!("${:.2}", a.real_valuation_multiplier)
         };
 
         report.push_str(&format!("| {} | {} | {} | {} | {} | {} | {} | {} |\n",
-            a.symbol, a.name, format_risk_class(&a.risk_class), format_multiplier(a.real_valuation_multiplier), format_tariff_rate(tariff),
-            exchange_rate_display, format_token_type(&a.token_type), format_ai_category(&a.ai_category)));
+            a.symbol, a.name, format_risk_class(&a.risk_class), format_multiplier(a.real_valuation_multiplier), current_price_display,
+            predicted_price_display, format_token_type(&a.token_type), format_ai_category(&a.ai_category)));
     }
     
     // Tier 6: Catastrophic
     report.push_str("\n### Tier 6: Catastrophic (>5000%)\n\n");
     report.push_str("Assets with multipliers below 0.02x. Maximum friction, near-worthless in collapse.\n\n");
-    report.push_str("| Symbol | Name | Risk Class | Multiplier | Effective Tariff | Exchange Rate | Token Type | AI Category |\n");
-    report.push_str("|--------|------|------------|------------|------------------|---------------|------------|-------------|\n");
+    report.push_str("| Symbol | Name | Risk Class | Multiplier | Current Price ($) | Predicted Price ($) | Token Type | AI Category |\n");
+    report.push_str("|--------|------|------------|------------|-------------------|---------------------|------------|-------------|\n");
     for a in &catastrophic {
-        let tariff = calculate_tariff(a.real_valuation_multiplier, &a.symbol, a.market_cap);
-        let exchange_rate_display = if a.current_price > 0.0 {
-            format!("{} ${} → ${}", format_trend(a.real_valuation_multiplier), format_smart_price(a.current_price), format_smart_price(a.projected_price))
+        let current_price_display = if a.current_price > 0.0 {
+            format_smart_price(a.current_price)
         } else {
-            format!("{} $1.00 → ${:.2}", format_trend(a.real_valuation_multiplier), a.real_valuation_multiplier)
+            format!("$1.00")
+        };
+        let predicted_price_display = if a.current_price > 0.0 {
+            format_smart_price(a.projected_price)
+        } else {
+            format!("${:.2}", a.real_valuation_multiplier)
         };
 
         report.push_str(&format!("| {} | {} | {} | {} | {} | {} | {} | {} |\n",
-            a.symbol, a.name, format_risk_class(&a.risk_class), format_multiplier(a.real_valuation_multiplier), format_tariff_rate(tariff),
-            exchange_rate_display, format_token_type(&a.token_type), format_ai_category(&a.ai_category)));
+            a.symbol, a.name, format_risk_class(&a.risk_class), format_multiplier(a.real_valuation_multiplier), current_price_display,
+            predicted_price_display, format_token_type(&a.token_type), format_ai_category(&a.ai_category)));
     }
     
     // Summary Statistics
@@ -703,16 +707,35 @@ pub fn generate_tariffs_report(analyses: &[TokenAnalysisResult]) -> String {
 
 pub fn generate_token_prices_report(analyses: &[TokenAnalysisResult]) -> String {
     let mut report = String::new();
-    
-    report.push_str("# Token Price Report (2026)\n\n");
+
+    report.push_str("# Tariff Rate Report (2026)\n\n");
     report.push_str("## Overview\n\n");
     report.push_str("This report provides the **Current Price**, the **Exchange Price** (Immediate Purchasing Power after tariff friction), the **Multiplier** (the real valuation factor), and the **Tariff Rate** (the risk-based friction).\n\n");
-    report.push_str("Calculations are based on the AI-Acceleration Pricing model defined in `tariffs.md`.\n\n");
+    report.push_str("Calculations are based on the AI-Acceleration Pricing model defined in `predicted_price.md`.\n\n");
     report.push_str("**Pricing Formula:** `Exchange Price = Current / (1 + Tariff/100)`\n\n");
     report.push_str("All numerical values are shown in **scientific notation** ($X.YeZ$) for precision across all scales.\n\n");
+    report.push_str("### Tariff Philosophy\n\n");
+    report.push_str("The tariff system is designed to be intuitive:\n");
+    report.push_str("- **Higher multiplier** = **Lower tariff** (better asset, less friction)\n");
+    report.push_str("- **Lower multiplier** = **Higher tariff** (worse asset, more friction)\n");
+    report.push_str("- **Minimum tariff is 0%** - no negative tariffs allowed\n\n");
+    report.push_str("### Calculation Formula\n\n");
+    report.push_str("The **effective tariff rate** is calculated from the real valuation multiplier:\n\n");
+    report.push_str("```\nEffective Tariff Rate = max(0, (100 / Real Valuation Multiplier) - 10)\n```\n\n");
+    report.push_str("The `max(0, ...)` ensures no negative tariffs - assets can only have 0% or higher tariffs.\n\n");
+    report.push_str("This means a 10x multiplier asset has 0% tariff (the baseline). Each 10x reduction in multiplier adds approximately 1000% to the tariff.\n\n");
+    report.push_str("### Tariff Tier Definitions\n\n");
+    report.push_str("| Tier | Tariff Rate | Multiplier Range | Description |\n");
+    report.push_str("|------|-------------|------------------|-------------|\n");
+    report.push_str("| **Premium** | 0% | ≥10.00x | Gold standard, reserve currencies |\n");
+    report.push_str("| **Good** | 1% - 100% | 5.00x - 9.99x | Strong assets, commodity-backed |\n");
+    report.push_str("| **Neutral** | 101% - 500% | 0.20x - 4.99x | Moderate utility, stable value |\n");
+    report.push_str("| **Discounted** | 501% - 1000% | 0.10x - 0.19x | Underperforms baseline |\n");
+    report.push_str("| **Poor** | 1001% - 5000% | 0.02x - 0.09x | Weak utility, high risk |\n");
+    report.push_str("| **Catastrophic** | >5000% | <0.02x | Collapses with fiat, dead assets |\n\n");
     report.push_str("## Price Table\n\n");
-    report.push_str("| Symbol | Name | AI Category | Current Price ($) | Exchange Price ($) | Multiplier | Tariff Rate | Market Cap ($) |\n");
-    report.push_str("|--------|------|-------------|-------------------|--------------------|------------|-------------|----------------|\n");
+    report.push_str("| Symbol | Name | AI Category | Current Price ($) | Exchange Price ($) | Multiplier | Tariff Rate |\n");
+    report.push_str("|--------|------|-------------|-------------------|--------------------|------------|-------------|\n");
 
     let mut tokens_with_prices: Vec<_> = analyses.iter()
         .filter(|a| a.current_price > 0.0)
@@ -729,21 +752,20 @@ pub fn generate_token_prices_report(analyses: &[TokenAnalysisResult]) -> String 
 
     for t in tokens_with_prices {
         let tariff = calculate_tariff(t.real_valuation_multiplier, &t.symbol, t.market_cap);
-        
+
         // Exchange Price is current price adjusted for tariff friction
         let exchange_price = t.current_price / (1.0 + tariff / 100.0);
-        
+
         let cur = format_smart_price(t.current_price);
         let ex = format_smart_price(exchange_price);
         let mult = format_multiplier(t.real_valuation_multiplier);
         let tariff_display = format_tariff_rate(tariff);
-        let mcap = format_compact_val(t.market_cap);
-        
+
         // Format AI Category with emoji
         let ai_cat_display = format_ai_category(&t.ai_category);
-        
-        report.push_str(&format!("| {} | {} | {} | {} | {} | {} | {} | {} |\n",
-            t.symbol, t.name, ai_cat_display, cur, ex, mult, tariff_display, mcap));
+
+        report.push_str(&format!("| {} | {} | {} | {} | {} | {} | {} |\n",
+            t.symbol, t.name, ai_cat_display, cur, ex, mult, tariff_display));
     }
     
     report

@@ -51,11 +51,11 @@
       {
         "year": 2027,
         "quarter": null,
-        "name": "Agentic (Great Aligner)",
+        "name": "Agentic (Waifu Aligner)",
         "hard_money_multiplier": 2.0,
         "ai_utility_multiplier": 50.0,
         "protocol_utility_multiplier": 25.0,
-        "description": "Agentic AGI alignment + Great Aligner (2027)"
+        "description": "Agentic AGI alignment + Waifu Aligner (2027)"
       }
     ]
   },

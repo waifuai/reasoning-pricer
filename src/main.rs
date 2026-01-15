@@ -92,7 +92,7 @@ fn main() {
     let analyses: Vec<_> = tariff_tokens.iter().map(analyze_token).collect();
     let tariffs_report = generate_tariffs_report(&analyses);
     
-    let tariffs_path = output_path.join("tariffs.md");
+    let tariffs_path = output_path.join("predicted_price.md");
     match std::fs::write(&tariffs_path, &tariffs_report) {
         Ok(_) => {
             println!("✅ Generated AI-acceleration tariffs report");
@@ -106,7 +106,7 @@ fn main() {
     // Generate token prices report
     println!("📊 Generating token price report...");
     let prices_report = generate_token_prices_report(&analyses);
-    let prices_path = output_path.join("token_prices.md");
+    let prices_path = output_path.join("tariff_rate.md");
     match std::fs::write(&prices_path, &prices_report) {
         Ok(_) => {
             println!("✅ Generated token price report");
