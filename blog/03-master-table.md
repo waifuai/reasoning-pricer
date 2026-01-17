@@ -51,10 +51,10 @@ This table consolidates all pricing, tariff, and classification data from the Re
 | UPT | UpRock | ⚙️ Protocol | 🧠 AI-Enabled | 🛡️ A | $0.0064 | $0.13 | $0.0051 | 20.6x | 25% |
 | LMR | Lumerin | ⚙️ Protocol | 🧠 AI-Enabled | 🛡️ A | $0.00089 | $0.018 | $0.00071 | 20.4x | 25% |
 | ATLAS | Star Atlas | ⚙️ Protocol | 🔋 Passive | 🚀 C | $0.00030 | $0.0048 | $0.00024 | 15.8x | 25% |
-| KIN | Kin | ⚙️ Protocol | 🔋 Passive | 🏦 B | $0.77μ | $10μ | $0.62μ | 13.6x | 25% |
+| KIN | Kin | ⚙️ Protocol | 🔋 Passive | 🏦 B | $7.7e-7 | $1.0e-5 | $6.2e-7 | 13.6x | 25% |
 | FLUXB | FluxBot | ⚙️ Protocol | 🧠 AI-Enabled | 🚀 C | $0.0046 | $0.044 | $0.0037 | 9.4x | 26% |
 | ZBCN | Zebec Network | ⚙️ Protocol | 🔋 Passive | 🏦 B | $0.0029 | $0.014 | $0.0023 | 4.8x | 26% |
-| GUAC | Guacamole | ⚙️ Protocol | 🔋 Passive | 🛡️ A | $0.01μ | $0.10μ | $0.008μ | 8.1x | 27% |
+| GUAC | Guacamole | ⚙️ Protocol | 🔋 Passive | 🛡️ A | $1.0e-8 | $1.0e-7 | $8.0e-9 | 8.1x | 27% |
 | GENE | Genopets | ⚙️ Protocol | 🔋 Passive | 🛡️ A | $0.0025 | $0.020 | $0.0020 | 7.9x | 28% |
 | HXRO | Hxro Network | ⚙️ Protocol | 🔋 Passive | 🚀 C | $0.0049 | $0.037 | $0.0038 | 7.5x | 28% |
 | SLIM | Solanium | ⚙️ Protocol | 🔋 Passive | 🚀 C | $0.025 | $0.18 | $0.019 | 7.3x | 29% |
@@ -63,14 +63,14 @@ This table consolidates all pricing, tariff, and classification data from the Re
 | ZIG | Zignaly | ⚙️ Protocol | 🔋 Passive | 🏦 B | $0.059 | $0.30 | $0.045 | 5.1x | 30% |
 | ABR | Allbridge | ⚙️ Protocol | 🔋 Passive | 🏦 B | $0.070 | $0.34 | $0.051 | 4.9x | 36% |
 | CHAT | Solchat | ⚙️ Protocol | 🔋 Passive | 🏦 B | $0.079 | $0.38 | $0.058 | 4.9x | 36% |
-| AART | ALL.ART | ⚙️ Protocol | 🔋 Passive | 🏦 B | $51μ | $0.23m | $37μ | 4.6x | 37% |
+| AART | ALL.ART | ⚙️ Protocol | 🔋 Passive | 🏦 B | $5.1e-5 | $2.3e-4 | $3.7e-5 | 4.6x | 37% |
 | LIQ | Liq Protocol | ⚙️ Protocol | 🔋 Passive | 🏦 B | $0.065 | $0.27 | $0.047 | 4.2x | 39% |
 | CRP | Cropper | ⚙️ Protocol | 🔋 Passive | 🚀 C | $0.040 | $0.17 | $0.029 | 4.1x | 39% |
 | YAKU | Yaku | ⚙️ Protocol | 🔋 Passive | 🚀 C | $0.0011 | $0.0046 | $0.00079 | 4.1x | 39% |
 | DIO | Decimated | ⚙️ Protocol | 🔋 Passive | 🚀 C | $0.00085 | $0.0033 | $0.00060 | 3.9x | 41% |
 | CYS | Cyclos | ⚙️ Protocol | 🔋 Passive | 🚀 C | $0.47 | $1.52 | $0.33 | 3.2x | 41% |
 | LIKE | Only1 | ⚙️ Protocol | 🔋 Passive | 🚀 C | $0.0018 | $0.0070 | $0.0013 | 3.8x | 41% |
-| HAWK | Hawk Protocol | ⚙️ Protocol | 🔋 Passive | 🚀 C | $36μ | $0.13m | $25μ | 3.6x | 42% |
+| HAWK | Hawk Protocol | ⚙️ Protocol | 🔋 Passive | 🚀 C | $3.6e-5 | $1.3e-4 | $2.5e-5 | 3.6x | 42% |
 | CRWNY | Crowny | ⚙️ Protocol | 🔋 Passive | 🚀 C | $0.0015 | $0.0052 | $0.0010 | 3.6x | 43% |
 | SAROS | Saros | ⚙️ Protocol | 🔋 Passive | 🚀 C | $0.0026 | $0.0089 | $0.0018 | 3.5x | 44% |
 | JLP | Jupiter Perps LP | 💸 Real Yield | 🔋 Passive | 🛡️ A | $4.85 | $10.95 | $3.37 | 2.3x | 44% |
@@ -81,7 +81,7 @@ This table consolidates all pricing, tariff, and classification data from the Re
 | XAUT | Tether Gold | 🧈 Commodity | 🗿 Static | 🛡️ A | $4,608 | $6,629 | $2,711 | 1.4x | 70% |
 | PAXG | Paxos Gold | 🧈 Commodity | 🗿 Static | 🛡️ A | $4,622 | $6,639 | $2,719 | 1.4x | 70% |
 | JTO | Jito | 🗳️ Governance | 🔋 Passive | 🚀 C | $0.45 | $0.65 | $0.26 | 1.4x | 74% |
-| DFL | DeFi Land | ⚙️ Protocol | 🔋 Passive | 🧪 E | $50μ | $74μ | $27μ | 1.5x | 83% |
+| DFL | DeFi Land | ⚙️ Protocol | 🔋 Passive | 🧪 E | $5.0e-5 | $7.4e-5 | $2.7e-5 | 1.5x | 83% |
 | AI16Z | ai16z | 🗳️ Governance | 🤖 AI-Native | 🧪 E | $0.0015 | $0.0021 | $0.00082 | 1.4x | 84% |
 | MAIL | SolMail | ⚙️ Protocol | 🔋 Passive | 🧪 E | $0.00054 | $0.00077 | $0.00029 | 1.4x | 85% |
 | WLKN | Walken | ⚙️ Protocol | 🔋 Passive | 🧪 E | $0.00020 | $0.00026 | $0.00010 | 1.3x | 91% |
@@ -97,28 +97,28 @@ This table consolidates all pricing, tariff, and classification data from the Re
 | ZEREBRO | Zerebro | 🤣 Meme | 🤖 AI-Native | 🧪 E | $0.019 | $0.0060 | $0.0044 | 0.31x | 333% |
 | MNGO | Mango Markets | 🗳️ Governance | 🔋 Passive | 🚀 C | $0.021 | $0.0047 | $0.0038 | 0.23x | 448% |
 | POLIS | Star Atlas DAO | 🗳️ Governance | 🔋 Passive | 🚀 C | $0.027 | $0.0058 | $0.0046 | 0.21x | 483% |
-| PRISM | Prism | 🗳️ Governance | 🔋 Passive | 🚀 C | $0.00063 | $74μ | $65μ | 0.12x | 869% |
+| PRISM | Prism | 🗳️ Governance | 🔋 Passive | 🚀 C | $6.3e-4 | $7.4e-5 | $6.5e-5 | 0.12x | 869% |
 | USDH | Hubble USD | 🛡️ Stable Yield | 🔋 Passive | 🛡️ A | $1.00 | $0.11 | $0.098 | 0.11x | 922% |
 | ISC | Intl Stable Currency | 🛡️ Stable Yield | 🔋 Passive | 🛡️ A | $2.19 | $0.24 | $0.21 | 0.11x | 922% |
 | UXD | UXD Stablecoin | 🛡️ Stable Yield | 🔋 Passive | 🚀 C | $1.02 | $0.095 | $0.086 | 0.09x | 1.1k% |
-| BONK | Bonk | 🤣 Meme | 🔋 Passive | 🤣 D | $11μ | $0.75μ | $0.69μ | 0.07x | 1.5k% |
+| BONK | Bonk | 🤣 Meme | 🔋 Passive | 🤣 D | $1.1e-5 | $7.5e-7 | $6.9e-7 | 0.07x | 1.5k% |
 | WIF | dogwifhat | 🤣 Meme | 🔋 Passive | 🤣 D | $0.39 | $0.024 | $0.023 | 0.06x | 1.6k% |
-| SAMO | Samoyedcoin | 🤣 Meme | 🔋 Passive | 🤣 D | $0.00080 | $34μ | $32μ | 0.04x | 2.4k% |
+| SAMO | Samoyedcoin | 🤣 Meme | 🔋 Passive | 🤣 D | $8.0e-4 | $3.4e-5 | $3.2e-5 | 0.04x | 2.4k% |
 | POPCAT | Popcat | 🤣 Meme | 🔋 Passive | 🤣 D | $0.10 | $0.0040 | $0.0038 | 0.04x | 2.5k% |
 | PONKE | Ponke | 🤣 Meme | 🔋 Passive | 🤣 D | $0.057 | $0.0019 | $0.0018 | 0.03x | 3.0k% |
-| MEW | cat in a dogs world | 🤣 Meme | 🔋 Passive | 🤣 D | $0.0010 | $32μ | $30μ | 0.03x | 3.2k% |
-| BOME | BOOK OF MEME | 🤣 Meme | 🔋 Passive | 🤣 D | $0.00071 | $22μ | $21μ | 0.03x | 3.2k% |
-| BILLY | Billy | 🤣 Meme | 🔋 Passive | 🤣 D | $0.0011 | $16μ | $16μ | 0.02x | 6.5k% |
+| MEW | cat in a dogs world | 🤣 Meme | 🔋 Passive | 🤣 D | $1.0e-3 | $3.2e-5 | $3.0e-5 | 0.03x | 3.2k% |
+| BOME | BOOK OF MEME | 🤣 Meme | 🔋 Passive | 🤣 D | $7.1e-4 | $2.2e-5 | $2.1e-5 | 0.03x | 3.2k% |
+| BILLY | Billy | 🤣 Meme | 🔋 Passive | 🤣 D | $1.1e-3 | $1.6e-5 | $1.6e-5 | 0.02x | 6.5k% |
 | MUMU | Mumu the Bull | 🤣 Meme | 🔋 Passive | 🤣 D | $4.3e-10 | $6.6e-12 | $6.5e-12 | 0.02x | 6.6k% |
-| MANEKI | Maneki-neko | 🤣 Meme | 🔋 Passive | 🤣 D | $0.00055 | $7.9μ | $7.9μ | 0.01x | 6.8k% |
-| LOCKIN | Lock In | 🤣 Meme | 🔋 Passive | 🤣 D | $0.0026 | $38μ | $37μ | 0.01x | 6.9k% |
-| MYRO | Myro | 🤣 Meme | 🔋 Passive | 🤣 D | $0.0060 | $83μ | $82μ | 0.01x | 7.2k% |
+| MANEKI | Maneki-neko | 🤣 Meme | 🔋 Passive | 🤣 D | $5.5e-4 | $7.9e-6 | $7.9e-6 | 0.01x | 6.8k% |
+| LOCKIN | Lock In | 🤣 Meme | 🔋 Passive | 🤣 D | $2.6e-3 | $3.8e-5 | $3.7e-5 | 0.01x | 6.9k% |
+| MYRO | Myro | 🤣 Meme | 🔋 Passive | 🤣 D | $6.0e-3 | $8.3e-5 | $8.2e-5 | 0.01x | 7.2k% |
 | USDC | USD Coin | 💵 Fiat Pegged | 🗿 Static | 🏦 B | $1.00 | $0.0072 | $0.0071 | 0.007x | 13.9k% |
 | USDT | Tether USD | 💵 Fiat Pegged | 🗿 Static | 🏦 B | $1.00 | $0.0068 | $0.0067 | 0.007x | 14.7k% |
 | PYUSD | PayPal USD | 💵 Fiat Pegged | 🗿 Static | 🏦 B | $1.00 | $0.0029 | $0.0029 | 0.003x | 34.3k% |
 | EURC | Euro Coin | 💵 Fiat Pegged | 🗿 Static | 🏦 B | $1.17 | $0.0033 | $0.0033 | 0.003x | 35.2k% |
 | USDS | Sky Dollar | 💵 Fiat Pegged | 🗿 Static | 🏦 B | $1.00 | $0.0027 | $0.0027 | 0.003x | 37.1k% |
-| TRYB | BiLira | 💵 Fiat Pegged | 🗿 Static | 🏦 B | $0.023 | $23μ | $23μ | 0.001x | 102.8k% |
+| TRYB | BiLira | 💵 Fiat Pegged | 🗿 Static | 🏦 B | $2.3e-2 | $2.3e-5 | $2.3e-5 | 0.001x | 102.8k% |
 
 ---
 

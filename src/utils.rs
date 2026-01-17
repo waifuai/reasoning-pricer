@@ -202,27 +202,14 @@ pub fn calculate_effective_tariff(multiplier: f64, symbol: &str, market_cap: f64
     base_tariff + liquidity_penalty
 }
 
-/// Format a price "normally" if in range [0.0001, 100,000], otherwise use scientific notation or μ.
+/// Format a price "normally" if in range [0.0001, 100,000], otherwise use scientific notation.
 pub fn format_smart_price(val: f64) -> String {
     if val == 0.0 {
         return "0.00".to_string();
     }
     let abs_val = val.abs();
     
-    // For extremely small numbers, use μ (micro) suffix
-    // e.g., 2.3e-5 -> 23μ, 7.0e-7 -> 0.7μ
-    if abs_val < 0.0001 && abs_val >= 1e-9 {
-        let micro_val = val * 1_000_000.0;
-        let s = if micro_val.abs() >= 10.0 {
-            format!("{:.0}μ", micro_val)
-        } else if micro_val.abs() >= 1.0 {
-            format!("{:.1}μ", micro_val)
-        } else {
-            format!("{:.2}μ", micro_val)
-        };
-        return s.trim_end_matches(".0μ").to_string();
-    }
-
+    // For very small or very large numbers, use scientific notation
     if abs_val < 0.0001 || abs_val > 100_000.0 {
         return format_sci(val);
     }
