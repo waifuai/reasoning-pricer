@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Solana Token Analysis Reports</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+    onload="renderMathInElement(document.body, {
+        delimiters: [
+            {left: '$$', right: '$$', display: true},
+            {left: '$', right: '$', display: false}
+        ]
+    });"></script>
+<style>
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; max-width: 900px; margin: 0 auto; padding: 2rem; line-height: 1.6; color: #333; }
+pre { background: #f5f5f5; padding: 1rem; border-radius: 4px; overflow-x: auto; }
+code { background: #f0f0f0; padding: 0.2em 0.4em; border-radius: 3px; font-size: 0.9em; }
+pre code { background: none; padding: 0; }
+table { border-collapse: collapse; width: 100%; margin: 1rem 0; }
+th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+th { background: #f5f5f5; }
+a { color: #0066cc; }
+</style>
+</head>
+<body>
+<h1>Solana Token Analysis Reports</h1>
+<h2>Overview</h2>
+<p>This repository contains comprehensive analysis reports for 100 Solana tokens, organized by risk classification and individual token details.</p>
+<h2>📊 Risk Class Summary</h2>
+<table>
+<thead>
+<tr>
+<th>Risk Class</th>
+<th>Token Count</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="./summaries/class-a-real-yield.html"><strong>Class A (Real Yield)</strong></a></td>
+<td>60</td>
+<td>Low-risk foundation assets</td>
+</tr>
+<tr>
+<td><a href="./summaries/class-b-systemic.html"><strong>Class B (Systemic)</strong></a></td>
+<td>21</td>
+<td>Medium-risk ecosystem tokens</td>
+</tr>
+<tr>
+<td><a href="./summaries/class-c-venture-risk.html"><strong>Class C (Venture Risk)</strong></a></td>
+<td>19</td>
+<td>Higher-risk growth opportunities</td>
+</tr>
+<tr>
+<td><a href="./summaries/class-d-speculative.html"><strong>Class D (Speculative)</strong></a></td>
+<td>0</td>
+<td>Maximum-risk speculative assets</td>
+</tr>
+</tbody>
+</table>
+<h2>📈 Quick Stats</h2>
+<ul>
+<li><strong>Total Tokens Analyzed:</strong> 100</li>
+<li><strong>Data Source:</strong> JSON files in <code>data/</code> directory</li>
+<li><strong>Average Insider Score:</strong> 36.2/100</li>
+<li><strong>Average Tariff:</strong> 33.6%</li>
+<li><strong>AI-Native/Enabled Tokens:</strong> 33</li>
+<li><strong>Static/Hard-Money Tokens:</strong> 3</li>
+</ul>
+<h2>📁 Report Structure</h2>
+<h3>By Risk Class</h3>
+<ul>
+<li><a href="./summaries/class-a-real-yield.html">Class A (Real Yield)</a> - 60 tokens</li>
+<li><a href="./summaries/class-b-systemic.html">Class B (Systemic)</a> - 21 tokens</li>
+<li><a href="./summaries/class-c-venture-risk.html">Class C (Venture Risk)</a> - 19 tokens</li>
+</ul>
+<h3>AI-Acceleration Pricing</h3>
+<ul>
+<li><a href="./predicted_price.html">📊 Predicted Price Report</a> - AI timeline impact analysis and predicted prices</li>
+</ul>
+<h3>Individual Token Reports</h3>
+<ul>
+<li><a href="./tokens/index.html">📋 All Token Reports</a></li>
+</ul>
+<h2>🔍 How to Use These Reports</h2>
+<ol>
+<li><strong>Start with Risk Class Summaries</strong> - Understand the landscape by reviewing each risk class</li>
+<li><strong>Review AI-Acceleration Tariffs</strong> - Understand how AI acceleration impacts asset valuations</li>
+<li><strong>Drill Down to Individual Tokens</strong> - Click through to detailed token analysis</li>
+<li><strong>Use Navigation Links</strong> - Jump between related reports using the navigation sections</li>
+<li><strong>Compare Exchange Rates</strong> - Review tariff impacts and exchange multipliers</li>
+</ol>
+<h2>📊 Methodology</h2>
+<h3>Risk Classification</h3>
+<p>Tokens are classified into four risk classes based on:
+- <strong>Insider Score</strong> (0-100): Degree of insider control
+- <strong>Economic Utility</strong>: Real value accrual mechanisms
+- <strong>Regulatory Risk</strong>: Compliance and legal considerations
+- <strong>Operational Risk</strong>: Technical and execution risks</p>
+<h3>AI-Acceleration Pricing Model</h3>
+<p>As AI progresses rapidly (2025-2027), asset valuations shift based on adaptability:</p>
+<table>
+<thead>
+<tr>
+<th>Asset Type</th>
+<th>AI Timeline Impact</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Static (BTC, Gold)</strong></td>
+<td>-92% by 2027</td>
+<td>Cannot evolve with AI; becomes obsolete</td>
+</tr>
+<tr>
+<td><strong>AI-Native/Enabled</strong></td>
+<td>+1500% by 2027</td>
+<td>Can rapidly evolve using AI programming</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Timeline Phases:</strong>
+- <strong>Q2 2025:</strong> Personal Architect - AI tokens start appreciating
+- <strong>Q4 2025:</strong> Global Acceleration Accord - Cross-over point (AI &gt; Static)
+- <strong>2026:</strong> Creative Renaissance - AI-native assets surge
+- <strong>2027:</strong> Agentic (Waifu Aligner) - Peak AI advantage</p>
+<h3>Exchange Rate Calculation</h3>
+<div class="codehilite"><pre><span></span><code>Exchange Rate = 1 + (Tariff Override / 100)
+Effective Tariff = max(0, (100 / Real Valuation Multiplier) - 10)
+</code></pre></div>
+
+<h3>Example: 5% tariff = 1.05x exchange rate</h3>
+<hr />
+<h2>🔗 Quick Links</h2>
+<ul>
+<li><a href="./summaries/class-a-real-yield.html">📊 Class A (Real Yield)</a></li>
+<li><a href="./summaries/class-b-systemic.html">📊 Class B (Systemic)</a></li>
+<li><a href="./summaries/class-c-venture-risk.html">📊 Class C (Venture Risk)</a></li>
+<li><a href="./summaries/class-d-speculative.html">📊 Class D (Speculative)</a></li>
+<li><a href="./predicted_price.html">📊 AI-Acceleration Predicted Prices</a></li>
+<li><a href="./tokens/index.html">📋 All Tokens</a></li>
+</ul>
+<p><em>For questions about methodology or data sources, see the main project documentation.</em></p>
+</body>
+</html>

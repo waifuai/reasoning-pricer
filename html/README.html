@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reasoning Pricer</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+    onload="renderMathInElement(document.body, {
+        delimiters: [
+            {left: '$$', right: '$$', display: true},
+            {left: '$', right: '$', display: false}
+        ]
+    });"></script>
+<style>
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; max-width: 900px; margin: 0 auto; padding: 2rem; line-height: 1.6; color: #333; }
+pre { background: #f5f5f5; padding: 1rem; border-radius: 4px; overflow-x: auto; }
+code { background: #f0f0f0; padding: 0.2em 0.4em; border-radius: 3px; font-size: 0.9em; }
+pre code { background: none; padding: 0; }
+table { border-collapse: collapse; width: 100%; margin: 1rem 0; }
+th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+th { background: #f5f5f5; }
+a { color: #0066cc; }
+</style>
+</head>
+<body>
+<h1>Reasoning Pricer</h1>
+<p>A Rust-based token valuation analysis tool that generates comprehensive markdown reports for Solana tokens using a AI Acceleration reasoning model with AI acceleration dynamics and configurable pricing parameters.</p>
+<h2>Overview</h2>
+<p>This project analyzes token data and generates detailed valuation reports based on a novel pricing framework that models token value under extreme economic scenarios, incorporating <strong>AI acceleration impact</strong> on asset valuations.</p>
+<h2>The AI Timeline</h2>
+<p>The key insight is that <strong>AI progress affects different asset types differently</strong>:
+- <strong>Static assets</strong> (BTC, gold, fiat-pegged) decline in relative value as AI accelerates
+- <strong>AI-evolving assets</strong> (utility tokens, AI-native protocols) appreciate as AI enables rapid evolution</p>
+<h3>Timeline Phases</h3>
+<table>
+<thead>
+<tr>
+<th>Phase</th>
+<th>Timeframe</th>
+<th>AI Capability</th>
+<th>Impact</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Global Acceleration Accord</td>
+<td>2026</td>
+<td>AI acceleration frameworks</td>
+<td>Acceleration impacts, protocol utility rises</td>
+</tr>
+<tr>
+<td>Creative Renaissance</td>
+<td>2027</td>
+<td>AI as creative partner</td>
+<td>Peak AI acceleration</td>
+</tr>
+<tr>
+<td>Agentic</td>
+<td>2028+</td>
+<td>Autonomous AI agents</td>
+<td>Full AI ecosystem integration</td>
+</tr>
+</tbody>
+</table>
+<h3>AI Impact by Asset Type</h3>
+<table>
+<thead>
+<tr>
+<th>Asset Type</th>
+<th>AI Sensitivity</th>
+<th>2025</th>
+<th>2027</th>
+<th>Trend</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Fiat-Pegged</strong></td>
+<td>Negative</td>
+<td>0.05x</td>
+<td>0.02x</td>
+<td>Declines faster with AI</td>
+</tr>
+<tr>
+<td><strong>Hard Money</strong></td>
+<td>Low/Negative</td>
+<td>25x</td>
+<td>15x</td>
+<td>Static assets lose relative value</td>
+</tr>
+<tr>
+<td><strong>Protocol Utility</strong></td>
+<td>High Positive</td>
+<td>12x</td>
+<td>40x</td>
+<td>Benefits from AI evolution</td>
+</tr>
+<tr>
+<td><strong>AI-Native</strong></td>
+<td>Extreme Positive</td>
+<td>15x</td>
+<td>100x</td>
+<td>Rapid appreciation</td>
+</tr>
+<tr>
+<td><strong>Liquid Staking</strong></td>
+<td>Moderate Positive</td>
+<td>10x</td>
+<td>25x</td>
+<td>Benefits from efficiency</td>
+</tr>
+<tr>
+<td><strong>Real Yield</strong></td>
+<td>Moderate</td>
+<td>8x</td>
+<td>12x</td>
+<td>Moderate appreciation</td>
+</tr>
+<tr>
+<td><strong>Meme</strong></td>
+<td>Volatile</td>
+<td>0.3x</td>
+<td>0.5x</td>
+<td>Uncertain</td>
+</tr>
+</tbody>
+</table>
+<h2>Key Features</h2>
+<h3>Configurable Pricing Parameters</h3>
+<p>Edit <code>pricing_config.json</code> to adjust all valuation parameters without code changes:</p>
+<div class="codehilite"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;ai_progress_factor&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">0.15</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;timeline_phases&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="err">...</span><span class="p">},</span>
+<span class="w">  </span><span class="nt">&quot;token_type_adjustments&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="err">...</span><span class="p">},</span>
+<span class="w">  </span><span class="nt">&quot;risk_class_multipliers&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="err">...</span><span class="p">},</span>
+<span class="w">  </span><span class="nt">&quot;capital_flight_factors&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="err">...</span><span class="p">},</span>
+<span class="w">  </span><span class="nt">&quot;tariff_calculation&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;formula&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;max(0, (100 / multiplier) - 10)&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;min_tariff&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;max_tariff&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">5000</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+
+<h3>AI Category Classifications</h3>
+<table>
+<thead>
+<tr>
+<th>Category</th>
+<th>Description</th>
+<th>AI Timeline Factor Range</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>AI-Native</strong></td>
+<td>Built for AI (ai16z, Fetch, Render)</td>
+<td>2.0x - 5.0x</td>
+</tr>
+<tr>
+<td><strong>AI-Enabled</strong></td>
+<td>Benefits from AI (Orca, Jito)</td>
+<td>1.5x - 2.5x</td>
+</tr>
+<tr>
+<td><strong>Passive Utility</strong></td>
+<td>Standard utility (SOL)</td>
+<td>1.2x - 1.8x</td>
+</tr>
+<tr>
+<td><strong>Static Store</strong></td>
+<td>BTC, gold</td>
+<td>0.8x - 1.0x</td>
+</tr>
+<tr>
+<td><strong>Fiat-Pegged</strong></td>
+<td>USDC, USDT</td>
+<td>0.3x - 0.6x</td>
+</tr>
+<tr>
+<td><strong>Speculative</strong></td>
+<td>Meme tokens</td>
+<td>1.0x - 1.5x</td>
+</tr>
+</tbody>
+</table>
+<h2>Valuation Model</h2>
+<h3>Core Formula</h3>
+<div class="codehilite"><pre><span></span><code>Real Multiplier = Base_Type_Multiplier × AI_Timeline_Factor × Risk_Class_Adjustment × Insider_Risk_Factor × Capital_Flight_Factor
+</code></pre></div>
+
+<h3>Components</h3>
+<ul>
+<li><strong>Base Type Multiplier</strong>: Midpoint of the token type's range (e.g., 35x for Hard Money)</li>
+<li><strong>AI Timeline Factor</strong>: Multiplier based on AI acceleration phase and token's AI category</li>
+<li><strong>Risk Class Adjustment</strong>: 0.6x - 1.2x based on token's risk classification</li>
+<li><strong>Insider Risk Factor</strong>: 0.5x - 1.0x (inverse of insider concentration score)</li>
+<li><strong>Capital Flight Factor</strong>: 0.2x - 1.2x based on token liquidity/rank</li>
+</ul>
+<h3>Tariff Calculation</h3>
+<p>The tariff represents trading friction, derived from the real valuation multiplier:</p>
+<div class="codehilite"><pre><span></span><code>tariff = max(0, (100 / real_multiplier) - 10)
+</code></pre></div>
+
+<p>Examples:
+| Real Multiplier | Tariff |
+|-----------------|--------|
+| 0.01x (USDT) | 14,687% |
+| 20.15x (SOL) | 0% |
+| 8.40x (tBTC) | 2% |
+| 144.84x (RENDER) | 0% |</p>
+<h3>Exchange Multiplier</h3>
+<div class="codehilite"><pre><span></span><code>exchange_multiplier = 1.0 + (tariff / 100.0)
+</code></pre></div>
+
+<p>This represents the effective exchange rate adjustment for the token.</p>
+<h3>Trading Signals</h3>
+<table>
+<thead>
+<tr>
+<th>Token Type</th>
+<th>BUY</th>
+<th>HOLD</th>
+<th>SELL</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Hard Money</td>
+<td>≥15x</td>
+<td>8x-15x</td>
+<td>&lt;8x</td>
+</tr>
+<tr>
+<td>Protocol Utility</td>
+<td>≥10x</td>
+<td>3x-10x</td>
+<td>&lt;3x</td>
+</tr>
+<tr>
+<td>AI-Native</td>
+<td>≥20x</td>
+<td>10x-20x</td>
+<td>&lt;10x</td>
+</tr>
+<tr>
+<td>Real Yield</td>
+<td>≥8x</td>
+<td>4x-8x</td>
+<td>&lt;4x</td>
+</tr>
+<tr>
+<td>Liquid Staking</td>
+<td>≥12x</td>
+<td>5x-12x</td>
+<td>&lt;5x</td>
+</tr>
+<tr>
+<td>Fiat-Pegged</td>
+<td>-</td>
+<td>-</td>
+<td>&lt;0.1x</td>
+</tr>
+<tr>
+<td>Meme</td>
+<td>≥0.5x</td>
+<td>0.2x-0.5x</td>
+<td>&lt;0.2x</td>
+</tr>
+</tbody>
+</table>
+<h2>Project Structure</h2>
+<div class="codehilite"><pre><span></span><code><span class="n">reasoning</span><span class="o">-</span><span class="n">pricer</span><span class="o">/</span>
+<span class="err">├──</span><span class="w"> </span><span class="n">Cargo</span><span class="o">.</span><span class="n">toml</span><span class="w">              </span><span class="c1"># Rust project manifest</span>
+<span class="err">├──</span><span class="w"> </span><span class="n">pricing_config</span><span class="o">.</span><span class="n">json</span><span class="w">     </span><span class="c1"># Configurable pricing parameters</span>
+<span class="err">├──</span><span class="w"> </span><span class="n">data</span><span class="o">/</span><span class="w">                   </span><span class="c1"># Input token data (JSON)</span>
+<span class="err">│</span><span class="w">   </span><span class="err">└──</span><span class="w"> </span><span class="o">*.</span><span class="n">json</span><span class="w">             </span><span class="c1"># Individual token files</span>
+<span class="err">├──</span><span class="w"> </span><span class="n">reports</span><span class="o">/</span><span class="w">                </span><span class="c1"># Generated output</span>
+<span class="err">│</span><span class="w">   </span><span class="err">├──</span><span class="w"> </span><span class="n">index</span><span class="o">.</span><span class="n">md</span><span class="w">           </span><span class="c1"># Main index</span>
+<span class="err">│</span><span class="w">   </span><span class="err">├──</span><span class="w"> </span><span class="n">tariffs</span><span class="o">.</span><span class="n">md</span><span class="w">         </span><span class="c1"># AI-acceleration tariffs report</span>
+<span class="err">│</span><span class="w">   </span><span class="err">├──</span><span class="w"> </span><span class="n">tokens</span><span class="o">/</span><span class="w">            </span><span class="c1"># Individual token reports</span>
+<span class="err">│</span><span class="w">   </span><span class="err">└──</span><span class="w"> </span><span class="n">summaries</span><span class="o">/</span><span class="w">         </span><span class="c1"># Risk class summaries</span>
+<span class="err">├──</span><span class="w"> </span><span class="n">src</span><span class="o">/</span>
+<span class="err">│</span><span class="w">   </span><span class="err">├──</span><span class="w"> </span><span class="n">lib</span><span class="o">.</span><span class="n">rs</span><span class="w">             </span><span class="c1"># Library module exports</span>
+<span class="err">│</span><span class="w">   </span><span class="err">├──</span><span class="w"> </span><span class="n">main</span><span class="o">.</span><span class="n">rs</span><span class="w">            </span><span class="c1"># Entry point</span>
+<span class="err">│</span><span class="w">   </span><span class="err">├──</span><span class="w"> </span><span class="n">models</span><span class="o">.</span><span class="n">rs</span><span class="w">          </span><span class="c1"># Data models (Token, TokenType, RiskClass, AITimeline)</span>
+<span class="err">│</span><span class="w">   </span><span class="err">├──</span><span class="w"> </span><span class="n">data_loader</span><span class="o">.</span><span class="n">rs</span><span class="w">     </span><span class="c1"># JSON file loading</span>
+<span class="err">│</span><span class="w">   </span><span class="err">├──</span><span class="w"> </span><span class="n">pricing_config</span><span class="o">.</span><span class="n">rs</span><span class="w">  </span><span class="c1"># Configuration loader</span>
+<span class="err">│</span><span class="w">   </span><span class="err">├──</span><span class="w"> </span><span class="n">reasoning_pricer</span><span class="o">.</span><span class="n">rs</span><span class="w"> </span><span class="c1"># Core AI-acceleration valuation logic</span>
+<span class="err">│</span><span class="w">   </span><span class="err">├──</span><span class="w"> </span><span class="n">token_reporter</span><span class="o">.</span><span class="n">rs</span><span class="w">  </span><span class="c1"># Token report generation</span>
+<span class="err">│</span><span class="w">   </span><span class="err">├──</span><span class="w"> </span><span class="n">tariff_generator</span><span class="o">.</span><span class="n">rs</span><span class="w"> </span><span class="c1"># Tariff report generation</span>
+<span class="err">│</span><span class="w">   </span><span class="err">├──</span><span class="w"> </span><span class="n">summary_reporter</span><span class="o">.</span><span class="n">rs</span><span class="w"> </span><span class="c1"># Risk class summary generation</span>
+<span class="err">│</span><span class="w">   </span><span class="err">└──</span><span class="w"> </span><span class="n">index_generator</span><span class="o">.</span><span class="n">rs</span><span class="w"> </span><span class="c1"># Index file generation</span>
+<span class="err">└──</span><span class="w"> </span><span class="n">README</span><span class="o">.</span><span class="n">md</span><span class="w">              </span><span class="c1"># This file</span>
+</code></pre></div>
+
+<h2>Usage</h2>
+<h3>Prerequisites</h3>
+<ul>
+<li>Rust 1.70 or later</li>
+<li>Cargo</li>
+</ul>
+<h3>Build and Run</h3>
+<div class="codehilite"><pre><span></span><code><span class="c1"># Build the project</span>
+cargo<span class="w"> </span>build<span class="w"> </span>--release
+
+<span class="c1"># Run the report generator</span>
+cargo<span class="w"> </span>run<span class="w"> </span>--release
+</code></pre></div>
+
+<h3>Configuration</h3>
+<p>Edit <code>pricing_config.json</code> to adjust:</p>
+<ol>
+<li><strong>AI Progress Factor</strong> - How much AI acceleration impacts valuations (0.0 - 0.3)</li>
+<li><strong>Timeline Phases</strong> - Timeline multipliers for each AI phase</li>
+<li><strong>Token Type Adjustments</strong> - Base multipliers per token type</li>
+<li><strong>Risk Class Multipliers</strong> - Risk class impact on valuation</li>
+<li><strong>Capital Flight Factors</strong> - Liquidity-based adjustments</li>
+<li><strong>Tariff Calculation</strong> - Formula and bounds</li>
+</ol>
+<h3>Input Data Format</h3>
+<p>Token data files in <code>data/</code> should be JSON arrays with the following structure:</p>
+<div class="codehilite"><pre><span></span><code><span class="p">[</span>
+<span class="w">  </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;symbol&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;SOL&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Solana&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;archetype&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Class B (Systemic)&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;insider_score&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">48</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;rank&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;token_type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ProtocolUtility&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;ai_category&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;PassiveUtility&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;tags&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;native&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;gas&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;layer-1&quot;</span><span class="p">],</span>
+<span class="w">    </span><span class="nt">&quot;tariff_override&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">30</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;reason&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;The Currency of the Realm.&quot;</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="p">]</span>
+</code></pre></div>
+
+<h3>Token Fields</h3>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Required</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>symbol</code></td>
+<td>string</td>
+<td>Yes</td>
+<td>Token ticker symbol</td>
+</tr>
+<tr>
+<td><code>name</code></td>
+<td>string</td>
+<td>Yes</td>
+<td>Full token name</td>
+</tr>
+<tr>
+<td><code>archetype</code></td>
+<td>string</td>
+<td>Yes</td>
+<td>Risk class (e.g., "Class A (Real Yield)")</td>
+</tr>
+<tr>
+<td><code>insider_score</code></td>
+<td>number</td>
+<td>Yes</td>
+<td>0-100 insider concentration (higher = more centralized)</td>
+</tr>
+<tr>
+<td><code>tags</code></td>
+<td>array</td>
+<td>Yes</td>
+<td>Array of tags for auto-detection</td>
+</tr>
+<tr>
+<td><code>tariff_override</code></td>
+<td>number</td>
+<td>No</td>
+<td>Manual tariff friction percentage</td>
+</tr>
+<tr>
+<td><code>reason</code></td>
+<td>string</td>
+<td>No</td>
+<td>Analyst notes</td>
+</tr>
+<tr>
+<td><code>rank</code></td>
+<td>number</td>
+<td>No</td>
+<td>Market cap rank (1-999) for capital flight calculation</td>
+</tr>
+<tr>
+<td><code>token_type</code></td>
+<td>string</td>
+<td>No</td>
+<td>Explicit type override (see below)</td>
+</tr>
+<tr>
+<td><code>ai_category</code></td>
+<td>string</td>
+<td>No</td>
+<td>Explicit AI category override (see below)</td>
+</tr>
+<tr>
+<td><code>parent_token</code></td>
+<td>string</td>
+<td>No</td>
+<td>Parent token for wrapped/bridged assets</td>
+</tr>
+</tbody>
+</table>
+<h3>Token Types</h3>
+<table>
+<thead>
+<tr>
+<th>Value</th>
+<th>Base Multiplier</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>HardMoney</code></td>
+<td>20x - 50x</td>
+<td>BTC, decentralized PoW</td>
+</tr>
+<tr>
+<td><code>CommodityBacked</code></td>
+<td>5x - 10x</td>
+<td>Gold, silver tokenized</td>
+</tr>
+<tr>
+<td><code>WrappedBridge</code></td>
+<td>10x - 25x</td>
+<td>Cross-chain wrapped assets</td>
+</tr>
+<tr>
+<td><code>RealYield</code></td>
+<td>0.5x - 1.5x</td>
+<td>Revenue-generating protocols</td>
+</tr>
+<tr>
+<td><code>FiatPegged</code></td>
+<td>0.01x - 0.05x</td>
+<td>USDC, USDT, stablecoins</td>
+</tr>
+<tr>
+<td><code>LiquidStaking</code></td>
+<td>0.5x - 1.5x</td>
+<td>LSTs like JitoSOL, mSOL</td>
+</tr>
+<tr>
+<td><code>ProtocolUtility</code></td>
+<td>10x - 25x</td>
+<td>General utility tokens</td>
+</tr>
+<tr>
+<td><code>Governance</code></td>
+<td>0.1x - 1.0x</td>
+<td>Pure governance tokens</td>
+</tr>
+<tr>
+<td><code>Meme</code></td>
+<td>0.01x - 0.2x</td>
+<td>Meme/culture tokens</td>
+</tr>
+<tr>
+<td><code>AINative</code></td>
+<td>15x - 40x</td>
+<td>AI agent tokens</td>
+</tr>
+<tr>
+<td><code>AIEnabled</code></td>
+<td>10x - 30x</td>
+<td>DePIN/GPU compute</td>
+</tr>
+</tbody>
+</table>
+<h3>AI Categories</h3>
+<table>
+<thead>
+<tr>
+<th>Value</th>
+<th>Timeline Factor</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Static</code></td>
+<td>0.20x</td>
+<td>Cannot evolve (BTC, gold)</td>
+</tr>
+<tr>
+<td><code>PassiveUtility</code></td>
+<td>1.00x</td>
+<td>Limited AI adaptation</td>
+</tr>
+<tr>
+<td><code>AIEnabled</code></td>
+<td>8.33x</td>
+<td>Can integrate AI (DePIN)</td>
+</tr>
+<tr>
+<td><code>AINative</code></td>
+<td>8.33x</td>
+<td>Built for AI ecosystems</td>
+</tr>
+<tr>
+<td><code>AIEvolving</code></td>
+<td>12.50x</td>
+<td>Self-modifying with AI</td>
+</tr>
+</tbody>
+</table>
+<h3>Rank-Based Capital Flight Factor</h3>
+<table>
+<thead>
+<tr>
+<th>Rank Range</th>
+<th>Factor</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1-9</td>
+<td>1.2x</td>
+<td>Blue-chip premium</td>
+</tr>
+<tr>
+<td>10-49</td>
+<td>1.0x</td>
+<td>No adjustment</td>
+</tr>
+<tr>
+<td>50-99</td>
+<td>0.8x</td>
+<td>Slight penalty</td>
+</tr>
+<tr>
+<td>100-299</td>
+<td>0.5x</td>
+<td>Moderate penalty</td>
+</tr>
+<tr>
+<td>300+</td>
+<td>0.2x</td>
+<td>Heavy penalty for illiquid alts</td>
+</tr>
+</tbody>
+</table>
+<h3>Tag-Based Auto-Detection</h3>
+<p>If <code>token_type</code> is not explicitly set, it's auto-detected from tags:</p>
+<table>
+<thead>
+<tr>
+<th>Tag Pattern</th>
+<th>Detected Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>hard-money</code>, <code>pow</code></td>
+<td>HardMoney</td>
+</tr>
+<tr>
+<td><code>commodity</code>, <code>gold</code></td>
+<td>CommodityBacked</td>
+</tr>
+<tr>
+<td><code>fiat-pegged</code></td>
+<td>FiatPegged</td>
+</tr>
+<tr>
+<td><code>liquid-staking</code>, <code>lst</code></td>
+<td>LiquidStaking</td>
+</tr>
+<tr>
+<td><code>real-yield</code></td>
+<td>RealYield</td>
+</tr>
+<tr>
+<td><code>governance</code></td>
+<td>Governance</td>
+</tr>
+<tr>
+<td><code>meme</code></td>
+<td>Meme</td>
+</tr>
+<tr>
+<td><code>bridged</code></td>
+<td>WrappedBridge</td>
+</tr>
+</tbody>
+</table>
+<p>If <code>ai_category</code> is not explicitly set, it's auto-detected from tags:</p>
+<table>
+<thead>
+<tr>
+<th>Tag Pattern</th>
+<th>AI Category</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>ai</code> + <code>agent</code></td>
+<td>AINative</td>
+</tr>
+<tr>
+<td><code>gpu-compute</code>, <code>depin</code></td>
+<td>AIEnabled</td>
+</tr>
+<tr>
+<td><code>hard-money</code>, <code>pow</code>, <code>gold</code>, <code>commodity</code></td>
+<td>Static</td>
+</tr>
+<tr>
+<td>(default)</td>
+<td>PassiveUtility</td>
+</tr>
+</tbody>
+</table>
+<h3>Output</h3>
+<p>Generated reports are saved to the <code>reports/</code> directory:
+- <code>reports/index.md</code> - Main index with all tokens
+- <code>reports/tariffs.md</code> - AI-acceleration tariffs summary
+- <code>reports/tokens/{symbol}.md</code> - Individual token analysis
+- <code>reports/summaries/{class}.md</code> - Risk class summary</p>
+<h2>Example Output</h2>
+<h3>SOL (Protocol Utility)</h3>
+<div class="codehilite"><pre><span></span><code>Token Type: ProtocolUtility
+AI Category: Passive Utility
+Rank: 5 (Blue-chip premium: 1.2x)
+Base Multiplier Range: 10x - 25x
+AI Timeline Factor: 1.00x
+Real Valuation Multiplier: 20.15x
+Tariff: 0%
+Trading Signal: HOLD
+</code></pre></div>
+
+<h3>USDT (Fiat-Pegged)</h3>
+<div class="codehilite"><pre><span></span><code>Token Type: FiatPegged
+AI Category: Static
+Rank: 4 (Blue-chip: 1.2x)
+Base Multiplier Range: 0.01x - 0.05x
+AI Timeline Factor: 0.20x
+Real Valuation Multiplier: 0.01x
+Tariff: 14,687%
+Trading Signal: AVOID
+Reasoning: Fiat-pegged assets collapse under AI acceleration.
+</code></pre></div>
+
+<h3>RENDER (AI-Enabled DePIN)</h3>
+<div class="codehilite"><pre><span></span><code>Token Type: ProtocolUtility
+AI Category: AI-Enabled
+Rank: 50 (Mid-tier: 1.0x)
+Base Multiplier Range: 10x - 25x
+AI Timeline Factor: 8.33x
+Real Valuation Multiplier: 144.84x
+Tariff: 0%
+Trading Signal: HOLD
+Reasoning: AI-Enabled DePIN tokens benefit enormously from AI acceleration.
+</code></pre></div>
+
+<h3>tBTC (Hard Money)</h3>
+<div class="codehilite"><pre><span></span><code>Token Type: HardMoney
+AI Category: Static
+Rank: 10 (Blue-chip: 1.2x)
+Base Multiplier Range: 20x - 50x
+AI Timeline Factor: 0.20x
+Real Valuation Multiplier: 8.40x
+Tariff: 2%
+Trading Signal: BUY
+Reasoning: Hard money assets retain value but don&#39;t benefit from AI.
+</code></pre></div>
+
+<h2>Dependencies</h2>
+<ul>
+<li><code>serde</code> / <code>serde_json</code> - JSON serialization</li>
+<li><code>chrono</code> - Date/time handling</li>
+<li><code>clap</code> - Command-line argument parsing</li>
+<li><code>anyhow</code> - Error handling</li>
+<li><code>thiserror</code> - Custom error types</li>
+</ul>
+</body>
+</html>
