@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reasoning Pricer</title>
+<style>
+  :root {
+    --bg: #0d1117;
+    --card-bg: #161b22;
+    --border: #30363d;
+    --text: #e6edf3;
+    --text-muted: #8b949e;
+    --accent: #58a6ff;
+    --accent2: #7ee787;
+    --accent3: #d2a8ff;
+    --accent4: #ffa657;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+    padding: 2rem;
+  }
+  .container {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  header {
+    text-align: center;
+    margin-bottom: 3rem;
+    padding: 2rem 0;
+    border-bottom: 1px solid var(--border);
+  }
+  header h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, var(--accent), var(--accent3));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 0.5rem;
+  }
+  header p {
+    color: var(--text-muted);
+    font-size: 1.1rem;
+  }
+  section {
+    margin-bottom: 2.5rem;
+  }
+  h2 {
+    font-size: 1.4rem;
+    margin-bottom: 0.75rem;
+    padding-bottom: 0.4rem;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    align-items: baseline;
+    gap: 0.5rem;
+  }
+  .count {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    font-weight: 400;
+  }
+  .section-desc {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+  }
+  .link-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+  .link-list a {
+    color: var(--accent);
+    text-decoration: none;
+    padding: 0.4rem 0.75rem;
+    border-radius: 6px;
+    transition: background 0.15s;
+    font-size: 0.95rem;
+  }
+  .link-list a:hover {
+    background: var(--card-bg);
+    text-decoration: underline;
+  }
+  .token-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  .token {
+    display: inline-block;
+    padding: 0.35rem 0.7rem;
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    color: var(--accent2);
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 600;
+    font-family: 'SF Mono', 'Consolas', monospace;
+    transition: all 0.15s;
+  }
+  .token:hover {
+    background: var(--border);
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(88, 166, 255, 0.15);
+  }
+  footer {
+    text-align: center;
+    color: var(--text-muted);
+    font-size: 0.8rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--border);
+    margin-top: 2rem;
+  }
+  @media (max-width: 600px) {
+    body { padding: 1rem; }
+    header h1 { font-size: 1.8rem; }
+    .token { padding: 0.3rem 0.5rem; font-size: 0.78rem; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <h1>Reasoning Pricer</h1>
+    <p>AI-Acceleration Predictive Pricing Model &mdash; Solana Token Analysis</p>
+  </header>
+
+    <section>
+      <h2>Getting Started <span class="count">(1)</span></h2>
+      <p class="section-desc">Project README and overview</p>
+      <div class="link-list">
+        <a href="./README.html">Reasoning Pricer</a>
+      </div>
+    </section>
+    <section>
+      <h2>Blog Posts <span class="count">(3)</span></h2>
+      <p class="section-desc">Deep dives into the AI-acceleration pricing model</p>
+      <div class="link-list">
+        <a href="./blog/01-timeline.html">The AI Timeline: Modeling Asset Value in an Accelerated Future</a>
+        <a href="./blog/02-pricing.html">The Mathematics of Predicted Price and Tariff Rates</a>
+        <a href="./blog/03-master-table.html">Master Token Valuation Table (January 2026)</a>
+      </div>
+    </section>
+    <section>
+      <h2>Reports <span class="count">(3)</span></h2>
+      <p class="section-desc">Key pricing reports and analysis</p>
+      <div class="link-list">
+        <a href="./reports/index.html">Solana Token Analysis Reports</a>
+        <a href="./reports/predicted_price.html">AI-Acceleration Predicted Price Report</a>
+        <a href="./reports/tariff_rate.html">Tariff Rate Report (2026)</a>
+      </div>
+    </section>
+    <section>
+      <h2>Class Summaries <span class="count">(4)</span></h2>
+      <p class="section-desc">A/B/C/D risk class breakdowns</p>
+      <div class="link-list">
+        <a href="./reports/summaries/class-a-real-yield.html">Class A (Real Yield) - Summary</a>
+        <a href="./reports/summaries/class-b-systemic.html">Class B (Systemic) - Summary</a>
+        <a href="./reports/summaries/class-c-venture-risk.html">Class C (Venture Risk) - Summary</a>
+        <a href="./reports/summaries/class-d-speculative.html">Class D (Speculative) - Summary</a>
+      </div>
+    </section>
+    <section>
+      <h2>Token Reports <span class="count">(186)</span></h2>
+      <p class="section-desc">Individual Solana token analysis reports</p>
+      <div class="token-grid">
+        <a href="./reports/tokens/1inch.html" class="token" title="1INCH - 1inch (Wormhole)">1INCH</a><a href="./reports/tokens/aart.html" class="token" title="AART - ALL.ART">AART</a><a href="./reports/tokens/abr.html" class="token" title="ABR - Allbridge">ABR</a><a href="./reports/tokens/acs.html" class="token" title="ACS - Access Protocol">ACS</a><a href="./reports/tokens/act.html" class="token" title="ACT - Act I: The AI Prophecy">ACT</a><a href="./reports/tokens/ai16z.html" class="token" title="AI16Z - ai16z">AI16Z</a><a href="./reports/tokens/akt.html" class="token" title="AKT - Akash Network (Wormhole)">AKT</a><a href="./reports/tokens/aleph.html" class="token" title="ALEPH - Aleph.im">ALEPH</a><a href="./reports/tokens/analos.html" class="token" title="ANALOS - Analos">ANALOS</a><a href="./reports/tokens/atlas.html" class="token" title="ATLAS - Star Atlas">ATLAS</a><a href="./reports/tokens/aury.html" class="token" title="AURY - Aurory">AURY</a><a href="./reports/tokens/bern.html" class="token" title="BERN - BonkEarn">BERN</a><a href="./reports/tokens/billy.html" class="token" title="BILLY - Billy">BILLY</a><a href="./reports/tokens/block.html" class="token" title="BLOCK - Blockasset">BLOCK</a><a href="./reports/tokens/bome.html" class="token" title="BOME - BOOK OF MEME">BOME</a><a href="./reports/tokens/bonk.html" class="token" title="BONK - Bonk">BONK</a><a href="./reports/tokens/bozo.html" class="token" title="BOZO - Bozo Hybrid">BOZO</a><a href="./reports/tokens/brz.html" class="token" title="BRZ - BRZ Token">BRZ</a><a href="./reports/tokens/bsol.html" class="token" title="bSOL - Blaze Staked SOL">bSOL</a><a href="./reports/tokens/cave.html" class="token" title="CAVE - CaveWorld">CAVE</a><a href="./reports/tokens/cbbtc.html" class="token" title="cbBTC - Coinbase Wrapped BTC">cbBTC</a><a href="./reports/tokens/chat.html" class="token" title="CHAT - Solchat">CHAT</a><a href="./reports/tokens/cloud.html" class="token" title="CLOUD - Sanctum">CLOUD</a><a href="./reports/tokens/cope.html" class="token" title="COPE - Cope">COPE</a><a href="./reports/tokens/crown.html" class="token" title="CROWN - Photo Finish LIVE">CROWN</a><a href="./reports/tokens/crp.html" class="token" title="CRP - Cropper">CRP</a><a href="./reports/tokens/crwny.html" class="token" title="CRWNY - Crowny">CRWNY</a><a href="./reports/tokens/cwif.html" class="token" title="CWIF - Catwifhat">CWIF</a><a href="./reports/tokens/cys.html" class="token" title="CYS - Cyclos">CYS</a><a href="./reports/tokens/daosol.html" class="token" title="daosol - daoSOL">daosol</a><a href="./reports/tokens/dbr.html" class="token" title="DBR - deBridge">DBR</a><a href="./reports/tokens/dean.html" class="token" title="DEAN - Dean&#x27;s List">DEAN</a><a href="./reports/tokens/dfl.html" class="token" title="DFL - DeFi Land">DFL</a><a href="./reports/tokens/dio.html" class="token" title="DIO - Decimated">DIO</a><a href="./reports/tokens/drift.html" class="token" title="DRIFT - Drift Protocol">DRIFT</a><a href="./reports/tokens/dual.html" class="token" title="DUAL - Dual Finance">DUAL</a><a href="./reports/tokens/dust.html" class="token" title="DUST - Dust Protocol">DUST</a><a href="./reports/tokens/eurc.html" class="token" title="EURC - Euro Coin">EURC</a><a href="./reports/tokens/fcon.html" class="token" title="FCON - Space Falcon">FCON</a><a href="./reports/tokens/fida.html" class="token" title="FIDA - Bonfida">FIDA</a><a href="./reports/tokens/fluxb.html" class="token" title="FLUXB - FluxBot">FLUXB</a><a href="./reports/tokens/forge.html" class="token" title="FORGE - Blocksmith Labs Forge">FORGE</a><a href="./reports/tokens/frkt.html" class="token" title="FRKT - Frakt">FRKT</a><a href="./reports/tokens/gari.html" class="token" title="GARI - Gari Network">GARI</a><a href="./reports/tokens/gene.html" class="token" title="GENE - Genopets">GENE</a><a href="./reports/tokens/gh0st.html" class="token" title="GH0ST - Gh0st">GH0ST</a><a href="./reports/tokens/gmt.html" class="token" title="GMT - STEPN">GMT</a><a href="./reports/tokens/goat.html" class="token" title="GOAT - Goatseus Maximus">GOAT</a><a href="./reports/tokens/gofx.html" class="token" title="GOFX - GooseFX">GOFX</a><a href="./reports/tokens/grape.html" class="token" title="GRAPE - Grape Network">GRAPE</a><a href="./reports/tokens/grass.html" class="token" title="GRASS - Grass">GRASS</a><a href="./reports/tokens/gst.html" class="token" title="GST - Green Satoshi Token">GST</a><a href="./reports/tokens/guac.html" class="token" title="GUAC - Guacamole">GUAC</a><a href="./reports/tokens/hades.html" class="token" title="HADES - Hadeswap">HADES</a><a href="./reports/tokens/hawk.html" class="token" title="HAWK - Hawk Protocol">HAWK</a><a href="./reports/tokens/hbb.html" class="token" title="HBB - Hubble Protocol">HBB</a><a href="./reports/tokens/hnt.html" class="token" title="HNT - Helium Network">HNT</a><a href="./reports/tokens/honey.html" class="token" title="HONEY - Hivemapper">HONEY</a><a href="./reports/tokens/hsol.html" class="token" title="hSOL - Helius Staked SOL">hSOL</a><a href="./reports/tokens/hxro.html" class="token" title="HXRO - Hxro Network">HXRO</a><a href="./reports/tokens/index.html" class="token" title="All Token Reports">All Token Reports</a><a href="./reports/tokens/inf.html" class="token" title="INF - Sanctum Infinity">INF</a><a href="./reports/tokens/io.html" class="token" title="IO - io.net">IO</a><a href="./reports/tokens/iot.html" class="token" title="IOT - Helium IOT">IOT</a><a href="./reports/tokens/isc.html" class="token" title="ISC - International Stable Currency">ISC</a><a href="./reports/tokens/ivn.html" class="token" title="IVN - Investin">IVN</a><a href="./reports/tokens/jitosol.html" class="token" title="JitoSOL - Jito Staked SOL">JitoSOL</a><a href="./reports/tokens/jlp.html" class="token" title="JLP - Jupiter Perps LP">JLP</a><a href="./reports/tokens/jsol.html" class="token" title="jSOL - JPool Staked SOL">jSOL</a><a href="./reports/tokens/jto.html" class="token" title="JTO - Jito">JTO</a><a href="./reports/tokens/jup.html" class="token" title="JUP - Jupiter">JUP</a><a href="./reports/tokens/kin.html" class="token" title="KIN - Kin">KIN</a><a href="./reports/tokens/kmno.html" class="token" title="KMNO - Kamino">KMNO</a><a href="./reports/tokens/koii.html" class="token" title="KOII - Koii Network">KOII</a><a href="./reports/tokens/larix.html" class="token" title="LARIX - Larix">LARIX</a><a href="./reports/tokens/lfg.html" class="token" title="LFG - Less Fn Gas">LFG</a><a href="./reports/tokens/lfnty.html" class="token" title="LFNTY - Lifinity">LFNTY</a><a href="./reports/tokens/like.html" class="token" title="LIKE - Only1">LIKE</a><a href="./reports/tokens/liq.html" class="token" title="LIQ - Liq Protocol">LIQ</a><a href="./reports/tokens/lmr.html" class="token" title="LMR - Lumerin">LMR</a><a href="./reports/tokens/loaf.html" class="token" title="LOAF - Loaf Cat">LOAF</a><a href="./reports/tokens/lockin.html" class="token" title="LOCKIN - Lock In">LOCKIN</a><a href="./reports/tokens/mail.html" class="token" title="MAIL - SolMail">MAIL</a><a href="./reports/tokens/maneki.html" class="token" title="MANEKI - Maneki-neko">MANEKI</a><a href="./reports/tokens/maps.html" class="token" title="MAPS - Maps.me">MAPS</a><a href="./reports/tokens/mbs.html" class="token" title="MBS - MonkeyLeague">MBS</a><a href="./reports/tokens/me.html" class="token" title="ME - Magic Eden">ME</a><a href="./reports/tokens/mean.html" class="token" title="MEAN - Mean DAO">MEAN</a><a href="./reports/tokens/media.html" class="token" title="MEDIA - Media Network">MEDIA</a><a href="./reports/tokens/met.html" class="token" title="MET - Meteora">MET</a><a href="./reports/tokens/mew.html" class="token" title="MEW - cat in a dogs world">MEW</a><a href="./reports/tokens/michi.html" class="token" title="MICHI - Michi">MICHI</a><a href="./reports/tokens/mnde.html" class="token" title="MNDE - Marinade">MNDE</a><a href="./reports/tokens/mngo.html" class="token" title="MNGO - Mango Markets">MNGO</a><a href="./reports/tokens/mobile.html" class="token" title="MOBILE - Helium Mobile">MOBILE</a><a href="./reports/tokens/mplx.html" class="token" title="MPLX - Metaplex">MPLX</a><a href="./reports/tokens/msol.html" class="token" title="mSOL - Marinade Staked SOL">mSOL</a><a href="./reports/tokens/mumu.html" class="token" title="MUMU - Mumu the Bull">MUMU</a><a href="./reports/tokens/myro.html" class="token" title="MYRO - Myro">MYRO</a><a href="./reports/tokens/natix.html" class="token" title="NATIX - Natix Network">NATIX</a><a href="./reports/tokens/neon.html" class="token" title="NEON - Neon EVM">NEON</a><a href="./reports/tokens/nos.html" class="token" title="NOS - Nosana">NOS</a><a href="./reports/tokens/onde.html" class="token" title="ONDE - Onde Network">ONDE</a><a href="./reports/tokens/open.html" class="token" title="OPEN - OpenBook">OPEN</a><a href="./reports/tokens/orca.html" class="token" title="ORCA - Orca">ORCA</a><a href="./reports/tokens/ousg.html" class="token" title="OUSG - Ondo Short-Term US Gov">OUSG</a><a href="./reports/tokens/oxy.html" class="token" title="OXY - Oxygen">OXY</a><a href="./reports/tokens/par.html" class="token" title="PAR - Parallel">PAR</a><a href="./reports/tokens/paxg.html" class="token" title="PAXG - Paxos Gold (Portal)">PAXG</a><a href="./reports/tokens/phoenix.html" class="token" title="PHOENIX - Phoenix (Ellipsis)">PHOENIX</a><a href="./reports/tokens/pica.html" class="token" title="PICA - Picasso">PICA</a><a href="./reports/tokens/pip.html" class="token" title="PIP - Pip">PIP</a><a href="./reports/tokens/polis.html" class="token" title="POLIS - Star Atlas DAO">POLIS</a><a href="./reports/tokens/ponke.html" class="token" title="PONKE - Ponke">PONKE</a><a href="./reports/tokens/popcat.html" class="token" title="POPCAT - Popcat">POPCAT</a><a href="./reports/tokens/port.html" class="token" title="PORT - Port Finance">PORT</a><a href="./reports/tokens/prcl.html" class="token" title="PRCL - Parcl">PRCL</a><a href="./reports/tokens/prism.html" class="token" title="PRISM - Prism">PRISM</a><a href="./reports/tokens/pyth.html" class="token" title="PYTH - Pyth Network">PYTH</a><a href="./reports/tokens/pyusd.html" class="token" title="PYUSD - PayPal USD">PYUSD</a><a href="./reports/tokens/rain.html" class="token" title="RAIN - Rain.fi">RAIN</a><a href="./reports/tokens/ray.html" class="token" title="RAY - Raydium">RAY</a><a href="./reports/tokens/real.html" class="token" title="REAL - Realy Metaverse">REAL</a><a href="./reports/tokens/render.html" class="token" title="RENDER - Render Network">RENDER</a><a href="./reports/tokens/rin.html" class="token" title="RIN - Aldrin">RIN</a><a href="./reports/tokens/rope.html" class="token" title="ROPE - Rope">ROPE</a><a href="./reports/tokens/samo.html" class="token" title="SAMO - Samoyedcoin">SAMO</a><a href="./reports/tokens/saros.html" class="token" title="SAROS - Saros">SAROS</a><a href="./reports/tokens/sbr.html" class="token" title="SBR - Saber">SBR</a><a href="./reports/tokens/sc.html" class="token" title="SC - Shark Cat">SC</a><a href="./reports/tokens/shdw.html" class="token" title="SHDW - Shadow Token">SHDW</a><a href="./reports/tokens/shrap.html" class="token" title="SHRAP - Shrapnel">SHRAP</a><a href="./reports/tokens/silly.html" class="token" title="SILLY - Silly Dragon">SILLY</a><a href="./reports/tokens/slerf.html" class="token" title="SLERF - Slerf">SLERF</a><a href="./reports/tokens/slim.html" class="token" title="SLIM - Solanium">SLIM</a><a href="./reports/tokens/slnd.html" class="token" title="SLND - Solend (Save)">SLND</a><a href="./reports/tokens/sns.html" class="token" title="SNS - Synesis One">SNS</a><a href="./reports/tokens/sny.html" class="token" title="SNY - Synthetify">SNY</a><a href="./reports/tokens/sol.html" class="token" title="SOL - Solana">SOL</a><a href="./reports/tokens/solc.html" class="token" title="SOLC - SolCard">SOLC</a><a href="./reports/tokens/solr.html" class="token" title="SOLR - SolRazr">SOLR</a><a href="./reports/tokens/sols.html" class="token" title="SOLS - SPL20 Inscriptions">SOLS</a><a href="./reports/tokens/sonar.html" class="token" title="SONAR - SonarWatch">SONAR</a><a href="./reports/tokens/srm.html" class="token" title="SRM - Serum">SRM</a><a href="./reports/tokens/step.html" class="token" title="STEP - Step Finance">STEP</a><a href="./reports/tokens/strm.html" class="token" title="STRM - Streamflow">STRM</a><a href="./reports/tokens/sunny.html" class="token" title="SUNNY - Sunny Aggregator">SUNNY</a><a href="./reports/tokens/syn.html" class="token" title="SYN - Synesis One">SYN</a><a href="./reports/tokens/taps.html" class="token" title="TAPS - Tap Fantasy">TAPS</a><a href="./reports/tokens/tbtc.html" class="token" title="tBTC - Threshold Bitcoin">tBTC</a><a href="./reports/tokens/tnsr.html" class="token" title="TNSR - Tensor">TNSR</a><a href="./reports/tokens/tryb.html" class="token" title="TRYB - BiLira">TRYB</a><a href="./reports/tokens/tulip.html" class="token" title="TULIP - Tulip Protocol">TULIP</a><a href="./reports/tokens/upc.html" class="token" title="UPC - UpRock">UPC</a><a href="./reports/tokens/upt.html" class="token" title="UPT - UpRock">UPT</a><a href="./reports/tokens/usdc.html" class="token" title="USDC - USD Coin">USDC</a><a href="./reports/tokens/usdh.html" class="token" title="USDH - Hubble USD">USDH</a><a href="./reports/tokens/usds.html" class="token" title="USDS - Sky Dollar (Solana)">USDS</a><a href="./reports/tokens/usdt.html" class="token" title="USDT - Tether USD">USDT</a><a href="./reports/tokens/usdy.html" class="token" title="USDY - Ondo US Dollar Yield">USDY</a><a href="./reports/tokens/uxd.html" class="token" title="UXD - UXD Stablecoin">UXD</a><a href="./reports/tokens/w.html" class="token" title="W - Wormhole">W</a><a href="./reports/tokens/wavax.html" class="token" title="wAVAX - Wrapped AVAX (Portal)">wAVAX</a><a href="./reports/tokens/wbnb.html" class="token" title="wBNB - Wrapped BNB (Portal)">wBNB</a><a href="./reports/tokens/wbtc.html" class="token" title="WBTC - Wrapped Bitcoin (Portal)">WBTC</a><a href="./reports/tokens/wcrv.html" class="token" title="wCRV - Wrapped Curve DAO (Portal)">wCRV</a><a href="./reports/tokens/wen.html" class="token" title="WEN - Wen">WEN</a><a href="./reports/tokens/weth.html" class="token" title="wETH - Wrapped Ether (Portal)">wETH</a><a href="./reports/tokens/wif.html" class="token" title="WIF - dogwifhat">WIF</a><a href="./reports/tokens/wifi.html" class="token" title="WIFI - WiFi Map">WIFI</a><a href="./reports/tokens/wldo.html" class="token" title="wLDO - Wrapped Lido DAO (Portal)">wLDO</a><a href="./reports/tokens/wlink.html" class="token" title="wLINK - Wrapped Chainlink (Portal)">wLINK</a><a href="./reports/tokens/wlkn.html" class="token" title="WLKN - Walken">WLKN</a><a href="./reports/tokens/wmatic.html" class="token" title="wMATIC - Wrapped Matic (Portal)">wMATIC</a><a href="./reports/tokens/wnear.html" class="token" title="wNEAR - Wrapped NEAR (Portal)">wNEAR</a><a href="./reports/tokens/wuni.html" class="token" title="wUNI - Wrapped Uniswap (Portal)">wUNI</a><a href="./reports/tokens/xaut.html" class="token" title="XAUT - Tether Gold (Portal)">XAUT</a><a href="./reports/tokens/yaku.html" class="token" title="YAKU - Yaku">YAKU</a><a href="./reports/tokens/yaw.html" class="token" title="YAW - Yawww">YAW</a><a href="./reports/tokens/zbcn.html" class="token" title="ZBCN - Zebec Network">ZBCN</a><a href="./reports/tokens/zbtc.html" class="token" title="zBTC - Zeus Bitcoin">zBTC</a><a href="./reports/tokens/zerebro.html" class="token" title="ZEREBRO - Zerebro">ZEREBRO</a><a href="./reports/tokens/zero.html" class="token" title="ZERO - Analysoor">ZERO</a><a href="./reports/tokens/zeta.html" class="token" title="ZETA - Zeta Markets">ZETA</a><a href="./reports/tokens/zeus.html" class="token" title="ZEUS - Zeus Network">ZEUS</a><a href="./reports/tokens/zig.html" class="token" title="ZIG - Zignaly">ZIG</a>
+      </div>
+    </section>
+
+  <footer>
+    Generated from markdown with KaTeX math rendering
+  </footer>
+</div>
+</body>
+</html>
